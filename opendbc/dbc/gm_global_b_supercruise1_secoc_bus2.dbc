@@ -1,0 +1,906 @@
+VERSION "GM Global B Super Cruise 1 CAN2"
+
+NS_ :
+    CM_
+    BA_DEF_
+    BA_
+    BA_DEF_DEF_
+    VAL_
+
+BS_:
+
+BU_: IPM CGM Vector__XXX
+
+CM_ "GM Global B Super Cruise 1 physical CAN2 database. Unknown transmitters use Vector__XXX.";
+
+BO_ 47 CAN2_RX_02F: 32 Vector__XXX
+
+BO_ 50 CAN2_RX_032: 8 Vector__XXX
+
+BO_ 58 CAN2_RX_03A: 20 Vector__XXX
+
+BO_ 59 CAN2_RX_03B: 64 Vector__XXX
+
+BO_ 62 CAN2_RX_03E: 8 Vector__XXX
+
+BO_ 63 CAN2_RX_03F: 4 Vector__XXX
+
+BO_ 66 CAN2_RX_042: 8 Vector__XXX
+
+BO_ 72 CAN2_RX_048: 8 Vector__XXX
+
+BO_ 84 CAN2_RX_054: 8 Vector__XXX
+
+BO_ 87 IPM_HOST_VEHICLE_DYNAMICS: 32 IPM
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ VehicleLateralVelocity : 46|8@0+ (0.05,-6.4) [-6.4|6.35] "" Vector__XXX
+ SG_ DynField02 : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehicleLongitudinalVelocity : 53|12@0+ (0.0625,-128) [-128|127.9375] "" Vector__XXX
+ SG_ DynField04 : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DynField05 : 56|16@0- (0.00001,0) [-0.32768|0.32767] "" Vector__XXX
+ SG_ DynField06 : 57|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DynField07 : 72|15@0+ (0.001,-16) [-16|16.767] "" Vector__XXX
+ SG_ DynField08 : 89|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VehicleSideslipAngle : 103|12@0+ (0.0625,-128) [-128|127.9375] "" Vector__XXX
+ SG_ DynField10 : 107|14@0+ (1,-8192) [-8192|8191] "" Vector__XXX
+ SG_ DynField11 : 125|8@0+ (0.1,-12.8) [-12.8|12.7] "" Vector__XXX
+ SG_ DynField12 : 131|12@0+ (0.0625,-128) [-128|127.9375] "" Vector__XXX
+ SG_ DynField13 : 133|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ VehicleYawRate : 150|12@0+ (0.0625,-128) [-128|127.9375] "" Vector__XXX
+ SG_ DynField15 : 151|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DynField16 : 153|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DynField17 : 154|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SourceTime : 167|32@0+ (1,0) [0|4294967295] "ms" Vector__XXX
+ SG_ RollingCounter : 193|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DynField20 : 195|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DynField21 : 199|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DynField22 : 201|9@0- (1,0) [-256|255] "" Vector__XXX
+ SG_ DynField23 : 203|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ DynField24 : 207|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ DynField25 : 208|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DynField26 : 223|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FrontRoadWheelAngle : 222|10@0- (0.00436332313,0) [-2.23402144256|2.22965811943] "rad" Vector__XXX
+ SG_ FrontRoadWheelAngleStatus : 228|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DynField27 : 227|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 174 CAN2_RX_0AE: 6 Vector__XXX
+
+BO_ 175 CAN2_RX_0AF: 6 Vector__XXX
+
+BO_ 182 CAN2_RX_0B6: 4 CGM
+
+BO_ 186 CAN2_RX_0BA: 12 Vector__XXX
+
+BO_ 187 IPM_STEERING_WHEEL_ANGLE: 7 IPM
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ MeasuredSteeringWheelAngle : 38|15@0- (0.0625,0) [-1024|1023.9375] "deg" Vector__XXX
+ SG_ SteeringWheelAngleValid : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 55|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 192 CAN2_RX_0C0: 2 Vector__XXX
+
+BO_ 225 IPM_0E1: 16 IPM
+
+BO_ 226 CAN2_RX_0E2: 20 Vector__XXX
+
+BO_ 525 IPM_UNKNOWN_20D: 8 IPM
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+
+BO_ 526 IPM_LONGITUDINAL_REQUEST_STATUS: 16 IPM
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ AxleTorqueRequestActive : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AdaptiveCruiseBrakeControlActive : 71|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AdaptiveCruiseBrakeRequestActive : 70|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ CollisionMitigationBrakeTorqueRequestActive : 86|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LaneCenteringAcceleratorLimitRequest : 101|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 545 CAN2_RX_221: 48 Vector__XXX
+
+BO_ 586 CAN2_RX_24A: 8 Vector__XXX
+
+BO_ 587 IPM_AXLE_TORQUE_STATUS: 12 IPM
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ AxleTorqueFieldA : 47|15@0+ (2.0,-22534) [-22534|43000] "" Vector__XXX
+ SG_ AxleTorqueFieldB : 48|14@0+ (2.0,-22534) [-22534|10232] "" Vector__XXX
+ SG_ AxleTorqueStatusA : 66|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AxleTorqueStatusB : 64|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AxleTorqueValid : 78|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SecOCFreshnessLow : 89|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 597 CAN2_RX_255: 8 CGM
+
+BO_ 610 CAN2_RX_262: 8 Vector__XXX
+
+BO_ 614 CAN2_RX_266: 8 Vector__XXX
+
+BO_ 615 CAN2_RX_267: 20 Vector__XXX
+
+BO_ 616 CAN2_RX_268: 8 Vector__XXX
+
+BO_ 622 CAN2_RX_26E: 8 CGM
+
+BO_ 624 CAN2_RX_270: 12 Vector__XXX
+
+BO_ 625 IPM_STEERING_REQUEST_COARSE: 8 IPM
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SteeringRequestAngleRaw : 39|14@0- (0.1,0) [-819.2|819.1] "" Vector__XXX
+ SG_ SteeringRequestState : 41|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SecondarySteeringRequestCoarse : 51|8@0- (0.1,0) [-12.8|12.7] "" Vector__XXX
+ SG_ SteeringRequestStatus : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SteeringRequestCalibrationStateFlag : 58|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SteeringRequestTransitionFlag : 59|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 57|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 634 CAN2_RX_27A: 8 Vector__XXX
+
+BO_ 635 CAN2_RX_AUTHENTICATED_27B: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" IPM
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" IPM
+
+BO_ 640 CAN2_RX_280: 8 CGM
+
+BO_ 644 IPM_STEERING_REQUEST_HIGH_RES: 12 IPM
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ SteeringRequestAngleRaw : 47|14@0- (0.1,0) [-819.2|819.1] "" Vector__XXX
+ SG_ SecondarySteeringRequestHighResolution : 49|11@0- (0.01,0) [-10.24|10.23] "" Vector__XXX
+ SG_ SteeringRequestCalibrationStateFlag : 64|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SteeringRequestStatus : 66|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SteeringRequestState : 70|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SteeringRequestTransitionFlag : 79|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 89|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 659 CAN2_RX_293: 12 CGM
+
+BO_ 674 CAN2_RX_2A2: 8 Vector__XXX
+
+BO_ 675 CAN2_RX_2A3: 8 Vector__XXX
+
+BO_ 683 CAN2_RX_2AB: 8 Vector__XXX
+
+BO_ 691 CAN2_RX_2B3: 8 Vector__XXX
+
+BO_ 693 CAN2_RX_2B5: 8 Vector__XXX
+
+BO_ 694 CAN2_RX_AUTHENTICATION_2B6: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" IPM
+
+BO_ 701 IPM_2BD: 2 IPM
+
+BO_ 702 CAN2_RX_2BE: 4 CGM
+
+BO_ 703 CAN2_RX_2BF: 2 Vector__XXX
+
+BO_ 725 CAN2_RX_2D5: 12 CGM
+
+BO_ 726 CAN2_RX_2D6: 5 CGM
+
+BO_ 727 CAN2_RX_2D7: 8 Vector__XXX
+
+BO_ 728 CAN2_RX_2D8: 8 CGM
+
+BO_ 873 CAN2_RX_369: 8 Vector__XXX
+
+BO_ 876 CAN2_RX_36C: 16 CGM
+
+BO_ 878 CAN2_RX_36E: 8 Vector__XXX
+
+BO_ 879 CAN2_RX_36F: 8 Vector__XXX
+
+BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
+ SG_ VehiclePowerMode : 37|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ PowerModeGate : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 898 CAN2_RX_382: 8 CGM
+
+BO_ 901 CAN2_RX_385: 8 Vector__XXX
+
+BO_ 902 IPM_LONGITUDINAL_REQUEST_STATUS_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 904 CAN2_RX_388: 8 Vector__XXX
+
+BO_ 905 CAN2_RX_389: 8 Vector__XXX
+
+BO_ 906 CAN2_RX_38A: 8 Vector__XXX
+
+BO_ 907 CAN2_RX_38B: 8 Vector__XXX
+
+BO_ 909 CAN2_RX_38D: 8 Vector__XXX
+
+BO_ 914 IPM_HOST_VEHICLE_DYNAMICS_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 919 CAN2_RX_397: 8 Vector__XXX
+
+BO_ 920 CAN2_RX_398: 8 Vector__XXX
+
+BO_ 923 CAN2_RX_39B: 8 Vector__XXX
+
+BO_ 924 IPM_STEERING_REQUEST_COARSE_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 925 IPM_UNKNOWN_20D_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 927 IPM_STEERING_WHEEL_ANGLE_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 930 CAN2_RX_3A2: 8 CGM
+
+BO_ 934 CAN2_RX_3A6: 6 Vector__XXX
+
+BO_ 938 CAN2_RX_3AA: 6 Vector__XXX
+
+BO_ 941 IPM_3AD: 6 IPM
+
+BO_ 945 CAN2_RX_3B1: 6 Vector__XXX
+
+BO_ 947 IPM_3B3: 6 IPM
+
+BO_ 949 IPM_3B5: 8 IPM
+
+BO_ 950 IPM_3B6: 8 IPM
+
+BO_ 951 IPM_3B7: 8 IPM
+
+BO_ 952 IPM_3B8: 8 IPM
+
+BO_ 962 CAN2_RX_CGM_SYSTEM_POWER_MODE_STATUS: 8 CGM
+ SG_ SystemPowerModeProtectionFailSafe : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 963 CAN2_RX_CGM_AUTHENTICATED_POWER_MODE: 8 CGM
+ SG_ SystemPowerModeActive : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PrimaryRunCrankCommand : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 964 CAN2_RX_3C4: 8 CGM
+
+BO_ 971 IPM_AXLE_TORQUE_STATUS_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 972 CAN2_RX_3CC: 8 Vector__XXX
+
+BO_ 974 IPM_STEERING_REQUEST_HIGH_RES_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 1026 IPM_402: 24 IPM
+
+BO_ 1027 IPM_403: 6 IPM
+
+BO_ 1117 IPM_UNKNOWN_45D: 8 IPM
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+
+BO_ 1149 CAN2_RX_47D: 8 CGM
+
+BO_ 1152 CAN2_RX_480: 8 CGM
+
+BO_ 1237 IPM_4D5: 8 IPM
+
+BO_ 1239 IPM_4D7: 12 IPM
+
+BO_ 1244 CAN2_RX_4DC: 6 CGM
+
+BO_ 1254 IPM_4E6: 12 IPM
+
+BO_ 1264 CAN2_RX_4F0: 6 Vector__XXX
+
+BO_ 1285 CAN2_RX_505: 6 Vector__XXX
+
+BO_ 1298 CAN2_RX_512: 8 Vector__XXX
+
+BO_ 1302 CAN2_RX_516: 8 Vector__XXX
+
+BO_ 1304 IPM_518: 12 IPM
+
+BO_ 1308 CAN2_RX_51C: 8 Vector__XXX
+
+BO_ 1313 CAN2_RX_521: 8 Vector__XXX
+
+BO_ 1314 CAN2_RX_522: 6 Vector__XXX
+
+BO_ 1315 CAN2_RX_523: 8 CGM
+
+BO_ 1316 CAN2_RX_524: 8 Vector__XXX
+
+BO_ 1318 IPM_526: 12 IPM
+
+BO_ 1319 CAN2_RX_527: 7 Vector__XXX
+
+BO_ 1321 IPM_529: 12 IPM
+
+BO_ 1323 IPM_UNKNOWN_52B: 8 IPM
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+
+BO_ 1324 CAN2_RX_52C: 8 Vector__XXX
+
+BO_ 1325 IPM_UNKNOWN_52D: 8 IPM
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+
+BO_ 1349 IPM_545: 8 IPM
+
+BO_ 1354 IPM_54A: 8 IPM
+
+BO_ 1355 IPM_54B: 8 IPM
+
+BO_ 1359 CAN2_RX_54F: 8 Vector__XXX
+
+BO_ 1369 CAN2_RX_559: 8 Vector__XXX
+
+BO_ 1373 CAN2_RX_55D: 8 CGM
+
+BO_ 1374 CAN2_RX_55E: 8 Vector__XXX
+
+BO_ 1376 CAN2_RX_560: 8 Vector__XXX
+
+BO_ 1377 CAN2_RX_561: 8 Vector__XXX
+
+BO_ 1383 IPM_UNKNOWN_52B_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 1384 CAN2_RX_568: 8 CGM
+
+BO_ 1385 CAN2_RX_569: 8 CGM
+
+BO_ 1387 CAN2_RX_56B: 8 Vector__XXX
+
+BO_ 1393 IPM_UNKNOWN_52D_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 1394 CAN2_RX_572: 8 Vector__XXX
+
+BO_ 1396 CAN2_RX_574: 8 Vector__XXX
+
+BO_ 1402 CAN2_RX_57A: 8 Vector__XXX
+
+BO_ 1403 CAN2_RX_57B: 8 Vector__XXX
+
+BO_ 1404 CAN2_RX_57C: 8 Vector__XXX
+
+BO_ 1406 IPM_57E: 6 IPM
+
+BO_ 1407 CAN2_RX_57F: 16 CGM
+
+BO_ 1408 CAN2_RX_580: 6 Vector__XXX
+
+BO_ 1409 CAN2_RX_581: 6 Vector__XXX
+
+BO_ 1410 CAN2_RX_582: 6 Vector__XXX
+
+BO_ 1412 CAN2_RX_584: 6 Vector__XXX
+
+BO_ 1415 IPM_587: 8 IPM
+
+BO_ 1416 IPM_588: 12 IPM
+
+BO_ 1417 IPM_589: 8 IPM
+
+BO_ 1421 IPM_58D: 6 IPM
+
+BO_ 1422 IPM_58E: 8 IPM
+
+BO_ 1424 CAN2_RX_590: 8 CGM
+
+BO_ 1426 CAN2_RX_592: 8 Vector__XXX
+
+BO_ 1427 CAN2_RX_593: 6 Vector__XXX
+
+BO_ 1428 CAN2_RX_594: 6 Vector__XXX
+
+BO_ 1429 CAN2_RX_595: 6 Vector__XXX
+
+BO_ 1430 CAN2_RX_596: 6 Vector__XXX
+
+BO_ 1431 IPM_597: 6 IPM
+
+BO_ 1433 CAN2_RX_599: 6 Vector__XXX
+
+BO_ 1435 CAN2_RX_59B: 6 Vector__XXX
+
+BO_ 1441 CAN2_RX_5A1: 32 CGM
+
+BO_ 1442 CAN2_RX_5A2: 32 CGM
+
+BO_ 1444 CAN2_RX_5A4: 6 CGM
+
+BO_ 1449 IPM_5A9: 6 IPM
+
+BO_ 1466 CAN2_RX_5BA: 8 CGM
+
+BO_ 1469 CAN2_RX_5BD: 6 CGM
+
+BO_ 1476 CAN2_RX_5C4: 6 CGM
+
+BO_ 1481 CAN2_RX_5C9: 8 Vector__XXX
+
+BO_ 1482 CAN2_RX_5CA: 6 Vector__XXX
+
+BO_ 1483 CAN2_RX_5CB: 8 Vector__XXX
+
+BO_ 1490 CAN2_RX_5D2: 6 Vector__XXX
+
+BO_ 1498 IPM_5DA: 6 IPM
+
+BO_ 1499 IPM_5DB: 6 IPM
+
+BO_ 1500 IPM_5DC: 8 IPM
+
+BO_ 1529 CAN2_RX_5F9: 32 CGM
+
+BO_ 1535 IPM_5FF: 6 IPM
+
+BO_ 1811 IPM_713: 6 IPM
+
+BO_ 1818 IPM_71A: 6 IPM
+
+BO_ 1822 IPM_71E: 6 IPM
+
+BO_ 1828 IPM_724: 8 IPM
+
+BO_ 1829 IPM_725: 8 IPM
+
+BO_ 1949 IPM_UNKNOWN_45D_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 2147745830 IPM_NodeStatus_CAN2: 1 IPM
+ SG_ NodeStatusBit0 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+CM_ BO_ 47 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 50 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 58 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 59 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 62 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 63 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 66 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 72 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 84 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 174 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 175 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 182 "Raw-forwarded by CGM to CAN2 from CAN4 0x209 or CAN8 0x0C0 and received by IPM; application layout is unknown.";
+CM_ BO_ 186 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 192 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 226 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 545 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 586 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 597 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 610 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 614 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 615 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 616 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 622 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 624 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 634 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 640 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 659 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 674 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 675 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 683 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 691 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 693 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 702 "Raw-forwarded by CGM from CAN9 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 703 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 725 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 726 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 727 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 728 "Raw-forwarded by CGM from CAN9 0x2A9 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 873 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 876 "Raw-forwarded by CGM from CAN9 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 878 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 879 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 880 "Transmitted by CGM; the payload is assembled from decoded gateway signals.";
+CM_ BO_ 898 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 901 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 904 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 905 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 906 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 907 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 909 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 919 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 920 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 923 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 930 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 934 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 938 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 945 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 962 "Transmitted by CGM and received by IPM; reports protected system-power-mode fail-safe status.";
+CM_ BO_ 963 "Transmitted by CGM and received by IPM; carries authenticated power-state inputs.";
+CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
+CM_ BO_ 964 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 972 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1149 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 1152 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 1244 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 1264 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1285 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1298 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1302 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1308 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1313 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1314 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1315 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 1316 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1319 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1324 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1355 "Transmitted by IPM and also registered as an IPM receive PDU.";
+CM_ BO_ 1359 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1369 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1373 "Raw-forwarded by CGM from CAN9 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 1374 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1376 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1377 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1384 "Raw-forwarded by CGM to CAN2 from CAN4 or CAN9 and received by IPM; application layout is unknown.";
+CM_ BO_ 1385 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 1387 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1394 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1396 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1402 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1403 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1404 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1407 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 1408 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1409 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1410 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1412 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1424 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 1426 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1427 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1428 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1429 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1430 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1433 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1435 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1441 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 1442 "Raw-forwarded by CGM from CAN9 0x5A1 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 1444 "Raw-forwarded by CGM from CAN8 0x594 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 1466 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 1469 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 1476 "Raw-forwarded by CGM from CAN5 0x494 to CAN2 and received by IPM; application layout is unknown.";
+CM_ BO_ 1481 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1482 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1483 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1490 "Received by IPM; transmitter and application layout are unknown.";
+CM_ BO_ 1529 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+
+VAL_ 187 SteeringWheelAngleValid 0 "Invalid" 1 "Valid";
+VAL_ 526 AxleTorqueRequestActive 0 "Inactive" 1 "Active";
+VAL_ 526 AdaptiveCruiseBrakeControlActive 0 "Inactive" 1 "Active";
+VAL_ 526 AdaptiveCruiseBrakeRequestActive 0 "Inactive" 1 "Active";
+VAL_ 526 CollisionMitigationBrakeTorqueRequestActive 0 "Inactive" 1 "Active";
+VAL_ 526 LaneCenteringAcceleratorLimitRequest 0 "Inactive" 1 "Active";
+VAL_ 587 AxleTorqueStatusA 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 587 AxleTorqueStatusB 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 587 AxleTorqueValid 0 "Invalid" 1 "Valid";
+VAL_ 625 SteeringRequestState 0 "Unknown_State_0" 3 "Unknown_State_3" 6 "Unknown_State_6";
+VAL_ 625 SteeringRequestStatus 1 "Unknown_Status_1" 2 "Unknown_Status_2";
+VAL_ 625 SteeringRequestCalibrationStateFlag 0 "Inactive" 1 "Active";
+VAL_ 625 SteeringRequestTransitionFlag 0 "No_Transition" 1 "Transition";
+VAL_ 644 SteeringRequestState 0 "Unknown_State_0" 3 "Unknown_State_3" 6 "Unknown_State_6";
+VAL_ 644 SteeringRequestStatus 1 "Unknown_Status_1" 2 "Unknown_Status_2";
+VAL_ 644 SteeringRequestCalibrationStateFlag 0 "Inactive" 1 "Active";
+VAL_ 644 SteeringRequestTransitionFlag 0 "No_Transition" 1 "Transition";
+VAL_ 880 VehiclePowerMode 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
+VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
+VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
+VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
+VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";
+
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_ "SecOCKeyRole" STRING;
+BA_DEF_ BO_ "SecOCObservedKeyFamily" STRING;
+BA_DEF_ BO_ "SecOCKeyCandidates" STRING;
+BA_DEF_ BO_ "SecOCDataId" INT 0 255;
+BA_DEF_ BO_ "SecOCCompanionId" INT 0 536870911;
+BA_DEF_ BO_ "SecOCCompanionPeriod" INT 1 65535;
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
+BA_ "SecOCObservedKeyFamily" BO_ 47 "shared_secoc_family_b";
+BA_ "SecOCKeyCandidates" BO_ 47 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
+BA_ "SecOCKeyRole" BO_ 50 "secoc_key_032_group";
+BA_ "SecOCObservedKeyFamily" BO_ 50 "shared_secoc_family_b";
+BA_ "SecOCKeyRole" BO_ 58 "safety_control_key";
+BA_ "SecOCKeyRole" BO_ 59 "shared_secoc_key_a";
+BA_ "SecOCKeyRole" BO_ 66 "shared_secoc_key_a";
+BA_ "SecOCKeyRole" BO_ 72 "secoc_key_048_group";
+BA_ "SecOCObservedKeyFamily" BO_ 72 "shared_secoc_family_b";
+BA_ "SecOCKeyRole" BO_ 84 "safety_control_key";
+BA_ "SecOCKeyRole" BO_ 87 "safety_control_key";
+BA_ "SecOCDataId" BO_ 87 1;
+BA_ "SecOCCompanionId" BO_ 87 914;
+BA_ "SecOCCompanionPeriod" BO_ 87 16;
+BA_ "SecOCKeyRole" BO_ 187 "safety_control_key";
+BA_ "SecOCDataId" BO_ 187 1;
+BA_ "SecOCCompanionId" BO_ 187 927;
+BA_ "SecOCCompanionPeriod" BO_ 187 16;
+BA_ "SecOCObservedKeyFamily" BO_ 226 "shared_secoc_family_b";
+BA_ "SecOCKeyCandidates" BO_ 226 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
+BA_ "SecOCKeyRole" BO_ 525 "safety_control_key";
+BA_ "SecOCDataId" BO_ 525 1;
+BA_ "SecOCCompanionId" BO_ 525 925;
+BA_ "SecOCCompanionPeriod" BO_ 525 16;
+BA_ "SecOCKeyRole" BO_ 526 "safety_control_key";
+BA_ "SecOCDataId" BO_ 526 1;
+BA_ "SecOCCompanionId" BO_ 526 902;
+BA_ "SecOCCompanionPeriod" BO_ 526 16;
+BA_ "SecOCKeyRole" BO_ 587 "safety_control_key";
+BA_ "SecOCDataId" BO_ 587 1;
+BA_ "SecOCCompanionId" BO_ 587 971;
+BA_ "SecOCCompanionPeriod" BO_ 587 16;
+BA_ "SecOCObservedKeyFamily" BO_ 610 "shared_secoc_family_b";
+BA_ "SecOCKeyCandidates" BO_ 610 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
+BA_ "SecOCKeyRole" BO_ 614 "secoc_key_266_group";
+BA_ "SecOCObservedKeyFamily" BO_ 614 "shared_secoc_family_b";
+BA_ "SecOCObservedKeyFamily" BO_ 615 "shared_secoc_family_b";
+BA_ "SecOCKeyCandidates" BO_ 615 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
+BA_ "SecOCKeyRole" BO_ 624 "shared_secoc_key_a";
+BA_ "SecOCKeyRole" BO_ 625 "safety_control_key";
+BA_ "SecOCDataId" BO_ 625 1;
+BA_ "SecOCCompanionId" BO_ 625 924;
+BA_ "SecOCCompanionPeriod" BO_ 625 16;
+BA_ "SecOCKeyRole" BO_ 635 "shared_secoc_key_a";
+BA_ "SecOCKeyRole" BO_ 644 "safety_control_key";
+BA_ "SecOCDataId" BO_ 644 1;
+BA_ "SecOCCompanionId" BO_ 644 974;
+BA_ "SecOCCompanionPeriod" BO_ 644 16;
+BA_ "SecOCKeyRole" BO_ 873 "shared_secoc_key_a";
+BA_ "SecOCKeyRole" BO_ 879 "secoc_key_36f_group";
+BA_ "SecOCObservedKeyFamily" BO_ 879 "shared_secoc_family_b";
+BA_ "SecOCKeyRole" BO_ 880 "central_gateway_key";
+BA_ "SecOCKeyRole" BO_ 1117 "safety_control_key";
+BA_ "SecOCDataId" BO_ 1117 1;
+BA_ "SecOCCompanionId" BO_ 1117 1949;
+BA_ "SecOCCompanionPeriod" BO_ 1117 3;
+BA_ "SecOCObservedKeyFamily" BO_ 1302 "shared_secoc_family_b";
+BA_ "SecOCKeyCandidates" BO_ 1302 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
+BA_ "SecOCKeyRole" BO_ 1308 "shared_secoc_key_a";
+BA_ "SecOCKeyRole" BO_ 1323 "safety_control_key";
+BA_ "SecOCDataId" BO_ 1323 1;
+BA_ "SecOCCompanionId" BO_ 1323 1383;
+BA_ "SecOCCompanionPeriod" BO_ 1323 3;
+BA_ "SecOCKeyRole" BO_ 1325 "safety_control_key";
+BA_ "SecOCDataId" BO_ 1325 1;
+BA_ "SecOCCompanionId" BO_ 1325 1393;
+BA_ "SecOCCompanionPeriod" BO_ 1325 3;
+BA_ "GenMsgCycleTime" BO_ 87 10;
+BA_ "GenMsgCycleTime" BO_ 187 10;
+BA_ "GenMsgCycleTime" BO_ 225 50;
+BA_ "GenMsgCycleTime" BO_ 525 50;
+BA_ "GenMsgCycleTime" BO_ 526 50;
+BA_ "GenMsgCycleTime" BO_ 587 10;
+BA_ "GenMsgCycleTime" BO_ 625 10;
+BA_ "GenMsgCycleTime" BO_ 644 10;
+BA_ "GenMsgCycleTime" BO_ 701 100;
+BA_ "GenMsgCycleTime" BO_ 880 250;
+BA_ "GenMsgCycleTime" BO_ 902 800;
+BA_ "GenMsgCycleTime" BO_ 914 160;
+BA_ "GenMsgCycleTime" BO_ 924 160;
+BA_ "GenMsgCycleTime" BO_ 925 800;
+BA_ "GenMsgCycleTime" BO_ 927 160;
+BA_ "GenMsgCycleTime" BO_ 941 250;
+BA_ "GenMsgCycleTime" BO_ 947 250;
+BA_ "GenMsgCycleTime" BO_ 949 500;
+BA_ "GenMsgCycleTime" BO_ 950 500;
+BA_ "GenMsgCycleTime" BO_ 951 500;
+BA_ "GenMsgCycleTime" BO_ 952 500;
+BA_ "GenMsgCycleTime" BO_ 962 1000;
+BA_ "GenMsgCycleTime" BO_ 963 1000;
+BA_ "GenMsgCycleTime" BO_ 971 160;
+BA_ "GenMsgCycleTime" BO_ 974 160;
+BA_ "GenMsgCycleTime" BO_ 1026 1000;
+BA_ "GenMsgCycleTime" BO_ 1027 1000;
+BA_ "GenMsgCycleTime" BO_ 1117 1000;
+BA_ "GenMsgCycleTime" BO_ 1237 1000;
+BA_ "GenMsgCycleTime" BO_ 1239 1000;
+BA_ "GenMsgCycleTime" BO_ 1254 1000;
+BA_ "GenMsgCycleTime" BO_ 1304 1000;
+BA_ "GenMsgCycleTime" BO_ 1318 1000;
+BA_ "GenMsgCycleTime" BO_ 1321 1000;
+BA_ "GenMsgCycleTime" BO_ 1323 1000;
+BA_ "GenMsgCycleTime" BO_ 1325 1000;
+BA_ "GenMsgCycleTime" BO_ 1349 1000;
+BA_ "GenMsgCycleTime" BO_ 1354 1000;
+BA_ "GenMsgCycleTime" BO_ 1355 1000;
+BA_ "GenMsgCycleTime" BO_ 1383 3500;
+BA_ "GenMsgCycleTime" BO_ 1393 3500;
+BA_ "GenMsgCycleTime" BO_ 1406 1000;
+BA_ "GenMsgCycleTime" BO_ 1415 1000;
+BA_ "GenMsgCycleTime" BO_ 1416 1000;
+BA_ "GenMsgCycleTime" BO_ 1417 1000;
+BA_ "GenMsgCycleTime" BO_ 1421 1000;
+BA_ "GenMsgCycleTime" BO_ 1422 1000;
+BA_ "GenMsgCycleTime" BO_ 1431 1000;
+BA_ "GenMsgCycleTime" BO_ 1449 1000;
+BA_ "GenMsgCycleTime" BO_ 1498 1000;
+BA_ "GenMsgCycleTime" BO_ 1499 1000;
+BA_ "GenMsgCycleTime" BO_ 1500 1000;
+BA_ "GenMsgCycleTime" BO_ 1535 1000;
+BA_ "GenMsgCycleTime" BO_ 1811 1000;
+BA_ "GenMsgCycleTime" BO_ 1818 1000;
+BA_ "GenMsgCycleTime" BO_ 1822 1000;
+BA_ "GenMsgCycleTime" BO_ 1828 1000;
+BA_ "GenMsgCycleTime" BO_ 1829 1000;
+BA_ "GenMsgCycleTime" BO_ 1949 3500;
+BA_ "GenMsgCycleTime" BO_ 2147745830 1000;
+BA_ "VFrameFormat" BO_ 47 4;
+BA_ "VFrameFormat" BO_ 50 4;
+BA_ "VFrameFormat" BO_ 58 4;
+BA_ "VFrameFormat" BO_ 59 4;
+BA_ "VFrameFormat" BO_ 62 4;
+BA_ "VFrameFormat" BO_ 63 4;
+BA_ "VFrameFormat" BO_ 66 4;
+BA_ "VFrameFormat" BO_ 72 4;
+BA_ "VFrameFormat" BO_ 84 4;
+BA_ "VFrameFormat" BO_ 87 4;
+BA_ "VFrameFormat" BO_ 174 4;
+BA_ "VFrameFormat" BO_ 175 4;
+BA_ "VFrameFormat" BO_ 182 4;
+BA_ "VFrameFormat" BO_ 186 4;
+BA_ "VFrameFormat" BO_ 187 4;
+BA_ "VFrameFormat" BO_ 192 4;
+BA_ "VFrameFormat" BO_ 225 4;
+BA_ "VFrameFormat" BO_ 226 4;
+BA_ "VFrameFormat" BO_ 525 4;
+BA_ "VFrameFormat" BO_ 526 4;
+BA_ "VFrameFormat" BO_ 545 4;
+BA_ "VFrameFormat" BO_ 586 4;
+BA_ "VFrameFormat" BO_ 587 4;
+BA_ "VFrameFormat" BO_ 597 4;
+BA_ "VFrameFormat" BO_ 610 4;
+BA_ "VFrameFormat" BO_ 614 4;
+BA_ "VFrameFormat" BO_ 615 4;
+BA_ "VFrameFormat" BO_ 616 4;
+BA_ "VFrameFormat" BO_ 622 4;
+BA_ "VFrameFormat" BO_ 624 4;
+BA_ "VFrameFormat" BO_ 625 4;
+BA_ "VFrameFormat" BO_ 634 4;
+BA_ "VFrameFormat" BO_ 635 4;
+BA_ "VFrameFormat" BO_ 640 4;
+BA_ "VFrameFormat" BO_ 644 4;
+BA_ "VFrameFormat" BO_ 659 4;
+BA_ "VFrameFormat" BO_ 674 4;
+BA_ "VFrameFormat" BO_ 675 4;
+BA_ "VFrameFormat" BO_ 683 4;
+BA_ "VFrameFormat" BO_ 691 4;
+BA_ "VFrameFormat" BO_ 693 4;
+BA_ "VFrameFormat" BO_ 694 4;
+BA_ "VFrameFormat" BO_ 701 4;
+BA_ "VFrameFormat" BO_ 702 4;
+BA_ "VFrameFormat" BO_ 703 4;
+BA_ "VFrameFormat" BO_ 725 4;
+BA_ "VFrameFormat" BO_ 726 4;
+BA_ "VFrameFormat" BO_ 727 4;
+BA_ "VFrameFormat" BO_ 728 4;
+BA_ "VFrameFormat" BO_ 873 4;
+BA_ "VFrameFormat" BO_ 876 4;
+BA_ "VFrameFormat" BO_ 878 4;
+BA_ "VFrameFormat" BO_ 879 4;
+BA_ "VFrameFormat" BO_ 898 4;
+BA_ "VFrameFormat" BO_ 901 4;
+BA_ "VFrameFormat" BO_ 902 4;
+BA_ "VFrameFormat" BO_ 904 4;
+BA_ "VFrameFormat" BO_ 905 4;
+BA_ "VFrameFormat" BO_ 906 4;
+BA_ "VFrameFormat" BO_ 907 4;
+BA_ "VFrameFormat" BO_ 909 4;
+BA_ "VFrameFormat" BO_ 914 4;
+BA_ "VFrameFormat" BO_ 919 4;
+BA_ "VFrameFormat" BO_ 920 4;
+BA_ "VFrameFormat" BO_ 923 4;
+BA_ "VFrameFormat" BO_ 924 4;
+BA_ "VFrameFormat" BO_ 925 4;
+BA_ "VFrameFormat" BO_ 927 4;
+BA_ "VFrameFormat" BO_ 930 4;
+BA_ "VFrameFormat" BO_ 934 4;
+BA_ "VFrameFormat" BO_ 938 4;
+BA_ "VFrameFormat" BO_ 941 4;
+BA_ "VFrameFormat" BO_ 945 4;
+BA_ "VFrameFormat" BO_ 947 4;
+BA_ "VFrameFormat" BO_ 949 4;
+BA_ "VFrameFormat" BO_ 950 4;
+BA_ "VFrameFormat" BO_ 951 4;
+BA_ "VFrameFormat" BO_ 952 4;
+BA_ "VFrameFormat" BO_ 962 4;
+BA_ "VFrameFormat" BO_ 963 4;
+BA_ "VFrameFormat" BO_ 964 4;
+BA_ "VFrameFormat" BO_ 971 4;
+BA_ "VFrameFormat" BO_ 972 4;
+BA_ "VFrameFormat" BO_ 974 4;
+BA_ "VFrameFormat" BO_ 1026 4;
+BA_ "VFrameFormat" BO_ 1027 4;
+BA_ "VFrameFormat" BO_ 1117 4;
+BA_ "VFrameFormat" BO_ 1149 4;
+BA_ "VFrameFormat" BO_ 1152 4;
+BA_ "VFrameFormat" BO_ 1237 4;
+BA_ "VFrameFormat" BO_ 1239 4;
+BA_ "VFrameFormat" BO_ 1244 4;
+BA_ "VFrameFormat" BO_ 1254 4;
+BA_ "VFrameFormat" BO_ 1264 4;
+BA_ "VFrameFormat" BO_ 1285 4;
+BA_ "VFrameFormat" BO_ 1298 4;
+BA_ "VFrameFormat" BO_ 1302 4;
+BA_ "VFrameFormat" BO_ 1304 4;
+BA_ "VFrameFormat" BO_ 1308 4;
+BA_ "VFrameFormat" BO_ 1313 4;
+BA_ "VFrameFormat" BO_ 1314 4;
+BA_ "VFrameFormat" BO_ 1315 4;
+BA_ "VFrameFormat" BO_ 1316 4;
+BA_ "VFrameFormat" BO_ 1318 4;
+BA_ "VFrameFormat" BO_ 1319 4;
+BA_ "VFrameFormat" BO_ 1321 4;
+BA_ "VFrameFormat" BO_ 1323 4;
+BA_ "VFrameFormat" BO_ 1324 4;
+BA_ "VFrameFormat" BO_ 1325 4;
+BA_ "VFrameFormat" BO_ 1349 4;
+BA_ "VFrameFormat" BO_ 1354 4;
+BA_ "VFrameFormat" BO_ 1355 4;
+BA_ "VFrameFormat" BO_ 1359 4;
+BA_ "VFrameFormat" BO_ 1369 4;
+BA_ "VFrameFormat" BO_ 1373 4;
+BA_ "VFrameFormat" BO_ 1374 4;
+BA_ "VFrameFormat" BO_ 1376 4;
+BA_ "VFrameFormat" BO_ 1377 4;
+BA_ "VFrameFormat" BO_ 1383 4;
+BA_ "VFrameFormat" BO_ 1384 4;
+BA_ "VFrameFormat" BO_ 1385 4;
+BA_ "VFrameFormat" BO_ 1387 4;
+BA_ "VFrameFormat" BO_ 1393 4;
+BA_ "VFrameFormat" BO_ 1394 4;
+BA_ "VFrameFormat" BO_ 1396 4;
+BA_ "VFrameFormat" BO_ 1402 4;
+BA_ "VFrameFormat" BO_ 1403 4;
+BA_ "VFrameFormat" BO_ 1404 4;
+BA_ "VFrameFormat" BO_ 1406 4;
+BA_ "VFrameFormat" BO_ 1407 4;
+BA_ "VFrameFormat" BO_ 1408 4;
+BA_ "VFrameFormat" BO_ 1409 4;
+BA_ "VFrameFormat" BO_ 1410 4;
+BA_ "VFrameFormat" BO_ 1412 4;
+BA_ "VFrameFormat" BO_ 1415 4;
+BA_ "VFrameFormat" BO_ 1416 4;
+BA_ "VFrameFormat" BO_ 1417 4;
+BA_ "VFrameFormat" BO_ 1421 4;
+BA_ "VFrameFormat" BO_ 1422 4;
+BA_ "VFrameFormat" BO_ 1424 4;
+BA_ "VFrameFormat" BO_ 1426 4;
+BA_ "VFrameFormat" BO_ 1427 4;
+BA_ "VFrameFormat" BO_ 1428 4;
+BA_ "VFrameFormat" BO_ 1429 4;
+BA_ "VFrameFormat" BO_ 1430 4;
+BA_ "VFrameFormat" BO_ 1431 4;
+BA_ "VFrameFormat" BO_ 1433 4;
+BA_ "VFrameFormat" BO_ 1435 4;
+BA_ "VFrameFormat" BO_ 1441 4;
+BA_ "VFrameFormat" BO_ 1442 4;
+BA_ "VFrameFormat" BO_ 1444 4;
+BA_ "VFrameFormat" BO_ 1449 4;
+BA_ "VFrameFormat" BO_ 1466 4;
+BA_ "VFrameFormat" BO_ 1469 4;
+BA_ "VFrameFormat" BO_ 1476 4;
+BA_ "VFrameFormat" BO_ 1481 4;
+BA_ "VFrameFormat" BO_ 1482 4;
+BA_ "VFrameFormat" BO_ 1483 4;
+BA_ "VFrameFormat" BO_ 1490 4;
+BA_ "VFrameFormat" BO_ 1498 4;
+BA_ "VFrameFormat" BO_ 1499 4;
+BA_ "VFrameFormat" BO_ 1500 4;
+BA_ "VFrameFormat" BO_ 1529 4;
+BA_ "VFrameFormat" BO_ 1535 4;
+BA_ "VFrameFormat" BO_ 1811 4;
+BA_ "VFrameFormat" BO_ 1818 4;
+BA_ "VFrameFormat" BO_ 1822 4;
+BA_ "VFrameFormat" BO_ 1828 4;
+BA_ "VFrameFormat" BO_ 1829 4;
+BA_ "VFrameFormat" BO_ 1949 4;
+BA_ "VFrameFormat" BO_ 2147745830 1;

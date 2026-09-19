@@ -1,7 +1,8 @@
-import re
+import json
 import os
+import re
 from collections.abc import Callable
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from functools import cache
 
 from opendbc import DBC_PATH, get_generated_dbcs
@@ -59,6 +60,9 @@ class Msg:
   address: int
   size: int
   sigs: dict[str, Signal]
+  attrs: dict[str, str | int | float] = field(default_factory=dict)
+  # the node the DBC names as the sender, "XXX" or "Vector__XXX" when it does not say
+  transmitter: str = ""
 
 
 @dataclass
@@ -73,6 +77,7 @@ SG_RE = re.compile(r"^SG_ (\w+) : (\d+)\|(\d+)@(\d)([+-]) \(([0-9.+\-eE]+),([0-9
 SGM_RE = re.compile(r"^SG_ (\w+) (\w+) *: (\d+)\|(\d+)@(\d)([+-]) \(([0-9.+\-eE]+),([0-9.+\-eE]+)\) \[[0-9.+\-eE]+\|[0-9.+\-eE]+\] \".*\" .*")
 VAL_RE = re.compile(r"^VAL_ (\w+) (\w+) (.*);")
 VAL_SPLIT_RE = re.compile(r'["]+')
+BA_BO_RE = re.compile(r'^BA_ "([^"]+)" BO_ (\w+) (.+);$')
 
 
 @cache
@@ -120,7 +125,7 @@ class DBC:
         msg_name = m.group(2)
         size = int(m.group(3), 0)
         sigs = {}
-        self.msgs[address] = Msg(msg_name, address, size, sigs)
+        self.msgs[address] = Msg(msg_name, address, size, sigs, transmitter=m.group(4))
         self.addr_to_msg[address] = self.msgs[address]
         self.name_to_msg[msg_name] = self.msgs[address]
         signals_temp[address] = sigs
@@ -162,6 +167,22 @@ class DBC:
         words = [w.upper().replace(" ", "_") for w in words]
         val_def = " ".join(words).strip()
         self.vals.append(Val(sgname, val_addr, val_def))
+      elif line.startswith('BA_ "'):
+        m = BA_BO_RE.match(line)
+        if not m:
+          continue
+        attr_name, attr_addr, raw_value = m.groups()
+        msg = self.addr_to_msg.get(int(attr_addr, 0))
+        if msg is None:
+          continue
+        if raw_value.startswith('"'):
+          value = json.loads(raw_value)
+        else:
+          try:
+            value = int(raw_value, 0)
+          except ValueError:
+            value = float(raw_value)
+        msg.attrs[attr_name] = value
     for addr, sigs in signals_temp.items():
       self.msgs[addr].sigs = sigs
 

@@ -4,7 +4,7 @@ import time
 import tomllib
 from abc import abstractmethod, ABC
 from enum import StrEnum
-from typing import Any
+from typing import Any, TYPE_CHECKING
 from collections.abc import Callable
 from functools import cache
 
@@ -16,6 +16,9 @@ from opendbc.car.common.conversions import Conversions as CV
 from opendbc.car.common.simple_kalman import KF1D, get_kalman_gain
 from opendbc.car.values import PLATFORMS
 from opendbc.can import CANParser
+
+if TYPE_CHECKING:
+  from opendbc.car.secoc import SecOcAuthenticator
 
 GearShifter = structs.CarState.GearShifter
 ButtonType = structs.CarState.ButtonEvent.Type
@@ -275,7 +278,6 @@ class CarStateBase(ABC):
     self.low_speed_alert = False
     self.cluster_speed_hyst_gap = 0.0
     self.cluster_min_speed = 0.0  # min speed before dropping to 0
-    self.secoc_key: bytes = b"00" * 16
 
     Q = [[0.0, 0.0], [0.0, 100.0]]
     R = 0.3
@@ -284,6 +286,17 @@ class CarStateBase(ABC):
     x0=[[0.0], [0.0]]
     K = get_kalman_gain(DT_CTRL, np.array(A), np.array(C), np.array(Q), R)
     self.v_ego_kf = KF1D(x0=x0, A=A, C=C[0], K=K)
+
+  # The single key this attribute once held is now a keystore on the controller's authenticator.
+  # An assignment from a caller that has not moved would otherwise land in a dead attribute and
+  # leave every frame unsigned, so it fails here instead.
+  @property
+  def secoc_key(self) -> bytes:
+    raise AttributeError("secoc_key was replaced: load keys with CC.secoc.load_keys() and check CC.secoc.missing_keys")
+
+  @secoc_key.setter
+  def secoc_key(self, _: bytes) -> None:
+    raise AttributeError("secoc_key was replaced: load keys with CC.secoc.load_keys() and check CC.secoc.missing_keys")
 
   @abstractmethod
   def update(self, can_parsers) -> structs.CarState:
@@ -360,7 +373,21 @@ class CarControllerBase(ABC):
   def __init__(self, dbc_names: dict[StrEnum, str], CP: structs.CarParams):
     self.CP = CP
     self.frame = 0
-    self.secoc_key: bytes = b"00" * 16
+    # Set by a port that signs its frames. Key material is supplied at runtime through
+    # secoc.load_keys(), from the stored keystore, and secoc.missing_keys says what is still
+    # wanted. None for a port that does not sign.
+    self.secoc: SecOcAuthenticator | None = None
+
+  # The single key this attribute once held is now a keystore on the controller's authenticator.
+  # An assignment from a caller that has not moved would otherwise land in a dead attribute and
+  # leave every frame unsigned, so it fails here instead.
+  @property
+  def secoc_key(self) -> bytes:
+    raise AttributeError("secoc_key was replaced: load keys with CC.secoc.load_keys() and check CC.secoc.missing_keys")
+
+  @secoc_key.setter
+  def secoc_key(self, _: bytes) -> None:
+    raise AttributeError("secoc_key was replaced: load keys with CC.secoc.load_keys() and check CC.secoc.missing_keys")
 
   @abstractmethod
   def update(self, CC: structs.CarControl, CS: CarStateBase, now_nanos: int) -> tuple[structs.CarControl.Actuators, list[CanData]]:

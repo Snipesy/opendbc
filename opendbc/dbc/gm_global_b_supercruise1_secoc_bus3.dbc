@@ -1,0 +1,135 @@
+VERSION "GM Global B Super Cruise 1 CAN3"
+
+NS_ :
+    CM_
+    BA_DEF_
+    BA_
+    BA_DEF_DEF_
+    VAL_
+
+BS_:
+
+BU_: IPM CGM Vector__XXX
+
+CM_ "GM Global B Super Cruise 1 physical CAN3 database. Unknown transmitters use Vector__XXX.";
+
+BO_ 528 IPM_MEASUREMENT_STATUS: 12 IPM
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ QuantityA : 47|12@0+ (0.01,-20.48) [-20.48|20.47] "" Vector__XXX
+ SG_ QuantityB : 51|9@0- (0.1,0) [-25.6|25.5] "" Vector__XXX
+ SG_ StatusA : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ StatusB : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ QuantityC : 68|16@0- (2,0) [-65536|65534] "" Vector__XXX
+ SG_ StatusC : 69|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ StatusD : 70|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Status_E : 71|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 83|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 613 IPM_SOURCE_TIME: 8 IPM
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SourceTimeMs : 39|32@0+ (1,0) [0|4294967295] "ms" Vector__XXX
+
+BO_ 671 IPM_MEASUREMENT_STATUS_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
+ SG_ VehiclePowerMode : 37|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ PowerModeGate : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 881 IPM_STATE_STATUS: 8 IPM
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ StateValue : 34|6@0+ (1,0) [0|63] "" Vector__XXX
+ SG_ StatusA : 37|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ StatusB : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ StatusC : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ StatusD : 41|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ Status_E : 43|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ StatusF : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ StatusG : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ RollingCounter : 53|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ StatusH : 55|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ PercentageValue : 63|7@0+ (1,0) [0|100] "%" Vector__XXX
+
+BO_ 962 CGM_SYSTEM_POWER_MODE_STATUS: 8 CGM
+ SG_ SystemPowerModeProtectionFailSafe : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 963 CGM_AUTHENTICATED_POWER_MODE: 8 CGM
+ SG_ SystemPowerModeActive : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PrimaryRunCrankCommand : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 1397 IPM_STATE_STATUS_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 1401 IPM_SOURCE_TIME_FV: 8 IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 2147745830 IPM_NodeStatus_CAN3: 1 IPM
+ SG_ NodeStatusBit0 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+VAL_ 528 StatusA 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 528 StatusB 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 528 StatusC 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 528 StatusD 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 528 Status_E 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 881 StateValue 0 "Unknown_State_0" 7 "Unknown_State_7";
+VAL_ 881 StatusA 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3" 4 "Unknown_Status_4" 5 "Unknown_Status_5" 6 "Unknown_Status_6" 7 "Unknown_Status_7";
+VAL_ 881 StatusB 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 881 StatusC 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 881 StatusD 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 881 Status_E 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 881 StatusF 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 881 StatusG 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3" 4 "Unknown_Status_4" 5 "Unknown_Status_5" 6 "Unknown_Status_6" 7 "Unknown_Status_7" 8 "Unknown_Status_8" 9 "Unknown_Status_9" 10 "Unknown_Status_10" 11 "Unknown_Status_11" 12 "Unknown_Status_12" 13 "Unknown_Status_13" 14 "Unknown_Status_14" 15 "Unknown_Status_15";
+VAL_ 881 StatusH 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 880 VehiclePowerMode 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
+VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
+VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
+VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
+VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";
+
+CM_ BO_ 880 "Transmitted by CGM; the payload is assembled from decoded gateway signals.";
+CM_ BO_ 962 "Transmitted by CGM; reports protected system-power-mode fail-safe status.";
+CM_ BO_ 963 "Transmitted by CGM; carries authenticated power-state inputs.";
+CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
+
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_ "SecOCKeyRole" STRING;
+BA_DEF_ BO_ "SecOCDataId" INT 0 255;
+BA_DEF_ BO_ "SecOCCompanionId" INT 0 536870911;
+BA_DEF_ BO_ "SecOCCompanionPeriod" INT 1 65535;
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
+BA_ "SecOCKeyRole" BO_ 528 "safety_control_key";
+BA_ "SecOCDataId" BO_ 528 1;
+BA_ "SecOCCompanionId" BO_ 528 671;
+BA_ "SecOCCompanionPeriod" BO_ 528 16;
+BA_ "SecOCKeyRole" BO_ 613 "safety_control_key";
+BA_ "SecOCDataId" BO_ 613 1;
+BA_ "SecOCCompanionId" BO_ 613 1401;
+BA_ "SecOCCompanionPeriod" BO_ 613 16;
+BA_ "SecOCKeyRole" BO_ 880 "central_gateway_key";
+BA_ "SecOCKeyRole" BO_ 881 "safety_control_key";
+BA_ "SecOCDataId" BO_ 881 1;
+BA_ "SecOCCompanionId" BO_ 881 1397;
+BA_ "SecOCCompanionPeriod" BO_ 881 10;
+BA_ "GenMsgCycleTime" BO_ 528 50;
+BA_ "GenMsgCycleTime" BO_ 613 100;
+BA_ "GenMsgCycleTime" BO_ 671 800;
+BA_ "GenMsgCycleTime" BO_ 880 250;
+BA_ "GenMsgCycleTime" BO_ 881 100;
+BA_ "GenMsgCycleTime" BO_ 962 1000;
+BA_ "GenMsgCycleTime" BO_ 963 1000;
+BA_ "GenMsgCycleTime" BO_ 1397 1000;
+BA_ "GenMsgCycleTime" BO_ 1401 1600;
+BA_ "GenMsgCycleTime" BO_ 2147745830 1000;
+BA_ "VFrameFormat" BO_ 528 4;
+BA_ "VFrameFormat" BO_ 613 4;
+BA_ "VFrameFormat" BO_ 671 4;
+BA_ "VFrameFormat" BO_ 881 4;
+BA_ "VFrameFormat" BO_ 1397 4;
+BA_ "VFrameFormat" BO_ 1401 4;
+BA_ "VFrameFormat" BO_ 2147745830 1;

@@ -25,3 +25,15 @@ BO_ 245 CAN_FD_MESSAGE: 32 XXX
  SG_ 64_BIT_BE : 80|64@0+ (1,0) [0|1] "" XXX
 
 VAL_ 80 NON_EXISTENT_ADDR 0 "test";
+
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_ "SecOCKeyRole" STRING;
+BA_DEF_ BO_ "Ratio" FLOAT 0 1;
+BA_DEF_ SG_ "SigStartValue" INT 0 100;
+BA_DEF_ "BusType" STRING;
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 228 10;
+BA_ "SecOCKeyRole" BO_ 228 "test_key";
+BA_ "Ratio" BO_ 228 0.5;
+BA_ "SigStartValue" SG_ 228 STEER_TORQUE 5;

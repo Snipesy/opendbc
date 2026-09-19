@@ -1,0 +1,75 @@
+VERSION "GM Global B Super Cruise 1 CAN5"
+
+NS_ :
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+
+BS_:
+
+BU_: CGM RADIO Vector__XXX
+
+CM_ "GM Global B Super Cruise 1 physical CAN5 database. This database contains high-confidence power-related layouts; unknown transmitters use Vector__XXX.";
+
+BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
+ SG_ VehiclePowerMode : 37|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ PowerModeGate : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 962 CGM_SYSTEM_POWER_MODE_STATUS: 8 CGM
+ SG_ SystemPowerModeProtectionFailSafe : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 963 CGM_AUTHENTICATED_POWER_MODE: 8 CGM
+ SG_ SystemPowerModeActive : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PrimaryRunCrankCommand : 44|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 1133 PROPULSION_POWER_STATUS: 8 Vector__XXX
+ SG_ ClutchBottomTravelAchieved : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PropulsionSystemActive : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ParkNeutralSwitchStatus : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngineRunning : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehicleTheftChallengeResponseStatus : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RemoteStartEngineRunning : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PowertrainCrankAborted : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PropulsionSystemStillActive : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1179 VEHICLE_IDENTITY: 8 Vector__XXX
+ SG_ VehicleIdentityTail : 0|64@1+ (1,0) [0|18446744073709551615] "" Vector__XXX
+
+BO_ 1269 CGM_AUXILIARY_POWER_MODE: 8 CGM
+ SG_ AuxiliaryPowerModeStatus : 34|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1515 RADIO_POWER_STATE: 8 RADIO
+ SG_ RadioPowerState : 11|5@1+ (1,0) [0|31] "" Vector__XXX
+
+CM_ BO_ 880 "Transmitted by CGM; the payload is assembled from decoded gateway signals.";
+CM_ BO_ 962 "Transmitted by CGM; reports protected system-power-mode fail-safe status.";
+CM_ BO_ 963 "Transmitted by CGM; the payload is assembled from decoded gateway signals and carries authenticated power-state inputs.";
+CM_ BO_ 1133 "Power and propulsion status received by the radio controller; transmitter ownership is unknown.";
+CM_ BO_ 1179 "Vehicle identity bytes received by the radio controller; transmitter ownership is unknown.";
+CM_ BO_ 1269 "Raw-forwarded by CGM from CAN9 0x5C9 to CAN5.";
+CM_ BO_ 1515 "Transmitted by the radio controller; reports its interpreted power state.";
+
+CM_ SG_ 880 VehiclePowerMode "Primary vehicle power mode consumed by the radio controller.";
+CM_ SG_ 880 PowerModeGate "Companion validity gate used by the power-mode selection path.";
+CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
+CM_ SG_ 1179 VehicleIdentityTail "Eight vehicle-identity characters used by the receiver's identity check.";
+
+VAL_ 880 VehiclePowerMode 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
+VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
+VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
+VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
+VAL_ 1133 ClutchBottomTravelAchieved 0 "Not_Achieved" 1 "Achieved";
+VAL_ 1133 PropulsionSystemActive 0 "Inactive" 1 "Active";
+VAL_ 1133 EngineRunning 0 "Not_Running" 1 "Running";
+VAL_ 1133 RemoteStartEngineRunning 0 "Not_Running" 1 "Running";
+VAL_ 1133 PowertrainCrankAborted 0 "Not_Aborted" 1 "Aborted";
+VAL_ 1133 PropulsionSystemStillActive 0 "Inactive" 1 "Active";
+VAL_ 1269 AuxiliaryPowerModeStatus 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
+VAL_ 1515 RadioPowerState 3 "Off" 5 "Run" 6 "Propulsion" 7 "Accessory" 13 "Theft_Locked" 15 "No_Vehicle_Identity";
+
+BA_DEF_ BO_ "SecOCKeyRole" STRING;
+BA_DEF_ BO_ "SecOCDataId" INT 0 255;
+BA_DEF_ BO_ "SecOCCompanionId" INT 0 536870911;
+BA_DEF_ BO_ "SecOCCompanionPeriod" INT 1 65535;
+BA_ "SecOCKeyRole" BO_ 880 "central_gateway_key";
