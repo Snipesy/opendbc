@@ -1274,13 +1274,11 @@ BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG"
 BA_DEF_ BO_ "SecOCKeyRole" STRING;
 BA_DEF_ BO_ "SecOCDataId" INT 0 255;
 BA_DEF_ BO_ "SecOCCompanionId" INT 0 536870911;
-BA_DEF_ BO_ "SecOCCompanionPeriod" INT 1 65535;
 BA_DEF_DEF_ "GenMsgCycleTime" 0;
 BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
 BA_ "SecOCKeyRole" BO_ 33 "safety_control_key";
 BA_ "SecOCDataId" BO_ 33 1;
 BA_ "SecOCCompanionId" BO_ 33 882;
-BA_ "SecOCCompanionPeriod" BO_ 33 16;
 BA_ "SecOCKeyRole" BO_ 880 "central_gateway_key";
 BA_ "GenMsgCycleTime" BO_ 33 100;
 BA_ "GenMsgCycleTime" BO_ 117 50;

@@ -34,7 +34,7 @@ BO_ 84 CAN2_RX_054: 8 Vector__XXX
 BO_ 87 IPM_HOST_VEHICLE_DYNAMICS: 32 IPM
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
- SG_ SECOC_PADDING : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
  SG_ VehicleLateralVelocity : 46|8@0+ (0.05,-6.4) [-6.4|6.35] "" Vector__XXX
  SG_ DynField02 : 47|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ VehicleLongitudinalVelocity : 53|12@0+ (0.0625,-128) [-128|127.9375] "" Vector__XXX
@@ -93,7 +93,7 @@ BO_ 525 IPM_UNKNOWN_20D: 8 IPM
 BO_ 526 IPM_LONGITUDINAL_REQUEST_STATUS: 16 IPM
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
- SG_ SECOC_PADDING : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
  SG_ AxleTorqueRequestActive : 47|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ AdaptiveCruiseBrakeControlActive : 71|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ AdaptiveCruiseBrakeRequestActive : 70|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -107,7 +107,7 @@ BO_ 586 CAN2_RX_24A: 8 Vector__XXX
 BO_ 587 IPM_AXLE_TORQUE_STATUS: 12 IPM
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
- SG_ SECOC_PADDING : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
  SG_ AxleTorqueFieldA : 47|15@0+ (2.0,-22534) [-22534|43000] "" Vector__XXX
  SG_ AxleTorqueFieldB : 48|14@0+ (2.0,-22534) [-22534|10232] "" Vector__XXX
  SG_ AxleTorqueStatusA : 66|2@0+ (1,0) [0|3] "" Vector__XXX
@@ -151,7 +151,7 @@ BO_ 640 CAN2_RX_280: 8 CGM
 BO_ 644 IPM_STEERING_REQUEST_HIGH_RES: 12 IPM
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
- SG_ SECOC_PADDING : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
  SG_ SteeringRequestAngleRaw : 47|14@0- (0.1,0) [-819.2|819.1] "" Vector__XXX
  SG_ SecondarySteeringRequestHighResolution : 49|11@0- (0.01,0) [-10.24|10.23] "" Vector__XXX
  SG_ SteeringRequestCalibrationStateFlag : 64|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -603,7 +603,6 @@ BA_DEF_ BO_ "SecOCObservedKeyFamily" STRING;
 BA_DEF_ BO_ "SecOCKeyCandidates" STRING;
 BA_DEF_ BO_ "SecOCDataId" INT 0 255;
 BA_DEF_ BO_ "SecOCCompanionId" INT 0 536870911;
-BA_DEF_ BO_ "SecOCCompanionPeriod" INT 1 65535;
 BA_DEF_DEF_ "GenMsgCycleTime" 0;
 BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
 BA_ "SecOCObservedKeyFamily" BO_ 47 "shared_secoc_family_b";
@@ -619,25 +618,20 @@ BA_ "SecOCKeyRole" BO_ 84 "safety_control_key";
 BA_ "SecOCKeyRole" BO_ 87 "safety_control_key";
 BA_ "SecOCDataId" BO_ 87 1;
 BA_ "SecOCCompanionId" BO_ 87 914;
-BA_ "SecOCCompanionPeriod" BO_ 87 16;
 BA_ "SecOCKeyRole" BO_ 187 "safety_control_key";
 BA_ "SecOCDataId" BO_ 187 1;
 BA_ "SecOCCompanionId" BO_ 187 927;
-BA_ "SecOCCompanionPeriod" BO_ 187 16;
 BA_ "SecOCObservedKeyFamily" BO_ 226 "shared_secoc_family_b";
 BA_ "SecOCKeyCandidates" BO_ 226 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
 BA_ "SecOCKeyRole" BO_ 525 "safety_control_key";
 BA_ "SecOCDataId" BO_ 525 1;
 BA_ "SecOCCompanionId" BO_ 525 925;
-BA_ "SecOCCompanionPeriod" BO_ 525 16;
 BA_ "SecOCKeyRole" BO_ 526 "safety_control_key";
 BA_ "SecOCDataId" BO_ 526 1;
 BA_ "SecOCCompanionId" BO_ 526 902;
-BA_ "SecOCCompanionPeriod" BO_ 526 16;
 BA_ "SecOCKeyRole" BO_ 587 "safety_control_key";
 BA_ "SecOCDataId" BO_ 587 1;
 BA_ "SecOCCompanionId" BO_ 587 971;
-BA_ "SecOCCompanionPeriod" BO_ 587 16;
 BA_ "SecOCObservedKeyFamily" BO_ 610 "shared_secoc_family_b";
 BA_ "SecOCKeyCandidates" BO_ 610 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
 BA_ "SecOCKeyRole" BO_ 614 "secoc_key_266_group";
@@ -648,12 +642,10 @@ BA_ "SecOCKeyRole" BO_ 624 "shared_secoc_key_a";
 BA_ "SecOCKeyRole" BO_ 625 "safety_control_key";
 BA_ "SecOCDataId" BO_ 625 1;
 BA_ "SecOCCompanionId" BO_ 625 924;
-BA_ "SecOCCompanionPeriod" BO_ 625 16;
 BA_ "SecOCKeyRole" BO_ 635 "shared_secoc_key_a";
 BA_ "SecOCKeyRole" BO_ 644 "safety_control_key";
 BA_ "SecOCDataId" BO_ 644 1;
 BA_ "SecOCCompanionId" BO_ 644 974;
-BA_ "SecOCCompanionPeriod" BO_ 644 16;
 BA_ "SecOCKeyRole" BO_ 873 "shared_secoc_key_a";
 BA_ "SecOCKeyRole" BO_ 879 "secoc_key_36f_group";
 BA_ "SecOCObservedKeyFamily" BO_ 879 "shared_secoc_family_b";
@@ -661,18 +653,15 @@ BA_ "SecOCKeyRole" BO_ 880 "central_gateway_key";
 BA_ "SecOCKeyRole" BO_ 1117 "safety_control_key";
 BA_ "SecOCDataId" BO_ 1117 1;
 BA_ "SecOCCompanionId" BO_ 1117 1949;
-BA_ "SecOCCompanionPeriod" BO_ 1117 3;
 BA_ "SecOCObservedKeyFamily" BO_ 1302 "shared_secoc_family_b";
 BA_ "SecOCKeyCandidates" BO_ 1302 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
 BA_ "SecOCKeyRole" BO_ 1308 "shared_secoc_key_a";
 BA_ "SecOCKeyRole" BO_ 1323 "safety_control_key";
 BA_ "SecOCDataId" BO_ 1323 1;
 BA_ "SecOCCompanionId" BO_ 1323 1383;
-BA_ "SecOCCompanionPeriod" BO_ 1323 3;
 BA_ "SecOCKeyRole" BO_ 1325 "safety_control_key";
 BA_ "SecOCDataId" BO_ 1325 1;
 BA_ "SecOCCompanionId" BO_ 1325 1393;
-BA_ "SecOCCompanionPeriod" BO_ 1325 3;
 BA_ "GenMsgCycleTime" BO_ 87 10;
 BA_ "GenMsgCycleTime" BO_ 187 10;
 BA_ "GenMsgCycleTime" BO_ 225 50;

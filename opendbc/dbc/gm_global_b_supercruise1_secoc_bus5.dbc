@@ -71,5 +71,4 @@ VAL_ 1515 RadioPowerState 3 "Off" 5 "Run" 6 "Propulsion" 7 "Accessory" 13 "Theft
 BA_DEF_ BO_ "SecOCKeyRole" STRING;
 BA_DEF_ BO_ "SecOCDataId" INT 0 255;
 BA_DEF_ BO_ "SecOCCompanionId" INT 0 536870911;
-BA_DEF_ BO_ "SecOCCompanionPeriod" INT 1 65535;
 BA_ "SecOCKeyRole" BO_ 880 "central_gateway_key";

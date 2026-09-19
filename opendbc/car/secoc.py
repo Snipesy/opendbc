@@ -137,8 +137,9 @@ class Companion:
   """The clear-text frame publishing a secured message's full freshness value."""
   addr: int
   size: int
-  # transmitted once every this many secured frames
-  period: int = 1
+  # The companion is scheduled independently from the secured PDU. This is its DBC cycle
+  # time, when declared, rather than a ratio rounded to a number of secured frames.
+  cycle_time: int | None = None
 
   def frame(self, freshness: int, bus: int) -> CanMsg:
     return (self.addr, struct.pack('<I', freshness & 0xFFFFFFFF).ljust(self.size, b'\x00'), bus)
@@ -372,28 +373,28 @@ class SecOcAuthenticator:
     return out
 
   def secure(self, can_msg: CanMsg) -> list[CanMsg]:
-    """Every frame the scheme requires on the wire: the secured frame plus any companion.
+    """Sign one application PDU.
 
-    A scheme that carries its freshness in-band yields the secured frame alone. One with a
-    companion cannot be transmitted without it: on its own the receiver never learns the
-    freshness, so the frame is unverifiable.
-
-    The companion consumes a counter tick of its own: the counter advances once per frame
-    transmitted, secured or companion. So a run reads ... secured N-1, companion N, secured
-    N+1 ..., and the counter steps by period + 1 between consecutive companions.
-
-    Which tick the companion falls on is read off that counter rather than off a separate tally
-    of frames sent, so nothing can drift out of step with it. The sender observed on the wire
-    picks a different residue of its own, which is equally valid: all a receiver needs is the
-    companion every period + 1 ticks.
+    A freshness companion is a separate periodic PDU, not a child transmission of a secured
+    frame. Call publish_freshness() from that PDU's own schedule. This distinction matters when
+    the two cycle times are not an integer ratio.
     """
     addr, _, bus = can_msg
-    msg = self.catalog[(bus, addr)]
-    fv = self._fv(msg)
+    return [self._sign(self.catalog[(bus, addr)], can_msg)]
 
-    frames = [self._sign(msg, can_msg)]
-    c = msg.companion
-    if c is not None and self.msg_cnt[fv] % (c.period + 1) == c.period:
-      frames.append(c.frame(self.msg_cnt[fv], bus))
-      self.msg_cnt[fv] += 1
-    return frames
+  def publish_freshness(self, ref: tuple[int, int]) -> CanMsg:
+    """Publish a message's full freshness on its companion PDU.
+
+    The companion consumes the same counter stream as the secured PDU. With no lost frames,
+    the wire therefore reads ... secured N-1, companion N, secured N+1 ... regardless of the
+    independent schedules' relative phase.
+    """
+    msg = self.catalog[ref]
+    if msg.companion is None:
+      raise ValueError(f"{msg.addr:#x} on bus {msg.bus} has no freshness companion")
+
+    fv = self._fv(msg)
+    cnt = self.msg_cnt.get(fv, 0)
+    out = msg.companion.frame(cnt, msg.bus)
+    self.msg_cnt[fv] = cnt + 1
+    return out

@@ -16,7 +16,7 @@ CM_ "GM Global B Super Cruise 1 physical CAN3 database. Unknown transmitters use
 BO_ 528 IPM_MEASUREMENT_STATUS: 12 IPM
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
- SG_ SECOC_PADDING : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
  SG_ QuantityA : 47|12@0+ (0.01,-20.48) [-20.48|20.47] "" Vector__XXX
  SG_ QuantityB : 51|9@0- (0.1,0) [-25.6|25.5] "" Vector__XXX
  SG_ StatusA : 56|2@1+ (1,0) [0|3] "" Vector__XXX
@@ -100,22 +100,18 @@ BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG"
 BA_DEF_ BO_ "SecOCKeyRole" STRING;
 BA_DEF_ BO_ "SecOCDataId" INT 0 255;
 BA_DEF_ BO_ "SecOCCompanionId" INT 0 536870911;
-BA_DEF_ BO_ "SecOCCompanionPeriod" INT 1 65535;
 BA_DEF_DEF_ "GenMsgCycleTime" 0;
 BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
 BA_ "SecOCKeyRole" BO_ 528 "safety_control_key";
 BA_ "SecOCDataId" BO_ 528 1;
 BA_ "SecOCCompanionId" BO_ 528 671;
-BA_ "SecOCCompanionPeriod" BO_ 528 16;
 BA_ "SecOCKeyRole" BO_ 613 "safety_control_key";
 BA_ "SecOCDataId" BO_ 613 1;
 BA_ "SecOCCompanionId" BO_ 613 1401;
-BA_ "SecOCCompanionPeriod" BO_ 613 16;
 BA_ "SecOCKeyRole" BO_ 880 "central_gateway_key";
 BA_ "SecOCKeyRole" BO_ 881 "safety_control_key";
 BA_ "SecOCDataId" BO_ 881 1;
 BA_ "SecOCCompanionId" BO_ 881 1397;
-BA_ "SecOCCompanionPeriod" BO_ 881 10;
 BA_ "GenMsgCycleTime" BO_ 528 50;
 BA_ "GenMsgCycleTime" BO_ 613 100;
 BA_ "GenMsgCycleTime" BO_ 671 800;

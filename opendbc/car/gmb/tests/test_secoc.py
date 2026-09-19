@@ -4,7 +4,7 @@ import pytest
 
 from opendbc.can.dbc import DBC
 from opendbc.car import Bus
-from opendbc.car.gmb.secoc import LAYOUT_27, SUPERCRUISE1, Scheme
+from opendbc.car.gmb.secoc import LAYOUT_27, SUPERCRUISE1, Scheme, reconstruct_freshness
 from opendbc.car.gm.values import CanBus
 from opendbc.car.secoc import SecOcAuthenticator, SecOcCatalog, SecOcMessage, aes_cmac, authenticate
 
@@ -17,28 +17,28 @@ GM_FRAMES = [
   (0x271, 0x0AC9629C, "0000001c" + "bb" * 4),  # 27 bit, 8 byte
   (0x057, 0x1181C862, "0000000010" + "dd" * 27),  # 32 bit, 32 byte
   (0x24B, 0x0ABEB919, "00000000c8" + "ee" * 7),  # 32 bit, 12 byte
-  (0x284, 0x1181C85E, "00000000f4" + "ff" * 7),  # 32 bit, 12 byte, padding bits set
+  (0x284, 0x1181C85E, "00000000f4" + "ff" * 7),  # 32 bit, 12 byte, auxiliary bits set
 ]
 
 # Explicit protocol inventory. The catalog is derived from the DBCs' transmitter and signal
 # declarations, so this is the independent statement of what those must yield: a DBC edit that
 # drops or adds a secured IPM message cannot make the test agree with itself. Values are
-# (companion address, authenticator width, secured frames per companion).
+# (companion address, authenticator width, companion cycle time in milliseconds).
 EXPECTED_TX = {
-  (2, 0x057): (0x392, 32, 16),
-  (2, 0x0BB): (0x39F, 27, 16),
-  (2, 0x20D): (0x39D, 27, 16),
-  (2, 0x20E): (0x386, 32, 16),
-  (2, 0x24B): (0x3CB, 32, 16),
-  (2, 0x271): (0x39C, 27, 16),
-  (2, 0x284): (0x3CE, 32, 16),
-  (2, 0x45D): (0x79D, 27, 3),
-  (2, 0x52B): (0x567, 27, 3),
-  (2, 0x52D): (0x571, 27, 3),
-  (3, 0x210): (0x29F, 32, 16),
-  (3, 0x265): (0x579, 27, 16),
-  (3, 0x371): (0x575, 27, 10),
-  (8, 0x021): (0x372, 27, 16),
+  (2, 0x057): (0x392, 32, 160),
+  (2, 0x0BB): (0x39F, 27, 160),
+  (2, 0x20D): (0x39D, 27, 800),
+  (2, 0x20E): (0x386, 32, 800),
+  (2, 0x24B): (0x3CB, 32, 160),
+  (2, 0x271): (0x39C, 27, 160),
+  (2, 0x284): (0x3CE, 32, 160),
+  (2, 0x45D): (0x79D, 27, 3500),
+  (2, 0x52B): (0x567, 27, 3500),
+  (2, 0x52D): (0x571, 27, 3500),
+  (3, 0x210): (0x29F, 32, 800),
+  (3, 0x265): (0x579, 27, 1600),
+  (3, 0x371): (0x575, 27, 1000),
+  (8, 0x021): (0x372, 27, 1600),
 }
 
 
@@ -74,19 +74,19 @@ class TestGmGlobalB:
     in_band = out[3] & 0x1F if msg.profile.mac_bits == 27 else out[4] >> 3
     assert in_band == freshness & 0x1F
 
-  def test_alignment_padding_is_outside_the_mac_and_preserved(self):
+  def test_auxiliary_bits_are_outside_the_mac_and_preserved(self):
     # The CMAC payload begins at byte 5, so authenticate must neither cover nor clobber byte
-    # 4's three alignment bits.
+    # 4's three auxiliary bits.
     msg = GM_CATALOG[(2, 0x284)]
     outputs = []
-    for pad in range(8):
-      src = bytes([0, 0, 0, 0, pad]) + b"\x11" * 7
+    for aux in range(8):
+      src = bytes([0, 0, 0, 0, aux]) + b"\x11" * 7
       _, out, _ = authenticate(KEY, msg, {'msg': 0x1181C85E}, (0x284, src, 0))
-      assert out[4] & 0x07 == pad
+      assert out[4] & 0x07 == aux
       assert out[4] >> 3 == 0x1181C85E & 0x1F
       outputs.append(out)
 
-    assert len({out[:4] for out in outputs}) == 1, "padding must not change the MAC"
+    assert len({out[:4] for out in outputs}) == 1, "auxiliary bits must not change the MAC"
 
   def test_refuses_a_frame_too_short_to_sign(self):
     # truncating instead would emit a short frame that presents as a bad key downstream
@@ -129,15 +129,10 @@ class TestGmGlobalB:
   def test_companion_consumes_a_counter_tick(self):
     # the wire reads ... secured N-1, companion N, secured N+1 ...
     auth = SecOcAuthenticator(GM_CATALOG, KEY)
-    period = GM_CATALOG[(2, 0x271)].companion.period
-    auth.msg_cnt[(2, 0x271)] = 17 * 6  # aligned so the companion lands on the period-th frame
+    auth.msg_cnt[(2, 0x271)] = 100
 
-    for _ in range(period - 1):
-      auth.secure((0x271, bytes(8), 2))
-
-    frames = auth.secure((0x271, bytes(8), 2))
-    assert len(frames) == 2, "the period-th secured frame is followed by its companion"
-    (_, before, _), (comp_addr, comp_data, _) = frames
+    ((_, before, _),) = auth.secure((0x271, bytes(8), 2))
+    comp_addr, comp_data, _ = auth.publish_freshness((2, 0x271))
     assert comp_addr == 0x39C
 
     published = struct.unpack("<I", comp_data[:4])[0]
@@ -146,17 +141,19 @@ class TestGmGlobalB:
     ((_, after, _),) = auth.secure((0x271, bytes(8), 2))
     assert after[3] & 0x1F == (published + 1) & 0x1F, "the next one is one higher, not equal"
 
-  def test_counter_steps_by_period_plus_one_between_companions(self):
+  def test_companion_uses_the_same_logical_counter(self):
     auth = SecOcAuthenticator(GM_CATALOG, KEY)
-    period = GM_CATALOG[(2, 0x271)].companion.period
-    published = []
-    for _ in range(period * 4):
-      for addr, data, _bus in auth.secure((0x271, bytes(8), 2)):
-        if addr == 0x39C:
-          published.append(struct.unpack("<I", data[:4])[0])
+    auth.secure((0x271, bytes(8), 2))
+    first = struct.unpack("<I", auth.publish_freshness((2, 0x271))[1][:4])[0]
+    auth.secure((0x271, bytes(8), 2))
+    second = struct.unpack("<I", auth.publish_freshness((2, 0x271))[1][:4])[0]
+    assert (first, second) == (1, 3)
 
-    assert len(published) == 4, f"one companion per {period} secured frames"
-    assert {b - a for a, b in zip(published, published[1:], strict=False)} == {period + 1}
+  def test_profile_without_a_companion_has_nothing_to_publish(self):
+    auth = SecOcAuthenticator(SecOcCatalog([SecOcMessage(bus=0, addr=0x100, profile=LAYOUT_27,
+                                                        data_id=1, fv_id=0x100, key_id="k")]), KEY)
+    with pytest.raises(ValueError, match="no freshness companion"):
+      auth.publish_freshness((0, 0x100))
 
   def test_every_message_has_a_distinct_companion_on_its_own_bus(self):
     assert all(m.companion is not None for m in GM_CATALOG)
@@ -166,9 +163,10 @@ class TestGmGlobalB:
 
   def test_catalog_matches_the_protocol_inventory(self):
     assert {msg.ref for msg in GM_CATALOG} == set(EXPECTED_TX)
-    for ref, (companion_addr, mac_bits, companion_period) in EXPECTED_TX.items():
+    for ref, (companion_addr, mac_bits, companion_cycle_time) in EXPECTED_TX.items():
       msg = GM_CATALOG[ref]
-      assert (msg.companion.addr, msg.profile.mac_bits, msg.companion.period) == (companion_addr, mac_bits, companion_period)
+      assert (msg.companion.addr, msg.profile.mac_bits, msg.companion.cycle_time) == \
+             (companion_addr, mac_bits, companion_cycle_time)
 
       dbc = DBC(f"gm_global_b_supercruise1_secoc_bus{msg.bus}")
       dbcmsg = dbc.addr_to_msg[msg.addr]
@@ -195,7 +193,7 @@ class TestGmGlobalB:
 
     # a scheme admitting only the 32 bit layout refuses the DBCs' 27 bit messages by name
     narrow = Scheme(name="narrow", dbcs=SUPERCRUISE1.dbcs, transmitter="IPM", bus_roles={2: Bus.pt},
-                    layouts=frozenset({((('mac', 32), ("msg", 5), ("pad", 3)), 0)}))
+                    layouts=frozenset({((('mac', 32), ("msg", 5), ("aux", 3)), 0)}))
     with pytest.raises(ValueError, match="narrow does not know"):
       narrow.catalog  # noqa: B018
     assert SUPERCRUISE1.profile is LAYOUT_27, "the MAC construction is the scheme's to choose"
@@ -229,23 +227,22 @@ class TestGmGlobalB:
       dbc = DBC(f"gm_global_b_supercruise1_secoc_bus{bus}")
       assert dbc.addr_to_msg[0x370].attrs["SecOCKeyRole"] == "central_gateway_key"
 
-  def test_companion_schedule_cannot_drift_from_the_counter(self):
-    # the schedule is read off the freshness counter itself, so an out-of-band signing of a
-    # message sharing the freshness group cannot put the companion on the wrong tick
-    period = GM_CATALOG[(2, 0x271)].companion.period
+  def test_companion_schedule_is_independent_from_the_counter(self):
+    # The 1000/3500 ms pair cannot be represented by an integer count of secured frames.
+    msg = GM_CATALOG[(2, 0x45D)]
+    assert msg.companion.cycle_time == 3500
+
     auth = SecOcAuthenticator(GM_CATALOG, KEY)
+    for _ in range(4):
+      assert len(auth.secure((0x45D, bytes(8), 2))) == 1
+    assert struct.unpack("<I", auth.publish_freshness((2, 0x45D))[1][:4])[0] == 4
 
-    published = []
-    for i in range(period * 3):
-      if i == 5:  # something else advances the same counter behind secure()'s back
-        auth.msg_cnt[(2, 0x271)] += 1
-      for addr, data, _bus in auth.secure((0x271, bytes(8), 2)):
-        if addr == 0x39C:
-          published.append(struct.unpack("<I", data[:4])[0])
-
-    assert len(published) >= 2
-    assert {b - a for a, b in zip(published, published[1:], strict=False)} == {period + 1}
-    assert all(v % (period + 1) == period for v in published), "still on the counter's own tick"
+  def test_receiver_reconstructs_the_next_strictly_forward_value(self):
+    anchor = 0x12340
+    assert reconstruct_freshness(anchor, 1) == anchor + 1
+    assert reconstruct_freshness(anchor, 31) == anchor + 31
+    assert reconstruct_freshness(anchor, 0) == anchor + 32
+    assert reconstruct_freshness(anchor + 31, 0) == anchor + 32
 
   def test_catalog_is_keyed_by_bus_and_address(self):
     # the same address on another bus is a different message, and 102 ids on this vehicle

@@ -13,10 +13,11 @@ layouts themselves are not specific to it.
 
 SecOC-shaped but not AUTOSAR SecOC. Three differences drive everything here:
 
-  * The freshness value is a plain 32 bit counter published in the clear on a companion frame,
-    one per secured PDU on the same bus. The secured frame carries only its low 5 bits, so a
-    receiver resolves the full value from the companion. The counter advances once per frame
-    transmitted, the companion included.
+  * In the profiles cataloged here, the freshness value is a plain 32 bit counter published in
+    the clear on a companion frame, one per secured PDU on the same bus. The secured frame
+    carries only its low 5 bits, so a receiver resolves the full value from the companion. The
+    counter advances once per frame transmitted, the companion included. Other profiles may
+    carry their full freshness in-band and need no companion.
   * The authenticator leads the frame and the payload follows it, and its width varies per
     message: 27 bits with the payload at offset 4, or 32 bits with the payload at offset 5.
     Which one a message uses is a property of that message, not of the platform.
@@ -47,13 +48,14 @@ from opendbc.can.dbc import DBC
 from opendbc.car import Bus
 from opendbc.car.secoc import MAC, Companion, SecOcCatalog, SecOcMessage, SecOcProfile, layout_from_dbc
 
-# Signals a secured message may declare, and the tail field each one is. Which of them a
-# message actually has is the DBC's to say: only the 32 bit layout needs alignment padding.
-SECOC_SIGNALS = ((MAC, "AUTHENTICATOR"), ("msg", "SECOC_FRESHNESS"), ("pad", "SECOC_PADDING"))
+# Signals a secured message may declare, and the tail field each one is. The three bits beside
+# the 32 bit layout's freshness are preserved auxiliary wire state. They are outside the MAC
+# input; their application meaning is not needed to authenticate the PDU.
+SECOC_SIGNALS = ((MAC, "AUTHENTICATOR"), ("msg", "SECOC_FRESHNESS"), ("aux", "SECOC_AUX"))
 
 # The two tail layouts. These are a property of the scheme rather than of any one platform or
 # feature, so they are named for the shape and nothing else: which one a message uses is its
-# DBC's to say, through the width of its AUTHENTICATOR and whether it declares SECOC_PADDING
+# DBC's to say, through the width of its AUTHENTICATOR and whether it declares SECOC_AUX
 # field. A Scheme refuses anything outside its layouts, so a change to a DBC that yields some
 # third layout is visible rather than silently absorbed.
 #
@@ -70,10 +72,9 @@ LAYOUT_27 = SecOcProfile(
 )
 
 # 32 bit: authenticator in bytes 0..3, counter in the top 5 bits of byte 4, payload from
-# offset 5. The low 3 bits of byte 4 are reserved byte-alignment padding and are not
-# authenticated. authenticate() preserves them while replacing the security fields; a
-# normally packed frame leaves them zero.
-LAYOUT_32 = replace(LAYOUT_27, tail_layout=((MAC, 32), ("msg", 5), ("pad", 3)), signals=SECOC_SIGNALS)
+# offset 5. The low 3 bits of byte 4 are auxiliary wire state, not padding or MAC/counter bits.
+# They are preserved from the packer's frame and are outside the authenticated payload.
+LAYOUT_32 = replace(LAYOUT_27, tail_layout=((MAC, 32), ("msg", 5), ("aux", 3)), signals=SECOC_SIGNALS)
 
 # What a DBC may yield, as (tail layout, tail offset).
 LAYOUTS = frozenset((p.tail_layout, p.tail_offset) for p in (LAYOUT_27, LAYOUT_32))
@@ -81,7 +82,21 @@ LAYOUTS = frozenset((p.tail_layout, p.tail_offset) for p in (LAYOUT_27, LAYOUT_3
 KEY_ROLE_ATTR = "SecOCKeyRole"
 DATA_ID_ATTR = "SecOCDataId"
 COMPANION_ID_ATTR = "SecOCCompanionId"
-COMPANION_PERIOD_ATTR = "SecOCCompanionPeriod"
+CYCLE_TIME_ATTR = "GenMsgCycleTime"
+
+
+def reconstruct_freshness(anchor: int, truncated: int, bits: int = 5) -> int:
+  """Return the smallest freshness strictly after anchor with the received low bits.
+
+  For the five-bit profiles this accepts a candidate in anchor + 1 through anchor + 32 and
+  gives no backward allowance. A repeated low-five value therefore means anchor + 32, not the
+  already accepted anchor.
+  """
+  if bits <= 0:
+    raise ValueError("freshness width must be positive")
+  modulus = 1 << bits
+  delta = (truncated - anchor) & (modulus - 1)
+  return anchor + (delta or modulus)
 
 
 def _required_int_attr(dbc_name: str, msg_name: str, attrs: dict[str, str | int | float], name: str) -> int:
@@ -140,11 +155,12 @@ class Scheme:
             addr=dbcmsg.address,
             profile=replace(self.profile, tail_layout=layout[0], tail_offset=layout[1], signals=signals),
             data_id=_required_int_attr(dbc_name, name, dbcmsg.attrs, DATA_ID_ATTR),
-            # each secured PDU has its own companion, so each carries an independent counter
+            # This variant's captured PDUs each have a distinct companion and logical counter.
+            # The generic SecOcMessage still permits another scheme to share an fv_id.
             fv_id=dbcmsg.address,
             key_id=key_id,
             companion=Companion(companion.address, companion.size,
-                                _required_int_attr(dbc_name, name, dbcmsg.attrs, COMPANION_PERIOD_ATTR)),
+                                _required_int_attr(dbc_name, companion.name, companion.attrs, CYCLE_TIME_ATTR)),
           )
         )
     return SecOcCatalog(messages)
