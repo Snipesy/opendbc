@@ -9,1260 +9,1260 @@ NS_ :
 
 BS_:
 
-BU_: IPM CGM CAMERA PARK_ASSIST RadarNodeA RadarNodeB RadarNodeC RadarNodeD RadarNodeE Vector__XXX
+BU_: ACP3_MCU CGM FCM PARK_ASSIST LRR LFR RFR LCRR LRR_SIDE RRR_SIDE Vector__XXX
 
 CM_ "GM Global B Super Cruise 1 physical CAN8 database. Unknown transmitters use Vector__XXX. RawField numbers are local to each message and do not identify a shared signal across messages.";
 
-BO_ 33 IPM_UNKNOWN_021: 8 IPM
+BO_ 33 ACP3_MCU_UNKNOWN_021: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
-BO_ 117 RadarNodeA_Sync_075: 8 RadarNodeA
- SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" IPM
- SG_ StateRaw : 32|8@1+ (1,0) [0|255] "" IPM
- SG_ SlowCounter : 40|4@1+ (1,0) [0|15] "" IPM
- SG_ CycleCounter : 52|4@1+ (1,0) [0|15] "" IPM
- SG_ CRC8_SAE_J1850 : 56|8@1+ (1,0) [0|255] "" IPM
+BO_ 117 CAN8_RX_075: 8 Vector__XXX
+ SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" ACP3_MCU
+ SG_ StateRaw : 32|8@1+ (1,0) [0|255] "" ACP3_MCU
+ SG_ SlowCounter : 40|4@1+ (1,0) [0|15] "" ACP3_MCU
+ SG_ CycleCounter : 52|4@1+ (1,0) [0|15] "" ACP3_MCU
+ SG_ CRC8_SAE_J1850 : 56|8@1+ (1,0) [0|255] "" ACP3_MCU
 
-BO_ 174 RadarNodeB_Sync_0AE: 8 RadarNodeB
- SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" IPM
- SG_ StateRaw : 32|8@1+ (1,0) [0|255] "" IPM
- SG_ SlowCounter : 40|4@1+ (1,0) [0|15] "" IPM
- SG_ CycleCounter : 52|4@1+ (1,0) [0|15] "" IPM
- SG_ CRC8_SAE_J1850 : 56|8@1+ (1,0) [0|255] "" IPM
+BO_ 174 CAN8_RX_0AE: 8 Vector__XXX
+ SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" ACP3_MCU
+ SG_ StateRaw : 32|8@1+ (1,0) [0|255] "" ACP3_MCU
+ SG_ SlowCounter : 40|4@1+ (1,0) [0|15] "" ACP3_MCU
+ SG_ CycleCounter : 52|4@1+ (1,0) [0|15] "" ACP3_MCU
+ SG_ CRC8_SAE_J1850 : 56|8@1+ (1,0) [0|255] "" ACP3_MCU
 
-BO_ 178 RadarNodeC_Sync_0B2: 8 RadarNodeC
- SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" IPM
- SG_ StateRaw : 32|8@1+ (1,0) [0|255] "" IPM
- SG_ SlowCounter : 40|4@1+ (1,0) [0|15] "" IPM
- SG_ CycleCounter : 52|4@1+ (1,0) [0|15] "" IPM
- SG_ CRC8_SAE_J1850 : 56|8@1+ (1,0) [0|255] "" IPM
+BO_ 178 CAN8_RX_0B2: 8 Vector__XXX
+ SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" ACP3_MCU
+ SG_ StateRaw : 32|8@1+ (1,0) [0|255] "" ACP3_MCU
+ SG_ SlowCounter : 40|4@1+ (1,0) [0|15] "" ACP3_MCU
+ SG_ CycleCounter : 52|4@1+ (1,0) [0|15] "" ACP3_MCU
+ SG_ CRC8_SAE_J1850 : 56|8@1+ (1,0) [0|255] "" ACP3_MCU
 
 BO_ 180 PARK_ASSIST_ULTRASONIC_BANK_A_0B4: 48 PARK_ASSIST
- SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" IPM
- SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" IPM
- SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" IPM
- SG_ ApplicationHeaderRaw : 40|8@1+ (1,0) [0|255] "" IPM
- SG_ UltrasonicRecord1Raw : 48|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ UltrasonicRecord2Raw : 96|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ UltrasonicRecord3Raw : 144|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ UltrasonicRecord4Raw : 192|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ UltrasonicRecord5Raw : 240|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ UltrasonicRecord6Raw : 288|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ ApplicationTailRaw : 336|16@1+ (1,0) [0|65535] "" IPM
- SG_ ReservedTail : 352|32@1+ (1,0) [0|4294967295] "" IPM
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" ACP3_MCU
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" ACP3_MCU
+ SG_ ApplicationHeaderRaw : 40|8@1+ (1,0) [0|255] "" ACP3_MCU
+ SG_ UltrasonicRecord1Raw : 48|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ UltrasonicRecord2Raw : 96|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ UltrasonicRecord3Raw : 144|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ UltrasonicRecord4Raw : 192|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ UltrasonicRecord5Raw : 240|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ UltrasonicRecord6Raw : 288|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ ApplicationTailRaw : 336|16@1+ (1,0) [0|65535] "" ACP3_MCU
+ SG_ ReservedTail : 352|32@1+ (1,0) [0|4294967295] "" ACP3_MCU
 
-BO_ 181 RadarNodeD_Sync_0B5: 8 RadarNodeD
- SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" IPM
- SG_ StateRaw : 32|8@1+ (1,0) [0|255] "" IPM
- SG_ SlowCounter : 40|4@1+ (1,0) [0|15] "" IPM
- SG_ CycleCounter : 52|4@1+ (1,0) [0|15] "" IPM
- SG_ CRC8_SAE_J1850 : 56|8@1+ (1,0) [0|255] "" IPM
+BO_ 181 CAN8_RX_0B5: 8 Vector__XXX
+ SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" ACP3_MCU
+ SG_ StateRaw : 32|8@1+ (1,0) [0|255] "" ACP3_MCU
+ SG_ SlowCounter : 40|4@1+ (1,0) [0|15] "" ACP3_MCU
+ SG_ CycleCounter : 52|4@1+ (1,0) [0|15] "" ACP3_MCU
+ SG_ CRC8_SAE_J1850 : 56|8@1+ (1,0) [0|255] "" ACP3_MCU
 
-BO_ 183 RadarNodeE_Sync_0B7: 8 RadarNodeE
- SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" IPM
- SG_ StateRaw : 32|8@1+ (1,0) [0|255] "" IPM
- SG_ SlowCounter : 40|4@1+ (1,0) [0|15] "" IPM
- SG_ CycleCounter : 52|4@1+ (1,0) [0|15] "" IPM
- SG_ CRC8_SAE_J1850 : 56|8@1+ (1,0) [0|255] "" IPM
+BO_ 183 CAN8_RX_0B7: 8 Vector__XXX
+ SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" ACP3_MCU
+ SG_ StateRaw : 32|8@1+ (1,0) [0|255] "" ACP3_MCU
+ SG_ SlowCounter : 40|4@1+ (1,0) [0|15] "" ACP3_MCU
+ SG_ CycleCounter : 52|4@1+ (1,0) [0|15] "" ACP3_MCU
+ SG_ CRC8_SAE_J1850 : 56|8@1+ (1,0) [0|255] "" ACP3_MCU
 
-BO_ 190 RadarNodeE_ObjectPage0_0BE: 64 RadarNodeE
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 190 RRR_SIDE_OBJECT_PAGE0_0BE: 64 RRR_SIDE
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 191 RadarNodeE_ObjectPage1_0BF: 64 RadarNodeE
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 191 RRR_SIDE_OBJECT_PAGE1_0BF: 64 RRR_SIDE
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 193 RadarNodeE_SecurityAux0_0C1: 48 RadarNodeE
- SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" IPM
+BO_ 193 RRR_SIDE_SECURITY_AUX0_0C1: 48 RRR_SIDE
+ SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 197 RadarNodeC_ObjectPage0_0C5: 64 RadarNodeC
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 197 LRR_SIDE_OBJECT_PAGE0_0C5: 64 LRR_SIDE
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 198 RadarNodeC_SecurityAux0_0C6: 48 RadarNodeC
- SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" IPM
+BO_ 198 LRR_SIDE_SECURITY_AUX0_0C6: 48 LRR_SIDE
+ SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 199 RadarNodeD_ObjectPage0_0C7: 64 RadarNodeD
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 199 LCRR_OBJECT_PAGE0_0C7: 64 LCRR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 200 RadarNodeD_ObjectPage1_0C8: 64 RadarNodeD
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 200 LCRR_OBJECT_PAGE1_0C8: 64 LCRR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 201 RadarNodeD_ObjectPage2_0C9: 64 RadarNodeD
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 201 LCRR_OBJECT_PAGE2_0C9: 64 LCRR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 207 RadarNodeB_ObjectPage0_0CF: 64 RadarNodeB
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 207 RFR_OBJECT_PAGE0_0CF: 64 RFR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 208 RadarNodeB_ObjectPage1_0D0: 64 RadarNodeB
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 208 RFR_OBJECT_PAGE1_0D0: 64 RFR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 209 RadarNodeB_SecurityAux0_0D1: 48 RadarNodeB
- SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" IPM
+BO_ 209 RFR_SECURITY_AUX0_0D1: 48 RFR
+ SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 210 RadarNodeE_ObjectPage2_0D2: 64 RadarNodeE
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 210 LFR_OBJECT_PAGE2_0D2: 64 LFR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 211 RadarNodeE_ObjectPage3_0D3: 64 RadarNodeE
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 211 LFR_OBJECT_PAGE3_0D3: 64 LFR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 212 RadarNodeE_SecurityAux1_0D4: 48 RadarNodeE
- SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" IPM
+BO_ 212 LFR_SECURITY_AUX1_0D4: 48 LFR
+ SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 216 CAMERA_0D8: 48 CAMERA
- SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField02_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField03 : 3|5@0+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 14|9@0- (1,0) [0|0] "" IPM
- SG_ RawField05 : 18|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 20|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 17|5@0+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 28|9@0- (1,0) [0|0] "" IPM
- SG_ RawField09 : 32|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField10 : 34|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField11 : 42|9@0- (1,0) [0|0] "" IPM
- SG_ RawField12 : 43|5@1+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 48|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 56|9@0- (1,0) [0|0] "" IPM
- SG_ RawField15 : 57|5@1+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 62|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 76|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 78|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField19 : 75|5@0+ (1,0) [0|0] "" IPM
- SG_ RawField20 : 86|9@0- (1,0) [0|0] "" IPM
- SG_ RawField21 : 90|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField22 : 92|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 89|5@0+ (1,0) [0|0] "" IPM
- SG_ RawField24 : 100|9@0- (1,0) [0|0] "" IPM
- SG_ RawField25 : 104|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField26 : 106|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 114|9@0- (1,0) [0|0] "" IPM
- SG_ RawField28 : 115|5@1+ (1,0) [0|0] "" IPM
- SG_ RawField29 : 120|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 128|9@0- (1,0) [0|0] "" IPM
- SG_ RawField31 : 129|5@1+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 134|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 148|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField34 : 150|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 147|5@0+ (1,0) [0|0] "" IPM
- SG_ RawField36 : 158|9@0- (1,0) [0|0] "" IPM
- SG_ RawField37 : 162|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField38 : 164|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField39 : 161|5@0+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 172|9@0- (1,0) [0|0] "" IPM
- SG_ RawField41 : 176|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField42 : 178|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField43 : 186|9@0- (1,0) [0|0] "" IPM
- SG_ RawField44 : 187|5@1+ (1,0) [0|0] "" IPM
- SG_ RawField45 : 192|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 200|9@0- (1,0) [0|0] "" IPM
- SG_ RawField47 : 201|5@1+ (1,0) [0|0] "" IPM
- SG_ RawField48 : 206|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField49 : 220|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 222|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 219|5@0+ (1,0) [0|0] "" IPM
- SG_ RawField52 : 230|9@0- (1,0) [0|0] "" IPM
- SG_ RawField53 : 234|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 236|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 233|5@0+ (1,0) [0|0] "" IPM
- SG_ RawField56 : 244|9@0- (1,0) [0|0] "" IPM
- SG_ RawField57 : 248|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField58 : 250|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 258|9@0- (1,0) [0|0] "" IPM
- SG_ RawField60 : 259|5@1+ (1,0) [0|0] "" IPM
- SG_ RawField61 : 264|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField62 : 272|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField63 : 278|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField64 : 287|9@0- (1,0) [0|0] "" IPM
- SG_ RawField65 : 294|11@0- (1,0) [0|0] "" IPM
- SG_ RawField66 : 298|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField67 : 297|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField68 : 307|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField69 : 315|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField70 : 314|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField71 : 321|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField72 : 320|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField73 : 330|9@0- (1,0) [0|0] "" IPM
- SG_ RawField74 : 337|11@0- (1,0) [0|0] "" IPM
- SG_ RawField75 : 357|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField76 : 356|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField77 : 360|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField78 : 374|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField79 : 373|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField80 : 376|6@1+ (1,0) [0|0] "" IPM
+BO_ 216 CAMERA_0D8: 48 FCM
+ SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03 : 3|5@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 14|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 18|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 20|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 17|5@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 28|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 32|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 34|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 42|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 43|5@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 48|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 56|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 57|5@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 62|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 76|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 78|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 75|5@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 86|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 90|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 92|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 89|5@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 100|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 104|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 106|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 114|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 115|5@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 120|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 128|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 129|5@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 134|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 148|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 150|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 147|5@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 158|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 162|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 164|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 161|5@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 172|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 176|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 178|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 186|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 187|5@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 192|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 200|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 201|5@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 206|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 220|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 222|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 219|5@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 230|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 234|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 236|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 233|5@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 244|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 248|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 250|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 258|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 259|5@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 264|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField62 : 272|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField63 : 278|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField64 : 287|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField65 : 294|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField66 : 298|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField67 : 297|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField68 : 307|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField69 : 315|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField70 : 314|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField71 : 321|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField72 : 320|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField73 : 330|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField74 : 337|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField75 : 357|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField76 : 356|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField77 : 360|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField78 : 374|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField79 : 373|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField80 : 376|6@1+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 217 CAMERA_0D9: 64 CAMERA
- SG_ RawField01_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField02 : 5|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField03 : 8|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 9|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField05 : 11|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 12|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 23|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 22|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 24|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField10 : 25|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField11 : 26|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 28|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 29|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 32|8@1+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 41|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 40|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 42|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 43|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField19 : 45|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField20 : 46|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 48|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField22 : 58|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 57|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField24 : 59|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField25 : 60|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField26 : 62|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 64|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField28 : 75|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField29 : 74|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 76|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 77|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 79|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 80|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField34 : 81|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 90|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField36 : 89|16@0- (1,0) [0|0] "" IPM
- SG_ RawField37 : 92|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField38 : 93|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField39 : 94|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 105|16@0- (1,0) [0|0] "" IPM
- SG_ RawField41 : 121|10@0- (1,0) [0|0] "" IPM
- SG_ RawField42 : 136|8@1+ (1,0) [0|0] "" IPM
- SG_ RawField43 : 151|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField44 : 157|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField45 : 165|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 172|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField47 : 171|16@0- (1,0) [0|0] "" IPM
- SG_ RawField48 : 187|16@0- (1,0) [0|0] "" IPM
- SG_ RawField49 : 203|10@0- (1,0) [0|0] "" IPM
- SG_ RawField50 : 209|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 217|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField52 : 232|8@1+ (1,0) [0|0] "" IPM
- SG_ RawField53 : 240|8@1+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 254|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 253|16@0- (1,0) [0|0] "" IPM
- SG_ RawField56 : 269|16@0- (1,0) [0|0] "" IPM
- SG_ RawField57 : 285|10@0- (1,0) [0|0] "" IPM
- SG_ RawField58 : 291|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 299|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField60 : 305|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField61 : 313|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField62 : 321|10@0- (1,0) [0|0] "" IPM
- SG_ RawField63 : 343|10@0- (1,0) [0|0] "" IPM
- SG_ RawField64 : 349|10@0- (1,0) [0|0] "" IPM
- SG_ RawField65 : 355|10@0- (1,0) [0|0] "" IPM
- SG_ RawField66 : 361|10@0- (1,0) [0|0] "" IPM
- SG_ RawField67 : 383|10@0- (1,0) [0|0] "" IPM
- SG_ RawField68 : 389|10@0- (1,0) [0|0] "" IPM
- SG_ RawField69 : 395|10@0- (1,0) [0|0] "" IPM
- SG_ RawField70 : 401|10@0- (1,0) [0|0] "" IPM
- SG_ RawField71 : 423|10@0- (1,0) [0|0] "" IPM
- SG_ RawField72 : 429|10@0- (1,0) [0|0] "" IPM
- SG_ RawField73 : 435|10@0- (1,0) [0|0] "" IPM
- SG_ RawField74 : 441|10@0- (1,0) [0|0] "" IPM
- SG_ RawField75 : 463|10@0- (1,0) [0|0] "" IPM
- SG_ RawField76 : 469|10@0- (1,0) [0|0] "" IPM
- SG_ RawField77 : 475|32@0+ (1,0) [0|0] "" IPM
- SG_ RawField78 : 504|4@1+ (1,0) [0|0] "" IPM
+BO_ 217 CAMERA_0D9: 64 FCM
+ SG_ RawField01_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02 : 5|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03 : 8|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 9|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 11|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 12|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 23|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 22|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 24|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 25|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 26|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 28|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 29|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 32|8@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 41|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 40|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 42|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 43|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 45|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 46|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 48|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 58|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 57|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 59|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 60|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 62|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 64|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 75|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 74|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 76|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 77|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 79|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 80|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 81|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 90|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 89|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 92|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 93|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 94|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 105|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 121|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 136|8@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 151|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 157|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 165|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 172|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 171|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 187|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 203|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 209|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 217|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 232|8@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 240|8@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 254|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 253|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 269|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 285|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 291|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 299|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 305|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 313|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField62 : 321|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField63 : 343|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField64 : 349|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField65 : 355|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField66 : 361|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField67 : 383|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField68 : 389|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField69 : 395|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField70 : 401|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField71 : 423|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField72 : 429|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField73 : 435|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField74 : 441|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField75 : 463|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField76 : 469|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField77 : 475|32@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField78 : 504|4@1+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 218 CAMERA_0DA: 64 CAMERA
- SG_ RawField01 : 3|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField02 : 4|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 8|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField05 : 28|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 29|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 33|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 51|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 52|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField10 : 54|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField11 : 56|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 76|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField13_Flag : 77|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 81|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 99|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 100|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 102|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 104|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField19 : 124|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField20_Flag : 125|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 129|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField22 : 147|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 148|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField24 : 150|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField25 : 152|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField26 : 172|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 173|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField28 : 177|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField29 : 195|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 196|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 198|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 200|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 220|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField34 : 221|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 225|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField36 : 243|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField37 : 244|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField38 : 246|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField39 : 248|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 268|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField41 : 269|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField42 : 273|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField43 : 291|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField44 : 292|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField45 : 294|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 296|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField47 : 316|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField48 : 317|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField49 : 321|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 339|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 340|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField52 : 342|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField53 : 344|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 364|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 365|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField56 : 369|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField57 : 387|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField58 : 388|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 390|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField60 : 392|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField61 : 412|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField62 : 413|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField63 : 417|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField64 : 435|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField65 : 436|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField66 : 438|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField67 : 440|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField68 : 460|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField69 : 461|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField70 : 465|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField71 : 481|26@0+ (1,0) [0|0] "" IPM
- SG_ RawField72 : 482|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField73 : 484|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField74 : 486|2@1+ (1,0) [0|0] "" IPM
+BO_ 218 CAMERA_0DA: 64 FCM
+ SG_ RawField01 : 3|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 8|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 28|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 29|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 33|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 51|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 52|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 54|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 56|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 76|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13_Flag : 77|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 81|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 99|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 100|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 102|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 104|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 124|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20_Flag : 125|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 129|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 147|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 148|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 150|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 152|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 172|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 173|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 177|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 195|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 196|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 198|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 200|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 220|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 221|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 225|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 243|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 244|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 246|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 248|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 268|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 269|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 273|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 291|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 292|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 294|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 296|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 316|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 317|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 321|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 339|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 340|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 342|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 344|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 364|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 365|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 369|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 387|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 388|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 390|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 392|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 412|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField62 : 413|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField63 : 417|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField64 : 435|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField65 : 436|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField66 : 438|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField67 : 440|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField68 : 460|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField69 : 461|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField70 : 465|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField71 : 481|26@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField72 : 482|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField73 : 484|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField74 : 486|2@1+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 219 CAMERA_0DB: 64 CAMERA
- SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField02 : 3|16@0- (1,0) [0|0] "" IPM
- SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 19|16@0- (1,0) [0|0] "" IPM
- SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 71|10@0- (1,0) [0|0] "" IPM
- SG_ RawField10 : 77|13@0- (1,0) [0|0] "" IPM
- SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 113|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField19 : 122|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField20 : 121|3@0+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 133|11@0- (1,0) [0|0] "" IPM
- SG_ RawField22 : 134|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 138|13@0- (1,0) [0|0] "" IPM
- SG_ RawField24 : 152|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField25 : 162|9@0- (1,0) [0|0] "" IPM
- SG_ RawField26 : 163|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 165|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField28 : 169|9@0- (1,0) [0|0] "" IPM
- SG_ RawField29 : 176|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 197|15@0+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 214|11@0- (1,0) [0|0] "" IPM
- SG_ RawField32 : 219|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 225|10@0- (1,0) [0|0] "" IPM
- SG_ RawField34 : 247|14@0+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 249|9@0- (1,0) [0|0] "" IPM
- SG_ RawField36 : 256|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField37 : 272|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField38 : 281|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField39 : 283|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 285|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField41 : 280|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField42 : 289|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField43 : 288|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField44 : 298|11@0- (1,0) [0|0] "" IPM
- SG_ RawField45 : 299|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 300|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField47 : 319|13@0- (1,0) [0|0] "" IPM
- SG_ RawField48 : 322|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField49 : 328|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 330|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 343|9@0- (1,0) [0|0] "" IPM
- SG_ RawField52 : 350|9@0- (1,0) [0|0] "" IPM
- SG_ RawField53 : 357|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 362|15@0+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 379|11@0- (1,0) [0|0] "" IPM
- SG_ RawField56 : 384|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField57 : 406|10@0- (1,0) [0|0] "" IPM
- SG_ RawField58 : 412|14@0+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 430|9@0- (1,0) [0|0] "" IPM
- SG_ RawField60 : 437|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField61 : 443|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField62 : 448|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField63 : 450|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField64 : 458|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField65 : 460|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField66 : 462|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField67 : 457|28@0+ (1,0) [0|0] "" IPM
- SG_ RawField68 : 493|19@0+ (1,0) [0|0] "" IPM
+BO_ 219 CAMERA_0DB: 64 FCM
+ SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02 : 3|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 19|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 71|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 77|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 113|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 122|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 121|3@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 133|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 134|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 138|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 152|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 162|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 163|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 165|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 169|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 176|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 197|15@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 214|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 219|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 225|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 247|14@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 249|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 256|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 272|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 281|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 283|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 285|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 280|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 289|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 288|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 298|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 299|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 300|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 319|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 322|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 328|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 330|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 343|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 350|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 357|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 362|15@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 379|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 384|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 406|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 412|14@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 430|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 437|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 443|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField62 : 448|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField63 : 450|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField64 : 458|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField65 : 460|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField66 : 462|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField67 : 457|28@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField68 : 493|19@0+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 220 CAMERA_0DC: 64 CAMERA
- SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField02 : 3|16@0- (1,0) [0|0] "" IPM
- SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 19|16@0- (1,0) [0|0] "" IPM
- SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 71|10@0- (1,0) [0|0] "" IPM
- SG_ RawField10 : 77|13@0- (1,0) [0|0] "" IPM
- SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 113|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField19 : 122|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField20 : 121|3@0+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 133|11@0- (1,0) [0|0] "" IPM
- SG_ RawField22 : 134|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 138|13@0- (1,0) [0|0] "" IPM
- SG_ RawField24 : 152|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField25 : 162|9@0- (1,0) [0|0] "" IPM
- SG_ RawField26 : 163|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 165|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField28 : 169|9@0- (1,0) [0|0] "" IPM
- SG_ RawField29 : 176|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 197|15@0+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 214|11@0- (1,0) [0|0] "" IPM
- SG_ RawField32 : 219|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 225|10@0- (1,0) [0|0] "" IPM
- SG_ RawField34 : 247|14@0+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 249|9@0- (1,0) [0|0] "" IPM
- SG_ RawField36 : 256|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField37 : 272|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField38 : 281|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField39 : 283|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 285|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField41 : 280|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField42 : 289|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField43 : 288|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField44 : 298|11@0- (1,0) [0|0] "" IPM
- SG_ RawField45 : 299|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 300|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField47 : 319|13@0- (1,0) [0|0] "" IPM
- SG_ RawField48 : 322|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField49 : 328|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 330|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 343|9@0- (1,0) [0|0] "" IPM
- SG_ RawField52 : 350|9@0- (1,0) [0|0] "" IPM
- SG_ RawField53 : 357|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 362|15@0+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 379|11@0- (1,0) [0|0] "" IPM
- SG_ RawField56 : 384|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField57 : 406|10@0- (1,0) [0|0] "" IPM
- SG_ RawField58 : 412|14@0+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 430|9@0- (1,0) [0|0] "" IPM
- SG_ RawField60 : 437|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField61 : 443|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField62 : 448|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField63 : 450|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField64 : 458|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField65 : 460|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField66 : 462|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField67 : 457|28@0+ (1,0) [0|0] "" IPM
- SG_ RawField68 : 493|22@0+ (1,0) [0|0] "" IPM
+BO_ 220 CAMERA_0DC: 64 FCM
+ SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02 : 3|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 19|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 71|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 77|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 113|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 122|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 121|3@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 133|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 134|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 138|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 152|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 162|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 163|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 165|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 169|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 176|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 197|15@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 214|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 219|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 225|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 247|14@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 249|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 256|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 272|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 281|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 283|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 285|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 280|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 289|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 288|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 298|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 299|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 300|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 319|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 322|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 328|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 330|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 343|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 350|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 357|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 362|15@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 379|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 384|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 406|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 412|14@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 430|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 437|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 443|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField62 : 448|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField63 : 450|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField64 : 458|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField65 : 460|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField66 : 462|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField67 : 457|28@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField68 : 493|22@0+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 221 CAMERA_0DD: 64 CAMERA
- SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField02 : 3|16@0- (1,0) [0|0] "" IPM
- SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 19|16@0- (1,0) [0|0] "" IPM
- SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 71|10@0- (1,0) [0|0] "" IPM
- SG_ RawField10 : 77|13@0- (1,0) [0|0] "" IPM
- SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 113|16@0- (1,0) [0|0] "" IPM
- SG_ RawField19 : 129|16@0- (1,0) [0|0] "" IPM
- SG_ RawField20 : 145|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 154|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField22 : 163|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 172|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField24 : 181|10@0- (1,0) [0|0] "" IPM
- SG_ RawField25 : 187|13@0- (1,0) [0|0] "" IPM
- SG_ RawField26 : 201|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 203|4@1+ (1,0) [0|0] "" IPM
- SG_ RawField28 : 200|3@0+ (1,0) [0|0] "" IPM
- SG_ RawField29 : 213|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 216|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 224|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 226|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 237|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField34 : 236|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 241|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField36 : 240|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField37 : 254|9@0- (1,0) [0|0] "" IPM
- SG_ RawField38 : 261|9@0- (1,0) [0|0] "" IPM
- SG_ RawField39 : 268|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 273|10@0- (1,0) [0|0] "" IPM
- SG_ RawField41 : 295|10@0- (1,0) [0|0] "" IPM
- SG_ RawField42 : 301|9@0- (1,0) [0|0] "" IPM
- SG_ RawField43 : 305|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField44 : 307|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField45 : 304|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 313|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField47 : 312|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField48 : 322|11@0- (1,0) [0|0] "" IPM
- SG_ RawField49 : 323|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 324|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 343|13@0- (1,0) [0|0] "" IPM
- SG_ RawField52 : 346|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField53 : 352|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 354|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 367|9@0- (1,0) [0|0] "" IPM
- SG_ RawField56 : 374|9@0- (1,0) [0|0] "" IPM
- SG_ RawField57 : 381|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField58 : 386|15@0+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 403|11@0- (1,0) [0|0] "" IPM
- SG_ RawField60 : 408|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField61 : 430|10@0- (1,0) [0|0] "" IPM
- SG_ RawField62 : 436|14@0+ (1,0) [0|0] "" IPM
- SG_ RawField63 : 454|9@0- (1,0) [0|0] "" IPM
- SG_ RawField64 : 461|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField65 : 467|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField66 : 472|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField67 : 474|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField68 : 480|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField69 : 482|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField70 : 484|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField71 : 486|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField72 : 495|24@0+ (1,0) [0|0] "" IPM
+BO_ 221 CAMERA_0DD: 64 FCM
+ SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02 : 3|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 19|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 71|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 77|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 113|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 129|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 145|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 154|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 163|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 172|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 181|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 187|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 201|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 203|4@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 200|3@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 213|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 216|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 224|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 226|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 237|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 236|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 241|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 240|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 254|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 261|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 268|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 273|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 295|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 301|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 305|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 307|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 304|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 313|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 312|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 322|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 323|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 324|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 343|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 346|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 352|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 354|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 367|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 374|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 386|15@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 403|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 408|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 430|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField62 : 436|14@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField63 : 454|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField64 : 461|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField65 : 467|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField66 : 472|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField67 : 474|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField68 : 480|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField69 : 482|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField70 : 484|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField71 : 486|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField72 : 495|24@0+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 222 CAMERA_0DE: 64 CAMERA
- SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField02 : 3|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 12|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField05 : 11|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 16|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 19|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField08_Flag : 24|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 25|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField10 : 28|4@1+ (1,0) [0|0] "" IPM
- SG_ RawField11 : 36|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 37|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 41|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 40|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 54|16@0- (1,0) [0|0] "" IPM
- SG_ RawField16 : 70|16@0- (1,0) [0|0] "" IPM
- SG_ RawField17 : 80|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 89|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField19 : 88|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField20 : 97|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 106|10@0- (1,0) [0|0] "" IPM
- SG_ RawField22 : 112|13@0- (1,0) [0|0] "" IPM
- SG_ RawField23 : 128|4@1+ (1,0) [0|0] "" IPM
- SG_ RawField24 : 139|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField25 : 138|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField26 : 142|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 147|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField28 : 156|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField29 : 162|5@1+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 161|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 169|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 168|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 176|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField34 : 187|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 186|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField36 : 190|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField37 : 196|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField38 : 204|9@0- (1,0) [0|0] "" IPM
- SG_ RawField39 : 205|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 211|9@0- (1,0) [0|0] "" IPM
- SG_ RawField41 : 218|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField42 : 239|10@0- (1,0) [0|0] "" IPM
- SG_ RawField43 : 245|10@0- (1,0) [0|0] "" IPM
- SG_ RawField44 : 251|9@0- (1,0) [0|0] "" IPM
- SG_ RawField45 : 257|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 256|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField47 : 266|5@1+ (1,0) [0|0] "" IPM
- SG_ RawField48 : 265|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField49 : 273|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 272|4@0+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 282|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField52 : 281|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField53 : 284|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 289|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField55_Flag : 288|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField56 : 297|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField57_Flag : 296|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField58 : 306|11@0- (1,0) [0|0] "" IPM
- SG_ RawField59 : 307|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField60 : 308|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField61 : 327|13@0- (1,0) [0|0] "" IPM
- SG_ RawField62 : 330|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField63 : 336|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField64 : 338|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField65 : 351|9@0- (1,0) [0|0] "" IPM
- SG_ RawField66 : 358|9@0- (1,0) [0|0] "" IPM
- SG_ RawField67 : 365|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField68 : 370|15@0+ (1,0) [0|0] "" IPM
- SG_ RawField69 : 387|11@0- (1,0) [0|0] "" IPM
- SG_ RawField70 : 392|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField71 : 414|10@0- (1,0) [0|0] "" IPM
- SG_ RawField72 : 420|14@0+ (1,0) [0|0] "" IPM
- SG_ RawField73 : 438|9@0- (1,0) [0|0] "" IPM
- SG_ RawField74 : 445|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField75 : 451|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField76 : 456|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField77 : 458|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField78 : 466|4@1+ (1,0) [0|0] "" IPM
- SG_ RawField79 : 470|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField80 : 465|3@0+ (1,0) [0|0] "" IPM
- SG_ RawField81 : 473|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField82 : 472|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField83 : 480|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField84 : 481|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField85 : 482|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField86 : 489|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField87 : 491|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField88 : 493|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField89 : 494|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField90 : 495|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField91 : 488|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField92 : 502|15@0+ (1,0) [0|0] "" IPM
+BO_ 222 CAMERA_0DE: 64 FCM
+ SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02 : 3|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 12|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 11|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 16|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 19|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08_Flag : 24|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 25|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 28|4@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 36|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 37|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 41|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 40|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 54|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 70|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 80|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 89|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 88|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 97|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 106|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 112|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 128|4@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 139|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 138|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 142|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 147|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 156|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 162|5@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 161|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 169|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 168|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 176|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 187|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 186|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 190|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 196|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 204|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 205|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 211|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 218|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 239|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 245|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 251|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 257|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 256|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 266|5@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 265|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 273|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 272|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 282|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 281|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 284|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 289|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55_Flag : 288|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 297|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57_Flag : 296|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 306|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 307|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 308|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 327|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField62 : 330|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField63 : 336|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField64 : 338|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField65 : 351|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField66 : 358|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField67 : 365|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField68 : 370|15@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField69 : 387|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField70 : 392|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField71 : 414|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField72 : 420|14@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField73 : 438|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField74 : 445|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField75 : 451|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField76 : 456|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField77 : 458|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField78 : 466|4@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField79 : 470|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField80 : 465|3@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField81 : 473|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField82 : 472|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField83 : 480|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField84 : 481|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField85 : 482|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField86 : 489|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField87 : 491|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField88 : 493|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField89 : 494|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField90 : 495|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField91 : 488|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField92 : 502|15@0+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 233 CAMERA_0E9: 64 CAMERA
- SG_ RawField01_Entropy : 7|32@0+ (1,0) [0|0] "" IPM
- SG_ RawField02_Counter : 35|5@1+ (1,0) [0|0] "" IPM
- SG_ RawField03 : 44|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 43|16@0- (1,0) [0|0] "" IPM
- SG_ RawField05_RollingCounter : 46|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 59|16@0- (1,0) [0|0] "" IPM
- SG_ RawField07 : 75|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 84|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 93|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField10 : 96|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField11 : 111|10@0- (1,0) [0|0] "" IPM
- SG_ RawField12 : 117|13@0- (1,0) [0|0] "" IPM
- SG_ RawField13 : 120|4@0+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 128|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 131|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 137|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 136|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 145|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField19 : 154|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField20 : 153|3@0+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 161|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField22 : 160|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 168|9@0- (1,0) [0|0] "" IPM
- SG_ RawField24 : 169|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField25 : 191|9@0- (1,0) [0|0] "" IPM
- SG_ RawField26 : 198|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 203|10@0- (1,0) [0|0] "" IPM
- SG_ RawField28 : 209|10@0- (1,0) [0|0] "" IPM
- SG_ RawField29 : 231|9@0- (1,0) [0|0] "" IPM
- SG_ RawField30_Flag : 233|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 235|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 232|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 237|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField34_Flag : 241|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 240|3@0+ (1,0) [0|0] "" IPM
- SG_ RawField36 : 252|11@0- (1,0) [0|0] "" IPM
- SG_ RawField37 : 253|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField38 : 257|13@0- (1,0) [0|0] "" IPM
- SG_ RawField39 : 276|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 281|9@0- (1,0) [0|0] "" IPM
- SG_ RawField41 : 282|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField42 : 284|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField43 : 288|9@0- (1,0) [0|0] "" IPM
- SG_ RawField44 : 311|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField45 : 316|15@0+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 333|11@0- (1,0) [0|0] "" IPM
- SG_ RawField47 : 338|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField48 : 344|10@0- (1,0) [0|0] "" IPM
- SG_ RawField49 : 366|14@0+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 368|9@0- (1,0) [0|0] "" IPM
- SG_ RawField51 : 391|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField52 : 397|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField53 : 400|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 402|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 404|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField56 : 413|9@0- (1,0) [0|0] "" IPM
- SG_ RawField57_RollingCounter : 414|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField58 : 420|9@0- (1,0) [0|0] "" IPM
- SG_ RawField59 : 427|9@0- (1,0) [0|0] "" IPM
- SG_ RawField60 : 434|9@0- (1,0) [0|0] "" IPM
- SG_ RawField61 : 441|9@0- (1,0) [0|0] "" IPM
- SG_ RawField62 : 448|9@0- (1,0) [0|0] "" IPM
- SG_ RawField63 : 471|9@0- (1,0) [0|0] "" IPM
- SG_ RawField64 : 478|9@0- (1,0) [0|0] "" IPM
- SG_ RawField65 : 485|9@0- (1,0) [0|0] "" IPM
- SG_ RawField66 : 492|9@0- (1,0) [0|0] "" IPM
- SG_ RawField67 : 496|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField68 : 498|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField69 : 504|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField70 : 510|2@1+ (1,0) [0|0] "" IPM
+BO_ 233 CAMERA_0E9: 64 FCM
+ SG_ RawField01_Entropy : 7|32@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02_Counter : 35|5@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03 : 44|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 43|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05_RollingCounter : 46|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 59|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 75|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 84|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 93|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 96|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 111|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 117|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 120|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 128|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 131|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 137|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 136|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 145|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 154|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 153|3@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 161|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 160|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 168|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 169|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 191|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 198|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 203|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 209|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 231|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30_Flag : 233|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 235|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 232|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 237|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34_Flag : 241|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 240|3@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 252|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 253|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 257|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 276|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 281|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 282|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 284|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 288|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 311|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 316|15@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 333|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 338|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 344|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 366|14@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 368|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 391|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 397|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 400|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 402|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 404|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 413|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57_RollingCounter : 414|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 420|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 427|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 434|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 441|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField62 : 448|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField63 : 471|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField64 : 478|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField65 : 485|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField66 : 492|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField67 : 496|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField68 : 498|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField69 : 504|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField70 : 510|2@1+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 234 CAMERA_0EA: 64 CAMERA
- SG_ RawField01 : 1|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField02 : 2|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField03 : 0|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 3|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField05 : 4|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 5|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField07_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 9|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 8|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField10 : 17|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField11 : 16|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 25|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 24|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 33|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 32|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 41|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 40|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 49|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField19 : 48|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField20 : 56|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 57|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField22 : 69|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 70|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField24 : 71|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField25_Flag : 74|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField26 : 73|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 83|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField28 : 88|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField29_Flag : 96|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 102|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 111|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 116|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 115|16@0- (1,0) [0|0] "" IPM
- SG_ RawField34 : 131|16@0- (1,0) [0|0] "" IPM
- SG_ RawField35 : 147|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField36 : 156|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField37 : 165|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField38 : 168|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField39 : 183|10@0- (1,0) [0|0] "" IPM
- SG_ RawField40 : 189|13@0- (1,0) [0|0] "" IPM
- SG_ RawField41 : 192|4@0+ (1,0) [0|0] "" IPM
- SG_ RawField42 : 200|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField43 : 203|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField44 : 209|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField45 : 208|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 217|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField47 : 226|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField48 : 225|3@0+ (1,0) [0|0] "" IPM
- SG_ RawField49 : 233|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 232|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 240|9@0- (1,0) [0|0] "" IPM
- SG_ RawField52 : 241|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField53 : 263|9@0- (1,0) [0|0] "" IPM
- SG_ RawField54 : 270|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 275|10@0- (1,0) [0|0] "" IPM
- SG_ RawField56 : 281|10@0- (1,0) [0|0] "" IPM
- SG_ RawField57 : 303|9@0- (1,0) [0|0] "" IPM
- SG_ RawField58 : 305|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 306|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField60 : 307|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField61 : 309|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField62 : 304|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField63 : 313|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField64 : 312|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField65 : 322|11@0- (1,0) [0|0] "" IPM
- SG_ RawField66 : 323|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField67 : 324|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField68 : 343|13@0- (1,0) [0|0] "" IPM
- SG_ RawField69 : 346|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField70 : 352|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField71 : 354|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField72 : 367|9@0- (1,0) [0|0] "" IPM
- SG_ RawField73 : 374|9@0- (1,0) [0|0] "" IPM
- SG_ RawField74 : 381|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField75 : 386|15@0+ (1,0) [0|0] "" IPM
- SG_ RawField76 : 403|11@0- (1,0) [0|0] "" IPM
- SG_ RawField77 : 408|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField78 : 430|10@0- (1,0) [0|0] "" IPM
- SG_ RawField79 : 436|14@0+ (1,0) [0|0] "" IPM
- SG_ RawField80 : 454|9@0- (1,0) [0|0] "" IPM
- SG_ RawField81 : 461|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField82 : 467|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField83 : 472|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField84 : 474|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField85 : 483|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField86 : 484|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField87 : 485|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField88 : 486|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField89 : 489|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField90 : 488|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField91 : 496|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField92 : 498|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField93 : 500|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField94 : 502|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField95 : 504|8@1+ (1,0) [0|0] "" IPM
+BO_ 234 CAMERA_0EA: 64 FCM
+ SG_ RawField01 : 1|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02 : 2|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03 : 0|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 3|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 4|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 5|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 9|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 8|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 17|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 16|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 25|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 24|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 33|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 32|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 41|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 40|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 49|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 48|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 56|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 57|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 69|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 70|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 71|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25_Flag : 74|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 73|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 83|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 88|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29_Flag : 96|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 102|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 111|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 116|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 115|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 131|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 147|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 156|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 165|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 168|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 183|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 189|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 192|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 200|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 203|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 209|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 208|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 217|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 226|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 225|3@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 233|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 232|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 240|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 241|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 263|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 270|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 275|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 281|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 303|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 305|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 306|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 307|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 309|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField62 : 304|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField63 : 313|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField64 : 312|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField65 : 322|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField66 : 323|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField67 : 324|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField68 : 343|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField69 : 346|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField70 : 352|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField71 : 354|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField72 : 367|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField73 : 374|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField74 : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField75 : 386|15@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField76 : 403|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField77 : 408|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField78 : 430|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField79 : 436|14@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField80 : 454|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField81 : 461|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField82 : 467|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField83 : 472|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField84 : 474|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField85 : 483|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField86 : 484|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField87 : 485|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField88 : 486|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField89 : 489|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField90 : 488|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField91 : 496|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField92 : 498|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField93 : 500|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField94 : 502|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField95 : 504|8@1+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 235 CAMERA_0EB: 64 CAMERA
- SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField02 : 3|16@0- (1,0) [0|0] "" IPM
- SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 19|16@0- (1,0) [0|0] "" IPM
- SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 71|10@0- (1,0) [0|0] "" IPM
- SG_ RawField10 : 77|13@0- (1,0) [0|0] "" IPM
- SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 113|16@0- (1,0) [0|0] "" IPM
- SG_ RawField19 : 129|16@0- (1,0) [0|0] "" IPM
- SG_ RawField20 : 145|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 154|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField22 : 163|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 172|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField24 : 181|10@0- (1,0) [0|0] "" IPM
- SG_ RawField25 : 187|13@0- (1,0) [0|0] "" IPM
- SG_ RawField26 : 201|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 203|4@1+ (1,0) [0|0] "" IPM
- SG_ RawField28 : 200|3@0+ (1,0) [0|0] "" IPM
- SG_ RawField29 : 213|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 216|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 224|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 226|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 237|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField34 : 236|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 241|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField36 : 240|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField37 : 254|9@0- (1,0) [0|0] "" IPM
- SG_ RawField38 : 261|9@0- (1,0) [0|0] "" IPM
- SG_ RawField39 : 268|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 273|10@0- (1,0) [0|0] "" IPM
- SG_ RawField41 : 295|10@0- (1,0) [0|0] "" IPM
- SG_ RawField42 : 301|9@0- (1,0) [0|0] "" IPM
- SG_ RawField43 : 305|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField44 : 307|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField45 : 304|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 313|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField47 : 312|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField48 : 322|11@0- (1,0) [0|0] "" IPM
- SG_ RawField49 : 323|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 324|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 343|13@0- (1,0) [0|0] "" IPM
- SG_ RawField52 : 346|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField53 : 352|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 354|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 367|9@0- (1,0) [0|0] "" IPM
- SG_ RawField56 : 374|9@0- (1,0) [0|0] "" IPM
- SG_ RawField57 : 381|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField58 : 386|15@0+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 403|11@0- (1,0) [0|0] "" IPM
- SG_ RawField60 : 408|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField61 : 430|10@0- (1,0) [0|0] "" IPM
- SG_ RawField62 : 436|14@0+ (1,0) [0|0] "" IPM
- SG_ RawField63 : 454|9@0- (1,0) [0|0] "" IPM
- SG_ RawField64 : 461|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField65 : 467|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField66 : 472|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField67 : 474|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField68 : 480|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField69 : 482|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField70 : 484|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField71 : 486|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField72 : 495|24@0+ (1,0) [0|0] "" IPM
+BO_ 235 CAMERA_0EB: 64 FCM
+ SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02 : 3|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 19|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 71|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 77|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 113|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 129|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 145|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 154|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 163|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 172|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 181|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 187|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 201|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 203|4@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 200|3@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 213|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 216|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 224|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 226|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 237|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 236|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 241|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 240|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 254|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 261|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 268|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 273|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 295|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 301|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 305|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 307|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 304|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 313|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 312|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 322|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 323|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 324|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 343|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 346|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 352|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 354|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 367|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 374|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 386|15@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 403|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 408|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 430|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField62 : 436|14@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField63 : 454|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField64 : 461|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField65 : 467|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField66 : 472|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField67 : 474|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField68 : 480|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField69 : 482|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField70 : 484|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField71 : 486|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField72 : 495|24@0+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 236 CAMERA_0EC: 64 CAMERA
- SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField02 : 3|16@0- (1,0) [0|0] "" IPM
- SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 19|16@0- (1,0) [0|0] "" IPM
- SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 71|10@0- (1,0) [0|0] "" IPM
- SG_ RawField10 : 77|13@0- (1,0) [0|0] "" IPM
- SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 113|16@0- (1,0) [0|0] "" IPM
- SG_ RawField19 : 129|16@0- (1,0) [0|0] "" IPM
- SG_ RawField20 : 145|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 154|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField22 : 163|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 172|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField24 : 181|10@0- (1,0) [0|0] "" IPM
- SG_ RawField25 : 187|13@0- (1,0) [0|0] "" IPM
- SG_ RawField26 : 201|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 203|4@1+ (1,0) [0|0] "" IPM
- SG_ RawField28 : 200|3@0+ (1,0) [0|0] "" IPM
- SG_ RawField29 : 213|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 216|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 224|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 226|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 232|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField34 : 234|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 243|11@0- (1,0) [0|0] "" IPM
- SG_ RawField36 : 244|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField37 : 245|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField38 : 248|13@0- (1,0) [0|0] "" IPM
- SG_ RawField39 : 267|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 272|9@0- (1,0) [0|0] "" IPM
- SG_ RawField41 : 273|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField42 : 275|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField43 : 295|9@0- (1,0) [0|0] "" IPM
- SG_ RawField44 : 302|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField45 : 307|15@0+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 324|11@0- (1,0) [0|0] "" IPM
- SG_ RawField47 : 329|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField48 : 351|10@0- (1,0) [0|0] "" IPM
- SG_ RawField49 : 357|14@0+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 375|9@0- (1,0) [0|0] "" IPM
- SG_ RawField51 : 382|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField52 : 388|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField53 : 393|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 395|3@1+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 392|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField56 : 403|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField57 : 405|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField58 : 402|28@0+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 438|32@0+ (1,0) [0|0] "" IPM
- SG_ RawField60 : 470|32@0+ (1,0) [0|0] "" IPM
- SG_ RawField61 : 502|15@0+ (1,0) [0|0] "" IPM
+BO_ 236 CAMERA_0EC: 64 FCM
+ SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02 : 3|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 19|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 71|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 77|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 113|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 129|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 145|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 154|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 163|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 172|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 181|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 187|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 201|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 203|4@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 200|3@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 213|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 216|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 224|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 226|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 232|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 234|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 243|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 244|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 245|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 248|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 267|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 272|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 273|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 275|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 295|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 302|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 307|15@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 324|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 329|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 351|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 357|14@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 375|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 382|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 388|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 393|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 395|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 392|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 403|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 405|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 402|28@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 438|32@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 470|32@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 502|15@0+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 237 CAMERA_0ED: 48 CAMERA
- SG_ RawField01 : 0|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField02_Flag : 1|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField03 : 2|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 3|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField05 : 4|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 5|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField07_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 12|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 13|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField10 : 11|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField11 : 14|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 15|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 20|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 29|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 32|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 41|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 40|16@0- (1,0) [0|0] "" IPM
- SG_ RawField18 : 56|16@0- (1,0) [0|0] "" IPM
- SG_ RawField19 : 72|10@0- (1,0) [0|0] "" IPM
- SG_ RawField20 : 94|12@0- (1,0) [0|0] "" IPM
- SG_ RawField21 : 98|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField22 : 107|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 116|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField24_Flag : 124|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField25 : 123|16@0- (1,0) [0|0] "" IPM
- SG_ RawField26 : 139|16@0- (1,0) [0|0] "" IPM
- SG_ RawField27 : 155|10@0- (1,0) [0|0] "" IPM
- SG_ RawField28 : 161|12@0- (1,0) [0|0] "" IPM
- SG_ RawField29 : 181|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 184|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 193|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 192|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 206|16@0- (1,0) [0|0] "" IPM
- SG_ RawField34 : 222|16@0- (1,0) [0|0] "" IPM
- SG_ RawField35 : 238|10@0- (1,0) [0|0] "" IPM
- SG_ RawField36 : 244|12@0- (1,0) [0|0] "" IPM
- SG_ RawField37 : 248|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField38 : 257|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField39 : 266|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 274|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField41 : 273|16@0- (1,0) [0|0] "" IPM
- SG_ RawField42 : 289|16@0- (1,0) [0|0] "" IPM
- SG_ RawField43 : 305|10@0- (1,0) [0|0] "" IPM
- SG_ RawField44 : 327|12@0- (1,0) [0|0] "" IPM
- SG_ RawField45 : 331|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 340|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField47 : 349|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField48 : 352|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField49 : 353|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 354|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 355|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField52 : 356|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField53 : 357|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 360|17@0+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 361|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField56 : 363|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField57 : 365|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField58 : 366|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 367|1@1+ (1,0) [0|0] "" IPM
+BO_ 237 CAMERA_0ED: 48 FCM
+ SG_ RawField01 : 0|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02_Flag : 1|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03 : 2|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 3|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 4|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 5|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 12|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 13|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 11|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 14|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 15|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 20|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 29|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 32|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 41|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 40|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 56|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 72|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 94|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 98|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 107|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 116|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24_Flag : 124|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 123|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 139|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 155|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 161|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 181|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 184|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 193|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 192|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 206|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 222|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 238|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 244|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 248|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 257|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 266|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 274|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 273|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 289|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 305|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 327|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 331|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 340|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 349|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 352|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 353|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 354|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 355|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 356|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 357|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 360|17@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 361|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 363|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 365|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 366|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 367|1@1+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 238 CAMERA_0EE: 64 CAMERA
- SG_ RawField01 : 5|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField02_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField03 : 10|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 16|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField05 : 30|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 35|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 40|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 55|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 60|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField10 : 65|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField11 : 64|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 85|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 90|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 89|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 110|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 114|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 115|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 135|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField19 : 139|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField20 : 140|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 144|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField22 : 164|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 165|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField24 : 169|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField25 : 189|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField26 : 190|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 194|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField28 : 200|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField29 : 214|11@0+ (1,0) [0|0] "" IPM
- SG_ RawField30 : 219|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 224|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 239|12@0- (1,0) [0|0] "" IPM
- SG_ RawField33 : 243|14@0- (1,0) [0|0] "" IPM
- SG_ RawField34 : 259|12@0+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 260|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField36 : 279|14@0+ (1,0) [0|0] "" IPM
- SG_ RawField37 : 280|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField38 : 292|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField39_Flag : 293|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 294|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField41 : 298|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField42 : 304|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField43 : 326|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField44 : 332|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField45 : 338|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 344|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField47 : 366|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField48 : 372|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField49 : 378|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 384|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 406|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField52 : 412|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField53 : 418|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 424|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 441|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField56 : 440|30@0+ (1,0) [0|0] "" IPM
- SG_ RawField57 : 443|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField58 : 445|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 474|32@0+ (1,0) [0|0] "" IPM
- SG_ RawField60 : 504|3@1+ (1,0) [0|0] "" IPM
+BO_ 238 CAMERA_0EE: 64 FCM
+ SG_ RawField01 : 5|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03 : 10|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 16|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 30|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 35|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 40|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 55|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 60|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 65|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 64|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 85|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 90|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 89|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 110|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 114|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 115|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 135|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 139|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 140|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 144|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 164|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 165|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 169|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 189|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 190|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 194|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 200|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 214|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 219|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 224|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 239|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 243|14@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 259|12@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 260|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 279|14@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 280|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 292|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39_Flag : 293|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 294|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 298|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 304|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 326|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 332|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 338|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 344|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 366|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 372|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 378|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 384|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 406|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 412|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 418|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 424|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 441|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 440|30@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 443|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 445|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 474|32@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 504|3@1+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 239 CAMERA_0EF: 64 CAMERA
- SG_ RawField01_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField02 : 5|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField03 : 8|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 9|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField05 : 11|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 12|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 22|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 23|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 24|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField10 : 25|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField11 : 26|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 28|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 29|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 32|8@1+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 41|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 40|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 42|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField18 : 43|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField19 : 45|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField20 : 46|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField21 : 48|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField22 : 56|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField23 : 58|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField24 : 59|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField25 : 60|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField26 : 62|1@1+ (1,0) [0|0] "" IPM
- SG_ RawField27 : 65|9@0- (1,0) [0|0] "" IPM
- SG_ RawField28 : 66|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField29 : 72|11@0- (1,0) [0|0] "" IPM
- SG_ RawField30 : 92|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField31 : 91|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField32 : 101|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField33 : 109|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField34 : 108|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField35 : 115|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField36 : 114|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField37 : 124|9@0- (1,0) [0|0] "" IPM
- SG_ RawField38 : 131|11@0- (1,0) [0|0] "" IPM
- SG_ RawField39 : 136|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField40 : 145|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField41 : 144|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField42 : 152|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField43 : 160|8@1+ (1,0) [0|0] "" IPM
- SG_ RawField44 : 168|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField45 : 174|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField46 : 183|9@0- (1,0) [0|0] "" IPM
- SG_ RawField47 : 190|11@0- (1,0) [0|0] "" IPM
- SG_ RawField48 : 194|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField49 : 193|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField50 : 203|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField51 : 211|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField52 : 210|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField53 : 217|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField54 : 216|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField55 : 226|9@0- (1,0) [0|0] "" IPM
- SG_ RawField56 : 233|11@0- (1,0) [0|0] "" IPM
- SG_ RawField57 : 253|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField58 : 252|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField59 : 256|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField60 : 270|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField61 : 269|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField62 : 276|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField63 : 275|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField64 : 285|9@0- (1,0) [0|0] "" IPM
- SG_ RawField65 : 292|11@0- (1,0) [0|0] "" IPM
- SG_ RawField66 : 296|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField67 : 306|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField68 : 305|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField69 : 313|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField70 : 312|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField71 : 320|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField72 : 328|9@0- (1,0) [0|0] "" IPM
- SG_ RawField73 : 329|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField74 : 351|11@0- (1,0) [0|0] "" IPM
- SG_ RawField75 : 355|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField76 : 354|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField77 : 364|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField78 : 372|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField79 : 371|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField80 : 378|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField81 : 377|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField82 : 387|9@0- (1,0) [0|0] "" IPM
- SG_ RawField83 : 394|11@0- (1,0) [0|0] "" IPM
- SG_ RawField84 : 408|6@1+ (1,0) [0|0] "" IPM
- SG_ RawField85 : 414|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField86 : 417|7@1+ (1,0) [0|0] "" IPM
- SG_ RawField87 : 416|2@0+ (1,0) [0|0] "" IPM
- SG_ RawField88 : 430|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField89 : 437|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField90 : 436|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField91 : 446|9@0- (1,0) [0|0] "" IPM
- SG_ RawField92 : 453|11@0- (1,0) [0|0] "" IPM
- SG_ RawField93 : 457|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField94 : 456|6@0+ (1,0) [0|0] "" IPM
- SG_ RawField95 : 466|7@0+ (1,0) [0|0] "" IPM
- SG_ RawField96 : 474|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField97 : 473|8@0+ (1,0) [0|0] "" IPM
- SG_ RawField98 : 481|26@0+ (1,0) [0|0] "" IPM
+BO_ 239 CAMERA_0EF: 64 FCM
+ SG_ RawField01_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02 : 5|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03 : 8|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 9|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 11|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 12|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 22|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 23|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 24|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 25|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 26|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 28|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 29|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 32|8@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 41|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 40|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 42|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField18 : 43|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField19 : 45|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField20 : 46|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField21 : 48|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField22 : 56|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField23 : 58|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField24 : 59|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField25 : 60|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField26 : 62|1@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField27 : 65|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField28 : 66|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField29 : 72|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField30 : 92|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField31 : 91|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField32 : 101|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField33 : 109|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField34 : 108|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField35 : 115|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField36 : 114|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField37 : 124|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField38 : 131|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField39 : 136|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField40 : 145|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField41 : 144|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField42 : 152|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField43 : 160|8@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField44 : 168|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField45 : 174|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField46 : 183|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField47 : 190|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField48 : 194|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField49 : 193|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField50 : 203|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField51 : 211|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField52 : 210|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField53 : 217|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField54 : 216|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField55 : 226|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField56 : 233|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField57 : 253|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField58 : 252|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField59 : 256|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField60 : 270|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField61 : 269|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField62 : 276|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField63 : 275|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField64 : 285|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField65 : 292|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField66 : 296|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField67 : 306|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField68 : 305|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField69 : 313|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField70 : 312|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField71 : 320|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField72 : 328|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField73 : 329|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField74 : 351|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField75 : 355|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField76 : 354|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField77 : 364|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField78 : 372|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField79 : 371|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField80 : 378|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField81 : 377|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField82 : 387|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField83 : 394|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField84 : 408|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField85 : 414|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField86 : 417|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField87 : 416|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField88 : 430|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField89 : 437|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField90 : 436|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField91 : 446|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField92 : 453|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField93 : 457|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField94 : 456|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField95 : 466|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField96 : 474|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField97 : 473|8@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField98 : 481|26@0+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 240 CAMERA_0F0: 20 CAMERA
- SG_ RawField01 : 5|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField02_RollingCounter : 6|2@1+ (1,0) [0|0] "" IPM
- SG_ RawField03 : 11|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField04 : 17|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField05 : 39|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField06 : 45|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField07 : 51|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField08 : 57|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField09 : 79|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField10 : 85|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField11 : 91|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField12 : 97|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField13 : 119|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField14 : 125|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField15 : 131|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField16 : 137|10@0+ (1,0) [0|0] "" IPM
- SG_ RawField17 : 152|8@1+ (1,0) [0|0] "" IPM
+BO_ 240 CAMERA_0F0: 20 FCM
+ SG_ RawField01 : 5|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField02_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField03 : 11|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField04 : 17|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField05 : 39|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField06 : 45|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField07 : 51|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField08 : 57|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField09 : 79|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField10 : 85|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField11 : 91|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField12 : 97|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField13 : 119|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField14 : 125|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField15 : 131|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField16 : 137|10@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RawField17 : 152|8@1+ (1,0) [0|0] "" ACP3_MCU
 
-BO_ 244 RadarNodeA_ObjectPage0_0F4: 64 RadarNodeA
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 244 LFR_OBJECT_PAGE0_0F4: 64 LFR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 245 RadarNodeA_ObjectPage1_0F5: 64 RadarNodeA
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 245 LFR_OBJECT_PAGE1_0F5: 64 LFR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 246 RadarNodeA_Aux0_0F6: 48 RadarNodeA
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 246 LFR_AUX0_0F6: 48 LFR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 247 RadarNodeA_ObjectPage2_0F7: 64 RadarNodeA
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 247 RFR_OBJECT_PAGE2_0F7: 64 RFR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 248 RadarNodeA_ObjectPage3_0F8: 64 RadarNodeA
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 248 RFR_OBJECT_PAGE3_0F8: 64 RFR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 249 RadarNodeA_Aux1_0F9: 48 RadarNodeA
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 249 RFR_AUX1_0F9: 48 RFR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 254 RadarNodeD_SecurityAux0_0FE: 48 RadarNodeD
- SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" IPM
+BO_ 254 LCRR_SECURITY_AUX0_0FE: 48 LCRR
+ SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 255 RadarNodeD_ObjectPage3_0FF: 64 RadarNodeD
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 255 LCRR_OBJECT_PAGE3_0FF: 64 LCRR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 513 RadarNodeD_Aux1_201: 48 RadarNodeD
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 513 LCRR_AUX1_201: 48 LCRR
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 515 RadarNodeC_ObjectPage1_203: 64 RadarNodeC
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 515 LRR_SIDE_OBJECT_PAGE1_203: 64 LRR_SIDE
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 516 RadarNodeC_ObjectPage2_204: 64 RadarNodeC
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 516 LRR_SIDE_OBJECT_PAGE2_204: 64 LRR_SIDE
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 517 RadarNodeC_ObjectPage3_205: 64 RadarNodeC
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 517 LRR_SIDE_OBJECT_PAGE3_205: 64 LRR_SIDE
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 518 RadarNodeC_Aux1_206: 48 RadarNodeC
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 518 LRR_SIDE_AUX1_206: 48 LRR_SIDE
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 519 RadarNodeB_ObjectPage2_207: 64 RadarNodeB
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 519 RRR_SIDE_OBJECT_PAGE2_207: 64 RRR_SIDE
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 520 RadarNodeA_ObjectPage4_208: 64 RadarNodeA
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 520 RRR_SIDE_OBJECT_PAGE4_208: 64 RRR_SIDE
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
-BO_ 522 RadarNodeB_Aux1_20A: 48 RadarNodeB
- SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
+BO_ 522 RRR_SIDE_AUX1_20A: 48 RRR_SIDE
+ SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
 BO_ 532 PARK_ASSIST_ULTRASONIC_BANK_B_214: 48 PARK_ASSIST
- SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" IPM
- SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" IPM
- SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" IPM
- SG_ ApplicationHeaderRaw : 40|8@1+ (1,0) [0|255] "" IPM
- SG_ UltrasonicRecord1Raw : 48|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ UltrasonicRecord2Raw : 96|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ UltrasonicRecord3Raw : 144|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ UltrasonicRecord4Raw : 192|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ UltrasonicRecord5Raw : 240|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ UltrasonicRecord6Raw : 288|48@1+ (1,0) [0|281474976710655] "" IPM
- SG_ ApplicationTailRaw : 336|16@1+ (1,0) [0|65535] "" IPM
- SG_ ReservedTail : 352|32@1+ (1,0) [0|4294967295] "" IPM
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" ACP3_MCU
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" ACP3_MCU
+ SG_ ApplicationHeaderRaw : 40|8@1+ (1,0) [0|255] "" ACP3_MCU
+ SG_ UltrasonicRecord1Raw : 48|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ UltrasonicRecord2Raw : 96|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ UltrasonicRecord3Raw : 144|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ UltrasonicRecord4Raw : 192|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ UltrasonicRecord5Raw : 240|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ UltrasonicRecord6Raw : 288|48@1+ (1,0) [0|281474976710655] "" ACP3_MCU
+ SG_ ApplicationTailRaw : 336|16@1+ (1,0) [0|65535] "" ACP3_MCU
+ SG_ ReservedTail : 352|32@1+ (1,0) [0|4294967295] "" ACP3_MCU
 
 BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
@@ -1270,14 +1270,14 @@ BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
  SG_ VehiclePowerMode : 37|3@1+ (1,0) [0|7] "" Vector__XXX
  SG_ PowerModeGate : 36|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 882 IPM_UNKNOWN_021_FV: 8 IPM
+BO_ 882 ACP3_MCU_UNKNOWN_021_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 883 PARK_ASSIST_ULTRASONIC_BANK_B_FV: 8 PARK_ASSIST
- SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" ACP3_MCU
 
 BO_ 884 PARK_ASSIST_ULTRASONIC_BANK_A_FV: 8 PARK_ASSIST
- SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" ACP3_MCU
 
 BO_ 962 CGM_SYSTEM_POWER_MODE_STATUS: 8 CGM
  SG_ SystemPowerModeProtectionFailSafe : 0|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -1289,7 +1289,7 @@ BO_ 963 CGM_AUTHENTICATED_POWER_MODE: 8 CGM
 BO_ 1405 CGM_VEHICLE_POWER_MODE_FV: 8 CGM
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 2147745830 IPM_NodeStatus_CAN8: 1 IPM
+BO_ 2147745830 ACP3_MCU_NodeStatus_CAN8: 1 ACP3_MCU
  SG_ NodeStatusBit0 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
 
 VAL_ 117 StateRaw 1 "Unknown_State_1";
@@ -1303,12 +1303,99 @@ VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
 VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
 VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";
 
-CM_ BO_ 880 "Transmitted by CGM; the payload is assembled from decoded gateway signals.";
-CM_ BO_ 962 "Transmitted by CGM; reports protected system-power-mode fail-safe status.";
-CM_ BO_ 963 "Transmitted by CGM; carries authenticated power-state inputs.";
-CM_ BO_ 180 "Authenticated parking-assist ultrasonic bank containing six repeated six-byte records. Banks A and B are likely the front and rear sensor groups, but their physical assignment and record ordering are not yet established.";
-CM_ BO_ 532 "Authenticated parking-assist ultrasonic bank containing six repeated six-byte records. Banks A and B are likely the front and rear sensor groups, but their physical assignment and record ordering are not yet established.";
+BO_ 213 CAN8_RX_0D5: 64 LRR
+
+BO_ 214 CAN8_RX_0D6: 64 LRR
+
+BO_ 215 CAN8_RX_0D7: 64 LRR
+
+BO_ 241 CAN8_RX_0F1: 64 LRR
+
+BO_ 242 CAN8_RX_0F2: 64 LRR
+
+BO_ 243 CAN8_RX_0F3: 48 LRR
+
+BO_ 593 CAN8_RX_251: 20 PARK_ASSIST
+
+BO_ 594 CAN8_RX_252: 64 PARK_ASSIST
+
+BO_ 681 CAN8_RX_2A9: 4 LCRR
+
+BO_ 719 CAN8_RX_2CF: 4 LCRR
+
+BO_ 1317 CAN8_RX_525: 8 FCM
+
+
+CM_ BO_ 880 "Transmitter: CGM. Transmitted by CGM; the payload is assembled from decoded gateway signals. CGM route: signal-gateway output on CAN8.";
+CM_ BO_ 962 "Transmitter: CGM. Transmitted by CGM; reports protected system-power-mode fail-safe status. CGM route: signal-gateway output on CAN8.";
+CM_ BO_ 963 "Transmitter: CGM. Transmitted by CGM; carries authenticated power-state inputs. CGM route: signal-gateway output on CAN8.";
+CM_ BO_ 117 "Transmitter remains unresolved. Radar synchronization/status frame.";
+CM_ BO_ 174 "Transmitter remains unresolved. Radar synchronization/status frame.";
+CM_ BO_ 178 "Transmitter remains unresolved. Radar synchronization/status frame.";
+CM_ BO_ 181 "Transmitter remains unresolved. Radar synchronization/status frame.";
+CM_ BO_ 183 "Transmitter remains unresolved. Radar synchronization/status frame.";
+CM_ BO_ 180 "Transmitter: PARK_ASSIST. Authenticated parking-assist ultrasonic bank containing six repeated six-byte records. Banks A and B are likely the front and rear sensor groups, but their physical assignment and record ordering are not yet established.";
+CM_ BO_ 532 "Transmitter: PARK_ASSIST. Authenticated parking-assist ultrasonic bank containing six repeated six-byte records. Banks A and B are likely the front and rear sensor groups, but their physical assignment and record ordering are not yet established.";
 CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
+
+CM_ BO_ 190 "Transmitter: RRR_SIDE.";
+CM_ BO_ 191 "Transmitter: RRR_SIDE.";
+CM_ BO_ 193 "Transmitter: RRR_SIDE.";
+CM_ BO_ 197 "Transmitter: LRR_SIDE.";
+CM_ BO_ 198 "Transmitter: LRR_SIDE.";
+CM_ BO_ 199 "Transmitter: LCRR.";
+CM_ BO_ 200 "Transmitter: LCRR.";
+CM_ BO_ 201 "Transmitter: LCRR.";
+CM_ BO_ 207 "Transmitter: RFR.";
+CM_ BO_ 208 "Transmitter: RFR.";
+CM_ BO_ 209 "Transmitter: RFR.";
+CM_ BO_ 210 "Transmitter: LFR.";
+CM_ BO_ 211 "Transmitter: LFR.";
+CM_ BO_ 212 "Transmitter: LFR.";
+CM_ BO_ 213 "Transmitter: LRR.";
+CM_ BO_ 214 "Transmitter: LRR.";
+CM_ BO_ 215 "Transmitter: LRR.";
+CM_ BO_ 216 "Transmitter: FCM.";
+CM_ BO_ 217 "Transmitter: FCM.";
+CM_ BO_ 218 "Transmitter: FCM.";
+CM_ BO_ 219 "Transmitter: FCM.";
+CM_ BO_ 220 "Transmitter: FCM.";
+CM_ BO_ 221 "Transmitter: FCM.";
+CM_ BO_ 222 "Transmitter: FCM.";
+CM_ BO_ 233 "Transmitter: FCM.";
+CM_ BO_ 234 "Transmitter: FCM.";
+CM_ BO_ 235 "Transmitter: FCM.";
+CM_ BO_ 236 "Transmitter: FCM.";
+CM_ BO_ 237 "Transmitter: FCM.";
+CM_ BO_ 238 "Transmitter: FCM.";
+CM_ BO_ 239 "Transmitter: FCM.";
+CM_ BO_ 240 "Transmitter: FCM.";
+CM_ BO_ 241 "Transmitter: LRR.";
+CM_ BO_ 242 "Transmitter: LRR.";
+CM_ BO_ 243 "Transmitter: LRR.";
+CM_ BO_ 244 "Transmitter: LFR.";
+CM_ BO_ 245 "Transmitter: LFR.";
+CM_ BO_ 246 "Transmitter: LFR.";
+CM_ BO_ 247 "Transmitter: RFR.";
+CM_ BO_ 248 "Transmitter: RFR.";
+CM_ BO_ 249 "Transmitter: RFR.";
+CM_ BO_ 254 "Transmitter: LCRR.";
+CM_ BO_ 255 "Transmitter: LCRR.";
+CM_ BO_ 513 "Transmitter: LCRR.";
+CM_ BO_ 515 "Transmitter: LRR_SIDE.";
+CM_ BO_ 516 "Transmitter: LRR_SIDE.";
+CM_ BO_ 517 "Transmitter: LRR_SIDE.";
+CM_ BO_ 518 "Transmitter: LRR_SIDE.";
+CM_ BO_ 519 "Transmitter: RRR_SIDE.";
+CM_ BO_ 520 "Transmitter: RRR_SIDE.";
+CM_ BO_ 522 "Transmitter: RRR_SIDE.";
+CM_ BO_ 593 "Transmitter: PARK_ASSIST.";
+CM_ BO_ 594 "Transmitter: PARK_ASSIST.";
+CM_ BO_ 681 "Transmitter: LCRR.";
+CM_ BO_ 719 "Transmitter: LCRR.";
+CM_ BO_ 1317 "Transmitter: FCM.";
+
+CM_ BO_ 1405 "Transmitter: CGM. CGM route: signal-gateway output on CAN8.";
 
 BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
 BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","StandardCAN_FD","ExtendedCAN_FD";
@@ -1390,6 +1477,17 @@ BA_ "GenMsgCycleTime" BO_ 1405 1000;
 BA_ "GenMsgCycleTime" BO_ 962 1000;
 BA_ "GenMsgCycleTime" BO_ 963 1000;
 BA_ "GenMsgCycleTime" BO_ 2147745830 1000;
+BA_ "GenMsgCycleTime" BO_ 213 50;
+BA_ "GenMsgCycleTime" BO_ 214 50;
+BA_ "GenMsgCycleTime" BO_ 215 50;
+BA_ "GenMsgCycleTime" BO_ 241 50;
+BA_ "GenMsgCycleTime" BO_ 242 50;
+BA_ "GenMsgCycleTime" BO_ 243 50;
+BA_ "GenMsgCycleTime" BO_ 593 100;
+BA_ "GenMsgCycleTime" BO_ 594 100;
+BA_ "GenMsgCycleTime" BO_ 681 100;
+BA_ "GenMsgCycleTime" BO_ 719 100;
+BA_ "GenMsgCycleTime" BO_ 1317 1000;
 BA_ "VFrameFormat" BO_ 33 4;
 BA_ "VFrameFormat" BO_ 117 4;
 BA_ "VFrameFormat" BO_ 174 4;
@@ -1447,3 +1545,14 @@ BA_ "VFrameFormat" BO_ 882 4;
 BA_ "VFrameFormat" BO_ 883 4;
 BA_ "VFrameFormat" BO_ 884 4;
 BA_ "VFrameFormat" BO_ 2147745830 1;
+BA_ "VFrameFormat" BO_ 213 4;
+BA_ "VFrameFormat" BO_ 214 4;
+BA_ "VFrameFormat" BO_ 215 4;
+BA_ "VFrameFormat" BO_ 241 4;
+BA_ "VFrameFormat" BO_ 242 4;
+BA_ "VFrameFormat" BO_ 243 4;
+BA_ "VFrameFormat" BO_ 593 4;
+BA_ "VFrameFormat" BO_ 594 4;
+BA_ "VFrameFormat" BO_ 681 4;
+BA_ "VFrameFormat" BO_ 719 4;
+BA_ "VFrameFormat" BO_ 1317 4;

@@ -1,7 +1,7 @@
 """GM Global B message authentication.
 
 One vehicle variant is described per Scheme: the module openpilot stands in for, the DBCs of
-the buses it reaches, and how those buses map onto port roles. SUPERCRUISE1 is the IPM on a
+the buses it reaches, and how those buses map onto port roles. SUPERCRUISE1 is the ACP3_MCU on a
 Super Cruise car, numbered because it is one scheme seen on Global B rather than the only one.
 A car without Super Cruise has the FCM send the secured control frames instead; that is a
 second Scheme over its own DBCs, and nothing else here has to change for it.
@@ -179,8 +179,8 @@ class Scheme:
     return self.catalog.rebus({vehicle: bus_indices[role] for vehicle, role in self.bus_roles.items() if role in bus_indices})
 
 
-# The IPM on a Super Cruise car. Only vehicle bus 2 is roled: it is the powertrain segment,
-# and the one the IPM sends its control frames on. The rest are left unroled rather than
+# The ACP3_MCU on a Super Cruise car. Only vehicle bus 2 is roled: it is the powertrain segment,
+# and the one the ACP3_MCU sends its control frames on. The rest are left unroled rather than
 # guessed.
 SUPERCRUISE1 = Scheme(
   name="supercruise1",
@@ -189,6 +189,6 @@ SUPERCRUISE1 = Scheme(
     3: "gm_global_b_supercruise1_secoc_bus3",
     8: "gm_global_b_supercruise1_secoc_bus8",
   },
-  transmitter="IPM",
+  transmitter="ACP3_MCU",
   bus_roles={2: Bus.pt},
 )

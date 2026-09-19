@@ -9,11 +9,11 @@ NS_ :
 
 BS_:
 
-BU_: IPM CGM Vector__XXX
+BU_: ACP3_MCU CGM SDM PARK_ASSIST VLM TCP Vector__XXX
 
 CM_ "GM Global B Super Cruise 1 physical CAN3 database. Unknown transmitters use Vector__XXX.";
 
-BO_ 528 IPM_MEASUREMENT_STATUS: 12 IPM
+BO_ 528 ACP3_MCU_MEASUREMENT_STATUS: 12 ACP3_MCU
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
@@ -27,12 +27,12 @@ BO_ 528 IPM_MEASUREMENT_STATUS: 12 IPM
  SG_ Status_E : 71|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ RollingCounter : 83|2@1+ (1,0) [0|3] "" Vector__XXX
 
-BO_ 613 IPM_SOURCE_TIME: 8 IPM
+BO_ 613 ACP3_MCU_SOURCE_TIME: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SourceTimeMs : 39|32@0+ (1,0) [0|4294967295] "ms" Vector__XXX
 
-BO_ 671 IPM_MEASUREMENT_STATUS_FV: 8 IPM
+BO_ 671 ACP3_MCU_MEASUREMENT_STATUS_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
@@ -41,7 +41,7 @@ BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
  SG_ VehiclePowerMode : 37|3@1+ (1,0) [0|7] "" Vector__XXX
  SG_ PowerModeGate : 36|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 881 IPM_STATE_STATUS: 8 IPM
+BO_ 881 ACP3_MCU_STATE_STATUS: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ StateValue : 34|6@0+ (1,0) [0|63] "" Vector__XXX
@@ -63,17 +63,42 @@ BO_ 963 CGM_AUTHENTICATED_POWER_MODE: 8 CGM
  SG_ SystemPowerModeActive : 40|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ PrimaryRunCrankCommand : 44|4@1+ (1,0) [0|15] "" Vector__XXX
 
-BO_ 1397 IPM_STATE_STATUS_FV: 8 IPM
+BO_ 1397 ACP3_MCU_STATE_STATUS_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 1401 IPM_SOURCE_TIME_FV: 8 IPM
+BO_ 1401 ACP3_MCU_SOURCE_TIME_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 1405 CGM_VEHICLE_POWER_MODE_FV: 8 CGM
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 2147745830 IPM_NodeStatus_CAN3: 1 IPM
+BO_ 2147745830 ACP3_MCU_NodeStatus_CAN3: 1 ACP3_MCU
  SG_ NodeStatusBit0 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 57 CAN3_RX_039: 20 SDM
+
+BO_ 228 CAN3_RX_0E4: 8 CGM
+
+BO_ 603 CAN3_RX_25B: 5 TCP
+
+BO_ 604 CAN3_RX_25C: 8 TCP
+
+BO_ 605 CAN3_RX_25D: 8 TCP
+
+BO_ 606 CAN3_RX_25E: 8 TCP
+
+BO_ 607 CAN3_RX_25F: 8 TCP
+
+BO_ 1309 CAN3_RX_51D: 7 VLM
+
+BO_ 1320 CAN3_RX_528: 8 SDM
+
+BO_ 1322 CAN3_RX_52A: 8 SDM
+
+BO_ 1409 CAN3_RX_581: 6 CGM
+
+BO_ 1410 CAN3_RX_582: 6 PARK_ASSIST
+
 
 VAL_ 528 StatusA 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
 VAL_ 528 StatusB 0 "Unknown_0" 1 "Unknown_1";
@@ -95,10 +120,27 @@ VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
 VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
 VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";
 
-CM_ BO_ 880 "Transmitted by CGM; the payload is assembled from decoded gateway signals.";
-CM_ BO_ 962 "Transmitted by CGM; reports protected system-power-mode fail-safe status.";
-CM_ BO_ 963 "Transmitted by CGM; carries authenticated power-state inputs.";
+CM_ BO_ 880 "Transmitter: CGM. Transmitted by CGM; the payload is assembled from decoded gateway signals. CGM route: signal-gateway output on CAN3.";
+CM_ BO_ 962 "Transmitter: CGM. Transmitted by CGM; reports protected system-power-mode fail-safe status. CGM route: signal-gateway output on CAN3.";
+CM_ BO_ 963 "Transmitter: CGM. Transmitted by CGM; carries authenticated power-state inputs. CGM route: signal-gateway output on CAN3.";
 CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
+
+CM_ BO_ 57 "Transmitter: SDM. Application layout is not yet defined.";
+CM_ BO_ 228 "Transmitter: CGM. Application layout is not yet defined. CGM route: raw CAN1 0x0E4 -> CAN3.";
+CM_ BO_ 603 "Transmitter: TCP. Application layout is not yet defined.";
+CM_ BO_ 604 "Transmitter: TCP. Application layout is not yet defined.";
+CM_ BO_ 605 "Transmitter: TCP. Application layout is not yet defined.";
+CM_ BO_ 606 "Transmitter: TCP. Application layout is not yet defined.";
+CM_ BO_ 607 "Transmitter: TCP. Application layout is not yet defined.";
+CM_ BO_ 1309 "Transmitter: VLM. Application layout is not yet defined.";
+CM_ BO_ 1320 "Transmitter: SDM. Application layout is not yet defined.";
+CM_ BO_ 1322 "Transmitter: SDM. Application layout is not yet defined.";
+CM_ BO_ 1409 "Transmitter: CGM. Application layout is not yet defined. CGM route: signal-gateway output on CAN3.";
+CM_ BO_ 1410 "Transmitter: PARK_ASSIST. Application layout is not yet defined.";
+
+CM_ BO_ 528 "Transmitter: ACP3_MCU. Additional CGM route: raw CAN2 0x210 -> CAN3; raw CAN8 0x210 -> CAN3.";
+CM_ BO_ 671 "Transmitter: ACP3_MCU. Additional CGM route: raw CAN2 0x29F -> CAN3; raw CAN8 0x29F -> CAN3.";
+CM_ BO_ 1405 "Transmitter: CGM. CGM route: signal-gateway output on CAN3.";
 
 BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
 BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","StandardCAN_FD","ExtendedCAN_FD";
@@ -137,3 +179,15 @@ BA_ "VFrameFormat" BO_ 881 4;
 BA_ "VFrameFormat" BO_ 1397 4;
 BA_ "VFrameFormat" BO_ 1401 4;
 BA_ "VFrameFormat" BO_ 2147745830 1;
+BA_ "VFrameFormat" BO_ 57 4;
+BA_ "VFrameFormat" BO_ 228 4;
+BA_ "VFrameFormat" BO_ 603 4;
+BA_ "VFrameFormat" BO_ 604 4;
+BA_ "VFrameFormat" BO_ 605 4;
+BA_ "VFrameFormat" BO_ 606 4;
+BA_ "VFrameFormat" BO_ 607 4;
+BA_ "VFrameFormat" BO_ 1309 4;
+BA_ "VFrameFormat" BO_ 1320 4;
+BA_ "VFrameFormat" BO_ 1322 4;
+BA_ "VFrameFormat" BO_ 1409 4;
+BA_ "VFrameFormat" BO_ 1410 4;

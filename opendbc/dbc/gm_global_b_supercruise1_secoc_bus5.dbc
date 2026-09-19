@@ -47,13 +47,13 @@ BO_ 1405 CGM_VEHICLE_POWER_MODE_FV: 8 CGM
 BO_ 1515 RADIO_POWER_STATE: 8 RADIO
  SG_ RadioPowerState : 11|5@1+ (1,0) [0|31] "" Vector__XXX
 
-CM_ BO_ 880 "Transmitted by CGM; the payload is assembled from decoded gateway signals.";
-CM_ BO_ 962 "Transmitted by CGM; reports protected system-power-mode fail-safe status.";
-CM_ BO_ 963 "Transmitted by CGM; the payload is assembled from decoded gateway signals and carries authenticated power-state inputs.";
-CM_ BO_ 1133 "Power and propulsion status received by the radio controller; transmitter ownership is unknown.";
-CM_ BO_ 1179 "Vehicle identity bytes received by the radio controller; transmitter ownership is unknown.";
-CM_ BO_ 1269 "Raw-forwarded by CGM from CAN9 0x5C9 to CAN5.";
-CM_ BO_ 1515 "Transmitted by the radio controller; reports its interpreted power state.";
+CM_ BO_ 880 "Transmitter: CGM. Transmitted by CGM; the payload is assembled from decoded gateway signals. CGM route: signal-gateway output on CAN5.";
+CM_ BO_ 962 "Transmitter: CGM. Transmitted by CGM; reports protected system-power-mode fail-safe status. CGM route: signal-gateway output on CAN5.";
+CM_ BO_ 963 "Transmitter: CGM. Transmitted by CGM; the payload is assembled from decoded gateway signals and carries authenticated power-state inputs. CGM route: signal-gateway output on CAN5.";
+CM_ BO_ 1133 "Transmitter remains unresolved. Power and propulsion status received by the radio controller.";
+CM_ BO_ 1179 "Transmitter remains unresolved. Vehicle identity bytes received by the radio controller.";
+CM_ BO_ 1269 "Transmitter: CGM. Raw-forwarded by CGM from CAN9 0x5C9 to CAN5. CGM route: raw CAN9 0x5C9 -> CAN5.";
+CM_ BO_ 1515 "Transmitter: RADIO. Reports the radio controller's interpreted power state.";
 
 CM_ SG_ 880 VehiclePowerMode "Primary vehicle power mode consumed by the radio controller.";
 CM_ SG_ 880 PowerModeGate "Companion validity gate used by the power-mode selection path.";
@@ -72,6 +72,8 @@ VAL_ 1133 PowertrainCrankAborted 0 "Not_Aborted" 1 "Aborted";
 VAL_ 1133 PropulsionSystemStillActive 0 "Inactive" 1 "Active";
 VAL_ 1269 AuxiliaryPowerModeStatus 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
 VAL_ 1515 RadioPowerState 3 "Off" 5 "Run" 6 "Propulsion" 7 "Accessory" 13 "Theft_Locked" 15 "No_Vehicle_Identity";
+
+CM_ BO_ 1405 "Transmitter: CGM. CGM route: signal-gateway output on CAN5.";
 
 BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
 BA_DEF_ BO_ "SecOCKeyRole" STRING;

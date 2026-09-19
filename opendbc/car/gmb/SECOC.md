@@ -23,7 +23,7 @@ data_id[1] || BE32(can_id) || BE64(freshness) || application_payload
 
 The authenticator is AES-CMAC over that byte string. The wire carries the most
 significant 27 or 32 bits of the 128-bit CMAC, according to the message's DBC
-layout. For the currently defined IPM scheme, `data_id` is `1` and freshness is
+layout. For the currently defined ACP3_MCU scheme, `data_id` is `1` and freshness is
 a 32-bit counter represented in the low half of the 64-bit freshness input.
 
 The security prefix itself is not part of `application_payload`:

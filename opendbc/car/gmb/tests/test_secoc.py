@@ -30,7 +30,7 @@ GM_FRAMES = [
 
 # Explicit protocol inventory. The catalog is derived from the DBCs' transmitter and signal
 # declarations, so this is the independent statement of what those must yield: a DBC edit that
-# drops or adds a secured IPM message cannot make the test agree with itself. Values are
+# drops or adds a secured ACP3_MCU message cannot make the test agree with itself. Values are
 # (companion address, authenticator width, companion cycle time in milliseconds).
 EXPECTED_TX = {
   (2, 0x057): (0x392, 32, 160),
@@ -185,7 +185,7 @@ class TestGmGlobalB:
     assert (2, 0x27B) not in GM_CATALOG
     assert (2, 0x2B6) not in GM_CATALOG
 
-  def test_catalog_is_exactly_what_the_ipm_transmits_and_secures(self):
+  def test_catalog_is_exactly_what_the_acp3_mcu_transmits_and_secures(self):
     # direction comes from the DBC's transmitter, not from a list kept beside it
     for bus, dbc_name in SUPERCRUISE1.dbcs.items():
       for msg in DBC(dbc_name).msgs.values():
@@ -194,7 +194,7 @@ class TestGmGlobalB:
 
   def test_a_scheme_is_one_module_on_one_variant(self):
     # the same DBCs seen from another module yield that module's secured frames: the CGM
-    # transmits secured 0x370 on all four buses without changing the IPM catalog
+    # transmits secured 0x370 on all four buses without changing the ACP3_MCU catalog
     assert {msg.ref for msg in CGM_CATALOG} == {(bus, 0x370) for bus in CGM_BUSES}
     assert {msg.ref for msg in GM_CATALOG} == set(EXPECTED_TX)
     assert CGM.catalog is CGM_CATALOG, "built once, on first use"
@@ -209,7 +209,7 @@ class TestGmGlobalB:
     assert (CanBus.POWERTRAIN, 0x370) not in port
 
     # a scheme admitting only the 32 bit layout refuses the DBCs' 27 bit messages by name
-    narrow = Scheme(name="narrow", dbcs=SUPERCRUISE1.dbcs, transmitter="IPM", bus_roles={2: Bus.pt},
+    narrow = Scheme(name="narrow", dbcs=SUPERCRUISE1.dbcs, transmitter="ACP3_MCU", bus_roles={2: Bus.pt},
                     layouts=frozenset({((('mac', 32), ("msg", 5), ("aux", 3)), 0)}))
     with pytest.raises(ValueError, match="narrow does not know"):
       narrow.catalog  # noqa: B018

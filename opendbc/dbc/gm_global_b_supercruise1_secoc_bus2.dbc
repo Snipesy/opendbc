@@ -9,41 +9,41 @@ NS_ :
 
 BS_:
 
-BU_: IPM CGM Vector__XXX
+BU_: ACP3_MCU CGM ECP_E EBCM EPS ARS BCM DSM TCP VICM RRR_SIDE Vector__XXX
 
 CM_ "GM Global B Super Cruise 1 physical CAN2 database. Unknown transmitters use Vector__XXX.";
 
-BO_ 47 CAN2_RX_02F: 32 Vector__XXX
+BO_ 47 CAN2_RX_02F: 32 ECP_E
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
 
-BO_ 50 CAN2_RX_032: 8 Vector__XXX
+BO_ 50 CAN2_RX_032: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
-BO_ 58 CAN2_RX_03A: 20 Vector__XXX
+BO_ 58 CAN2_RX_03A: 20 EPS
 
-BO_ 59 CAN2_RX_03B: 64 Vector__XXX
+BO_ 59 CAN2_RX_03B: 64 EBCM
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
 
-BO_ 62 CAN2_RX_03E: 8 Vector__XXX
+BO_ 62 CAN2_RX_03E: 8 BCM
 
-BO_ 63 CAN2_RX_03F: 4 Vector__XXX
+BO_ 63 CAN2_RX_03F: 4 ECP_E
 
-BO_ 66 CAN2_RX_042: 8 Vector__XXX
+BO_ 66 CAN2_RX_042: 8 EBCM
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
-BO_ 72 CAN2_RX_048: 8 Vector__XXX
+BO_ 72 CAN2_RX_048: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
-BO_ 84 CAN2_RX_054: 8 Vector__XXX
+BO_ 84 CAN2_RX_054: 8 EPS
 
-BO_ 87 IPM_HOST_VEHICLE_DYNAMICS: 32 IPM
+BO_ 87 ACP3_MCU_HOST_VEHICLE_DYNAMICS: 32 ACP3_MCU
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
@@ -77,35 +77,35 @@ BO_ 87 IPM_HOST_VEHICLE_DYNAMICS: 32 IPM
  SG_ FrontRoadWheelAngleStatus : 228|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ DynField27 : 227|2@0+ (1,0) [0|3] "" Vector__XXX
 
-BO_ 174 CAN2_RX_0AE: 6 Vector__XXX
+BO_ 174 CAN2_RX_0AE: 6 ECP_E
 
-BO_ 175 CAN2_RX_0AF: 6 Vector__XXX
+BO_ 175 CAN2_RX_0AF: 6 ECP_E
 
 BO_ 182 CAN2_RX_0B6: 4 CGM
 
-BO_ 186 CAN2_RX_0BA: 12 Vector__XXX
+BO_ 186 CAN2_RX_0BA: 12 CGM
 
-BO_ 187 IPM_STEERING_WHEEL_ANGLE: 7 IPM
+BO_ 187 ACP3_MCU_STEERING_WHEEL_ANGLE: 7 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ MeasuredSteeringWheelAngle : 38|15@0- (0.0625,0) [-1024|1023.9375] "deg" Vector__XXX
  SG_ SteeringWheelAngleValid : 39|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ RollingCounter : 55|2@0+ (1,0) [0|3] "" Vector__XXX
 
-BO_ 192 CAN2_RX_0C0: 2 Vector__XXX
+BO_ 192 CAN2_RX_0C0: 2 EBCM
 
-BO_ 225 IPM_0E1: 16 IPM
+BO_ 225 ACP3_MCU_0E1: 16 ACP3_MCU
 
-BO_ 226 CAN2_RX_0E2: 20 Vector__XXX
+BO_ 226 CAN2_RX_0E2: 20 ECP_E
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
 
-BO_ 525 IPM_UNKNOWN_20D: 8 IPM
+BO_ 525 ACP3_MCU_UNKNOWN_20D: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
-BO_ 526 IPM_LONGITUDINAL_REQUEST_STATUS: 16 IPM
+BO_ 526 ACP3_MCU_LONGITUDINAL_REQUEST_STATUS: 16 ACP3_MCU
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
@@ -119,7 +119,7 @@ BO_ 545 CAN2_RX_221: 48 Vector__XXX
 
 BO_ 586 CAN2_RX_24A: 8 Vector__XXX
 
-BO_ 587 IPM_AXLE_TORQUE_STATUS: 12 IPM
+BO_ 587 ACP3_MCU_AXLE_TORQUE_STATUS: 12 ACP3_MCU
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
@@ -132,29 +132,29 @@ BO_ 587 IPM_AXLE_TORQUE_STATUS: 12 IPM
 
 BO_ 597 CAN2_RX_255: 8 CGM
 
-BO_ 610 CAN2_RX_262: 8 Vector__XXX
+BO_ 610 CAN2_RX_262: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
-BO_ 614 CAN2_RX_266: 8 Vector__XXX
+BO_ 614 CAN2_RX_266: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
-BO_ 615 CAN2_RX_267: 20 Vector__XXX
+BO_ 615 CAN2_RX_267: 20 ECP_E
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
 
-BO_ 616 CAN2_RX_268: 8 Vector__XXX
+BO_ 616 CAN2_RX_268: 8 VICM
 
 BO_ 622 CAN2_RX_26E: 8 CGM
 
-BO_ 624 CAN2_RX_270: 12 Vector__XXX
+BO_ 624 CAN2_RX_270: 12 EBCM
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
 
-BO_ 625 IPM_STEERING_REQUEST_COARSE: 8 IPM
+BO_ 625 ACP3_MCU_STEERING_REQUEST_COARSE: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SteeringRequestAngleRaw : 39|14@0- (0.1,0) [-819.2|819.1] "" Vector__XXX
@@ -165,15 +165,15 @@ BO_ 625 IPM_STEERING_REQUEST_COARSE: 8 IPM
  SG_ SteeringRequestTransitionFlag : 59|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ RollingCounter : 57|2@0+ (1,0) [0|3] "" Vector__XXX
 
-BO_ 634 CAN2_RX_27A: 8 Vector__XXX
+BO_ 634 CAN2_RX_27A: 8 BCM
 
-BO_ 635 CAN2_RX_AUTHENTICATED_27B: 8 Vector__XXX
- SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" IPM
- SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" IPM
+BO_ 635 CAN2_RX_AUTHENTICATED_27B: 8 EBCM
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" ACP3_MCU
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" ACP3_MCU
 
 BO_ 640 CAN2_RX_280: 8 CGM
 
-BO_ 644 IPM_STEERING_REQUEST_HIGH_RES: 12 IPM
+BO_ 644 ACP3_MCU_STEERING_REQUEST_HIGH_RES: 12 ACP3_MCU
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
@@ -200,31 +200,31 @@ BO_ 691 CAN2_RX_2B3: 8 Vector__XXX
 BO_ 693 CAN2_RX_2B5: 8 Vector__XXX
 
 BO_ 694 CAN2_RX_AUTHENTICATION_2B6: 8 Vector__XXX
- SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" IPM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" ACP3_MCU
 
-BO_ 701 IPM_2BD: 2 IPM
+BO_ 701 ACP3_MCU_2BD: 2 ACP3_MCU
 
 BO_ 702 CAN2_RX_2BE: 4 CGM
 
-BO_ 703 CAN2_RX_2BF: 2 Vector__XXX
+BO_ 703 CAN2_RX_2BF: 2 EBCM
 
 BO_ 725 CAN2_RX_2D5: 12 CGM
 
 BO_ 726 CAN2_RX_2D6: 5 CGM
 
-BO_ 727 CAN2_RX_2D7: 8 Vector__XXX
+BO_ 727 CAN2_RX_2D7: 8 TCP
 
 BO_ 728 CAN2_RX_2D8: 8 CGM
 
-BO_ 873 CAN2_RX_369: 8 Vector__XXX
+BO_ 873 CAN2_RX_369: 8 EBCM
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
 BO_ 876 CAN2_RX_36C: 16 CGM
 
-BO_ 878 CAN2_RX_36E: 8 Vector__XXX
+BO_ 878 CAN2_RX_36E: 8 BCM
 
-BO_ 879 CAN2_RX_36F: 8 Vector__XXX
+BO_ 879 CAN2_RX_36F: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
@@ -238,7 +238,7 @@ BO_ 898 CAN2_RX_382: 8 CGM
 
 BO_ 901 CAN2_RX_385: 8 Vector__XXX
 
-BO_ 902 IPM_LONGITUDINAL_REQUEST_STATUS_FV: 8 IPM
+BO_ 902 ACP3_MCU_LONGITUDINAL_REQUEST_STATUS_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 904 CAN2_RX_388: 8 Vector__XXX
@@ -253,7 +253,7 @@ BO_ 907 CAN2_RX_38B: 8 Vector__XXX
 
 BO_ 909 CAN2_RX_38D: 8 Vector__XXX
 
-BO_ 914 IPM_HOST_VEHICLE_DYNAMICS_FV: 8 IPM
+BO_ 914 ACP3_MCU_HOST_VEHICLE_DYNAMICS_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 919 CAN2_RX_397: 8 Vector__XXX
@@ -263,34 +263,34 @@ BO_ 920 CAN2_RX_398: 8 Vector__XXX
 
 BO_ 923 CAN2_RX_39B: 8 Vector__XXX
 
-BO_ 924 IPM_STEERING_REQUEST_COARSE_FV: 8 IPM
+BO_ 924 ACP3_MCU_STEERING_REQUEST_COARSE_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 925 IPM_UNKNOWN_20D_FV: 8 IPM
+BO_ 925 ACP3_MCU_UNKNOWN_20D_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 927 IPM_STEERING_WHEEL_ANGLE_FV: 8 IPM
+BO_ 927 ACP3_MCU_STEERING_WHEEL_ANGLE_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 930 CAN2_RX_3A2: 8 CGM
 
-BO_ 934 CAN2_RX_3A6: 6 Vector__XXX
+BO_ 934 CAN2_RX_3A6: 6 ECP_E
 
-BO_ 938 CAN2_RX_3AA: 6 Vector__XXX
+BO_ 938 CAN2_RX_3AA: 6 EBCM
 
-BO_ 941 IPM_3AD: 6 IPM
+BO_ 941 ACP3_MCU_3AD: 6 ACP3_MCU
 
 BO_ 945 CAN2_RX_3B1: 6 Vector__XXX
 
-BO_ 947 IPM_3B3: 6 IPM
+BO_ 947 ACP3_MCU_3B3: 6 ACP3_MCU
 
-BO_ 949 IPM_3B5: 8 IPM
+BO_ 949 ACP3_MCU_3B5: 8 ACP3_MCU
 
-BO_ 950 IPM_3B6: 8 IPM
+BO_ 950 ACP3_MCU_3B6: 8 ACP3_MCU
 
-BO_ 951 IPM_3B7: 8 IPM
+BO_ 951 ACP3_MCU_3B7: 8 ACP3_MCU
 
-BO_ 952 IPM_3B8: 8 IPM
+BO_ 952 ACP3_MCU_3B8: 8 ACP3_MCU
 
 BO_ 962 CAN2_RX_CGM_SYSTEM_POWER_MODE_STATUS: 8 CGM
  SG_ SystemPowerModeProtectionFailSafe : 0|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -301,19 +301,19 @@ BO_ 963 CAN2_RX_CGM_AUTHENTICATED_POWER_MODE: 8 CGM
 
 BO_ 964 CAN2_RX_3C4: 8 CGM
 
-BO_ 971 IPM_AXLE_TORQUE_STATUS_FV: 8 IPM
+BO_ 971 ACP3_MCU_AXLE_TORQUE_STATUS_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 972 CAN2_RX_3CC: 8 Vector__XXX
 
-BO_ 974 IPM_STEERING_REQUEST_HIGH_RES_FV: 8 IPM
+BO_ 974 ACP3_MCU_STEERING_REQUEST_HIGH_RES_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 1026 IPM_402: 24 IPM
+BO_ 1026 ACP3_MCU_402: 24 ACP3_MCU
 
-BO_ 1027 IPM_403: 6 IPM
+BO_ 1027 ACP3_MCU_403: 6 ACP3_MCU
 
-BO_ 1117 IPM_UNKNOWN_45D: 8 IPM
+BO_ 1117 ACP3_MCU_UNKNOWN_45D: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
@@ -321,59 +321,59 @@ BO_ 1149 CAN2_RX_47D: 8 CGM
 
 BO_ 1152 CAN2_RX_480: 8 CGM
 
-BO_ 1237 IPM_4D5: 8 IPM
+BO_ 1237 ACP3_MCU_4D5: 8 ACP3_MCU
 
-BO_ 1239 IPM_4D7: 12 IPM
+BO_ 1239 ACP3_MCU_4D7: 12 ACP3_MCU
 
 BO_ 1244 CAN2_RX_4DC: 6 CGM
 
-BO_ 1254 IPM_4E6: 12 IPM
+BO_ 1254 ACP3_MCU_4E6: 12 ACP3_MCU
 
-BO_ 1264 CAN2_RX_4F0: 6 Vector__XXX
+BO_ 1264 CAN2_RX_4F0: 6 ECP_E
 
 BO_ 1285 CAN2_RX_505: 6 Vector__XXX
 
-BO_ 1298 CAN2_RX_512: 8 Vector__XXX
+BO_ 1298 CAN2_RX_512: 8 BCM
 
-BO_ 1302 CAN2_RX_516: 8 Vector__XXX
+BO_ 1302 CAN2_RX_516: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
-BO_ 1304 IPM_518: 12 IPM
+BO_ 1304 ACP3_MCU_518: 12 ACP3_MCU
 
-BO_ 1308 CAN2_RX_51C: 8 Vector__XXX
+BO_ 1308 CAN2_RX_51C: 8 EBCM
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
-BO_ 1313 CAN2_RX_521: 8 Vector__XXX
+BO_ 1313 CAN2_RX_521: 8 VICM
 
-BO_ 1314 CAN2_RX_522: 6 Vector__XXX
+BO_ 1314 CAN2_RX_522: 6 DSM
 
 BO_ 1315 CAN2_RX_523: 8 CGM
 
-BO_ 1316 CAN2_RX_524: 8 Vector__XXX
+BO_ 1316 CAN2_RX_524: 8 BCM
 
-BO_ 1318 IPM_526: 12 IPM
+BO_ 1318 ACP3_MCU_526: 12 ACP3_MCU
 
-BO_ 1319 CAN2_RX_527: 7 Vector__XXX
+BO_ 1319 CAN2_RX_527: 7 TCP
 
-BO_ 1321 IPM_529: 12 IPM
+BO_ 1321 ACP3_MCU_529: 12 ACP3_MCU
 
-BO_ 1323 IPM_UNKNOWN_52B: 8 IPM
+BO_ 1323 ACP3_MCU_UNKNOWN_52B: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
-BO_ 1324 CAN2_RX_52C: 8 Vector__XXX
+BO_ 1324 CAN2_RX_52C: 8 BCM
 
-BO_ 1325 IPM_UNKNOWN_52D: 8 IPM
+BO_ 1325 ACP3_MCU_UNKNOWN_52D: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
-BO_ 1349 IPM_545: 8 IPM
+BO_ 1349 ACP3_MCU_545: 8 ACP3_MCU
 
-BO_ 1354 IPM_54A: 8 IPM
+BO_ 1354 ACP3_MCU_54A: 8 ACP3_MCU
 
-BO_ 1355 IPM_54B: 8 IPM
+BO_ 1355 ACP3_MCU_54B: 8 ACP3_MCU
 
 BO_ 1359 CAN2_RX_54F: 8 Vector__XXX
 
@@ -390,7 +390,7 @@ BO_ 1376 CAN2_RX_560: 8 Vector__XXX
 BO_ 1377 CAN2_RX_561: 8 Vector__XXX
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 1383 IPM_UNKNOWN_52B_FV: 8 IPM
+BO_ 1383 ACP3_MCU_UNKNOWN_52B_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 1384 CAN2_RX_568: 8 CGM
@@ -399,7 +399,7 @@ BO_ 1385 CAN2_RX_569: 8 CGM
 
 BO_ 1387 CAN2_RX_56B: 8 Vector__XXX
 
-BO_ 1393 IPM_UNKNOWN_52D_FV: 8 IPM
+BO_ 1393 ACP3_MCU_UNKNOWN_52D_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 1394 CAN2_RX_572: 8 Vector__XXX
@@ -416,27 +416,27 @@ BO_ 1404 CAN2_RX_57C: 8 Vector__XXX
 BO_ 1405 CGM_VEHICLE_POWER_MODE_FV: 8 CGM
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 1406 IPM_57E: 6 IPM
+BO_ 1406 ACP3_MCU_57E: 6 ACP3_MCU
 
 BO_ 1407 CAN2_RX_57F: 16 CGM
 
-BO_ 1408 CAN2_RX_580: 6 Vector__XXX
+BO_ 1408 CAN2_RX_580: 6 BCM
 
-BO_ 1409 CAN2_RX_581: 6 Vector__XXX
+BO_ 1409 CAN2_RX_581: 6 BCM
 
 BO_ 1410 CAN2_RX_582: 6 Vector__XXX
 
-BO_ 1412 CAN2_RX_584: 6 Vector__XXX
+BO_ 1412 CAN2_RX_584: 6 RRR_SIDE
 
-BO_ 1415 IPM_587: 8 IPM
+BO_ 1415 ACP3_MCU_587: 8 ACP3_MCU
 
-BO_ 1416 IPM_588: 12 IPM
+BO_ 1416 ACP3_MCU_588: 12 ACP3_MCU
 
-BO_ 1417 IPM_589: 8 IPM
+BO_ 1417 ACP3_MCU_589: 8 ACP3_MCU
 
-BO_ 1421 IPM_58D: 6 IPM
+BO_ 1421 ACP3_MCU_58D: 6 ACP3_MCU
 
-BO_ 1422 IPM_58E: 8 IPM
+BO_ 1422 ACP3_MCU_58E: 8 ACP3_MCU
 
 BO_ 1424 CAN2_RX_590: 8 CGM
 
@@ -450,7 +450,7 @@ BO_ 1429 CAN2_RX_595: 6 Vector__XXX
 
 BO_ 1430 CAN2_RX_596: 6 Vector__XXX
 
-BO_ 1431 IPM_597: 6 IPM
+BO_ 1431 ACP3_MCU_597: 6 ACP3_MCU
 
 BO_ 1433 CAN2_RX_599: 6 Vector__XXX
 
@@ -462,7 +462,7 @@ BO_ 1442 CAN2_RX_5A2: 32 CGM
 
 BO_ 1444 CAN2_RX_5A4: 6 CGM
 
-BO_ 1449 IPM_5A9: 6 IPM
+BO_ 1449 ACP3_MCU_5A9: 6 ACP3_MCU
 
 BO_ 1466 CAN2_RX_5BA: 8 CGM
 
@@ -470,38 +470,38 @@ BO_ 1469 CAN2_RX_5BD: 6 CGM
 
 BO_ 1476 CAN2_RX_5C4: 6 CGM
 
-BO_ 1481 CAN2_RX_5C9: 8 Vector__XXX
+BO_ 1481 CAN2_RX_5C9: 8 EBCM
 
-BO_ 1482 CAN2_RX_5CA: 6 Vector__XXX
+BO_ 1482 CAN2_RX_5CA: 6 EBCM
 
-BO_ 1483 CAN2_RX_5CB: 8 Vector__XXX
+BO_ 1483 CAN2_RX_5CB: 8 EBCM
 
 BO_ 1490 CAN2_RX_5D2: 6 Vector__XXX
 
-BO_ 1498 IPM_5DA: 6 IPM
+BO_ 1498 ACP3_MCU_5DA: 6 ACP3_MCU
 
-BO_ 1499 IPM_5DB: 6 IPM
+BO_ 1499 ACP3_MCU_5DB: 6 ACP3_MCU
 
-BO_ 1500 IPM_5DC: 8 IPM
+BO_ 1500 ACP3_MCU_5DC: 8 ACP3_MCU
 
 BO_ 1529 CAN2_RX_5F9: 32 CGM
 
-BO_ 1535 IPM_5FF: 6 IPM
+BO_ 1535 ACP3_MCU_5FF: 6 ACP3_MCU
 
-BO_ 1811 IPM_713: 6 IPM
+BO_ 1811 ACP3_MCU_713: 6 ACP3_MCU
 
-BO_ 1818 IPM_71A: 6 IPM
+BO_ 1818 ACP3_MCU_71A: 6 ACP3_MCU
 
-BO_ 1822 IPM_71E: 6 IPM
+BO_ 1822 ACP3_MCU_71E: 6 ACP3_MCU
 
-BO_ 1828 IPM_724: 8 IPM
+BO_ 1828 ACP3_MCU_724: 8 ACP3_MCU
 
-BO_ 1829 IPM_725: 8 IPM
+BO_ 1829 ACP3_MCU_725: 8 ACP3_MCU
 
-BO_ 1949 IPM_UNKNOWN_45D_FV: 8 IPM
+BO_ 1949 ACP3_MCU_UNKNOWN_45D_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 2147745830 IPM_NodeStatus_CAN2: 1 IPM
+BO_ 2147745830 ACP3_MCU_NodeStatus_CAN2: 1 ACP3_MCU
  SG_ NodeStatusBit0 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 49 CAN2_RX_031: 8 Vector__XXX
@@ -540,121 +540,130 @@ BO_ 1380 CAN2_RX_564: 8 Vector__XXX
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 
-CM_ BO_ 47 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 50 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 58 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 59 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 62 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 63 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 66 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 72 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 84 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 174 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 175 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 182 "Raw-forwarded by CGM to CAN2 from CAN4 0x209 or CAN8 0x0C0 and received by IPM; application layout is unknown.";
-CM_ BO_ 186 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 192 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 226 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 545 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 586 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 597 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 610 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 614 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 615 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 616 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 622 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 624 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 634 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 640 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 659 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
-CM_ BO_ 674 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 675 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 683 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 691 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 693 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 702 "Raw-forwarded by CGM from CAN9 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 703 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 725 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
-CM_ BO_ 726 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
-CM_ BO_ 727 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 728 "Raw-forwarded by CGM from CAN9 0x2A9 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 873 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 876 "Raw-forwarded by CGM from CAN9 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 878 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 879 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 880 "Transmitted by CGM; the payload is assembled from decoded gateway signals.";
-CM_ BO_ 898 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 901 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 904 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 905 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 906 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 907 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 909 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 919 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 920 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 923 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 930 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
-CM_ BO_ 934 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 938 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 945 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 962 "Transmitted by CGM and received by IPM; reports protected system-power-mode fail-safe status.";
-CM_ BO_ 963 "Transmitted by CGM and received by IPM; carries authenticated power-state inputs.";
+BO_ 171 CAN2_RX_0AB: 12 CGM
+
+BO_ 529 CAN2_RX_211: 64 Vector__XXX
+
+BO_ 1171 CAN2_RX_493: 8 ARS
+
+BO_ 1413 CAN2_RX_585: 1 CGM
+
+
+CM_ BO_ 47 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 50 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 58 "Transmitter: EPS. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 59 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 62 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 63 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 66 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 72 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 84 "Transmitter: EPS. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 174 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 175 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 182 "Transmitter: CGM. Raw-forwarded by CGM to CAN2 from CAN4 0x209 or CAN8 0x0C0 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN4 0x209 -> CAN2; raw CAN8 0x0C0 -> CAN2; network-to-CAN relay on CAN2.";
+CM_ BO_ 186 "Transmitter: CGM. Generated from ACP3_SOC network data and received by ACP3_MCU; application layout is unknown. CGM route: network-to-CAN relay on CAN2 from ACP3_SOC data.";
+CM_ BO_ 192 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 226 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 545 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 586 "Transmitter remains unresolved. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 597 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x255 -> CAN2.";
+CM_ BO_ 610 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 614 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 615 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 616 "Transmitter: VICM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 622 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x26E -> CAN2.";
+CM_ BO_ 624 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 634 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 640 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x280 -> CAN2.";
+CM_ BO_ 659 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 674 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 675 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 683 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 691 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 693 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 702 "Transmitter: CGM. Raw-forwarded by CGM from CAN9 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN9 0x2BE -> CAN2.";
+CM_ BO_ 703 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 725 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 726 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 727 "Transmitter: TCP. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 728 "Transmitter: CGM. Raw-forwarded by CGM from CAN9 0x2A9 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN9 0x2A9 -> CAN2.";
+CM_ BO_ 873 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 876 "Transmitter: CGM. Raw-forwarded by CGM from CAN9 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN9 0x36C -> CAN2.";
+CM_ BO_ 878 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 879 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 880 "Transmitter: CGM. Transmitted by CGM; the payload is assembled from decoded gateway signals. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 898 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x382 -> CAN2.";
+CM_ BO_ 901 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 904 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 905 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 906 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 907 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 909 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 919 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 920 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 923 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 930 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 934 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 938 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 945 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 962 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; reports protected system-power-mode fail-safe status. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 963 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; carries authenticated power-state inputs. CGM route: signal-gateway output on CAN2.";
 CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
-CM_ BO_ 964 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
-CM_ BO_ 972 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1149 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 1152 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 1244 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
-CM_ BO_ 1264 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1285 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1298 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1302 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1308 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1313 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1314 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1315 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 1316 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1319 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1324 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1355 "Transmitted by IPM and also registered as an IPM receive PDU.";
-CM_ BO_ 1359 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1369 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1373 "Raw-forwarded by CGM from CAN9 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 1374 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1376 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1377 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1384 "Raw-forwarded by CGM to CAN2 from CAN4 or CAN9 and received by IPM; application layout is unknown.";
-CM_ BO_ 1385 "Raw-forwarded by CGM from CAN5 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 1387 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1394 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1396 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1402 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1403 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1404 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1407 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
-CM_ BO_ 1408 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1409 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1410 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1412 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1424 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
-CM_ BO_ 1426 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1427 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1428 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1429 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1430 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1433 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1435 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1441 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
-CM_ BO_ 1442 "Raw-forwarded by CGM from CAN9 0x5A1 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 1444 "Raw-forwarded by CGM from CAN8 0x594 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 1466 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
-CM_ BO_ 1469 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
-CM_ BO_ 1476 "Raw-forwarded by CGM from CAN5 0x494 to CAN2 and received by IPM; application layout is unknown.";
-CM_ BO_ 1481 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1482 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1483 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1490 "Received by IPM; transmitter and application layout are unknown.";
-CM_ BO_ 1529 "Transmitted by CGM and received by IPM; payload is assembled from decoded gateway signals, but its application semantics are unknown.";
+CM_ BO_ 964 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 972 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1149 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x47D -> CAN2.";
+CM_ BO_ 1152 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x480 -> CAN2.";
+CM_ BO_ 1244 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 1264 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1285 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1298 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1302 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1308 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1313 "Transmitter: VICM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1314 "Transmitter: DSM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1315 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x523 -> CAN2.";
+CM_ BO_ 1316 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1319 "Transmitter: TCP. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1324 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1355 "Transmitter: ACP3_MCU. Also registered as an ACP3_MCU receive PDU.";
+CM_ BO_ 1359 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1369 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1373 "Transmitter: CGM. Raw-forwarded by CGM from CAN9 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN9 0x55D -> CAN2.";
+CM_ BO_ 1374 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1376 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1377 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1384 "Transmitter: CGM. Raw-forwarded by CGM to CAN2 from CAN4 or CAN9 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN4 0x568 -> CAN2; raw CAN9 0x568 -> CAN2.";
+CM_ BO_ 1385 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x569 -> CAN2.";
+CM_ BO_ 1387 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1394 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1396 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1402 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1403 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1404 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1407 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 1408 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1409 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1410 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1412 "Transmitter: RRR_SIDE. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1424 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 1426 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1427 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1428 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1429 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1430 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1433 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1435 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1441 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 1442 "Transmitter: CGM. Raw-forwarded by CGM from CAN9 0x5A1 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN9 0x5A1 -> CAN2.";
+CM_ BO_ 1444 "Transmitter: CGM. Raw-forwarded by CGM from CAN8 0x594 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN8 0x594 -> CAN2.";
+CM_ BO_ 1466 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 1469 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 1476 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 0x494 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x494 -> CAN2.";
+CM_ BO_ 1481 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1482 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1483 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1490 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1529 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
 
 VAL_ 187 SteeringWheelAngleValid 0 "Invalid" 1 "Valid";
 VAL_ 526 AxleTorqueRequestActive 0 "Inactive" 1 "Active";
@@ -678,6 +687,19 @@ VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
 VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
 VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
 VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";
+
+CM_ BO_ 171 "Transmitter: CGM. Application layout is not yet defined. CGM route: raw CAN3 0x0AB -> CAN2.";
+CM_ BO_ 525 "Transmitter: ACP3_MCU. Application layout is not yet defined.";
+CM_ BO_ 529 "Transmitter remains unresolved. Application layout is not yet defined.";
+CM_ BO_ 635 "Transmitter: EBCM. Application layout is not yet defined.";
+CM_ BO_ 1171 "Transmitter: ARS. Application layout is not yet defined.";
+CM_ BO_ 1413 "Transmitter: CGM. Application layout is not yet defined. CGM route: signal-gateway output on CAN2.";
+
+CM_ BO_ 225 "Transmitter: ACP3_MCU. Additional CGM route: network-to-CAN relay on CAN2.";
+CM_ BO_ 1321 "Transmitter: ACP3_MCU. Additional CGM route: network-to-CAN relay on CAN2.";
+CM_ BO_ 1405 "Transmitter: CGM. CGM route: signal-gateway output on CAN2.";
+CM_ BO_ 1500 "Transmitter: ACP3_MCU. Additional CGM route: network-to-CAN relay on CAN2 from ACP3_SOC data.";
+CM_ BO_ 1829 "Transmitter: ACP3_MCU. Additional CGM route: network-to-CAN relay on CAN2.";
 
 BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
 BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","StandardCAN_FD","ExtendedCAN_FD";
@@ -979,6 +1001,15 @@ BA_ "VFrameFormat" BO_ 1828 4;
 BA_ "VFrameFormat" BO_ 1829 4;
 BA_ "VFrameFormat" BO_ 1949 4;
 BA_ "VFrameFormat" BO_ 2147745830 1;
+BA_ "VFrameFormat" BO_ 49 4;
+BA_ "VFrameFormat" BO_ 51 4;
+BA_ "VFrameFormat" BO_ 101 4;
+BA_ "VFrameFormat" BO_ 588 4;
+BA_ "VFrameFormat" BO_ 874 4;
+BA_ "VFrameFormat" BO_ 970 4;
+BA_ "VFrameFormat" BO_ 1300 4;
+BA_ "VFrameFormat" BO_ 1375 4;
+BA_ "VFrameFormat" BO_ 1380 4;
 BA_ "SecOCDataId" BO_ 47 1;
 BA_ "SecOCCompanionId" BO_ 47 674;
 BA_ "SecOCDataId" BO_ 49 1;
@@ -1045,3 +1076,7 @@ BA_ "GenMsgCycleTime" BO_ 1404 1000;
 BA_ "SecOCDataId" BO_ 635 1;
 BA_ "SecOCCompanionId" BO_ 635 694;
 BA_ "GenMsgCycleTime" BO_ 694 1600;
+BA_ "VFrameFormat" BO_ 171 4;
+BA_ "VFrameFormat" BO_ 529 4;
+BA_ "VFrameFormat" BO_ 1171 4;
+BA_ "VFrameFormat" BO_ 1413 4;
