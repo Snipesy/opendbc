@@ -9,7 +9,7 @@ NS_ :
 
 BS_:
 
-BU_: IPM CGM CAMERA RadarNodeA RadarNodeB RadarNodeC RadarNodeD RadarNodeE Vector__XXX
+BU_: IPM CGM CAMERA PARK_ASSIST RadarNodeA RadarNodeB RadarNodeC RadarNodeD RadarNodeE Vector__XXX
 
 CM_ "GM Global B Super Cruise 1 physical CAN8 database. Unknown transmitters use Vector__XXX. RawField numbers are local to each message and do not identify a shared signal across messages.";
 
@@ -37,6 +37,20 @@ BO_ 178 RadarNodeC_Sync_0B2: 8 RadarNodeC
  SG_ SlowCounter : 40|4@1+ (1,0) [0|15] "" IPM
  SG_ CycleCounter : 52|4@1+ (1,0) [0|15] "" IPM
  SG_ CRC8_SAE_J1850 : 56|8@1+ (1,0) [0|255] "" IPM
+
+BO_ 180 PARK_ASSIST_ULTRASONIC_BANK_A_0B4: 48 PARK_ASSIST
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" IPM
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" IPM
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" IPM
+ SG_ ApplicationHeaderRaw : 40|8@1+ (1,0) [0|255] "" IPM
+ SG_ UltrasonicRecord1Raw : 48|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ UltrasonicRecord2Raw : 96|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ UltrasonicRecord3Raw : 144|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ UltrasonicRecord4Raw : 192|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ UltrasonicRecord5Raw : 240|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ UltrasonicRecord6Raw : 288|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ ApplicationTailRaw : 336|16@1+ (1,0) [0|65535] "" IPM
+ SG_ ReservedTail : 352|32@1+ (1,0) [0|4294967295] "" IPM
 
 BO_ 181 RadarNodeD_Sync_0B5: 8 RadarNodeD
  SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" IPM
@@ -1236,12 +1250,32 @@ BO_ 520 RadarNodeA_ObjectPage4_208: 64 RadarNodeA
 BO_ 522 RadarNodeB_Aux1_20A: 48 RadarNodeB
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" IPM
 
+BO_ 532 PARK_ASSIST_ULTRASONIC_BANK_B_214: 48 PARK_ASSIST
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" IPM
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" IPM
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" IPM
+ SG_ ApplicationHeaderRaw : 40|8@1+ (1,0) [0|255] "" IPM
+ SG_ UltrasonicRecord1Raw : 48|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ UltrasonicRecord2Raw : 96|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ UltrasonicRecord3Raw : 144|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ UltrasonicRecord4Raw : 192|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ UltrasonicRecord5Raw : 240|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ UltrasonicRecord6Raw : 288|48@1+ (1,0) [0|281474976710655] "" IPM
+ SG_ ApplicationTailRaw : 336|16@1+ (1,0) [0|65535] "" IPM
+ SG_ ReservedTail : 352|32@1+ (1,0) [0|4294967295] "" IPM
+
 BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
  SG_ VehiclePowerMode : 37|3@1+ (1,0) [0|7] "" Vector__XXX
  SG_ PowerModeGate : 36|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 882 IPM_UNKNOWN_021_FV: 8 IPM
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 883 PARK_ASSIST_ULTRASONIC_BANK_B_FV: 8 PARK_ASSIST
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" IPM
+
+BO_ 884 PARK_ASSIST_ULTRASONIC_BANK_A_FV: 8 PARK_ASSIST
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" IPM
 
 BO_ 962 CGM_SYSTEM_POWER_MODE_STATUS: 8 CGM
  SG_ SystemPowerModeProtectionFailSafe : 0|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -1267,6 +1301,8 @@ VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";
 CM_ BO_ 880 "Transmitted by CGM; the payload is assembled from decoded gateway signals.";
 CM_ BO_ 962 "Transmitted by CGM; reports protected system-power-mode fail-safe status.";
 CM_ BO_ 963 "Transmitted by CGM; carries authenticated power-state inputs.";
+CM_ BO_ 180 "Authenticated parking-assist ultrasonic bank containing six repeated six-byte records. Banks A and B are likely the front and rear sensor groups, but their physical assignment and record ordering are not yet established.";
+CM_ BO_ 532 "Authenticated parking-assist ultrasonic bank containing six repeated six-byte records. Banks A and B are likely the front and rear sensor groups, but their physical assignment and record ordering are not yet established.";
 CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
 
 BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
@@ -1279,11 +1315,18 @@ BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
 BA_ "SecOCKeyRole" BO_ 33 "safety_control_key";
 BA_ "SecOCDataId" BO_ 33 1;
 BA_ "SecOCCompanionId" BO_ 33 882;
+BA_ "SecOCKeyRole" BO_ 180 "parking_assist_key";
+BA_ "SecOCDataId" BO_ 180 1;
+BA_ "SecOCCompanionId" BO_ 180 884;
+BA_ "SecOCKeyRole" BO_ 532 "parking_assist_key";
+BA_ "SecOCDataId" BO_ 532 1;
+BA_ "SecOCCompanionId" BO_ 532 883;
 BA_ "SecOCKeyRole" BO_ 880 "central_gateway_key";
 BA_ "GenMsgCycleTime" BO_ 33 100;
 BA_ "GenMsgCycleTime" BO_ 117 50;
 BA_ "GenMsgCycleTime" BO_ 174 50;
 BA_ "GenMsgCycleTime" BO_ 178 50;
+BA_ "GenMsgCycleTime" BO_ 180 40;
 BA_ "GenMsgCycleTime" BO_ 181 50;
 BA_ "GenMsgCycleTime" BO_ 183 50;
 BA_ "GenMsgCycleTime" BO_ 190 50;
@@ -1331,8 +1374,11 @@ BA_ "GenMsgCycleTime" BO_ 518 50;
 BA_ "GenMsgCycleTime" BO_ 519 50;
 BA_ "GenMsgCycleTime" BO_ 520 50;
 BA_ "GenMsgCycleTime" BO_ 522 50;
+BA_ "GenMsgCycleTime" BO_ 532 40;
 BA_ "GenMsgCycleTime" BO_ 880 250;
 BA_ "GenMsgCycleTime" BO_ 882 1600;
+BA_ "GenMsgCycleTime" BO_ 883 640;
+BA_ "GenMsgCycleTime" BO_ 884 640;
 BA_ "GenMsgCycleTime" BO_ 962 1000;
 BA_ "GenMsgCycleTime" BO_ 963 1000;
 BA_ "GenMsgCycleTime" BO_ 2147745830 1000;
@@ -1340,6 +1386,7 @@ BA_ "VFrameFormat" BO_ 33 4;
 BA_ "VFrameFormat" BO_ 117 4;
 BA_ "VFrameFormat" BO_ 174 4;
 BA_ "VFrameFormat" BO_ 178 4;
+BA_ "VFrameFormat" BO_ 180 4;
 BA_ "VFrameFormat" BO_ 181 4;
 BA_ "VFrameFormat" BO_ 183 4;
 BA_ "VFrameFormat" BO_ 190 4;
@@ -1387,5 +1434,8 @@ BA_ "VFrameFormat" BO_ 518 4;
 BA_ "VFrameFormat" BO_ 519 4;
 BA_ "VFrameFormat" BO_ 520 4;
 BA_ "VFrameFormat" BO_ 522 4;
+BA_ "VFrameFormat" BO_ 532 4;
 BA_ "VFrameFormat" BO_ 882 4;
+BA_ "VFrameFormat" BO_ 883 4;
+BA_ "VFrameFormat" BO_ 884 4;
 BA_ "VFrameFormat" BO_ 2147745830 1;
