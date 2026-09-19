@@ -218,7 +218,7 @@ class TestGmGlobalB:
   def test_dbc_declares_known_key_roles_per_message(self):
     expected_bus2 = {
       "safety_control_key": {0x03A, 0x054, 0x057, 0x0BB, 0x20D, 0x20E, 0x24B, 0x271, 0x284, 0x45D, 0x52B, 0x52D},
-      "shared_secoc_key_a": {0x03B, 0x042, 0x270, 0x27B, 0x369, 0x51C},
+      "shared_secoc_key_a": {0x03B, 0x042, 0x270, 0x27B, 0x369, 0x36A, 0x51C},
       "secoc_key_032_group": {0x032},
       "secoc_key_048_group": {0x048},
       "secoc_key_266_group": {0x266},
@@ -234,11 +234,12 @@ class TestGmGlobalB:
 
     observed_family = {msg.address for msg in dbc.msgs.values()
                        if msg.attrs.get("SecOCObservedKeyFamily") == "shared_secoc_family_b"}
-    assert observed_family == {0x02F, 0x032, 0x048, 0x0E2, 0x262, 0x266, 0x267, 0x36F, 0x516}
+    assert observed_family == {0x02F, 0x031, 0x032, 0x033, 0x048, 0x065, 0x0E2, 0x24C,
+                               0x262, 0x266, 0x267, 0x36F, 0x514, 0x516}
 
     candidates = "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group"
     ambiguous = {msg.address for msg in dbc.msgs.values() if msg.attrs.get("SecOCKeyCandidates") == candidates}
-    assert ambiguous == {0x02F, 0x0E2, 0x262, 0x267, 0x516}
+    assert ambiguous == {0x02F, 0x031, 0x033, 0x065, 0x0E2, 0x24C, 0x262, 0x267, 0x514, 0x516}
 
     for bus in (3, 5, 8):
       dbc = DBC(f"gm_global_b_supercruise1_secoc_bus{bus}")

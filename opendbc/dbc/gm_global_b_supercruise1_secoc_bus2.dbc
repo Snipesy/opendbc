@@ -14,20 +14,32 @@ BU_: IPM CGM Vector__XXX
 CM_ "GM Global B Super Cruise 1 physical CAN2 database. Unknown transmitters use Vector__XXX.";
 
 BO_ 47 CAN2_RX_02F: 32 Vector__XXX
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
 
 BO_ 50 CAN2_RX_032: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
 BO_ 58 CAN2_RX_03A: 20 Vector__XXX
 
 BO_ 59 CAN2_RX_03B: 64 Vector__XXX
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
 
 BO_ 62 CAN2_RX_03E: 8 Vector__XXX
 
 BO_ 63 CAN2_RX_03F: 4 Vector__XXX
 
 BO_ 66 CAN2_RX_042: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
 BO_ 72 CAN2_RX_048: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
 BO_ 84 CAN2_RX_054: 8 Vector__XXX
 
@@ -85,6 +97,9 @@ BO_ 192 CAN2_RX_0C0: 2 Vector__XXX
 BO_ 225 IPM_0E1: 16 IPM
 
 BO_ 226 CAN2_RX_0E2: 20 Vector__XXX
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
 
 BO_ 525 IPM_UNKNOWN_20D: 8 IPM
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
@@ -118,16 +133,26 @@ BO_ 587 IPM_AXLE_TORQUE_STATUS: 12 IPM
 BO_ 597 CAN2_RX_255: 8 CGM
 
 BO_ 610 CAN2_RX_262: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
 BO_ 614 CAN2_RX_266: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
 BO_ 615 CAN2_RX_267: 20 Vector__XXX
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
 
 BO_ 616 CAN2_RX_268: 8 Vector__XXX
 
 BO_ 622 CAN2_RX_26E: 8 CGM
 
 BO_ 624 CAN2_RX_270: 12 Vector__XXX
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
 
 BO_ 625 IPM_STEERING_REQUEST_COARSE: 8 IPM
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
@@ -163,12 +188,14 @@ BO_ 644 IPM_STEERING_REQUEST_HIGH_RES: 12 IPM
 BO_ 659 CAN2_RX_293: 12 CGM
 
 BO_ 674 CAN2_RX_2A2: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 675 CAN2_RX_2A3: 8 Vector__XXX
 
 BO_ 683 CAN2_RX_2AB: 8 Vector__XXX
 
 BO_ 691 CAN2_RX_2B3: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 693 CAN2_RX_2B5: 8 Vector__XXX
 
@@ -190,12 +217,16 @@ BO_ 727 CAN2_RX_2D7: 8 Vector__XXX
 BO_ 728 CAN2_RX_2D8: 8 CGM
 
 BO_ 873 CAN2_RX_369: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
 BO_ 876 CAN2_RX_36C: 16 CGM
 
 BO_ 878 CAN2_RX_36E: 8 Vector__XXX
 
 BO_ 879 CAN2_RX_36F: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
 BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
@@ -213,8 +244,10 @@ BO_ 902 IPM_LONGITUDINAL_REQUEST_STATUS_FV: 8 IPM
 BO_ 904 CAN2_RX_388: 8 Vector__XXX
 
 BO_ 905 CAN2_RX_389: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 906 CAN2_RX_38A: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 907 CAN2_RX_38B: 8 Vector__XXX
 
@@ -224,6 +257,7 @@ BO_ 914 IPM_HOST_VEHICLE_DYNAMICS_FV: 8 IPM
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 919 CAN2_RX_397: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 920 CAN2_RX_398: 8 Vector__XXX
 
@@ -302,10 +336,14 @@ BO_ 1285 CAN2_RX_505: 6 Vector__XXX
 BO_ 1298 CAN2_RX_512: 8 Vector__XXX
 
 BO_ 1302 CAN2_RX_516: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
 BO_ 1304 IPM_518: 12 IPM
 
 BO_ 1308 CAN2_RX_51C: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
 
 BO_ 1313 CAN2_RX_521: 8 Vector__XXX
 
@@ -340,14 +378,17 @@ BO_ 1355 IPM_54B: 8 IPM
 BO_ 1359 CAN2_RX_54F: 8 Vector__XXX
 
 BO_ 1369 CAN2_RX_559: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 1373 CAN2_RX_55D: 8 CGM
 
 BO_ 1374 CAN2_RX_55E: 8 Vector__XXX
 
 BO_ 1376 CAN2_RX_560: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 1377 CAN2_RX_561: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 1383 IPM_UNKNOWN_52B_FV: 8 IPM
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
@@ -370,6 +411,7 @@ BO_ 1402 CAN2_RX_57A: 8 Vector__XXX
 BO_ 1403 CAN2_RX_57B: 8 Vector__XXX
 
 BO_ 1404 CAN2_RX_57C: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 1405 CGM_VEHICLE_POWER_MODE_FV: 8 CGM
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
@@ -461,6 +503,42 @@ BO_ 1949 IPM_UNKNOWN_45D_FV: 8 IPM
 
 BO_ 2147745830 IPM_NodeStatus_CAN2: 1 IPM
  SG_ NodeStatusBit0 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 49 CAN2_RX_031: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+
+BO_ 51 CAN2_RX_033: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+
+BO_ 101 CAN2_RX_065: 20 Vector__XXX
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 588 CAN2_RX_24C: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+
+BO_ 874 CAN2_RX_36A: 8 Vector__XXX
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+
+BO_ 1300 CAN2_RX_514: 12 Vector__XXX
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 970 CAN2_RX_3CA: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 1375 CAN2_RX_55F: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
+BO_ 1380 CAN2_RX_564: 8 Vector__XXX
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+
 
 CM_ BO_ 47 "Received by IPM; transmitter and application layout are unknown.";
 CM_ BO_ 50 "Received by IPM; transmitter and application layout are unknown.";
@@ -901,3 +979,69 @@ BA_ "VFrameFormat" BO_ 1828 4;
 BA_ "VFrameFormat" BO_ 1829 4;
 BA_ "VFrameFormat" BO_ 1949 4;
 BA_ "VFrameFormat" BO_ 2147745830 1;
+BA_ "SecOCDataId" BO_ 47 1;
+BA_ "SecOCCompanionId" BO_ 47 674;
+BA_ "SecOCDataId" BO_ 49 1;
+BA_ "SecOCCompanionId" BO_ 49 674;
+BA_ "SecOCDataId" BO_ 50 1;
+BA_ "SecOCCompanionId" BO_ 50 674;
+BA_ "SecOCDataId" BO_ 51 1;
+BA_ "SecOCCompanionId" BO_ 51 674;
+BA_ "SecOCDataId" BO_ 59 1;
+BA_ "SecOCCompanionId" BO_ 59 691;
+BA_ "SecOCDataId" BO_ 66 1;
+BA_ "SecOCCompanionId" BO_ 66 691;
+BA_ "SecOCDataId" BO_ 72 1;
+BA_ "SecOCCompanionId" BO_ 72 674;
+BA_ "SecOCDataId" BO_ 101 1;
+BA_ "SecOCCompanionId" BO_ 101 674;
+BA_ "SecOCDataId" BO_ 226 1;
+BA_ "SecOCCompanionId" BO_ 226 906;
+BA_ "SecOCDataId" BO_ 588 1;
+BA_ "SecOCCompanionId" BO_ 588 970;
+BA_ "SecOCDataId" BO_ 610 1;
+BA_ "SecOCCompanionId" BO_ 610 1369;
+BA_ "SecOCDataId" BO_ 614 1;
+BA_ "SecOCCompanionId" BO_ 614 1369;
+BA_ "SecOCDataId" BO_ 615 1;
+BA_ "SecOCCompanionId" BO_ 615 905;
+BA_ "SecOCDataId" BO_ 624 1;
+BA_ "SecOCCompanionId" BO_ 624 919;
+BA_ "SecOCDataId" BO_ 873 1;
+BA_ "SecOCCompanionId" BO_ 873 1377;
+BA_ "SecOCDataId" BO_ 874 1;
+BA_ "SecOCCompanionId" BO_ 874 1380;
+BA_ "SecOCDataId" BO_ 879 1;
+BA_ "SecOCCompanionId" BO_ 879 1404;
+BA_ "SecOCDataId" BO_ 1300 1;
+BA_ "SecOCCompanionId" BO_ 1300 1375;
+BA_ "SecOCDataId" BO_ 1302 1;
+BA_ "SecOCCompanionId" BO_ 1302 1375;
+BA_ "SecOCDataId" BO_ 1308 1;
+BA_ "SecOCCompanionId" BO_ 1308 1376;
+BA_ "SecOCObservedKeyFamily" BO_ 49 "shared_secoc_family_b";
+BA_ "SecOCKeyCandidates" BO_ 49 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
+BA_ "SecOCObservedKeyFamily" BO_ 51 "shared_secoc_family_b";
+BA_ "SecOCKeyCandidates" BO_ 51 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
+BA_ "SecOCObservedKeyFamily" BO_ 101 "shared_secoc_family_b";
+BA_ "SecOCKeyCandidates" BO_ 101 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
+BA_ "SecOCObservedKeyFamily" BO_ 588 "shared_secoc_family_b";
+BA_ "SecOCKeyCandidates" BO_ 588 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
+BA_ "SecOCKeyRole" BO_ 874 "shared_secoc_key_a";
+BA_ "SecOCObservedKeyFamily" BO_ 1300 "shared_secoc_family_b";
+BA_ "SecOCKeyCandidates" BO_ 1300 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
+BA_ "GenMsgCycleTime" BO_ 674 200;
+BA_ "GenMsgCycleTime" BO_ 691 160;
+BA_ "GenMsgCycleTime" BO_ 905 1064;
+BA_ "GenMsgCycleTime" BO_ 906 400;
+BA_ "GenMsgCycleTime" BO_ 919 1600;
+BA_ "GenMsgCycleTime" BO_ 970 1600;
+BA_ "GenMsgCycleTime" BO_ 1369 1600;
+BA_ "GenMsgCycleTime" BO_ 1375 3500;
+BA_ "GenMsgCycleTime" BO_ 1376 3500;
+BA_ "GenMsgCycleTime" BO_ 1377 1000;
+BA_ "GenMsgCycleTime" BO_ 1380 1000;
+BA_ "GenMsgCycleTime" BO_ 1404 1000;
+BA_ "SecOCDataId" BO_ 635 1;
+BA_ "SecOCCompanionId" BO_ 635 694;
+BA_ "GenMsgCycleTime" BO_ 694 1600;
