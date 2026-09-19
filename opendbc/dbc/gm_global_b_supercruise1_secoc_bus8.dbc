@@ -1,17 +1,12 @@
 VERSION "GM Global B Super Cruise 1 CAN8"
-
 NS_ :
     CM_
     BA_DEF_
     BA_
     BA_DEF_DEF_
     VAL_
-
 BS_:
-
 BU_: ACP3_MCU CGM FCM PARK_ASSIST LRR LFR RFR LCRR LRR_SIDE RRR_SIDE Vector__XXX
-
-CM_ "GM Global B Super Cruise 1 physical CAN8 database. Unknown transmitters use Vector__XXX. RawField numbers are local to each message and do not identify a shared signal across messages.";
 
 BO_ 33 ACP3_MCU_UNKNOWN_021: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
@@ -1292,17 +1287,6 @@ BO_ 1405 CGM_VEHICLE_POWER_MODE_FV: 8 CGM
 BO_ 2147745830 ACP3_MCU_NodeStatus_CAN8: 1 ACP3_MCU
  SG_ NodeStatusBit0 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
 
-VAL_ 117 StateRaw 1 "Unknown_State_1";
-VAL_ 174 StateRaw 1 "Unknown_State_1";
-VAL_ 178 StateRaw 1 "Unknown_State_1";
-VAL_ 181 StateRaw 1 "Unknown_State_1";
-VAL_ 183 StateRaw 1 "Unknown_State_1";
-VAL_ 880 VehiclePowerMode 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
-VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
-VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
-VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
-VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";
-
 BO_ 213 CAN8_RX_0D5: 64 LRR
 
 BO_ 214 CAN8_RX_0D6: 64 LRR
@@ -1325,7 +1309,7 @@ BO_ 719 CAN8_RX_2CF: 4 LCRR
 
 BO_ 1317 CAN8_RX_525: 8 FCM
 
-
+CM_ "GM Global B Super Cruise 1 physical CAN8 database. Unknown transmitters use Vector__XXX. RawField numbers are local to each message and do not identify a shared signal across messages.";
 CM_ BO_ 880 "Transmitter: CGM. Transmitted by CGM; the payload is assembled from decoded gateway signals. CGM route: signal-gateway output on CAN8.";
 CM_ BO_ 962 "Transmitter: CGM. Transmitted by CGM; reports protected system-power-mode fail-safe status. CGM route: signal-gateway output on CAN8.";
 CM_ BO_ 963 "Transmitter: CGM. Transmitted by CGM; carries authenticated power-state inputs. CGM route: signal-gateway output on CAN8.";
@@ -1336,8 +1320,6 @@ CM_ BO_ 181 "Transmitter remains unresolved. Radar synchronization/status frame.
 CM_ BO_ 183 "Transmitter remains unresolved. Radar synchronization/status frame.";
 CM_ BO_ 180 "Transmitter: PARK_ASSIST. Authenticated parking-assist ultrasonic bank containing six repeated six-byte records. Banks A and B are likely the front and rear sensor groups, but their physical assignment and record ordering are not yet established.";
 CM_ BO_ 532 "Transmitter: PARK_ASSIST. Authenticated parking-assist ultrasonic bank containing six repeated six-byte records. Banks A and B are likely the front and rear sensor groups, but their physical assignment and record ordering are not yet established.";
-CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
-
 CM_ BO_ 190 "Transmitter: RRR_SIDE.";
 CM_ BO_ 191 "Transmitter: RRR_SIDE.";
 CM_ BO_ 193 "Transmitter: RRR_SIDE.";
@@ -1394,16 +1376,18 @@ CM_ BO_ 594 "Transmitter: PARK_ASSIST.";
 CM_ BO_ 681 "Transmitter: LCRR.";
 CM_ BO_ 719 "Transmitter: LCRR.";
 CM_ BO_ 1317 "Transmitter: FCM.";
-
 CM_ BO_ 1405 "Transmitter: CGM. CGM route: signal-gateway output on CAN8.";
+CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
 
 BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
 BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","StandardCAN_FD","ExtendedCAN_FD";
 BA_DEF_ BO_ "SecOCKeyRole" STRING;
 BA_DEF_ BO_ "SecOCDataId" INT 0 255;
 BA_DEF_ BO_ "SecOCCompanionId" INT 0 536870911;
+
 BA_DEF_DEF_ "GenMsgCycleTime" 0;
 BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
+
 BA_ "SecOCKeyRole" BO_ 33 "safety_control_key";
 BA_ "SecOCDataId" BO_ 33 1;
 BA_ "SecOCCompanionId" BO_ 33 882;
@@ -1556,3 +1540,14 @@ BA_ "VFrameFormat" BO_ 594 4;
 BA_ "VFrameFormat" BO_ 681 4;
 BA_ "VFrameFormat" BO_ 719 4;
 BA_ "VFrameFormat" BO_ 1317 4;
+
+VAL_ 117 StateRaw 1 "Unknown_State_1";
+VAL_ 174 StateRaw 1 "Unknown_State_1";
+VAL_ 178 StateRaw 1 "Unknown_State_1";
+VAL_ 181 StateRaw 1 "Unknown_State_1";
+VAL_ 183 StateRaw 1 "Unknown_State_1";
+VAL_ 880 VehiclePowerMode 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
+VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
+VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
+VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
+VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";

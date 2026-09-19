@@ -1,13 +1,8 @@
 VERSION "GM Global B Super Cruise 1 Vehicle Dynamics CAN"
-
 NS_ :
     CM_
-
 BS_:
-
 BU_: VDS Vector__XXX
-
-CM_ "GM Global B Super Cruise 1 Vehicle Dynamics CAN database. Payload layouts and frame format remain unresolved.";
 
 BO_ 73 VEHICLE_DYNAMICS_RX_049: 8 VDS
 
@@ -15,6 +10,7 @@ BO_ 74 VEHICLE_DYNAMICS_RX_04A: 8 VDS
 
 BO_ 75 VEHICLE_DYNAMICS_RX_04B: 8 VDS
 
+CM_ "GM Global B Super Cruise 1 Vehicle Dynamics CAN database. Payload layouts and frame format remain unresolved.";
 CM_ BO_ 73 "Transmitter: VDS. Application layout is not yet defined.";
 CM_ BO_ 74 "Transmitter: VDS. Application layout is not yet defined.";
 CM_ BO_ 75 "Transmitter: VDS. Application layout is not yet defined.";

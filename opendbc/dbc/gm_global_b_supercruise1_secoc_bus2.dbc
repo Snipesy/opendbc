@@ -1,17 +1,12 @@
 VERSION "GM Global B Super Cruise 1 CAN2"
-
 NS_ :
     CM_
     BA_DEF_
     BA_
     BA_DEF_DEF_
     VAL_
-
 BS_:
-
 BU_: ACP3_MCU CGM ECP_E EBCM EPS ARS BCM DSM TCP VICM RRR_SIDE Vector__XXX
-
-CM_ "GM Global B Super Cruise 1 physical CAN2 database. Unknown transmitters use Vector__XXX.";
 
 BO_ 47 CAN2_RX_02F: 32 ECP_E
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
@@ -539,7 +534,6 @@ BO_ 1375 CAN2_RX_55F: 8 Vector__XXX
 BO_ 1380 CAN2_RX_564: 8 Vector__XXX
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-
 BO_ 171 CAN2_RX_0AB: 12 CGM
 
 BO_ 529 CAN2_RX_211: 64 Vector__XXX
@@ -548,7 +542,7 @@ BO_ 1171 CAN2_RX_493: 8 ARS
 
 BO_ 1413 CAN2_RX_585: 1 CGM
 
-
+CM_ "GM Global B Super Cruise 1 physical CAN2 database. Unknown transmitters use Vector__XXX.";
 CM_ BO_ 47 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 50 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 58 "Transmitter: EPS. Received by ACP3_MCU; application layout is unknown.";
@@ -608,7 +602,6 @@ CM_ BO_ 938 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unkn
 CM_ BO_ 945 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 962 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; reports protected system-power-mode fail-safe status. CGM route: signal-gateway output on CAN2.";
 CM_ BO_ 963 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; carries authenticated power-state inputs. CGM route: signal-gateway output on CAN2.";
-CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
 CM_ BO_ 964 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
 CM_ BO_ 972 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 1149 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x47D -> CAN2.";
@@ -664,42 +657,18 @@ CM_ BO_ 1482 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unk
 CM_ BO_ 1483 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 1490 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 1529 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
-
-VAL_ 187 SteeringWheelAngleValid 0 "Invalid" 1 "Valid";
-VAL_ 526 AxleTorqueRequestActive 0 "Inactive" 1 "Active";
-VAL_ 526 AdaptiveCruiseBrakeControlActive 0 "Inactive" 1 "Active";
-VAL_ 526 AdaptiveCruiseBrakeRequestActive 0 "Inactive" 1 "Active";
-VAL_ 526 CollisionMitigationBrakeTorqueRequestActive 0 "Inactive" 1 "Active";
-VAL_ 526 LaneCenteringAcceleratorLimitRequest 0 "Inactive" 1 "Active";
-VAL_ 587 AxleTorqueStatusA 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
-VAL_ 587 AxleTorqueStatusB 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
-VAL_ 587 AxleTorqueValid 0 "Invalid" 1 "Valid";
-VAL_ 625 SteeringRequestState 0 "Unknown_State_0" 3 "Unknown_State_3" 6 "Unknown_State_6";
-VAL_ 625 SteeringRequestStatus 1 "Unknown_Status_1" 2 "Unknown_Status_2";
-VAL_ 625 SteeringRequestCalibrationStateFlag 0 "Inactive" 1 "Active";
-VAL_ 625 SteeringRequestTransitionFlag 0 "No_Transition" 1 "Transition";
-VAL_ 644 SteeringRequestState 0 "Unknown_State_0" 3 "Unknown_State_3" 6 "Unknown_State_6";
-VAL_ 644 SteeringRequestStatus 1 "Unknown_Status_1" 2 "Unknown_Status_2";
-VAL_ 644 SteeringRequestCalibrationStateFlag 0 "Inactive" 1 "Active";
-VAL_ 644 SteeringRequestTransitionFlag 0 "No_Transition" 1 "Transition";
-VAL_ 880 VehiclePowerMode 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
-VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
-VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
-VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
-VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";
-
 CM_ BO_ 171 "Transmitter: CGM. Application layout is not yet defined. CGM route: raw CAN3 0x0AB -> CAN2.";
 CM_ BO_ 525 "Transmitter: ACP3_MCU. Application layout is not yet defined.";
 CM_ BO_ 529 "Transmitter remains unresolved. Application layout is not yet defined.";
 CM_ BO_ 635 "Transmitter: EBCM. Application layout is not yet defined.";
 CM_ BO_ 1171 "Transmitter: ARS. Application layout is not yet defined.";
 CM_ BO_ 1413 "Transmitter: CGM. Application layout is not yet defined. CGM route: signal-gateway output on CAN2.";
-
 CM_ BO_ 225 "Transmitter: ACP3_MCU. Additional CGM route: network-to-CAN relay on CAN2.";
 CM_ BO_ 1321 "Transmitter: ACP3_MCU. Additional CGM route: network-to-CAN relay on CAN2.";
 CM_ BO_ 1405 "Transmitter: CGM. CGM route: signal-gateway output on CAN2.";
 CM_ BO_ 1500 "Transmitter: ACP3_MCU. Additional CGM route: network-to-CAN relay on CAN2 from ACP3_SOC data.";
 CM_ BO_ 1829 "Transmitter: ACP3_MCU. Additional CGM route: network-to-CAN relay on CAN2.";
+CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
 
 BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
 BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","StandardCAN_FD","ExtendedCAN_FD";
@@ -708,8 +677,10 @@ BA_DEF_ BO_ "SecOCObservedKeyFamily" STRING;
 BA_DEF_ BO_ "SecOCKeyCandidates" STRING;
 BA_DEF_ BO_ "SecOCDataId" INT 0 255;
 BA_DEF_ BO_ "SecOCCompanionId" INT 0 536870911;
+
 BA_DEF_DEF_ "GenMsgCycleTime" 0;
 BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
+
 BA_ "SecOCObservedKeyFamily" BO_ 47 "shared_secoc_family_b";
 BA_ "SecOCKeyCandidates" BO_ 47 "secoc_key_032_group,secoc_key_048_group,secoc_key_266_group,secoc_key_36f_group";
 BA_ "SecOCKeyRole" BO_ 50 "secoc_key_032_group";
@@ -1080,3 +1051,26 @@ BA_ "VFrameFormat" BO_ 171 4;
 BA_ "VFrameFormat" BO_ 529 4;
 BA_ "VFrameFormat" BO_ 1171 4;
 BA_ "VFrameFormat" BO_ 1413 4;
+
+VAL_ 187 SteeringWheelAngleValid 0 "Invalid" 1 "Valid";
+VAL_ 526 AxleTorqueRequestActive 0 "Inactive" 1 "Active";
+VAL_ 526 AdaptiveCruiseBrakeControlActive 0 "Inactive" 1 "Active";
+VAL_ 526 AdaptiveCruiseBrakeRequestActive 0 "Inactive" 1 "Active";
+VAL_ 526 CollisionMitigationBrakeTorqueRequestActive 0 "Inactive" 1 "Active";
+VAL_ 526 LaneCenteringAcceleratorLimitRequest 0 "Inactive" 1 "Active";
+VAL_ 587 AxleTorqueStatusA 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 587 AxleTorqueStatusB 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 587 AxleTorqueValid 0 "Invalid" 1 "Valid";
+VAL_ 625 SteeringRequestState 0 "Unknown_State_0" 3 "Unknown_State_3" 6 "Unknown_State_6";
+VAL_ 625 SteeringRequestStatus 1 "Unknown_Status_1" 2 "Unknown_Status_2";
+VAL_ 625 SteeringRequestCalibrationStateFlag 0 "Inactive" 1 "Active";
+VAL_ 625 SteeringRequestTransitionFlag 0 "No_Transition" 1 "Transition";
+VAL_ 644 SteeringRequestState 0 "Unknown_State_0" 3 "Unknown_State_3" 6 "Unknown_State_6";
+VAL_ 644 SteeringRequestStatus 1 "Unknown_Status_1" 2 "Unknown_Status_2";
+VAL_ 644 SteeringRequestCalibrationStateFlag 0 "Inactive" 1 "Active";
+VAL_ 644 SteeringRequestTransitionFlag 0 "No_Transition" 1 "Transition";
+VAL_ 880 VehiclePowerMode 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
+VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
+VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
+VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
+VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";

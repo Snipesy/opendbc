@@ -1,17 +1,12 @@
 VERSION "GM Global B Super Cruise 1 CAN3"
-
 NS_ :
     CM_
     BA_DEF_
     BA_
     BA_DEF_DEF_
     VAL_
-
 BS_:
-
 BU_: ACP3_MCU CGM SDM PARK_ASSIST VLM TCP Vector__XXX
-
-CM_ "GM Global B Super Cruise 1 physical CAN3 database. Unknown transmitters use Vector__XXX.";
 
 BO_ 528 ACP3_MCU_MEASUREMENT_STATUS: 12 ACP3_MCU
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
@@ -99,32 +94,10 @@ BO_ 1409 CAN3_RX_581: 6 CGM
 
 BO_ 1410 CAN3_RX_582: 6 PARK_ASSIST
 
-
-VAL_ 528 StatusA 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
-VAL_ 528 StatusB 0 "Unknown_0" 1 "Unknown_1";
-VAL_ 528 StatusC 0 "Unknown_0" 1 "Unknown_1";
-VAL_ 528 StatusD 0 "Unknown_0" 1 "Unknown_1";
-VAL_ 528 Status_E 0 "Unknown_0" 1 "Unknown_1";
-VAL_ 881 StateValue 0 "Unknown_State_0" 7 "Unknown_State_7";
-VAL_ 881 StatusA 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3" 4 "Unknown_Status_4" 5 "Unknown_Status_5" 6 "Unknown_Status_6" 7 "Unknown_Status_7";
-VAL_ 881 StatusB 0 "Unknown_0" 1 "Unknown_1";
-VAL_ 881 StatusC 0 "Unknown_0" 1 "Unknown_1";
-VAL_ 881 StatusD 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
-VAL_ 881 Status_E 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
-VAL_ 881 StatusF 0 "Unknown_0" 1 "Unknown_1";
-VAL_ 881 StatusG 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3" 4 "Unknown_Status_4" 5 "Unknown_Status_5" 6 "Unknown_Status_6" 7 "Unknown_Status_7" 8 "Unknown_Status_8" 9 "Unknown_Status_9" 10 "Unknown_Status_10" 11 "Unknown_Status_11" 12 "Unknown_Status_12" 13 "Unknown_Status_13" 14 "Unknown_Status_14" 15 "Unknown_Status_15";
-VAL_ 881 StatusH 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
-VAL_ 880 VehiclePowerMode 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
-VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
-VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
-VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
-VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";
-
+CM_ "GM Global B Super Cruise 1 physical CAN3 database. Unknown transmitters use Vector__XXX.";
 CM_ BO_ 880 "Transmitter: CGM. Transmitted by CGM; the payload is assembled from decoded gateway signals. CGM route: signal-gateway output on CAN3.";
 CM_ BO_ 962 "Transmitter: CGM. Transmitted by CGM; reports protected system-power-mode fail-safe status. CGM route: signal-gateway output on CAN3.";
 CM_ BO_ 963 "Transmitter: CGM. Transmitted by CGM; carries authenticated power-state inputs. CGM route: signal-gateway output on CAN3.";
-CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
-
 CM_ BO_ 57 "Transmitter: SDM. Application layout is not yet defined.";
 CM_ BO_ 228 "Transmitter: CGM. Application layout is not yet defined. CGM route: raw CAN1 0x0E4 -> CAN3.";
 CM_ BO_ 603 "Transmitter: TCP. Application layout is not yet defined.";
@@ -137,18 +110,20 @@ CM_ BO_ 1320 "Transmitter: SDM. Application layout is not yet defined.";
 CM_ BO_ 1322 "Transmitter: SDM. Application layout is not yet defined.";
 CM_ BO_ 1409 "Transmitter: CGM. Application layout is not yet defined. CGM route: signal-gateway output on CAN3.";
 CM_ BO_ 1410 "Transmitter: PARK_ASSIST. Application layout is not yet defined.";
-
 CM_ BO_ 528 "Transmitter: ACP3_MCU. Additional CGM route: raw CAN2 0x210 -> CAN3; raw CAN8 0x210 -> CAN3.";
 CM_ BO_ 671 "Transmitter: ACP3_MCU. Additional CGM route: raw CAN2 0x29F -> CAN3; raw CAN8 0x29F -> CAN3.";
 CM_ BO_ 1405 "Transmitter: CGM. CGM route: signal-gateway output on CAN3.";
+CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
 
 BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
 BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","StandardCAN_FD","ExtendedCAN_FD";
 BA_DEF_ BO_ "SecOCKeyRole" STRING;
 BA_DEF_ BO_ "SecOCDataId" INT 0 255;
 BA_DEF_ BO_ "SecOCCompanionId" INT 0 536870911;
+
 BA_DEF_DEF_ "GenMsgCycleTime" 0;
 BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
+
 BA_ "SecOCKeyRole" BO_ 528 "safety_control_key";
 BA_ "SecOCDataId" BO_ 528 1;
 BA_ "SecOCCompanionId" BO_ 528 671;
@@ -191,3 +166,23 @@ BA_ "VFrameFormat" BO_ 1320 4;
 BA_ "VFrameFormat" BO_ 1322 4;
 BA_ "VFrameFormat" BO_ 1409 4;
 BA_ "VFrameFormat" BO_ 1410 4;
+
+VAL_ 528 StatusA 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 528 StatusB 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 528 StatusC 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 528 StatusD 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 528 Status_E 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 881 StateValue 0 "Unknown_State_0" 7 "Unknown_State_7";
+VAL_ 881 StatusA 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3" 4 "Unknown_Status_4" 5 "Unknown_Status_5" 6 "Unknown_Status_6" 7 "Unknown_Status_7";
+VAL_ 881 StatusB 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 881 StatusC 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 881 StatusD 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 881 Status_E 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 881 StatusF 0 "Unknown_0" 1 "Unknown_1";
+VAL_ 881 StatusG 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3" 4 "Unknown_Status_4" 5 "Unknown_Status_5" 6 "Unknown_Status_6" 7 "Unknown_Status_7" 8 "Unknown_Status_8" 9 "Unknown_Status_9" 10 "Unknown_Status_10" 11 "Unknown_Status_11" 12 "Unknown_Status_12" 13 "Unknown_Status_13" 14 "Unknown_Status_14" 15 "Unknown_Status_15";
+VAL_ 881 StatusH 0 "Unknown_Status_0" 1 "Unknown_Status_1" 2 "Unknown_Status_2" 3 "Unknown_Status_3";
+VAL_ 880 VehiclePowerMode 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
+VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
+VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
+VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
+VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";
