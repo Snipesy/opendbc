@@ -113,7 +113,7 @@ BO_ 587 IPM_AXLE_TORQUE_STATUS: 12 IPM
  SG_ AxleTorqueStatusA : 66|2@0+ (1,0) [0|3] "" Vector__XXX
  SG_ AxleTorqueStatusB : 64|2@0+ (1,0) [0|3] "" Vector__XXX
  SG_ AxleTorqueValid : 78|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ SecOCFreshnessLow : 89|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RollingCounter : 89|2@0+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 597 CAN2_RX_255: 8 CGM
 
