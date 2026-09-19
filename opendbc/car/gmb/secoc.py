@@ -48,12 +48,12 @@ from opendbc.car import Bus
 from opendbc.car.secoc import MAC, Companion, SecOcCatalog, SecOcMessage, SecOcProfile, layout_from_dbc
 
 # Signals a secured message may declare, and the tail field each one is. Which of them a
-# message actually has is the DBC's to say: the 27 bit layout has no status field.
-SECOC_SIGNALS = ((MAC, "AUTHENTICATOR"), ("msg", "SECOC_FRESHNESS"), ("flags", "SECOC_AUX"))
+# message actually has is the DBC's to say: only the 32 bit layout needs alignment padding.
+SECOC_SIGNALS = ((MAC, "AUTHENTICATOR"), ("msg", "SECOC_FRESHNESS"), ("pad", "SECOC_PADDING"))
 
 # The two tail layouts. These are a property of the scheme rather than of any one platform or
 # feature, so they are named for the shape and nothing else: which one a message uses is its
-# DBC's to say, through the width of its AUTHENTICATOR and whether it declares a SECOC_AUX
+# DBC's to say, through the width of its AUTHENTICATOR and whether it declares SECOC_PADDING
 # field. A Scheme refuses anything outside its layouts, so a change to a DBC that yields some
 # third layout is visible rather than silently absorbed.
 #
@@ -70,12 +70,10 @@ LAYOUT_27 = SecOcProfile(
 )
 
 # 32 bit: authenticator in bytes 0..3, counter in the top 5 bits of byte 4, payload from
-# offset 5. The low 3 bits of byte 4 are not padding: on the wire they are zero the
-# overwhelming majority of the time and otherwise sparse and non-uniform, which is a status
-# field rather than MAC or counter bits. They are preserved from the packer's frame rather
-# than synthesized. Whether they fall under the MAC is unresolved: the authenticated payload
-# is taken to start at offset 5.
-LAYOUT_32 = replace(LAYOUT_27, tail_layout=((MAC, 32), ("msg", 5), ("flags", 3)), signals=SECOC_SIGNALS)
+# offset 5. The low 3 bits of byte 4 are reserved byte-alignment padding and are not
+# authenticated. authenticate() preserves them while replacing the security fields; a
+# normally packed frame leaves them zero.
+LAYOUT_32 = replace(LAYOUT_27, tail_layout=((MAC, 32), ("msg", 5), ("pad", 3)), signals=SECOC_SIGNALS)
 
 # What a DBC may yield, as (tail layout, tail offset).
 LAYOUTS = frozenset((p.tail_layout, p.tail_offset) for p in (LAYOUT_27, LAYOUT_32))

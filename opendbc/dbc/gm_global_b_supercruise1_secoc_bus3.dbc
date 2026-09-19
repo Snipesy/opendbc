@@ -16,7 +16,7 @@ CM_ "GM Global B Super Cruise 1 physical CAN3 database. Unknown transmitters use
 BO_ 528 IPM_MEASUREMENT_STATUS: 12 IPM
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
- SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ SECOC_PADDING : 34|3@0+ (1,0) [0|7] "" Vector__XXX
  SG_ QuantityA : 47|12@0+ (0.01,-20.48) [-20.48|20.47] "" Vector__XXX
  SG_ QuantityB : 51|9@0- (0.1,0) [-25.6|25.5] "" Vector__XXX
  SG_ StatusA : 56|2@1+ (1,0) [0|3] "" Vector__XXX

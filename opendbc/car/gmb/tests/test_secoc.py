@@ -17,7 +17,7 @@ GM_FRAMES = [
   (0x271, 0x0AC9629C, "0000001c" + "bb" * 4),  # 27 bit, 8 byte
   (0x057, 0x1181C862, "0000000010" + "dd" * 27),  # 32 bit, 32 byte
   (0x24B, 0x0ABEB919, "00000000c8" + "ee" * 7),  # 32 bit, 12 byte
-  (0x284, 0x1181C85E, "00000000f4" + "ff" * 7),  # 32 bit, 12 byte, auxiliary bits set
+  (0x284, 0x1181C85E, "00000000f4" + "ff" * 7),  # 32 bit, 12 byte, padding bits set
 ]
 
 # Explicit protocol inventory. The catalog is derived from the DBCs' transmitter and signal
@@ -74,15 +74,19 @@ class TestGmGlobalB:
     in_band = out[3] & 0x1F if msg.profile.mac_bits == 27 else out[4] >> 3
     assert in_band == freshness & 0x1F
 
-  def test_auxiliary_bits_beside_the_freshness_are_preserved(self):
-    # byte 4 of the 32 bit layout carries three semantically unknown auxiliary bits below the
-    # freshness; they belong to the packer's frame and the authenticator must not clobber them
+  def test_alignment_padding_is_outside_the_mac_and_preserved(self):
+    # The CMAC payload begins at byte 5, so authenticate must neither cover nor clobber byte
+    # 4's three alignment bits.
     msg = GM_CATALOG[(2, 0x284)]
-    for aux in range(8):
-      src = bytes([0, 0, 0, 0, aux]) + b"\x11" * 7
+    outputs = []
+    for pad in range(8):
+      src = bytes([0, 0, 0, 0, pad]) + b"\x11" * 7
       _, out, _ = authenticate(KEY, msg, {'msg': 0x1181C85E}, (0x284, src, 0))
-      assert out[4] & 0x07 == aux
+      assert out[4] & 0x07 == pad
       assert out[4] >> 3 == 0x1181C85E & 0x1F
+      outputs.append(out)
+
+    assert len({out[:4] for out in outputs}) == 1, "padding must not change the MAC"
 
   def test_refuses_a_frame_too_short_to_sign(self):
     # truncating instead would emit a short frame that presents as a bad key downstream
@@ -191,7 +195,7 @@ class TestGmGlobalB:
 
     # a scheme admitting only the 32 bit layout refuses the DBCs' 27 bit messages by name
     narrow = Scheme(name="narrow", dbcs=SUPERCRUISE1.dbcs, transmitter="IPM", bus_roles={2: Bus.pt},
-                    layouts=frozenset({((('mac', 32), ("msg", 5), ("flags", 3)), 0)}))
+                    layouts=frozenset({((('mac', 32), ("msg", 5), ("pad", 3)), 0)}))
     with pytest.raises(ValueError, match="narrow does not know"):
       narrow.catalog  # noqa: B018
     assert SUPERCRUISE1.profile is LAYOUT_27, "the MAC construction is the scheme's to choose"

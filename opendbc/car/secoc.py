@@ -98,7 +98,7 @@ class SecOcProfile:
 
   The MAC is taken over [header][payload][freshness], or [header][freshness][payload] when
   freshness_before_payload is set. The frame carries the tail, the authenticator with any
-  truncated freshness and status bits beside it, at tail_offset; the payload is everything
+  truncated freshness and other wire bits beside it, at tail_offset; the payload is everything
   outside the tail.
 
   A scheme's synchronization message, if it has one, is described by a profile of its own:
@@ -274,7 +274,7 @@ def authenticate(key: bytes, msg: SecOcMessage, ctx: Context, can_msg: CanMsg) -
 
   The context carries the counters the scheme's layouts name, such as the per-message counter
   under 'msg'. The address and data id are added here. Tail fields the context does not name,
-  such as status bits the packer set beside the truncated counter, are kept from the frame.
+  such as reserved bits the packer set beside the truncated counter, are kept from the frame.
   """
   addr, data, bus = can_msg
   p = msg.profile
