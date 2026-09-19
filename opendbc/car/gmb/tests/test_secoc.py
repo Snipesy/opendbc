@@ -10,6 +10,14 @@ from opendbc.car.secoc import SecOcAuthenticator, SecOcCatalog, SecOcMessage, ae
 
 KEY = bytes(range(16))
 GM_CATALOG = SUPERCRUISE1.catalog
+CGM_BUSES = (2, 3, 5, 8)
+CGM = Scheme(
+  name="cgm",
+  dbcs={bus: f"gm_global_b_supercruise1_secoc_bus{bus}" for bus in CGM_BUSES},
+  transmitter="CGM",
+  bus_roles={2: Bus.pt},
+)
+CGM_CATALOG = CGM.catalog
 
 # Synthetic frames covering both layouts and both DLC families.
 GM_FRAMES = [
@@ -186,10 +194,19 @@ class TestGmGlobalB:
 
   def test_a_scheme_is_one_module_on_one_variant(self):
     # the same DBCs seen from another module yield that module's secured frames: the CGM
-    # transmits on every bus here and secures nothing, so its catalog is empty
-    cgm = Scheme(name="cgm", dbcs=SUPERCRUISE1.dbcs, transmitter="CGM", bus_roles={2: Bus.pt})
-    assert len(cgm.catalog) == 0
-    assert cgm.catalog is cgm.catalog, "built once, on first use"
+    # transmits secured 0x370 on all four buses without changing the IPM catalog
+    assert {msg.ref for msg in CGM_CATALOG} == {(bus, 0x370) for bus in CGM_BUSES}
+    assert {msg.ref for msg in GM_CATALOG} == set(EXPECTED_TX)
+    assert CGM.catalog is CGM_CATALOG, "built once, on first use"
+
+    for msg in CGM_CATALOG:
+      assert (msg.profile.tail_layout, msg.profile.tail_offset) == (LAYOUT_27.tail_layout, 0)
+      assert (msg.data_id, msg.key_id) == (1, "central_gateway_key")
+      assert (msg.companion.addr, msg.companion.size, msg.companion.cycle_time) == (0x57D, 8, 1000)
+
+    port = SUPERCRUISE1.port_catalog({Bus.pt: CanBus.POWERTRAIN})
+    assert {msg.ref for msg in port} == {(CanBus.POWERTRAIN, addr) for bus, addr in EXPECTED_TX if bus == 2}
+    assert (CanBus.POWERTRAIN, 0x370) not in port
 
     # a scheme admitting only the 32 bit layout refuses the DBCs' 27 bit messages by name
     narrow = Scheme(name="narrow", dbcs=SUPERCRUISE1.dbcs, transmitter="IPM", bus_roles={2: Bus.pt},

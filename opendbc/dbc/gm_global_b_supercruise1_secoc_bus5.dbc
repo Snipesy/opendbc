@@ -13,6 +13,8 @@ BU_: CGM RADIO Vector__XXX
 CM_ "GM Global B Super Cruise 1 physical CAN5 database. This database contains high-confidence power-related layouts; unknown transmitters use Vector__XXX.";
 
 BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ VehiclePowerMode : 37|3@1+ (1,0) [0|7] "" Vector__XXX
  SG_ PowerModeGate : 36|1@1+ (1,0) [0|1] "" Vector__XXX
 
@@ -38,6 +40,9 @@ BO_ 1179 VEHICLE_IDENTITY: 8 Vector__XXX
 
 BO_ 1269 CGM_AUXILIARY_POWER_MODE: 8 CGM
  SG_ AuxiliaryPowerModeStatus : 34|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 1405 CGM_VEHICLE_POWER_MODE_FV: 8 CGM
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 1515 RADIO_POWER_STATE: 8 RADIO
  SG_ RadioPowerState : 11|5@1+ (1,0) [0|31] "" Vector__XXX
@@ -68,7 +73,13 @@ VAL_ 1133 PropulsionSystemStillActive 0 "Inactive" 1 "Active";
 VAL_ 1269 AuxiliaryPowerModeStatus 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
 VAL_ 1515 RadioPowerState 3 "Off" 5 "Run" 6 "Propulsion" 7 "Accessory" 13 "Theft_Locked" 15 "No_Vehicle_Identity";
 
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
 BA_DEF_ BO_ "SecOCKeyRole" STRING;
 BA_DEF_ BO_ "SecOCDataId" INT 0 255;
 BA_DEF_ BO_ "SecOCCompanionId" INT 0 536870911;
+BA_DEF_DEF_ "GenMsgCycleTime" 0;
 BA_ "SecOCKeyRole" BO_ 880 "central_gateway_key";
+BA_ "SecOCDataId" BO_ 880 1;
+BA_ "SecOCCompanionId" BO_ 880 1405;
+BA_ "GenMsgCycleTime" BO_ 880 250;
+BA_ "GenMsgCycleTime" BO_ 1405 1000;
