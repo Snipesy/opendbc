@@ -8,35 +8,93 @@ NS_ :
 BS_:
 BU_: ACP3_MCU CGM ECP_E EBCM EPS ARS BCM DSM TCP VICM RRR_SIDE Vector__XXX
 
-BO_ 47 CAN2_RX_02F: 32 ECP_E
+BO_ 47 ECP_E_AXLE_TORQUE: 32 ECP_E
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ ActualAxleTorque : 47|15@0+ (2,-22534) [-22534|43000] "Nm" Vector__XXX
+ SG_ ActualAxleTorqueInvalid : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SecondaryAxleTorque : 176|15@0+ (2,-22534) [-22534|43000] "Nm" Vector__XXX
+ SG_ SecondaryAxleTorqueInvalid : 193|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 239|2@0+ (1,0) [0|3] "" Vector__XXX
 
-BO_ 50 CAN2_RX_032: 8 ECP_E
+BO_ 50 ECP_E_TRANSMISSION_GEAR: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ EstimatedGear : 32|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ShiftLeverPosition : 43|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ShiftLeverPositionInvalid : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 54|2@0+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 58 CAN2_RX_03A: 20 EPS
-
-BO_ 59 CAN2_RX_03B: 64 EBCM
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ RollingCounter : 135|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 59 EBCM_BRAKE_WHEEL_DATA: 64 EBCM
+ SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ BrakePedalPosition : 105|8@0+ (0.392157,0) [0|100] "%" Vector__XXX
+ SG_ BrakePedalPositionInvalid : 113|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ChassisBrakeAxleTorque : 209|14@0+ (2,0) [0|32766] "Nm" Vector__XXX
+ SG_ ChassisBrakeAxleTorqueInvalid : 227|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ DriverIntendedTotalBrakeTorque : 226|14@0+ (2,0) [0|32766] "Nm" Vector__XXX
+ SG_ LeftFrontWheelDistanceEdges : 244|11@0+ (1,0) [0|2047] "edges" Vector__XXX
+ SG_ LeftFrontWheelDistanceInvalid : 249|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RightFrontWheelDistanceEdges : 248|11@0+ (1,0) [0|2047] "edges" Vector__XXX
+ SG_ RightFrontWheelDistanceInvalid : 269|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FrontWheelDistanceResetOccurrence : 268|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LeftRearWheelDistanceEdges : 303|11@0+ (1,0) [0|2047] "edges" Vector__XXX
+ SG_ LeftRearWheelDistanceInvalid : 308|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RightRearWheelDistanceEdges : 307|11@0+ (1,0) [0|2047] "edges" Vector__XXX
+ SG_ RightRearWheelDistanceInvalid : 312|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RearWheelDistanceResetOccurrence : 327|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LeftFrontWheelAngularVelocity : 356|14@0- (0.004,0) [-32.768|32.764] "rad/s" Vector__XXX
+ SG_ LeftFrontWheelAngularVelocityInvalid : 374|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RightFrontWheelAngularVelocity : 373|14@0- (0.004,0) [-32.768|32.764] "rad/s" Vector__XXX
+ SG_ RightFrontWheelAngularVelocityInvalid : 391|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LeftRearWheelAngularVelocity : 390|14@0- (0.004,0) [-32.768|32.764] "rad/s" Vector__XXX
+ SG_ LeftRearWheelAngularVelocityInvalid : 392|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RightRearWheelAngularVelocity : 407|14@0- (0.004,0) [-32.768|32.764] "rad/s" Vector__XXX
+ SG_ RightRearWheelAngularVelocityInvalid : 409|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 455|2@0+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 62 CAN2_RX_03E: 8 BCM
 
-BO_ 63 CAN2_RX_03F: 4 ECP_E
+BO_ 63 ECP_E_NOMINAL_ROAD_LOAD_AXLE_TORQUE: 4 ECP_E
+ SG_ NominalRoadLoadAxleTorque : 7|19@0- (0.125,-22534) [-55302|10233.875] "Nm" Vector__XXX
 
-BO_ 66 CAN2_RX_042: 8 EBCM
+BO_ 66 EBCM_DRIVER_APPLIED_BRAKE_PRESSURE: 8 EBCM
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ DriverAppliedBrakePressure : 55|10@0+ (20,0) [0|20460] "" Vector__XXX
+ SG_ DriverAppliedBrakePressureInvalid : 61|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 60|2@0+ (1,0) [0|3] "" Vector__XXX
 
-BO_ 72 CAN2_RX_048: 8 ECP_E
+BO_ 72 ECP_E_ELECTRIC_TRANSMISSION_RANGE: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ ElectricTransmissionRangePrimary : 32|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ ElectricShiftAutomaticParkingAssistControlActive : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ElectricShiftAutomaticParkingAssistControlStatus : 34|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ ElectronicShiftSecurePattern : 39|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ SecondaryEngineCompartmentAjar : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ElectricShiftAutomaticBrakingRequired : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ElectricShiftAutomaticBrakingRequestType : 45|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SecondaryEngineCompartmentAjarInvalid : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 51|2@0+ (1,0) [0|3] "" Vector__XXX
 
-BO_ 84 CAN2_RX_054: 8 EPS
+BO_ 84 EPS_STEERING_WHEEL_DATA: 8 EPS
+ SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
+ SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ SteeringWheelAngle : 39|15@0- (0.0625,0) [-1024|1023.9375] "deg" Vector__XXX
+ SG_ SteeringWheelAngleDataUnavailable : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SteeringWheelAngleInvalid : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ SteeringWheelAngleCalibrationStatus : 54|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ SteeringWheelAngleGradient : 52|11@0- (2,0) [-2048|2046] "deg/s" Vector__XXX
+ SG_ RollingCounter : 57|2@0+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 87 ACP3_MCU_HOST_VEHICLE_DYNAMICS: 32 ACP3_MCU
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
@@ -50,12 +108,12 @@ BO_ 87 ACP3_MCU_HOST_VEHICLE_DYNAMICS: 32 ACP3_MCU
  SG_ DynField06 : 57|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ DynField07 : 72|15@0+ (0.001,-16) [-16|16.767] "" Vector__XXX
  SG_ DynField08 : 89|2@0+ (1,0) [0|3] "" Vector__XXX
- SG_ VehicleSideslipAngle : 103|12@0+ (0.0625,-128) [-128|127.9375] "" Vector__XXX
+ SG_ VehicleSideslipAngle : 103|12@0+ (0.0625,-128) [-128|127.9375] "deg" Vector__XXX
  SG_ DynField10 : 107|14@0+ (1,-8192) [-8192|8191] "" Vector__XXX
  SG_ DynField11 : 125|8@0+ (0.1,-12.8) [-12.8|12.7] "" Vector__XXX
  SG_ DynField12 : 131|12@0+ (0.0625,-128) [-128|127.9375] "" Vector__XXX
  SG_ DynField13 : 133|2@0+ (1,0) [0|3] "" Vector__XXX
- SG_ VehicleYawRate : 150|12@0+ (0.0625,-128) [-128|127.9375] "" Vector__XXX
+ SG_ VehicleYawRate : 150|12@0+ (0.0625,-128) [-128|127.9375] "deg/s" Vector__XXX
  SG_ DynField15 : 151|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ DynField16 : 153|2@0+ (1,0) [0|3] "" Vector__XXX
  SG_ DynField17 : 154|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -127,13 +185,20 @@ BO_ 587 ACP3_MCU_AXLE_TORQUE_STATUS: 12 ACP3_MCU
 
 BO_ 597 CAN2_RX_255: 8 CGM
 
-BO_ 610 CAN2_RX_262: 8 ECP_E
+BO_ 610 ECP_E_NON_DRIVEN_VEHICLE_SPEED: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ AverageNonDrivenVehicleSpeed : 39|15@0+ (0.015625,0) [0|511.984375] "m/s" Vector__XXX
+ SG_ AverageNonDrivenVehicleSpeedInvalid : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 55|2@0+ (1,0) [0|3] "" Vector__XXX
 
-BO_ 614 CAN2_RX_266: 8 ECP_E
+BO_ 614 ECP_E_DRIVEN_VEHICLE_SPEED: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ AverageDrivenVehicleSpeed : 35|15@0+ (0.015625,0) [0|511.984375] "m/s" Vector__XXX
+ SG_ AverageDrivenVehicleSpeedInvalid : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AverageDrivenVehicleSpeedSource : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 50|2@0+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 615 CAN2_RX_267: 20 ECP_E
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
@@ -144,10 +209,17 @@ BO_ 616 CAN2_RX_268: 8 VICM
 
 BO_ 622 CAN2_RX_26E: 8 CGM
 
-BO_ 624 CAN2_RX_270: 12 EBCM
+BO_ 624 EBCM_WHEEL_ROTATION_DIRECTIONAL_STATUS: 12 EBCM
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ ActualVehicleAcceleration : 43|12@0- (0.01,0) [-20.48|20.47] "m/s^2" Vector__XXX
+ SG_ ActualVehicleAccelerationInvalid : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ LeftFrontWheelDirection : 62|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ LeftRearWheelDirection : 59|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ RightFrontWheelDirection : 56|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ RightRearWheelDirection : 69|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ RollingCounter : 66|2@0+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 625 ACP3_MCU_STEERING_REQUEST_COARSE: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
@@ -185,11 +257,12 @@ BO_ 659 CAN2_RX_293: 12 CGM
 BO_ 674 CAN2_RX_2A2: 8 Vector__XXX
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 675 CAN2_RX_2A3: 8 Vector__XXX
+BO_ 675 EPS_STEERING_WHEEL_DATA_FV: 8 EPS
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 683 CAN2_RX_2AB: 8 Vector__XXX
 
-BO_ 691 CAN2_RX_2B3: 8 Vector__XXX
+BO_ 691 EBCM_BRAKE_DATA_FV: 8 EBCM
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 693 CAN2_RX_2B5: 8 Vector__XXX
@@ -219,9 +292,23 @@ BO_ 876 CAN2_RX_36C: 16 CGM
 
 BO_ 878 CAN2_RX_36E: 8 BCM
 
-BO_ 879 CAN2_RX_36F: 8 ECP_E
+BO_ 879 ECP_E_PROPULSION_INFO: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ ConverterTorqueSpeedLimitResponseType : 39|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ ConverterTorqueSpeedLimitResponseValue : 36|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ClutchBottomTravelAchieved : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ClutchBottomTravelAchievedInvalid : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ EngineRunning : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ParkNeutralSwitchStatus : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ParkNeutralSwitchStatusInvalid : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PropulsionSystemActive : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PropulsionSystemStillActive : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PowertrainCrankAborted : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RemoteStartEngineRunning : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ VehicleTheftChallengeResponseStatus : 51|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RollingCounter : 49|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ PropulsionBrakeThrottleOverrideRequired : 63|1@0+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
@@ -251,7 +338,7 @@ BO_ 909 CAN2_RX_38D: 8 Vector__XXX
 BO_ 914 ACP3_MCU_HOST_VEHICLE_DYNAMICS_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 919 CAN2_RX_397: 8 Vector__XXX
+BO_ 919 EBCM_WHEEL_ROTATION_DIRECTIONAL_STATUS_FV: 8 EBCM
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 920 CAN2_RX_398: 8 Vector__XXX
@@ -330,15 +417,21 @@ BO_ 1285 CAN2_RX_505: 6 Vector__XXX
 
 BO_ 1298 CAN2_RX_512: 8 BCM
 
-BO_ 1302 CAN2_RX_516: 8 ECP_E
+BO_ 1302 ECP_E_WHEEL_DISTANCE_PER_REVOLUTION: 8 ECP_E
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ FrontWheelDistancePerRevolution : 39|10@0+ (3,800) [800|3869] "mm" Vector__XXX
+ SG_ RearWheelDistancePerRevolution : 45|10@0+ (3,800) [800|3869] "mm" Vector__XXX
+ SG_ RollingCounter : 51|2@0+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 1304 ACP3_MCU_518: 12 ACP3_MCU
 
-BO_ 1308 CAN2_RX_51C: 8 EBCM
+BO_ 1308 EBCM_WHEEL_EDGES_PER_REVOLUTION: 8 EBCM
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ WheelEdgesPerRevolutionFieldA : 47|7@0+ (1,30) [30|157] "edges/rev" Vector__XXX
+ SG_ WheelEdgesPerRevolutionFieldB : 40|7@0+ (1,30) [30|157] "edges/rev" Vector__XXX
+ SG_ RollingCounter : 49|2@0+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 1313 CAN2_RX_521: 8 VICM
 
@@ -372,7 +465,7 @@ BO_ 1355 ACP3_MCU_54B: 8 ACP3_MCU
 
 BO_ 1359 CAN2_RX_54F: 8 Vector__XXX
 
-BO_ 1369 CAN2_RX_559: 8 Vector__XXX
+BO_ 1369 ECP_E_VEHICLE_SPEED_FV: 8 ECP_E
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 1373 CAN2_RX_55D: 8 CGM
@@ -405,7 +498,7 @@ BO_ 1402 CAN2_RX_57A: 8 Vector__XXX
 
 BO_ 1403 CAN2_RX_57B: 8 Vector__XXX
 
-BO_ 1404 CAN2_RX_57C: 8 Vector__XXX
+BO_ 1404 ECP_E_PROPULSION_INFO_FV: 8 ECP_E
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 1405 CGM_VEHICLE_POWER_MODE_FV: 8 CGM
@@ -528,7 +621,7 @@ BO_ 1300 CAN2_RX_514: 12 Vector__XXX
 BO_ 970 CAN2_RX_3CA: 8 Vector__XXX
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 1375 CAN2_RX_55F: 8 Vector__XXX
+BO_ 1375 ECP_E_WHEEL_CALIBRATION_FV: 8 ECP_E
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 1380 CAN2_RX_564: 8 Vector__XXX
@@ -543,15 +636,15 @@ BO_ 1171 CAN2_RX_493: 8 ARS
 BO_ 1413 CAN2_RX_585: 1 CGM
 
 CM_ "GM Global B Super Cruise 1 physical CAN2 database. Unknown transmitters use Vector__XXX.";
-CM_ BO_ 47 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
-CM_ BO_ 50 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
-CM_ BO_ 58 "Transmitter: EPS. Received by ACP3_MCU; application layout is unknown.";
-CM_ BO_ 59 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 47 "Transmitter: ECP_E. Received by ACP3_MCU; carries actual axle torque and a second axle-torque channel whose precise role is not yet identified.";
+CM_ BO_ 50 "Transmitter: ECP_E. Received by ACP3_MCU; carries estimated gear and shift-lever position.";
+CM_ BO_ 58 "Transmitter: EPS. Received by ACP3_MCU; authenticated EPS data. The application fields other than the rolling counter are not yet identified.";
+CM_ BO_ 59 "Transmitter: EBCM. Received by ACP3_MCU; carries brake-pedal position, brake torque, wheel-distance edge counters, and wheel angular velocities.";
 CM_ BO_ 62 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
-CM_ BO_ 63 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
-CM_ BO_ 66 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
-CM_ BO_ 72 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
-CM_ BO_ 84 "Transmitter: EPS. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 63 "Transmitter: ECP_E. Received by ACP3_MCU; carries nominal road-load axle torque.";
+CM_ BO_ 66 "Transmitter: EBCM. Received by ACP3_MCU; carries driver-applied brake pressure. The field identity is supported by its scaling and correlation with brake-pedal position; the physical unit is not yet established.";
+CM_ BO_ 72 "Transmitter: ECP_E. Received by ACP3_MCU; carries primary electric transmission range and electronic-shift status.";
+CM_ BO_ 84 "Transmitter: EPS. Received by ACP3_MCU; carries steering-wheel angle, angle gradient, calibration status, and validity state.";
 CM_ BO_ 174 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 175 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 182 "Transmitter: CGM. Raw-forwarded by CGM to CAN2 from CAN4 0x209 or CAN8 0x0C0 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN4 0x209 -> CAN2; raw CAN8 0x0C0 -> CAN2; network-to-CAN relay on CAN2.";
@@ -561,19 +654,19 @@ CM_ BO_ 226 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unk
 CM_ BO_ 545 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 586 "Transmitter remains unresolved. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 597 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x255 -> CAN2.";
-CM_ BO_ 610 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
-CM_ BO_ 614 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 610 "Transmitter: ECP_E. Received by ACP3_MCU; carries average non-driven vehicle speed.";
+CM_ BO_ 614 "Transmitter: ECP_E. Received by ACP3_MCU; carries average driven vehicle speed.";
 CM_ BO_ 615 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 616 "Transmitter: VICM. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 622 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x26E -> CAN2.";
-CM_ BO_ 624 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 624 "Transmitter: EBCM. Received by ACP3_MCU; carries actual vehicle acceleration and the four wheel-direction states.";
 CM_ BO_ 634 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 640 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x280 -> CAN2.";
 CM_ BO_ 659 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
 CM_ BO_ 674 "Received by ACP3_MCU; transmitter and application layout are unknown.";
-CM_ BO_ 675 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 675 "Transmitter: EPS. Full freshness value for EPS_STEERING_WHEEL_DATA.";
 CM_ BO_ 683 "Received by ACP3_MCU; transmitter and application layout are unknown.";
-CM_ BO_ 691 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 691 "Transmitter: EBCM. Full freshness value shared by EBCM_BRAKE_WHEEL_DATA and EBCM_DRIVER_APPLIED_BRAKE_PRESSURE.";
 CM_ BO_ 693 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 702 "Transmitter: CGM. Raw-forwarded by CGM from CAN9 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN9 0x2BE -> CAN2.";
 CM_ BO_ 703 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
@@ -584,7 +677,7 @@ CM_ BO_ 728 "Transmitter: CGM. Raw-forwarded by CGM from CAN9 0x2A9 to CAN2 and 
 CM_ BO_ 873 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 876 "Transmitter: CGM. Raw-forwarded by CGM from CAN9 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN9 0x36C -> CAN2.";
 CM_ BO_ 878 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
-CM_ BO_ 879 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 879 "Transmitter: ECP_E. Received by ACP3_MCU; carries propulsion-system, park/neutral, engine-running, crank, remote-start, and related status.";
 CM_ BO_ 880 "Transmitter: CGM. Transmitted by CGM; the payload is assembled from decoded gateway signals. CGM route: signal-gateway output on CAN2.";
 CM_ BO_ 898 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x382 -> CAN2.";
 CM_ BO_ 901 "Received by ACP3_MCU; transmitter and application layout are unknown.";
@@ -593,7 +686,7 @@ CM_ BO_ 905 "Received by ACP3_MCU; transmitter and application layout are unknow
 CM_ BO_ 906 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 907 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 909 "Received by ACP3_MCU; transmitter and application layout are unknown.";
-CM_ BO_ 919 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 919 "Transmitter: EBCM. Full freshness value for EBCM_WHEEL_ROTATION_DIRECTIONAL_STATUS.";
 CM_ BO_ 920 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 923 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 930 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
@@ -610,8 +703,8 @@ CM_ BO_ 1244 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; pay
 CM_ BO_ 1264 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 1285 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 1298 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
-CM_ BO_ 1302 "Transmitter: ECP_E. Received by ACP3_MCU; application layout is unknown.";
-CM_ BO_ 1308 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unknown.";
+CM_ BO_ 1302 "Transmitter: ECP_E. Received by ACP3_MCU; carries front and rear wheel distance per revolution.";
+CM_ BO_ 1308 "Transmitter: EBCM. Received by ACP3_MCU; carries the front/rear wheel-edge counts per revolution. The two axle assignments cannot yet be distinguished because both observed values are equal.";
 CM_ BO_ 1313 "Transmitter: VICM. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 1314 "Transmitter: DSM. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 1315 "Transmitter: CGM. Raw-forwarded by CGM from CAN5 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN5 0x523 -> CAN2.";
@@ -620,9 +713,10 @@ CM_ BO_ 1319 "Transmitter: TCP. Received by ACP3_MCU; application layout is unkn
 CM_ BO_ 1324 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 1355 "Transmitter: ACP3_MCU. Also registered as an ACP3_MCU receive PDU.";
 CM_ BO_ 1359 "Received by ACP3_MCU; transmitter and application layout are unknown.";
-CM_ BO_ 1369 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1369 "Transmitter: ECP_E. Full freshness value shared by ECP_E_NON_DRIVEN_VEHICLE_SPEED and ECP_E_DRIVEN_VEHICLE_SPEED.";
 CM_ BO_ 1373 "Transmitter: CGM. Raw-forwarded by CGM from CAN9 to CAN2 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN9 0x55D -> CAN2.";
 CM_ BO_ 1374 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1375 "Transmitter: ECP_E. Full freshness value used by ECP_E_WHEEL_DISTANCE_PER_REVOLUTION.";
 CM_ BO_ 1376 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 1377 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 1384 "Transmitter: CGM. Raw-forwarded by CGM to CAN2 from CAN4 or CAN9 and received by ACP3_MCU; application layout is unknown. CGM route: raw CAN4 0x568 -> CAN2; raw CAN9 0x568 -> CAN2.";
@@ -632,7 +726,7 @@ CM_ BO_ 1394 "Received by ACP3_MCU; transmitter and application layout are unkno
 CM_ BO_ 1396 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 1402 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 1403 "Received by ACP3_MCU; transmitter and application layout are unknown.";
-CM_ BO_ 1404 "Received by ACP3_MCU; transmitter and application layout are unknown.";
+CM_ BO_ 1404 "Transmitter: ECP_E. Full freshness value for ECP_E_PROPULSION_INFO.";
 CM_ BO_ 1407 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
 CM_ BO_ 1408 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
 CM_ BO_ 1409 "Transmitter: BCM. Received by ACP3_MCU; application layout is unknown.";
@@ -668,6 +762,10 @@ CM_ BO_ 1321 "Transmitter: ACP3_MCU. Additional CGM route: network-to-CAN relay 
 CM_ BO_ 1405 "Transmitter: CGM. CGM route: signal-gateway output on CAN2.";
 CM_ BO_ 1500 "Transmitter: ACP3_MCU. Additional CGM route: network-to-CAN relay on CAN2 from ACP3_SOC data.";
 CM_ BO_ 1829 "Transmitter: ACP3_MCU. Additional CGM route: network-to-CAN relay on CAN2.";
+CM_ SG_ 47 SecondaryAxleTorque "The payload and scale are established, but this channel's precise axle-torque role remains unresolved.";
+CM_ SG_ 66 DriverAppliedBrakePressure "The physical unit has not yet been established.";
+CM_ SG_ 1308 WheelEdgesPerRevolutionFieldA "One of the front/rear wheel-edge calibration values; its axle assignment is not yet established.";
+CM_ SG_ 1308 WheelEdgesPerRevolutionFieldB "One of the front/rear wheel-edge calibration values; its axle assignment is not yet established.";
 CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
 
 BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
@@ -691,6 +789,8 @@ BA_ "SecOCKeyRole" BO_ 66 "shared_secoc_key_a";
 BA_ "SecOCKeyRole" BO_ 72 "secoc_key_048_group";
 BA_ "SecOCObservedKeyFamily" BO_ 72 "shared_secoc_family_b";
 BA_ "SecOCKeyRole" BO_ 84 "safety_control_key";
+BA_ "SecOCDataId" BO_ 84 1;
+BA_ "SecOCCompanionId" BO_ 84 675;
 BA_ "SecOCKeyRole" BO_ 87 "safety_control_key";
 BA_ "SecOCDataId" BO_ 87 1;
 BA_ "SecOCCompanionId" BO_ 87 914;
@@ -742,6 +842,7 @@ BA_ "SecOCDataId" BO_ 1325 1;
 BA_ "SecOCCompanionId" BO_ 1325 1393;
 BA_ "GenMsgCycleTime" BO_ 87 10;
 BA_ "GenMsgCycleTime" BO_ 187 10;
+BA_ "GenMsgCycleTime" BO_ 675 160;
 BA_ "GenMsgCycleTime" BO_ 225 50;
 BA_ "GenMsgCycleTime" BO_ 525 50;
 BA_ "GenMsgCycleTime" BO_ 526 50;
@@ -1053,6 +1154,35 @@ BA_ "VFrameFormat" BO_ 1171 4;
 BA_ "VFrameFormat" BO_ 1413 4;
 
 VAL_ 187 SteeringWheelAngleValid 0 "Invalid" 1 "Valid";
+VAL_ 47 ActualAxleTorqueInvalid 0 "Valid" 1 "Invalid";
+VAL_ 47 SecondaryAxleTorqueInvalid 0 "Valid" 1 "Invalid";
+VAL_ 50 ShiftLeverPositionInvalid 0 "Valid" 1 "Invalid";
+VAL_ 59 BrakePedalPositionInvalid 0 "Valid" 1 "Invalid";
+VAL_ 59 ChassisBrakeAxleTorqueInvalid 0 "Valid" 1 "Invalid";
+VAL_ 59 LeftFrontWheelDistanceInvalid 0 "Valid" 1 "Invalid";
+VAL_ 59 RightFrontWheelDistanceInvalid 0 "Valid" 1 "Invalid";
+VAL_ 59 LeftRearWheelDistanceInvalid 0 "Valid" 1 "Invalid";
+VAL_ 59 RightRearWheelDistanceInvalid 0 "Valid" 1 "Invalid";
+VAL_ 59 LeftFrontWheelAngularVelocityInvalid 0 "Valid" 1 "Invalid";
+VAL_ 59 RightFrontWheelAngularVelocityInvalid 0 "Valid" 1 "Invalid";
+VAL_ 59 LeftRearWheelAngularVelocityInvalid 0 "Valid" 1 "Invalid";
+VAL_ 59 RightRearWheelAngularVelocityInvalid 0 "Valid" 1 "Invalid";
+VAL_ 66 DriverAppliedBrakePressureInvalid 0 "Valid" 1 "Invalid";
+VAL_ 72 SecondaryEngineCompartmentAjarInvalid 0 "Valid" 1 "Invalid";
+VAL_ 84 SteeringWheelAngleDataUnavailable 0 "Available" 1 "Unavailable";
+VAL_ 84 SteeringWheelAngleInvalid 0 "Valid" 1 "Invalid";
+VAL_ 610 AverageNonDrivenVehicleSpeedInvalid 0 "Valid" 1 "Invalid";
+VAL_ 614 AverageDrivenVehicleSpeedInvalid 0 "Valid" 1 "Invalid";
+VAL_ 624 ActualVehicleAccelerationInvalid 0 "Valid" 1 "Invalid";
+VAL_ 879 ClutchBottomTravelAchieved 0 "Not_Achieved" 1 "Achieved";
+VAL_ 879 ClutchBottomTravelAchievedInvalid 0 "Valid" 1 "Invalid";
+VAL_ 879 EngineRunning 0 "Not_Running" 1 "Running";
+VAL_ 879 ParkNeutralSwitchStatusInvalid 0 "Valid" 1 "Invalid";
+VAL_ 879 PropulsionSystemActive 0 "Inactive" 1 "Active";
+VAL_ 879 PropulsionSystemStillActive 0 "Inactive" 1 "Active";
+VAL_ 879 PowertrainCrankAborted 0 "Not_Aborted" 1 "Aborted";
+VAL_ 879 RemoteStartEngineRunning 0 "Not_Running" 1 "Running";
+VAL_ 879 PropulsionBrakeThrottleOverrideRequired 0 "Not_Required" 1 "Required";
 VAL_ 526 AxleTorqueRequestActive 0 "Inactive" 1 "Active";
 VAL_ 526 AdaptiveCruiseBrakeControlActive 0 "Inactive" 1 "Active";
 VAL_ 526 AdaptiveCruiseBrakeRequestActive 0 "Inactive" 1 "Active";
