@@ -8,9 +8,12 @@ NS_ :
 BS_:
 BU_: ACP3_MCU CGM FCM PARK_ASSIST LRR LFR RFR LCRR LRR_SIDE RRR_SIDE Vector__XXX
 
-BO_ 33 ACP3_MCU_UNKNOWN_021: 8 ACP3_MCU
+BO_ 33 ACP3_MCU_HOST_VEHICLE_SPEED_BAND_STATUS: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ HostVehicleSpeedBandState : 36|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ SpeedBandModeEnabled : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ RollingCounter : 56|2@1+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 117 CAN8_RX_075: 8 Vector__XXX
  SG_ SensorTimeTicks : 0|32@1+ (1,0) [0|4294967295] "tick" ACP3_MCU
@@ -1265,7 +1268,7 @@ BO_ 880 CGM_VEHICLE_POWER_MODE: 6 CGM
  SG_ VehiclePowerMode : 37|3@1+ (1,0) [0|7] "" Vector__XXX
  SG_ PowerModeGate : 36|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 882 ACP3_MCU_UNKNOWN_021_FV: 8 ACP3_MCU
+BO_ 882 ACP3_MCU_HOST_VEHICLE_SPEED_BAND_STATUS_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 883 PARK_ASSIST_ULTRASONIC_BANK_B_FV: 8 PARK_ASSIST
@@ -1310,6 +1313,11 @@ BO_ 719 CAN8_RX_2CF: 4 LCRR
 BO_ 1317 CAN8_RX_525: 8 FCM
 
 CM_ "GM Global B Super Cruise 1 physical CAN8 database. Unknown transmitters use Vector__XXX. RawField numbers are local to each message and do not identify a shared signal across messages.";
+CM_ BO_ 33 "Transmitter: ACP3_MCU. Host-vehicle speed-band status. Transmitted every 100 ms.";
+CM_ SG_ 33 HostVehicleSpeedBandState "Speed band with 5.5 km/h and 15 km/h thresholds and 0.5 km/h hysteresis. Direction is not encoded.";
+CM_ SG_ 33 SpeedBandModeEnabled "Speed-band classifier enabled.";
+CM_ SG_ 33 RollingCounter "Modulo-four application rolling counter.";
+CM_ BO_ 882 "Transmitter: ACP3_MCU. Full freshness value for ACP3_MCU_HOST_VEHICLE_SPEED_BAND_STATUS.";
 CM_ BO_ 880 "Transmitter: CGM. Transmitted by CGM; the payload is assembled from decoded gateway signals. CGM route: signal-gateway output on CAN8.";
 CM_ BO_ 962 "Transmitter: CGM. Transmitted by CGM; reports protected system-power-mode fail-safe status. CGM route: signal-gateway output on CAN8.";
 CM_ BO_ 963 "Transmitter: CGM. Transmitted by CGM; carries authenticated power-state inputs. CGM route: signal-gateway output on CAN8.";
@@ -1546,6 +1554,8 @@ VAL_ 174 StateRaw 1 "Unknown_State_1";
 VAL_ 178 StateRaw 1 "Unknown_State_1";
 VAL_ 181 StateRaw 1 "Unknown_State_1";
 VAL_ 183 StateRaw 1 "Unknown_State_1";
+VAL_ 33 HostVehicleSpeedBandState 0 "Inactive" 1 "Low_Speed" 2 "Medium_Speed" 3 "High_Speed";
+VAL_ 33 SpeedBandModeEnabled 0 "Disabled" 1 "Enabled";
 VAL_ 880 VehiclePowerMode 0 "Off" 1 "Accessory" 2 "Run" 3 "Start_Crank" 4 "Propulsion";
 VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
 VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";

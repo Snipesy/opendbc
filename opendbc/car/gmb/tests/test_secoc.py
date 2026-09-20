@@ -24,6 +24,7 @@ GM_FRAMES = [
   (0x0BB, 0x0BD3E142, "00000002" + "aa" * 3),  # 27 bit, 7 byte
   (0x271, 0x0AC9629C, "0000001c" + "bb" * 4),  # 27 bit, 8 byte
   (0x057, 0x1181C862, "0000000010" + "dd" * 27),  # 32 bit, 32 byte
+  (0x20D, 0x12D47F35, "00000000" + "cc" * 4),  # 27 bit, 8 byte
   (0x24B, 0x0ABEB919, "00000000c8" + "ee" * 7),  # 32 bit, 12 byte
   (0x284, 0x1181C85E, "00000000f4" + "ff" * 7),  # 32 bit, 12 byte, auxiliary bits set
 ]

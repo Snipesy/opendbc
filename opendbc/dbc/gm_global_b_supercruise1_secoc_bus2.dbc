@@ -154,9 +154,13 @@ BO_ 226 CAN2_RX_0E2: 20 ECP_E
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
 
-BO_ 525 ACP3_MCU_UNKNOWN_20D: 8 ACP3_MCU
+BO_ 525 ACP3_MCU_LONGITUDINAL_CONTROL_STATUS: 8 ACP3_MCU
  SG_ AUTHENTICATOR : 7|27@0+ (1,0) [0|134217727] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
+ SG_ LongitudinalControlMode : 48|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ RollingCounter : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AxleTorqueRequestMode : 60|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ AxleTorqueRequestPathActive : 63|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 526 ACP3_MCU_LONGITUDINAL_REQUEST_STATUS: 16 ACP3_MCU
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
@@ -348,7 +352,7 @@ BO_ 923 CAN2_RX_39B: 8 Vector__XXX
 BO_ 924 ACP3_MCU_STEERING_REQUEST_COARSE_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
-BO_ 925 ACP3_MCU_UNKNOWN_20D_FV: 8 ACP3_MCU
+BO_ 925 ACP3_MCU_LONGITUDINAL_CONTROL_STATUS_FV: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 927 ACP3_MCU_STEERING_WHEEL_ANGLE_FV: 8 ACP3_MCU
@@ -752,7 +756,21 @@ CM_ BO_ 1483 "Transmitter: EBCM. Received by ACP3_MCU; application layout is unk
 CM_ BO_ 1490 "Received by ACP3_MCU; transmitter and application layout are unknown.";
 CM_ BO_ 1529 "Transmitter: CGM. Transmitted by CGM and received by ACP3_MCU; payload is assembled from decoded gateway signals, but its application semantics are unknown. CGM route: signal-gateway output on CAN2.";
 CM_ BO_ 171 "Transmitter: CGM. Application layout is not yet defined. CGM route: raw CAN3 0x0AB -> CAN2.";
-CM_ BO_ 525 "Transmitter: ACP3_MCU. Application layout is not yet defined.";
+CM_ BO_ 525 "Transmitter: ACP3_MCU. Longitudinal-control mode and axle-torque-request status. Complements request status 0x20E and axle-torque status 0x24B. Transmitted every 50 ms.";
+CM_ SG_ 525 LongitudinalControlMode "Longitudinal controller operating state. States 4 and 5 permit axle-torque output.";
+CM_ SG_ 525 RollingCounter "Modulo-four application rolling counter.";
+CM_ SG_ 525 AxleTorqueRequestMode "Axle-torque request mode, including request direction/type.";
+CM_ SG_ 525 AxleTorqueRequestPathActive "Axle-torque request path active.";
+CM_ BO_ 526 "Transmitter: ACP3_MCU. Longitudinal request and authorization status.";
+CM_ SG_ 526 AxleTorqueRequestActive "Same logical state as AdaptiveCruiseBrakeControlActive.";
+CM_ SG_ 526 AdaptiveCruiseBrakeControlActive "Same logical state as AxleTorqueRequestActive.";
+CM_ BO_ 587 "Transmitter: ACP3_MCU. Axle-torque values, status, and validity.";
+CM_ SG_ 587 AxleTorqueFieldA "First axle-torque value. Valid when AxleTorqueValid is set.";
+CM_ SG_ 587 AxleTorqueFieldB "Second axle-torque value. Valid when AxleTorqueValid is set.";
+CM_ SG_ 587 AxleTorqueStatusA "Status for AxleTorqueFieldA.";
+CM_ SG_ 587 AxleTorqueStatusB "Status for AxleTorqueFieldB.";
+CM_ SG_ 587 AxleTorqueValid "Validity of both axle-torque values.";
+CM_ BO_ 925 "Transmitter: ACP3_MCU. Full freshness value for ACP3_MCU_LONGITUDINAL_CONTROL_STATUS.";
 CM_ BO_ 529 "Transmitter remains unresolved. Application layout is not yet defined.";
 CM_ BO_ 635 "Transmitter: EBCM. Application layout is not yet defined.";
 CM_ BO_ 1171 "Transmitter: ARS. Application layout is not yet defined.";
@@ -1183,6 +1201,7 @@ VAL_ 879 PropulsionSystemStillActive 0 "Inactive" 1 "Active";
 VAL_ 879 PowertrainCrankAborted 0 "Not_Aborted" 1 "Aborted";
 VAL_ 879 RemoteStartEngineRunning 0 "Not_Running" 1 "Running";
 VAL_ 879 PropulsionBrakeThrottleOverrideRequired 0 "Not_Required" 1 "Required";
+VAL_ 525 AxleTorqueRequestPathActive 0 "Inactive" 1 "Active";
 VAL_ 526 AxleTorqueRequestActive 0 "Inactive" 1 "Active";
 VAL_ 526 AdaptiveCruiseBrakeControlActive 0 "Inactive" 1 "Active";
 VAL_ 526 AdaptiveCruiseBrakeRequestActive 0 "Inactive" 1 "Active";
