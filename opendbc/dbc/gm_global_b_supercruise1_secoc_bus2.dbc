@@ -100,18 +100,18 @@ BO_ 87 ACP3_MCU_HOST_VEHICLE_DYNAMICS: 32 ACP3_MCU
  SG_ AUTHENTICATOR : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
- SG_ VehicleLateralVelocity : 46|8@0+ (0.05,-6.4) [-6.4|6.35] "" Vector__XXX
+ SG_ VehicleLateralVelocity : 46|8@0+ (0.05,-6.4) [-6.4|6.35] "m/s" Vector__XXX
  SG_ DynField02 : 47|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ VehicleLongitudinalVelocity : 53|12@0+ (0.0625,-128) [-128|127.9375] "" Vector__XXX
+ SG_ VehicleLongitudinalVelocity : 53|12@0+ (0.0625,-128) [-128|127.9375] "m/s" Vector__XXX
  SG_ DynField04 : 54|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ DynField05 : 56|16@0- (0.00001,0) [-0.32768|0.32767] "" Vector__XXX
+ SG_ DynField05 : 56|16@0- (0.00001,0) [-0.32768|0.32767] "1/m" Vector__XXX
  SG_ DynField06 : 57|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ DynField07 : 72|15@0+ (0.001,-16) [-16|16.767] "" Vector__XXX
+ SG_ DynField07 : 72|15@0+ (0.001,-16) [-16|16.767] "1/(m*s)" Vector__XXX
  SG_ DynField08 : 89|2@0+ (1,0) [0|3] "" Vector__XXX
  SG_ VehicleSideslipAngle : 103|12@0+ (0.0625,-128) [-128|127.9375] "deg" Vector__XXX
- SG_ DynField10 : 107|14@0+ (1,-8192) [-8192|8191] "" Vector__XXX
- SG_ DynField11 : 125|8@0+ (0.1,-12.8) [-12.8|12.7] "" Vector__XXX
- SG_ DynField12 : 131|12@0+ (0.0625,-128) [-128|127.9375] "" Vector__XXX
+ SG_ DynField10 : 107|14@0+ (1,-8192) [-8192|8191] "m" Vector__XXX
+ SG_ DynField11 : 125|8@0+ (0.1,-12.8) [-12.8|12.7] "m" Vector__XXX
+ SG_ DynField12 : 131|12@0+ (0.0625,-128) [-128|127.9375] "m/s" Vector__XXX
  SG_ DynField13 : 133|2@0+ (1,0) [0|3] "" Vector__XXX
  SG_ VehicleYawRate : 150|12@0+ (0.0625,-128) [-128|127.9375] "deg/s" Vector__XXX
  SG_ DynField15 : 151|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -121,7 +121,7 @@ BO_ 87 ACP3_MCU_HOST_VEHICLE_DYNAMICS: 32 ACP3_MCU
  SG_ RollingCounter : 193|2@0+ (1,0) [0|3] "" Vector__XXX
  SG_ DynField20 : 195|2@0+ (1,0) [0|3] "" Vector__XXX
  SG_ DynField21 : 199|2@0+ (1,0) [0|3] "" Vector__XXX
- SG_ DynField22 : 201|9@0- (1,0) [-256|255] "" Vector__XXX
+ SG_ DynField22 : 201|9@0- (1,0) [-256|255] "mm" Vector__XXX
  SG_ DynField23 : 203|2@0+ (1,0) [0|3] "" Vector__XXX
  SG_ DynField24 : 207|4@0+ (1,0) [0|15] "" Vector__XXX
  SG_ DynField25 : 208|1@0+ (1,0) [0|1] "" Vector__XXX
