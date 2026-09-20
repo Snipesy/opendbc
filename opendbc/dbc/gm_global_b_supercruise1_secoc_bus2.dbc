@@ -226,7 +226,7 @@ BO_ 625 ACP3_MCU_STEERING_REQUEST_COARSE: 8 ACP3_MCU
  SG_ SECOC_FRESHNESS : 28|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SteeringRequestAngleRaw : 39|14@0- (0.1,0) [-819.2|819.1] "" Vector__XXX
  SG_ SteeringRequestState : 41|4@0+ (1,0) [0|15] "" Vector__XXX
- SG_ SecondarySteeringRequestCoarse : 51|8@0- (0.1,0) [-12.8|12.7] "" Vector__XXX
+ SG_ SecondarySteeringRequestCoarse : 51|8@0- (0.1,0) [-12.8|12.7] "Nm" Vector__XXX
  SG_ SteeringRequestStatus : 53|2@0+ (1,0) [0|3] "" Vector__XXX
  SG_ SteeringRequestCalibrationStateFlag : 58|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ SteeringRequestTransitionFlag : 59|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -245,7 +245,7 @@ BO_ 644 ACP3_MCU_STEERING_REQUEST_HIGH_RES: 12 ACP3_MCU
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" Vector__XXX
  SG_ SECOC_AUX : 34|3@0+ (1,0) [0|7] "" Vector__XXX
  SG_ SteeringRequestAngleRaw : 47|14@0- (0.1,0) [-819.2|819.1] "" Vector__XXX
- SG_ SecondarySteeringRequestHighResolution : 49|11@0- (0.01,0) [-10.24|10.23] "" Vector__XXX
+ SG_ SecondarySteeringRequestHighResolution : 49|11@0- (0.01,0) [-10.24|10.23] "Nm" Vector__XXX
  SG_ SteeringRequestCalibrationStateFlag : 64|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ SteeringRequestStatus : 66|2@0+ (1,0) [0|3] "" Vector__XXX
  SG_ SteeringRequestState : 70|4@0+ (1,0) [0|15] "" Vector__XXX
