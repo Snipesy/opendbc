@@ -10,6 +10,34 @@ bool ignition_can = false;
 uint32_t ignition_can_cnt = 0U;
 
 void ignition_can_hook(const CANPacket_t *msg) {
+  // GM Global B: CGM power mode on vehicle CAN2 or CAN8, mapped to Panda bus 0.
+  // This receive-only detector also runs before the host selects a car safety mode.
+  if (msg_matches(msg, 0x370U, 0U, 6U) && (msg->extended == 0U)) {
+    static uint8_t gm_mode = 0xFFU;
+    static uint8_t gm_freshness = 0xFFU;
+    static uint8_t gm_samples = 0U;
+    uint8_t mode = (msg->data[4] >> 5U) & 0x7U;
+    uint8_t freshness = msg->data[3] & 0x1FU;
+    if (ignition_can_cnt > 2U) {
+      gm_mode = 0xFFU;
+      gm_freshness = 0xFFU;
+      gm_samples = 0U;
+    }
+    // Undefined modes and duplicate counters do not keep ignition alive.
+    // PowerModeGate is not an ignition-validity bit: propulsion can have gate=0.
+    if ((mode <= 4U) && (freshness != gm_freshness)) {
+      gm_samples = (mode == gm_mode) ? (uint8_t)(gm_samples + (gm_samples < 4U ? 1U : 0U)) : 1U;
+      gm_mode = mode;
+      gm_freshness = freshness;
+      ignition_can_cnt = 0U;
+      // Two samples to wake; four Off samples to avoid a transient shutdown.
+      if (gm_samples >= (mode == 0U ? 4U : 2U)) {
+        ignition_can = mode != 0U;
+      }
+    }
+    return;
+  }
+
   // GM exception
   if (msg_matches(msg, 0x1F1U, 0U, 8U)) {
     // SystemPowerMode (2=Run, 3=Crank Request)
