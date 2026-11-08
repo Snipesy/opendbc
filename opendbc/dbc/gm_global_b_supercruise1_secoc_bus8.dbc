@@ -1,7 +1,14 @@
 VERSION "GM Global B Super Cruise 1 CAN8"
 NS_ :
     CM_
-    BA_DEF_
+    CM_ BO_ 648 "Full freshness counter companion for 0x0C1. The next observed protected frame carries (counter + 1) modulo 32. Counter pairing verified; authentication key and data ID remain unresolved.";
+CM_ BO_ 650 "Full freshness counter companion for 0x0C6. The next observed protected frame carries (counter + 1) modulo 32. Counter pairing verified; authentication key and data ID remain unresolved.";
+CM_ BO_ 654 "Full freshness counter companion for 0x0D1. The next observed protected frame carries (counter + 1) modulo 32. Counter pairing verified; authentication key and data ID remain unresolved.";
+CM_ BO_ 656 "Full freshness counter companion for 0x0D4. The next observed protected frame carries (counter + 1) modulo 32. Counter pairing verified; authentication key and data ID remain unresolved.";
+CM_ BO_ 655 "Full freshness counter companion for 0x0FE. The next observed protected frame carries (counter + 1) modulo 32. Counter pairing verified; authentication key and data ID remain unresolved.";
+CM_ BO_ 1326 "Full freshness counter companion for 0x252. The next observed protected frame carries (counter + 1) modulo 32. Counter pairing verified; authentication key and data ID remain unresolved.";
+
+BA_DEF_
     BA_
     BA_DEF_DEF_
     VAL_
@@ -66,21 +73,61 @@ BO_ 183 CAN8_RX_0B7: 8 Vector__XXX
 
 BO_ 190 RRR_SIDE_OBJECT_PAGE0_0BE: 64 RRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 318|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0LateralCandidateRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object1LongitudinalRaw : 329|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object1LateralCandidateRaw : 350|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object2LongitudinalRaw : 356|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object2LateralCandidateRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object3LongitudinalRaw : 383|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object3LateralCandidateRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object4LongitudinalRaw : 394|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object4LateralCandidateRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object5LongitudinalRaw : 421|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object5LateralCandidateRaw : 426|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object6LongitudinalRaw : 432|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object6LateralCandidateRaw : 453|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object7LongitudinalRaw : 459|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object7LateralCandidateRaw : 464|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object8LongitudinalRaw : 486|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object8LateralCandidateRaw : 491|10@0- (1,0) [-512|511] "" ACP3_MCU
 
 BO_ 191 RRR_SIDE_OBJECT_PAGE1_0BF: 64 RRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
 BO_ 193 RRR_SIDE_SECURITY_AUX0_0C1: 48 RRR_SIDE
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
 
 BO_ 197 LRR_SIDE_OBJECT_PAGE0_0C5: 64 LRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
 BO_ 198 LRR_SIDE_SECURITY_AUX0_0C6: 48 LRR_SIDE
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
 
 BO_ 199 LCRR_OBJECT_PAGE0_0C7: 64 LCRR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 318|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0LateralCandidateRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object1LongitudinalRaw : 329|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object1LateralCandidateRaw : 350|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object2LongitudinalRaw : 356|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object2LateralCandidateRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object3LongitudinalRaw : 383|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object3LateralCandidateRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object4LongitudinalRaw : 394|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object4LateralCandidateRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object5LongitudinalRaw : 421|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object5LateralCandidateRaw : 426|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object6LongitudinalRaw : 432|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object6LateralCandidateRaw : 453|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object7LongitudinalRaw : 459|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object7LateralCandidateRaw : 464|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object8LongitudinalRaw : 486|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object8LateralCandidateRaw : 491|10@0- (1,0) [-512|511] "" ACP3_MCU
 
 BO_ 200 LCRR_OBJECT_PAGE1_0C8: 64 LCRR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -90,21 +137,61 @@ BO_ 201 LCRR_OBJECT_PAGE2_0C9: 64 LCRR
 
 BO_ 207 RFR_OBJECT_PAGE0_0CF: 64 RFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 318|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0LateralCandidateRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object1LongitudinalRaw : 329|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object1LateralCandidateRaw : 350|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object2LongitudinalRaw : 356|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object2LateralCandidateRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object3LongitudinalRaw : 383|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object3LateralCandidateRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object4LongitudinalRaw : 394|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object4LateralCandidateRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object5LongitudinalRaw : 421|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object5LateralCandidateRaw : 426|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object6LongitudinalRaw : 432|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object6LateralCandidateRaw : 453|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object7LongitudinalRaw : 459|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object7LateralCandidateRaw : 464|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object8LongitudinalRaw : 486|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object8LateralCandidateRaw : 491|10@0- (1,0) [-512|511] "" ACP3_MCU
 
 BO_ 208 RFR_OBJECT_PAGE1_0D0: 64 RFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
 BO_ 209 RFR_SECURITY_AUX0_0D1: 48 RFR
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
 
 BO_ 210 LFR_OBJECT_PAGE2_0D2: 64 LFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 318|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0LateralCandidateRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object1LongitudinalRaw : 329|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object1LateralCandidateRaw : 350|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object2LongitudinalRaw : 356|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object2LateralCandidateRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object3LongitudinalRaw : 383|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object3LateralCandidateRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object4LongitudinalRaw : 394|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object4LateralCandidateRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object5LongitudinalRaw : 421|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object5LateralCandidateRaw : 426|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object6LongitudinalRaw : 432|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object6LateralCandidateRaw : 453|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object7LongitudinalRaw : 459|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object7LateralCandidateRaw : 464|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object8LongitudinalRaw : 486|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object8LateralCandidateRaw : 491|10@0- (1,0) [-512|511] "" ACP3_MCU
 
 BO_ 211 LFR_OBJECT_PAGE3_0D3: 64 LFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
 BO_ 212 LFR_SECURITY_AUX1_0D4: 48 LFR
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
 
 BO_ 216 CAMERA_0D8: 48 FCM
  SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -368,16 +455,16 @@ BO_ 219 CAMERA_0DB: 64 FCM
  SG_ RawField21 : 133|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField22 : 134|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 138|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField24 : 152|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0IdCandidate : 152|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField25 : 162|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField26 : 163|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField27 : 165|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField28 : 169|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField29 : 176|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 176|11@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField30 : 197|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField31 : 214|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeMotionCandidate : 214|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField32 : 219|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField33 : 225|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralRaw : 225|10@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField34 : 247|14@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField35 : 249|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField36 : 256|10@0+ (1,0) [0|0] "" ACP3_MCU
@@ -392,16 +479,16 @@ BO_ 219 CAMERA_0DB: 64 FCM
  SG_ RawField45 : 299|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField46 : 300|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 319|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField48 : 322|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1IdCandidate : 322|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField49 : 328|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField50 : 330|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField51 : 343|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField52 : 350|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField53 : 357|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1LongitudinalRaw : 357|11@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField54 : 362|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField55 : 379|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1RelativeMotionCandidate : 379|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField56 : 384|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField57 : 406|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1LateralRaw : 406|10@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField58 : 412|14@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField59 : 430|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField60 : 437|10@0+ (1,0) [0|0] "" ACP3_MCU
@@ -438,16 +525,16 @@ BO_ 220 CAMERA_0DC: 64 FCM
  SG_ RawField21 : 133|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField22 : 134|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 138|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField24 : 152|6@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0IdCandidate : 152|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField25 : 162|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField26 : 163|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField27 : 165|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField28 : 169|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField29 : 176|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 176|11@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField30 : 197|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField31 : 214|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeMotionCandidate : 214|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField32 : 219|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField33 : 225|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralRaw : 225|10@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField34 : 247|14@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField35 : 249|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField36 : 256|10@0+ (1,0) [0|0] "" ACP3_MCU
@@ -462,16 +549,16 @@ BO_ 220 CAMERA_0DC: 64 FCM
  SG_ RawField45 : 299|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField46 : 300|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 319|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField48 : 322|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1IdCandidate : 322|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField49 : 328|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField50 : 330|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField51 : 343|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField52 : 350|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField53 : 357|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1LongitudinalRaw : 357|11@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField54 : 362|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField55 : 379|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1RelativeMotionCandidate : 379|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField56 : 384|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField57 : 406|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1LateralRaw : 406|10@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField58 : 412|14@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField59 : 430|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField60 : 437|10@0+ (1,0) [0|0] "" ACP3_MCU
@@ -536,16 +623,16 @@ BO_ 221 CAMERA_0DD: 64 FCM
  SG_ RawField49 : 323|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField50 : 324|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField51 : 343|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField52 : 346|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0IdCandidate : 346|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField53 : 352|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField54 : 354|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField55 : 367|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField56 : 374|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField57 : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField58 : 386|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField59 : 403|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeMotionCandidate : 403|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField60 : 408|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField61 : 430|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralRaw : 430|10@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField62 : 436|14@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField63 : 454|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField64 : 461|10@0+ (1,0) [0|0] "" ACP3_MCU
@@ -573,17 +660,17 @@ BO_ 222 CAMERA_0DE: 64 FCM
  SG_ RawField12 : 37|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField13 : 41|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField14 : 40|2@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField15 : 54|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RightLaneCurvatureRaw : 54|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField16 : 70|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField17 : 80|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField18 : 89|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField19 : 88|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField20 : 97|7@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField21 : 106|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField22 : 112|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RightLaneHeadingRaw : 106|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RightLaneOffsetRaw : 112|13@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 128|4@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField24 : 139|3@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField25 : 138|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightLaneStateRaw : 139|3@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightLaneExtentRaw : 138|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField26 : 142|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField27 : 147|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField28 : 156|6@0+ (1,0) [0|0] "" ACP3_MCU
@@ -620,16 +707,16 @@ BO_ 222 CAMERA_0DE: 64 FCM
  SG_ RawField59 : 307|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField60 : 308|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField61 : 327|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField62 : 330|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0IdCandidate : 330|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField63 : 336|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField64 : 338|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField65 : 351|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField66 : 358|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField67 : 365|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 365|11@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField68 : 370|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField69 : 387|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeMotionCandidate : 387|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField70 : 392|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField71 : 414|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralRaw : 414|10@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField72 : 420|14@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField73 : 438|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField74 : 445|10@0+ (1,0) [0|0] "" ACP3_MCU
@@ -655,20 +742,20 @@ BO_ 222 CAMERA_0DE: 64 FCM
 BO_ 233 CAMERA_0E9: 64 FCM
  SG_ RawField01_Entropy : 7|32@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField02_Counter : 35|5@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField03 : 44|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField04 : 43|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftLaneStateRaw : 44|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftLaneCurvatureRaw : 43|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField05_RollingCounter : 46|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField06 : 59|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField07 : 75|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField08 : 84|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField09 : 93|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField10 : 96|7@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField11 : 111|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField12 : 117|13@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftLaneHeadingRaw : 111|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftLaneOffsetRaw : 117|13@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField13 : 120|4@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField14 : 128|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField15 : 131|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField16 : 137|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftLaneExtentRaw : 137|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField17 : 136|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField18 : 145|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField19 : 154|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -691,16 +778,16 @@ BO_ 233 CAMERA_0E9: 64 FCM
  SG_ RawField36 : 252|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField37 : 253|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField38 : 257|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField39 : 276|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0IdCandidate : 276|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField40 : 281|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField41 : 282|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField42 : 284|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField43 : 288|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField44 : 311|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 311|11@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField45 : 316|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField46 : 333|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeMotionCandidate : 333|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 338|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField48 : 344|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralRaw : 344|10@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField49 : 366|14@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField50 : 368|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField51 : 391|10@0+ (1,0) [0|0] "" ACP3_MCU
@@ -793,16 +880,16 @@ BO_ 234 CAMERA_0EA: 64 FCM
  SG_ RawField66 : 323|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField67 : 324|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField68 : 343|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField69 : 346|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0IdCandidate : 346|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField70 : 352|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField71 : 354|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField72 : 367|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField73 : 374|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField74 : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField75 : 386|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField76 : 403|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeMotionCandidate : 403|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField77 : 408|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField78 : 430|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralRaw : 430|10@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField79 : 436|14@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField80 : 454|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField81 : 461|10@0+ (1,0) [0|0] "" ACP3_MCU
@@ -873,16 +960,16 @@ BO_ 235 CAMERA_0EB: 64 FCM
  SG_ RawField49 : 323|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField50 : 324|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField51 : 343|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField52 : 346|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0IdCandidate : 346|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField53 : 352|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField54 : 354|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField55 : 367|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField56 : 374|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField57 : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField58 : 386|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField59 : 403|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeMotionCandidate : 403|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField60 : 408|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField61 : 430|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralRaw : 430|10@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField62 : 436|14@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField63 : 454|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField64 : 461|10@0+ (1,0) [0|0] "" ACP3_MCU
@@ -934,16 +1021,16 @@ BO_ 236 CAMERA_0EC: 64 FCM
  SG_ RawField36 : 244|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField37 : 245|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField38 : 248|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField39 : 267|6@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0IdCandidate : 267|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField40 : 272|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField41 : 273|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField42 : 275|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField43 : 295|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField44 : 302|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 302|11@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField45 : 307|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField46 : 324|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeMotionCandidate : 324|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 329|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField48 : 351|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralRaw : 351|10@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField49 : 357|14@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField50 : 375|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField51 : 382|10@0+ (1,0) [0|0] "" ACP3_MCU
@@ -1219,7 +1306,9 @@ BO_ 249 RFR_AUX1_0F9: 48 RFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
 
 BO_ 254 LCRR_SECURITY_AUX0_0FE: 48 LCRR
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
 
 BO_ 255 LCRR_OBJECT_PAGE3_0FF: 64 LCRR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -1235,6 +1324,24 @@ BO_ 516 LRR_SIDE_OBJECT_PAGE2_204: 64 LRR_SIDE
 
 BO_ 517 LRR_SIDE_OBJECT_PAGE3_205: 64 LRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object0LongitudinalRaw : 318|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0LateralCandidateRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object1LongitudinalRaw : 329|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object1LateralCandidateRaw : 350|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object2LongitudinalRaw : 356|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object2LateralCandidateRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object3LongitudinalRaw : 383|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object3LateralCandidateRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object4LongitudinalRaw : 394|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object4LateralCandidateRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object5LongitudinalRaw : 421|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object5LateralCandidateRaw : 426|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object6LongitudinalRaw : 432|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object6LateralCandidateRaw : 453|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object7LongitudinalRaw : 459|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object7LateralCandidateRaw : 464|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object8LongitudinalRaw : 486|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object8LateralCandidateRaw : 491|10@0- (1,0) [-512|511] "" ACP3_MCU
 
 BO_ 518 LRR_SIDE_AUX1_206: 48 LRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -1291,6 +1398,14 @@ BO_ 2147745830 ACP3_MCU_NodeStatus_CAN8: 1 ACP3_MCU
  SG_ NodeStatusBit0 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 213 CAN8_RX_0D5: 64 LRR
+ SG_ Slot14LongitudinalRaw : 318|11@0+ (1,0) [0|2047] "" ACP3_MCU
+ SG_ Slot14LateralRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Slot16LongitudinalRaw : 356|11@0+ (1,0) [0|2047] "" ACP3_MCU
+ SG_ Slot16LateralRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Slot17LongitudinalRaw : 383|11@0+ (1,0) [0|2047] "" ACP3_MCU
+ SG_ Slot17LateralRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Slot18LongitudinalRaw : 394|11@0+ (1,0) [0|2047] "" ACP3_MCU
+ SG_ Slot18LateralRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
 
 BO_ 214 CAN8_RX_0D6: 64 LRR
 
@@ -1305,6 +1420,7 @@ BO_ 243 CAN8_RX_0F3: 48 LRR
 BO_ 593 CAN8_RX_251: 20 PARK_ASSIST
 
 BO_ 594 CAN8_RX_252: 64 PARK_ASSIST
+ SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
 
 BO_ 681 CAN8_RX_2A9: 4 LCRR
 
@@ -1313,6 +1429,24 @@ BO_ 719 CAN8_RX_2CF: 4 LCRR
 BO_ 1317 CAN8_RX_525: 8 FCM
 
 CM_ "GM Global B Super Cruise 1 physical CAN8 database. Unknown transmitters use Vector__XXX. RawField numbers are local to each message and do not identify a shared signal across messages.";
+BO_ 648 RRR_SIDE_SECURITY_AUX0_0C1_FV: 8 RRR_SIDE
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" ACP3_MCU
+
+BO_ 650 LRR_SIDE_SECURITY_AUX0_0C6_FV: 8 LRR_SIDE
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" ACP3_MCU
+
+BO_ 654 RFR_SECURITY_AUX0_0D1_FV: 8 RFR
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" ACP3_MCU
+
+BO_ 656 LFR_SECURITY_AUX1_0D4_FV: 8 LFR
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" ACP3_MCU
+
+BO_ 655 LCRR_SECURITY_AUX0_0FE_FV: 8 LCRR
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" ACP3_MCU
+
+BO_ 1326 CAN8_RX_252_FV: 8 PARK_ASSIST
+ SG_ SECOC_FRESHNESS_VALUE : 0|32@1+ (1,0) [0|4294967295] "" ACP3_MCU
+
 CM_ BO_ 33 "Transmitter: ACP3_MCU. Host-vehicle speed-band status. Transmitted every 100 ms.";
 CM_ SG_ 33 HostVehicleSpeedBandState "Speed band with 5.5 km/h and 15 km/h thresholds and 0.5 km/h hysteresis. Direction is not encoded.";
 CM_ SG_ 33 SpeedBandModeEnabled "Speed-band classifier enabled.";
@@ -1386,6 +1520,60 @@ CM_ BO_ 719 "Transmitter: LCRR.";
 CM_ BO_ 1317 "Transmitter: FCM.";
 CM_ BO_ 1405 "Transmitter: CGM. CGM route: signal-gateway output on CAN8.";
 CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
+
+CM_ SG_ 222 RightLaneOffsetRaw "Image-checked host right boundary; positive offset is left. Raw scale retained.";
+CM_ SG_ 222 RightLaneCurvatureRaw "Image-space curvature fit only; physical radius scale is unverified. Heading and extent retain raw units.";
+CM_ SG_ 222 RightLaneStateRaw "State meaning unresolved. Values 1 and 2 both occur with valid-looking lanes; do not interpret as an availability flag.";
+CM_ SG_ 233 LeftLaneOffsetRaw "Image-checked host left boundary; positive offset is left. Raw scale retained. Viewer projection gains, ground-plane height, sensor-frame corrections, filtering, matching, log axes and display brightness are application hypotheses/settings, not CAN scaling. No physical conversion is encoded here.";
+CM_ SG_ 233 LeftLaneCurvatureRaw "Image-space curvature fit only; physical radius scale is unverified. Heading and extent retain raw units.";
+CM_ SG_ 233 LeftLaneStateRaw "State meaning unresolved. Values 1 and 2 both occur with valid-looking lanes; do not interpret as an availability flag.";
+CM_ SG_ 221 Object0LongitudinalRaw "FCM record at MSB-stream bit 325; X/Y bearing image-checked. Absolute coordinate units and camera-only provenance unresolved. Zero and recurrent 1992 are absence/sentinel candidates, not decoded validity.";
+CM_ SG_ 221 Object0IdCandidate "Candidate identity can follow a vehicle across records; not proven globally unique or persistent. Object0 denotes this message record, not a fixed vehicle.";
+CM_ SG_ 221 Object0RelativeMotionCandidate "Signed motion candidate; E9 correlates with longitudinal-coordinate derivative. Physical speed units remain unverified.";
+CM_ SG_ 222 Object0LongitudinalRaw "FCM record at MSB-stream bit 309; X/Y bearing image-checked. Absolute coordinate units and camera-only provenance unresolved. Zero and recurrent 1992 are absence/sentinel candidates, not decoded validity.";
+CM_ SG_ 222 Object0IdCandidate "Candidate identity can follow a vehicle across records; not proven globally unique or persistent. Object0 denotes this message record, not a fixed vehicle.";
+CM_ SG_ 222 Object0RelativeMotionCandidate "Signed motion candidate; E9 correlates with longitudinal-coordinate derivative. Physical speed units remain unverified.";
+CM_ SG_ 233 Object0LongitudinalRaw "FCM record at MSB-stream bit 251; X/Y bearing image-checked. Absolute coordinate units and camera-only provenance unresolved. Zero and recurrent 1992 are absence/sentinel candidates, not decoded validity.";
+CM_ SG_ 233 Object0IdCandidate "Candidate identity can follow a vehicle across records; not proven globally unique or persistent. Object0 denotes this message record, not a fixed vehicle.";
+CM_ SG_ 233 Object0RelativeMotionCandidate "Signed motion candidate; E9 correlates with longitudinal-coordinate derivative. Physical speed units remain unverified.";
+CM_ SG_ 210 Object0LongitudinalRaw "First compact coordinate record, MSB-stream bit313. Signed rear-to-front trajectory and detail-message copies cross-checked during a rear-to-front vehicle pass. Raw units; record index is not an object ID.";
+CM_ SG_ 210 Object0LateralCandidateRaw "Lateral interpretation and sensor-to-vehicle transform remain provisional. Do not assume a calibrated common reference frame or filter solely by sensor side.";
+CM_ SG_ 207 Object0LongitudinalRaw "First compact coordinate record, MSB-stream bit313. Signed rear-to-front trajectory and detail-message copies cross-checked during a rear-to-front vehicle pass. Raw units; record index is not an object ID.";
+CM_ SG_ 207 Object0LateralCandidateRaw "Lateral interpretation and sensor-to-vehicle transform remain provisional. Do not assume a calibrated common reference frame or filter solely by sensor side.";
+CM_ SG_ 517 Object0LongitudinalRaw "First compact coordinate record, MSB-stream bit313. Signed rear-to-front trajectory and detail-message copies cross-checked during a rear-to-front vehicle pass. Raw units; record index is not an object ID.";
+CM_ SG_ 517 Object0LateralCandidateRaw "Lateral interpretation and sensor-to-vehicle transform remain provisional. Do not assume a calibrated common reference frame or filter solely by sensor side.";
+CM_ SG_ 190 Object0LongitudinalRaw "First compact coordinate record, MSB-stream bit313. Signed rear-to-front trajectory and detail-message copies cross-checked during a rear-to-front vehicle pass. Raw units; record index is not an object ID.";
+CM_ SG_ 190 Object0LateralCandidateRaw "Lateral interpretation and sensor-to-vehicle transform remain provisional. Do not assume a calibrated common reference frame or filter solely by sensor side.";
+CM_ SG_ 199 Object0LongitudinalRaw "First compact coordinate record, MSB-stream bit313. Signed rear-to-front trajectory and detail-message copies cross-checked during a rear-to-front vehicle pass. Raw units; record index is not an object ID.";
+CM_ SG_ 199 Object0LateralCandidateRaw "Lateral interpretation and sensor-to-vehicle transform remain provisional. Do not assume a calibrated common reference frame or filter solely by sensor side.";
+CM_ SG_ 212 Object0LongitudinalRaw "First-object longitudinal duplicate at MSB-stream bit273; agrees within one raw count with its compact summary in the rear-left pass recording. Not an additional target.";
+CM_ SG_ 209 Object0LongitudinalRaw "First-object longitudinal duplicate at MSB-stream bit273; agrees within one raw count with its compact summary in the rear-left pass recording. Not an additional target.";
+CM_ SG_ 198 Object0LongitudinalRaw "First-object longitudinal duplicate at MSB-stream bit273; agrees within one raw count with its compact summary in the rear-left pass recording. Not an additional target.";
+CM_ SG_ 193 Object0LongitudinalRaw "First-object longitudinal duplicate at MSB-stream bit273; agrees within one raw count with its compact summary in the rear-left pass recording. Not an additional target.";
+CM_ SG_ 254 Object0LongitudinalRaw "First-object longitudinal duplicate at MSB-stream bit273; agrees within one raw count with its compact summary in the rear-left pass recording. Not an additional target.";
+CM_ SG_ 180 UltrasonicRecord1Raw "All six six-byte records contain candidate 11-bit echo values at MSB-first record offsets 4,15,26. Repeated 2000 appears to be a sentinel; zeros and remaining bits need validity decoding. Millimetres, bank position and sensor order remain hypotheses. Raw records intentionally retained.";
+CM_ SG_ 532 UltrasonicRecord1Raw "All six six-byte records contain candidate 11-bit echo values at MSB-first record offsets 4,15,26. Repeated 2000 appears to be a sentinel; zeros and remaining bits need validity decoding. Millimetres, bank position and sensor order remain hypotheses. Raw records intentionally retained.";
+
+CM_ SG_ 219 Object0LongitudinalRaw "FCM repeated record at MSB-stream bit130; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
+CM_ SG_ 219 Object0IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
+CM_ SG_ 219 Object1LongitudinalRaw "FCM repeated record at MSB-stream bit301; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
+CM_ SG_ 219 Object1IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
+CM_ SG_ 220 Object0LongitudinalRaw "FCM repeated record at MSB-stream bit130; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
+CM_ SG_ 220 Object0IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
+CM_ SG_ 220 Object1LongitudinalRaw "FCM repeated record at MSB-stream bit301; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
+CM_ SG_ 220 Object1IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
+CM_ SG_ 234 Object0LongitudinalRaw "FCM repeated record at MSB-stream bit325; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
+CM_ SG_ 234 Object0IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
+CM_ SG_ 235 Object0LongitudinalRaw "FCM repeated record at MSB-stream bit325; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
+CM_ SG_ 235 Object0IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
+CM_ SG_ 236 Object0LongitudinalRaw "FCM repeated record at MSB-stream bit244; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
+CM_ SG_ 236 Object0IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
+CM_ SG_ 210 Object1LongitudinalRaw "Object0..8 are the 21-bit compact records used by the viewer, not persistent IDs. Later record semantics follow the repeated-layout hypothesis; first records have the strongest cross-message evidence. All-zero records are omitted by the viewer, not a decoded OEM validity condition. Lateral reference frame remains provisional.";
+CM_ SG_ 207 Object1LongitudinalRaw "Object0..8 are the 21-bit compact records used by the viewer, not persistent IDs. Later record semantics follow the repeated-layout hypothesis; first records have the strongest cross-message evidence. All-zero records are omitted by the viewer, not a decoded OEM validity condition. Lateral reference frame remains provisional.";
+CM_ SG_ 517 Object1LongitudinalRaw "Object0..8 are the 21-bit compact records used by the viewer, not persistent IDs. Later record semantics follow the repeated-layout hypothesis; first records have the strongest cross-message evidence. All-zero records are omitted by the viewer, not a decoded OEM validity condition. Lateral reference frame remains provisional.";
+CM_ SG_ 190 Object1LongitudinalRaw "Object0..8 are the 21-bit compact records used by the viewer, not persistent IDs. Later record semantics follow the repeated-layout hypothesis; first records have the strongest cross-message evidence. All-zero records are omitted by the viewer, not a decoded OEM validity condition. Lateral reference frame remains provisional.";
+CM_ SG_ 199 Object1LongitudinalRaw "Object0..8 are the 21-bit compact records used by the viewer, not persistent IDs. Later record semantics follow the repeated-layout hypothesis; first records have the strongest cross-message evidence. All-zero records are omitted by the viewer, not a decoded OEM validity condition. Lateral reference frame remains provisional.";
+CM_ SG_ 213 Slot14LongitudinalRaw "Compact front-radar records used by the viewer: grid slots14,16,17,18. Slots may reassign between vehicles and are not object IDs. X/Y bearing compared with truck images; absolute units and OEM validity remain unresolved. Radar velocity in the viewer is coordinate-derived, not a decoded signal.";
 
 BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
 BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","StandardCAN_FD","ExtendedCAN_FD";
@@ -1561,3 +1749,10 @@ VAL_ 880 PowerModeGate 0 "Inactive" 1 "Active";
 VAL_ 962 SystemPowerModeProtectionFailSafe 0 "Inactive" 1 "Active";
 VAL_ 963 SystemPowerModeActive 0 "Inactive" 1 "Active";
 VAL_ 2147745830 NodeStatusBit0 0 "Unknown_0" 1 "Unknown_1";
+
+BA_ "SecOCCompanionId" BO_ 193 648;
+BA_ "SecOCCompanionId" BO_ 198 650;
+BA_ "SecOCCompanionId" BO_ 209 654;
+BA_ "SecOCCompanionId" BO_ 212 656;
+BA_ "SecOCCompanionId" BO_ 254 655;
+BA_ "SecOCCompanionId" BO_ 594 1326;
