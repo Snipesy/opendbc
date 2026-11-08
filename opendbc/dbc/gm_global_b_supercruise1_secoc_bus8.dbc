@@ -1062,36 +1062,36 @@ BO_ 237 CAMERA_0ED: 48 FCM
  SG_ RawField14 : 29|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField15 : 32|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField16 : 41|7@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField17 : 40|16@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField18 : 56|16@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField19 : 72|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField20 : 94|12@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField21 : 98|7@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField22 : 107|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftBoundaryCandidateCurvatureRaw : 40|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftBoundaryCandidateCurvatureRateRaw : 56|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftBoundaryCandidateHeadingRaw : 72|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftBoundaryCandidateOffsetRaw : 94|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftBoundaryCandidateSupportRaw : 98|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftBoundaryCandidateExtentRaw : 107|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 116|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField24_Flag : 124|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField25 : 123|16@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField26 : 139|16@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField27 : 155|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField28 : 161|12@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField29 : 181|7@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField30 : 184|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightBoundaryCandidateCurvatureRaw : 123|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RightBoundaryCandidateCurvatureRateRaw : 139|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RightBoundaryCandidateHeadingRaw : 155|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RightBoundaryCandidateOffsetRaw : 161|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RightBoundaryCandidateSupportRaw : 181|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightBoundaryCandidateExtentRaw : 184|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField31 : 193|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField32 : 192|2@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField33 : 206|16@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField34 : 222|16@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField35 : 238|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField36 : 244|12@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField37 : 248|7@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField38 : 257|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCandidateCurvatureRaw : 206|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCandidateCurvatureRateRaw : 222|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCandidateHeadingRaw : 238|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCandidateOffsetRaw : 244|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCandidateSupportRaw : 248|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCandidateExtentRaw : 257|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField39 : 266|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField40 : 274|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField41 : 273|16@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField42 : 289|16@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField43 : 305|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField44 : 327|12@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField45 : 331|7@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField46 : 340|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCopyCandidateCurvatureRaw : 273|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCopyCandidateCurvatureRateRaw : 289|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCopyCandidateHeadingRaw : 305|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCopyCandidateOffsetRaw : 327|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCopyCandidateSupportRaw : 331|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCopyCandidateExtentRaw : 340|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 349|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField48 : 352|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField49 : 353|1@1+ (1,0) [0|0] "" ACP3_MCU
@@ -1490,7 +1490,7 @@ CM_ BO_ 233 "Transmitter: FCM.";
 CM_ BO_ 234 "Transmitter: FCM.";
 CM_ BO_ 235 "Transmitter: FCM.";
 CM_ BO_ 236 "Transmitter: FCM.";
-CM_ BO_ 237 "Transmitter: FCM.";
+CM_ BO_ 237 "Four repeated lane-model candidates: two boundary offsets and two equal centre offsets, with common curvature and heading in tested recordings. Centre is approximately the boundary midpoint; exceptional frames and OEM validity remain unresolved. Support-like trailing fields are not confirmed validity flags. No physical units or steering-command interpretation assigned.";
 CM_ BO_ 238 "Transmitter: FCM.";
 CM_ BO_ 239 "Transmitter: FCM.";
 CM_ BO_ 240 "Transmitter: FCM.";
@@ -1756,3 +1756,30 @@ BA_ "SecOCCompanionId" BO_ 209 654;
 BA_ "SecOCCompanionId" BO_ 212 656;
 BA_ "SecOCCompanionId" BO_ 254 655;
 BA_ "SecOCCompanionId" BO_ 594 1326;
+
+BO_ 204 CAMERA_LANE_MODEL_RIGHT_CANDIDATE_0CC: 48 Vector__XXX
+ SG_ LaneCurvatureCandidateRaw : 37|16@0- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ LaneCurvatureRateCandidateRaw : 53|16@0- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ LaneHeadingCandidateRaw : 69|10@0- (1,0) [-512|511] "" Vector__XXX
+ SG_ LaneOffsetCandidateRaw : 75|13@0- (1,0) [-4096|4095] "" Vector__XXX
+
+CM_ BO_ 204 "Empirical right lane-model candidate. Geometric fields track the corresponding camera boundary; this may be processed or copied camera data, not an independent sensor. Transmitter, validity bits, unused payload and physical units remain unresolved.";
+BA_ "VFrameFormat" BO_ 204 4;
+
+BO_ 206 CAMERA_LANE_MODEL_LEFT_CANDIDATE_0CE: 64 Vector__XXX
+ SG_ LaneCurvatureCandidateRaw : 37|16@0- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ LaneCurvatureRateCandidateRaw : 53|16@0- (1,0) [-32768|32767] "" Vector__XXX
+ SG_ LaneHeadingCandidateRaw : 69|10@0- (1,0) [-512|511] "" Vector__XXX
+ SG_ LaneOffsetCandidateRaw : 75|13@0- (1,0) [-4096|4095] "" Vector__XXX
+
+CM_ BO_ 206 "Empirical left lane-model candidate. Geometric fields track the corresponding camera boundary; this may be processed or copied camera data, not an independent sensor. Transmitter, validity bits, unused payload and physical units remain unresolved.";
+BA_ "VFrameFormat" BO_ 206 4;
+
+CM_ SG_ 237 LeftBoundaryCandidateSupportRaw "Empirical support-like field. Zero in the checked parked recording and positive during supported highway tracking; OEM validity semantics and physical units remain unresolved. Application thresholds are not a decoded validity flag.";
+CM_ SG_ 237 LeftBoundaryCandidateExtentRaw "Empirical extent-like field. Zero in the checked parked recording and positive during supported highway tracking; OEM validity semantics and physical units remain unresolved. Application thresholds are not a decoded validity flag.";
+CM_ SG_ 237 RightBoundaryCandidateSupportRaw "Empirical support-like field. Zero in the checked parked recording and positive during supported highway tracking; OEM validity semantics and physical units remain unresolved. Application thresholds are not a decoded validity flag.";
+CM_ SG_ 237 RightBoundaryCandidateExtentRaw "Empirical extent-like field. Zero in the checked parked recording and positive during supported highway tracking; OEM validity semantics and physical units remain unresolved. Application thresholds are not a decoded validity flag.";
+CM_ SG_ 237 CenterCandidateSupportRaw "Empirical support-like field. Zero in the checked parked recording and positive during supported highway tracking; OEM validity semantics and physical units remain unresolved. Application thresholds are not a decoded validity flag.";
+CM_ SG_ 237 CenterCandidateExtentRaw "Empirical extent-like field. Zero in the checked parked recording and positive during supported highway tracking; OEM validity semantics and physical units remain unresolved. Application thresholds are not a decoded validity flag.";
+CM_ SG_ 237 CenterCopyCandidateSupportRaw "Empirical support-like field. Zero in the checked parked recording and positive during supported highway tracking; OEM validity semantics and physical units remain unresolved. Application thresholds are not a decoded validity flag.";
+CM_ SG_ 237 CenterCopyCandidateExtentRaw "Empirical extent-like field. Zero in the checked parked recording and positive during supported highway tracking; OEM validity semantics and physical units remain unresolved. Application thresholds are not a decoded validity flag.";
