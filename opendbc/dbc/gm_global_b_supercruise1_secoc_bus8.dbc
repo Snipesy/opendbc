@@ -73,24 +73,24 @@ BO_ 183 CAN8_RX_0B7: 8 Vector__XXX
 
 BO_ 190 RRR_SIDE_OBJECT_PAGE0_0BE: 64 RRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 318|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object0LateralCandidateRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object1LongitudinalRaw : 329|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object1LateralCandidateRaw : 350|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object2LongitudinalRaw : 356|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object2LateralCandidateRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object3LongitudinalRaw : 383|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object3LateralCandidateRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object4LongitudinalRaw : 394|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object4LateralCandidateRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object5LongitudinalRaw : 421|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object5LateralCandidateRaw : 426|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object6LongitudinalRaw : 432|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object6LateralCandidateRaw : 453|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object7LongitudinalRaw : 459|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object7LateralCandidateRaw : 464|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object8LongitudinalRaw : 486|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object8LateralCandidateRaw : 491|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 318|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object0LateralEstimate : 323|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object1LongitudinalEstimate : 329|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object1LateralEstimate : 350|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object2LongitudinalEstimate : 356|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object2LateralEstimate : 361|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object3LongitudinalEstimate : 383|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object3LateralEstimate : 388|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object4LongitudinalEstimate : 394|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object4LateralEstimate : 415|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object5LongitudinalEstimate : 421|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object5LateralEstimate : 426|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object6LongitudinalEstimate : 432|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object6LateralEstimate : 453|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object7LongitudinalEstimate : 459|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object7LateralEstimate : 464|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object8LongitudinalEstimate : 486|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object8LateralEstimate : 491|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
 
 BO_ 191 RRR_SIDE_OBJECT_PAGE1_0BF: 64 RRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -110,24 +110,24 @@ BO_ 198 LRR_SIDE_SECURITY_AUX0_0C6: 48 LRR_SIDE
 
 BO_ 199 LCRR_OBJECT_PAGE0_0C7: 64 LCRR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 318|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object0LateralCandidateRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object1LongitudinalRaw : 329|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object1LateralCandidateRaw : 350|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object2LongitudinalRaw : 356|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object2LateralCandidateRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object3LongitudinalRaw : 383|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object3LateralCandidateRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object4LongitudinalRaw : 394|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object4LateralCandidateRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object5LongitudinalRaw : 421|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object5LateralCandidateRaw : 426|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object6LongitudinalRaw : 432|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object6LateralCandidateRaw : 453|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object7LongitudinalRaw : 459|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object7LateralCandidateRaw : 464|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object8LongitudinalRaw : 486|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object8LateralCandidateRaw : 491|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 318|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object0LateralEstimate : 323|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object1LongitudinalEstimate : 329|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object1LateralEstimate : 350|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object2LongitudinalEstimate : 356|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object2LateralEstimate : 361|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object3LongitudinalEstimate : 383|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object3LateralEstimate : 388|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object4LongitudinalEstimate : 394|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object4LateralEstimate : 415|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object5LongitudinalEstimate : 421|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object5LateralEstimate : 426|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object6LongitudinalEstimate : 432|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object6LateralEstimate : 453|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object7LongitudinalEstimate : 459|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object7LateralEstimate : 464|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object8LongitudinalEstimate : 486|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object8LateralEstimate : 491|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
 
 BO_ 200 LCRR_OBJECT_PAGE1_0C8: 64 LCRR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -137,24 +137,24 @@ BO_ 201 LCRR_OBJECT_PAGE2_0C9: 64 LCRR
 
 BO_ 207 RFR_OBJECT_PAGE0_0CF: 64 RFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 318|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object0LateralCandidateRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object1LongitudinalRaw : 329|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object1LateralCandidateRaw : 350|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object2LongitudinalRaw : 356|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object2LateralCandidateRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object3LongitudinalRaw : 383|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object3LateralCandidateRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object4LongitudinalRaw : 394|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object4LateralCandidateRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object5LongitudinalRaw : 421|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object5LateralCandidateRaw : 426|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object6LongitudinalRaw : 432|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object6LateralCandidateRaw : 453|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object7LongitudinalRaw : 459|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object7LateralCandidateRaw : 464|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object8LongitudinalRaw : 486|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object8LateralCandidateRaw : 491|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 318|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object0LateralEstimate : 323|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object1LongitudinalEstimate : 329|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object1LateralEstimate : 350|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object2LongitudinalEstimate : 356|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object2LateralEstimate : 361|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object3LongitudinalEstimate : 383|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object3LateralEstimate : 388|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object4LongitudinalEstimate : 394|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object4LateralEstimate : 415|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object5LongitudinalEstimate : 421|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object5LateralEstimate : 426|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object6LongitudinalEstimate : 432|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object6LateralEstimate : 453|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object7LongitudinalEstimate : 459|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object7LateralEstimate : 464|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object8LongitudinalEstimate : 486|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object8LateralEstimate : 491|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
 
 BO_ 208 RFR_OBJECT_PAGE1_0D0: 64 RFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -166,24 +166,24 @@ BO_ 209 RFR_SECURITY_AUX0_0D1: 48 RFR
 
 BO_ 210 LFR_OBJECT_PAGE2_0D2: 64 LFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 318|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object0LateralCandidateRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object1LongitudinalRaw : 329|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object1LateralCandidateRaw : 350|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object2LongitudinalRaw : 356|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object2LateralCandidateRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object3LongitudinalRaw : 383|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object3LateralCandidateRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object4LongitudinalRaw : 394|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object4LateralCandidateRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object5LongitudinalRaw : 421|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object5LateralCandidateRaw : 426|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object6LongitudinalRaw : 432|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object6LateralCandidateRaw : 453|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object7LongitudinalRaw : 459|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object7LateralCandidateRaw : 464|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object8LongitudinalRaw : 486|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object8LateralCandidateRaw : 491|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 318|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object0LateralEstimate : 323|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object1LongitudinalEstimate : 329|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object1LateralEstimate : 350|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object2LongitudinalEstimate : 356|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object2LateralEstimate : 361|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object3LongitudinalEstimate : 383|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object3LateralEstimate : 388|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object4LongitudinalEstimate : 394|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object4LateralEstimate : 415|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object5LongitudinalEstimate : 421|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object5LateralEstimate : 426|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object6LongitudinalEstimate : 432|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object6LateralEstimate : 453|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object7LongitudinalEstimate : 459|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object7LateralEstimate : 464|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object8LongitudinalEstimate : 486|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object8LateralEstimate : 491|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
 
 BO_ 211 LFR_OBJECT_PAGE3_0D3: 64 LFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -433,20 +433,20 @@ BO_ 218 CAMERA_0DA: 64 FCM
 
 BO_ 219 CAMERA_0DB: 64 FCM
  SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField02 : 3|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RightRoadEdgeCandidateCurvatureRaw : 3|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField04 : 19|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RightRoadEdgeCandidateCurvatureRateRaw : 19|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField09 : 71|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField10 : 77|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightRoadEdgeCandidateHeadingRaw : 71|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RightRoadEdgeCandidateOffsetEstimate : 77|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ RightRoadEdgeCandidateRoleCandidateRaw : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightRoadEdgeCandidateActivityCandidateRaw : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightRoadEdgeCandidateRangeEndEstimate : 97|7@1+ (1,0) [0|127] "m" ACP3_MCU
+ SG_ RightRoadEdgeCandidateRangeStartEstimate : 96|7@0+ (1,0) [0|127] "m" ACP3_MCU
  SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField18 : 113|6@0+ (1,0) [0|0] "" ACP3_MCU
@@ -460,13 +460,13 @@ BO_ 219 CAMERA_0DB: 64 FCM
  SG_ RawField26 : 163|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField27 : 165|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField28 : 169|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 176|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 176|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
  SG_ RawField30 : 197|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0RelativeMotionCandidate : 214|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityEstimate : 214|11@0- (0.125,0) [-128|127.875] "m/s" ACP3_MCU
  SG_ RawField32 : 219|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LateralRaw : 225|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralEstimate : 225|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
  SG_ RawField34 : 247|14@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField35 : 249|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityEstimate : 249|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField36 : 256|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField37 : 272|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField38 : 281|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -484,13 +484,13 @@ BO_ 219 CAMERA_0DB: 64 FCM
  SG_ RawField50 : 330|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField51 : 343|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField52 : 350|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ Object1LongitudinalRaw : 357|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1LongitudinalEstimate : 357|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
  SG_ RawField54 : 362|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object1RelativeMotionCandidate : 379|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1RelativeLongitudinalVelocityEstimate : 379|11@0- (0.125,0) [-128|127.875] "m/s" ACP3_MCU
  SG_ RawField56 : 384|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object1LateralRaw : 406|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1LateralEstimate : 406|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
  SG_ RawField58 : 412|14@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField59 : 430|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1RelativeLateralVelocityEstimate : 430|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField60 : 437|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField61 : 443|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField62 : 448|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -511,12 +511,12 @@ BO_ 220 CAMERA_0DC: 64 FCM
  SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField09 : 71|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField10 : 77|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightSecondaryBoundaryCandidateOffsetEstimate : 77|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ RightSecondaryBoundaryCandidateRoleCandidateRaw : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightSecondaryBoundaryCandidateActivityCandidateRaw : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightSecondaryBoundaryCandidateRangeEndEstimate : 97|7@1+ (1,0) [0|127] "m" ACP3_MCU
+ SG_ RightSecondaryBoundaryCandidateRangeStartEstimate : 96|7@0+ (1,0) [0|127] "m" ACP3_MCU
  SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField18 : 113|6@0+ (1,0) [0|0] "" ACP3_MCU
@@ -530,13 +530,13 @@ BO_ 220 CAMERA_0DC: 64 FCM
  SG_ RawField26 : 163|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField27 : 165|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField28 : 169|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 176|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 176|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
  SG_ RawField30 : 197|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0RelativeMotionCandidate : 214|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityEstimate : 214|11@0- (0.125,0) [-128|127.875] "m/s" ACP3_MCU
  SG_ RawField32 : 219|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LateralRaw : 225|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralEstimate : 225|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
  SG_ RawField34 : 247|14@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField35 : 249|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityEstimate : 249|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField36 : 256|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField37 : 272|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField38 : 281|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -554,13 +554,13 @@ BO_ 220 CAMERA_0DC: 64 FCM
  SG_ RawField50 : 330|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField51 : 343|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField52 : 350|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ Object1LongitudinalRaw : 357|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1LongitudinalEstimate : 357|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
  SG_ RawField54 : 362|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object1RelativeMotionCandidate : 379|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1RelativeLongitudinalVelocityEstimate : 379|11@0- (0.125,0) [-128|127.875] "m/s" ACP3_MCU
  SG_ RawField56 : 384|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object1LateralRaw : 406|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1LateralEstimate : 406|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
  SG_ RawField58 : 412|14@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField59 : 430|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1RelativeLateralVelocityEstimate : 430|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField60 : 437|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField61 : 443|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField62 : 448|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -596,12 +596,12 @@ BO_ 221 CAMERA_0DD: 64 FCM
  SG_ RawField22 : 163|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 172|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ OuterRightLaneCandidateHeadingRaw : 181|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ OuterRightLaneCandidateOffsetRaw : 187|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField26 : 201|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField27 : 203|4@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ OuterRightLaneCandidateOffsetEstimate : 187|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ OuterRightLaneCandidateActivityCandidateRaw : 201|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ OuterRightLaneCandidateRoleCandidateRaw : 203|4@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField28 : 200|3@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField29 : 213|7@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField30 : 216|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ OuterRightLaneCandidateRangeEndEstimate : 213|7@0+ (1,0) [0|127] "m" ACP3_MCU
+ SG_ OuterRightLaneCandidateRangeStartEstimate : 216|7@1+ (1,0) [0|127] "m" ACP3_MCU
  SG_ RawField31 : 224|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField32 : 226|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField33 : 237|3@1+ (1,0) [0|0] "" ACP3_MCU
@@ -628,13 +628,13 @@ BO_ 221 CAMERA_0DD: 64 FCM
  SG_ RawField54 : 354|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField55 : 367|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField56 : 374|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 381|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
  SG_ RawField58 : 386|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0RelativeMotionCandidate : 403|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityEstimate : 403|11@0- (0.125,0) [-128|127.875] "m/s" ACP3_MCU
  SG_ RawField60 : 408|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LateralRaw : 430|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralEstimate : 430|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
  SG_ RawField62 : 436|14@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField63 : 454|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityEstimate : 454|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField64 : 461|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField65 : 467|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField66 : 472|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -667,12 +667,12 @@ BO_ 222 CAMERA_0DE: 64 FCM
  SG_ RawField19 : 88|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField20 : 97|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RightLaneHeadingRaw : 106|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RightLaneOffsetRaw : 112|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField23 : 128|4@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightLaneOffsetEstimate : 112|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ RightLaneRoleCandidateRaw : 128|4@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RightLaneStateRaw : 139|3@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RightLaneExtentRaw : 138|7@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField26 : 142|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField27 : 147|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightLaneRangeEndEstimate : 138|7@0+ (1,0) [0|127] "m" ACP3_MCU
+ SG_ RightLaneActivityCandidateRaw : 142|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ RightLaneRangeStartEstimate : 147|7@0+ (1,0) [0|127] "m" ACP3_MCU
  SG_ RawField28 : 156|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField29 : 162|5@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField30 : 161|8@0+ (1,0) [0|0] "" ACP3_MCU
@@ -712,13 +712,13 @@ BO_ 222 CAMERA_0DE: 64 FCM
  SG_ RawField64 : 338|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField65 : 351|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField66 : 358|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 365|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 365|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
  SG_ RawField68 : 370|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0RelativeMotionCandidate : 387|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityEstimate : 387|11@0- (0.125,0) [-128|127.875] "m/s" ACP3_MCU
  SG_ RawField70 : 392|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LateralRaw : 414|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralEstimate : 414|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
  SG_ RawField72 : 420|14@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField73 : 438|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityEstimate : 438|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField74 : 445|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField75 : 451|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField76 : 456|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -751,12 +751,12 @@ BO_ 233 CAMERA_0E9: 64 FCM
  SG_ RawField09 : 93|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField10 : 96|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ LeftLaneHeadingRaw : 111|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ LeftLaneOffsetRaw : 117|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField13 : 120|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftLaneOffsetEstimate : 117|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ LeftLaneRoleCandidateRaw : 120|4@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField14 : 128|3@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField15 : 131|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ LeftLaneExtentRaw : 137|7@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField17 : 136|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftLaneActivityCandidateRaw : 131|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftLaneRangeEndEstimate : 137|7@1+ (1,0) [0|127] "m" ACP3_MCU
+ SG_ LeftLaneRangeStartEstimate : 136|7@0+ (1,0) [0|127] "m" ACP3_MCU
  SG_ RawField18 : 145|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField19 : 154|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField20 : 153|3@0+ (1,0) [0|0] "" ACP3_MCU
@@ -783,13 +783,13 @@ BO_ 233 CAMERA_0E9: 64 FCM
  SG_ RawField41 : 282|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField42 : 284|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField43 : 288|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 311|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 311|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
  SG_ RawField45 : 316|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0RelativeMotionCandidate : 333|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityEstimate : 333|11@0- (0.125,0) [-128|127.875] "m/s" ACP3_MCU
  SG_ RawField47 : 338|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LateralRaw : 344|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralEstimate : 344|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
  SG_ RawField49 : 366|14@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField50 : 368|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityEstimate : 368|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField51 : 391|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField52 : 397|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField53 : 400|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -851,12 +851,12 @@ BO_ 234 CAMERA_0EA: 64 FCM
  SG_ RawField37 : 165|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField38 : 168|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ OuterLeftLaneCandidateHeadingRaw : 183|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ OuterLeftLaneCandidateOffsetRaw : 189|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField41 : 192|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ OuterLeftLaneCandidateOffsetEstimate : 189|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ OuterLeftLaneCandidateRoleCandidateRaw : 192|4@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField42 : 200|3@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField43 : 203|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField44 : 209|7@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField45 : 208|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ OuterLeftLaneCandidateActivityCandidateRaw : 203|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ OuterLeftLaneCandidateRangeEndEstimate : 209|7@1+ (1,0) [0|127] "m" ACP3_MCU
+ SG_ OuterLeftLaneCandidateRangeStartEstimate : 208|7@0+ (1,0) [0|127] "m" ACP3_MCU
  SG_ RawField46 : 217|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 226|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField48 : 225|3@0+ (1,0) [0|0] "" ACP3_MCU
@@ -885,13 +885,13 @@ BO_ 234 CAMERA_0EA: 64 FCM
  SG_ RawField71 : 354|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField72 : 367|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField73 : 374|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 381|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
  SG_ RawField75 : 386|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0RelativeMotionCandidate : 403|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityEstimate : 403|11@0- (0.125,0) [-128|127.875] "m/s" ACP3_MCU
  SG_ RawField77 : 408|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LateralRaw : 430|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralEstimate : 430|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
  SG_ RawField79 : 436|14@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField80 : 454|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityEstimate : 454|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField81 : 461|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField82 : 467|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField83 : 472|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -933,12 +933,12 @@ BO_ 235 CAMERA_0EB: 64 FCM
  SG_ RawField22 : 163|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 172|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField24 : 181|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField25 : 187|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField26 : 201|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField27 : 203|4@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftSecondaryBoundaryCandidateOffsetEstimate : 187|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ LeftSecondaryBoundaryCandidateActivityCandidateRaw : 201|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftSecondaryBoundaryCandidateRoleCandidateRaw : 203|4@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField28 : 200|3@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField29 : 213|7@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField30 : 216|7@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftSecondaryBoundaryCandidateRangeEndEstimate : 213|7@0+ (1,0) [0|127] "m" ACP3_MCU
+ SG_ LeftSecondaryBoundaryCandidateRangeStartEstimate : 216|7@1+ (1,0) [0|127] "m" ACP3_MCU
  SG_ RawField31 : 224|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField32 : 226|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField33 : 237|3@1+ (1,0) [0|0] "" ACP3_MCU
@@ -965,13 +965,13 @@ BO_ 235 CAMERA_0EB: 64 FCM
  SG_ RawField54 : 354|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField55 : 367|9@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField56 : 374|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 381|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 381|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
  SG_ RawField58 : 386|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0RelativeMotionCandidate : 403|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityEstimate : 403|11@0- (0.125,0) [-128|127.875] "m/s" ACP3_MCU
  SG_ RawField60 : 408|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LateralRaw : 430|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralEstimate : 430|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
  SG_ RawField62 : 436|14@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField63 : 454|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityEstimate : 454|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField64 : 461|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField65 : 467|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField66 : 472|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -984,20 +984,20 @@ BO_ 235 CAMERA_0EB: 64 FCM
 
 BO_ 236 CAMERA_0EC: 64 FCM
  SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField02 : 3|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftRoadEdgeCandidateCurvatureRaw : 3|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField03_RollingCounter : 6|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField04 : 19|16@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftRoadEdgeCandidateCurvatureRateRaw : 19|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField05 : 35|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField06 : 44|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField09 : 71|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField10 : 77|13@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RawField11 : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftRoadEdgeCandidateHeadingRaw : 71|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftRoadEdgeCandidateOffsetEstimate : 77|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ LeftRoadEdgeCandidateRoleCandidateRaw : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField13 : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField14 : 97|7@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField15 : 96|7@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftRoadEdgeCandidateActivityCandidateRaw : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftRoadEdgeCandidateRangeEndEstimate : 97|7@1+ (1,0) [0|127] "m" ACP3_MCU
+ SG_ LeftRoadEdgeCandidateRangeStartEstimate : 96|7@0+ (1,0) [0|127] "m" ACP3_MCU
  SG_ RawField16 : 105|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField17 : 114|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField18 : 113|16@0- (1,0) [0|0] "" ACP3_MCU
@@ -1026,13 +1026,13 @@ BO_ 236 CAMERA_0EC: 64 FCM
  SG_ RawField41 : 273|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField42 : 275|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField43 : 295|9@0- (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 302|11@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 302|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
  SG_ RawField45 : 307|15@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0RelativeMotionCandidate : 324|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityEstimate : 324|11@0- (0.125,0) [-128|127.875] "m/s" ACP3_MCU
  SG_ RawField47 : 329|10@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ Object0LateralRaw : 351|10@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0LateralEstimate : 351|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
  SG_ RawField49 : 357|14@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField50 : 375|9@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityEstimate : 375|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField51 : 382|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField52 : 388|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField53 : 393|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -1065,7 +1065,7 @@ BO_ 237 CAMERA_0ED: 48 FCM
  SG_ LeftBoundaryCandidateCurvatureRaw : 40|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ LeftBoundaryCandidateCurvatureRateRaw : 56|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ LeftBoundaryCandidateHeadingRaw : 72|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ LeftBoundaryCandidateOffsetRaw : 94|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ LeftBoundaryCandidateOffsetEstimate : 94|12@0- (0.00390625,0) [-8|7.99609] "m" ACP3_MCU
  SG_ LeftBoundaryCandidateSupportRaw : 98|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ LeftBoundaryCandidateExtentRaw : 107|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 116|7@0+ (1,0) [0|0] "" ACP3_MCU
@@ -1073,7 +1073,7 @@ BO_ 237 CAMERA_0ED: 48 FCM
  SG_ RightBoundaryCandidateCurvatureRaw : 123|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RightBoundaryCandidateCurvatureRateRaw : 139|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RightBoundaryCandidateHeadingRaw : 155|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RightBoundaryCandidateOffsetRaw : 161|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ RightBoundaryCandidateOffsetEstimate : 161|12@0- (0.00390625,0) [-8|7.99609] "m" ACP3_MCU
  SG_ RightBoundaryCandidateSupportRaw : 181|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RightBoundaryCandidateExtentRaw : 184|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField31 : 193|7@1+ (1,0) [0|0] "" ACP3_MCU
@@ -1081,7 +1081,7 @@ BO_ 237 CAMERA_0ED: 48 FCM
  SG_ CenterCandidateCurvatureRaw : 206|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCandidateCurvatureRateRaw : 222|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCandidateHeadingRaw : 238|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ CenterCandidateOffsetRaw : 244|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCandidateOffsetEstimate : 244|12@0- (0.00390625,0) [-8|7.99609] "m" ACP3_MCU
  SG_ CenterCandidateSupportRaw : 248|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCandidateExtentRaw : 257|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField39 : 266|7@0+ (1,0) [0|0] "" ACP3_MCU
@@ -1089,7 +1089,7 @@ BO_ 237 CAMERA_0ED: 48 FCM
  SG_ CenterCopyCandidateCurvatureRaw : 273|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCopyCandidateCurvatureRateRaw : 289|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCopyCandidateHeadingRaw : 305|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ CenterCopyCandidateOffsetRaw : 327|12@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ CenterCopyCandidateOffsetEstimate : 327|12@0- (0.00390625,0) [-8|7.99609] "m" ACP3_MCU
  SG_ CenterCopyCandidateSupportRaw : 331|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCopyCandidateExtentRaw : 340|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 349|7@0+ (1,0) [0|0] "" ACP3_MCU
@@ -1324,24 +1324,24 @@ BO_ 516 LRR_SIDE_OBJECT_PAGE2_204: 64 LRR_SIDE
 
 BO_ 517 LRR_SIDE_OBJECT_PAGE3_205: 64 LRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
- SG_ Object0LongitudinalRaw : 318|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object0LateralCandidateRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object1LongitudinalRaw : 329|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object1LateralCandidateRaw : 350|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object2LongitudinalRaw : 356|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object2LateralCandidateRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object3LongitudinalRaw : 383|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object3LateralCandidateRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object4LongitudinalRaw : 394|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object4LateralCandidateRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object5LongitudinalRaw : 421|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object5LateralCandidateRaw : 426|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object6LongitudinalRaw : 432|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object6LateralCandidateRaw : 453|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object7LongitudinalRaw : 459|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object7LateralCandidateRaw : 464|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Object8LongitudinalRaw : 486|11@0- (1,0) [-1024|1023] "" ACP3_MCU
- SG_ Object8LateralCandidateRaw : 491|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Object0LongitudinalEstimate : 318|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object0LateralEstimate : 323|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object1LongitudinalEstimate : 329|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object1LateralEstimate : 350|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object2LongitudinalEstimate : 356|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object2LateralEstimate : 361|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object3LongitudinalEstimate : 383|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object3LateralEstimate : 388|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object4LongitudinalEstimate : 394|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object4LateralEstimate : 415|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object5LongitudinalEstimate : 421|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object5LateralEstimate : 426|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object6LongitudinalEstimate : 432|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object6LateralEstimate : 453|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object7LongitudinalEstimate : 459|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object7LateralEstimate : 464|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Object8LongitudinalEstimate : 486|11@0- (0.125,0) [-128|127.875] "m" ACP3_MCU
+ SG_ Object8LateralEstimate : 491|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
 
 BO_ 518 LRR_SIDE_AUX1_206: 48 LRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -1398,14 +1398,14 @@ BO_ 2147745830 ACP3_MCU_NodeStatus_CAN8: 1 ACP3_MCU
  SG_ NodeStatusBit0 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 213 CAN8_RX_0D5: 64 LRR
- SG_ Slot14LongitudinalRaw : 318|11@0+ (1,0) [0|2047] "" ACP3_MCU
- SG_ Slot14LateralRaw : 323|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Slot16LongitudinalRaw : 356|11@0+ (1,0) [0|2047] "" ACP3_MCU
- SG_ Slot16LateralRaw : 361|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Slot17LongitudinalRaw : 383|11@0+ (1,0) [0|2047] "" ACP3_MCU
- SG_ Slot17LateralRaw : 388|10@0- (1,0) [-512|511] "" ACP3_MCU
- SG_ Slot18LongitudinalRaw : 394|11@0+ (1,0) [0|2047] "" ACP3_MCU
- SG_ Slot18LateralRaw : 415|10@0- (1,0) [-512|511] "" ACP3_MCU
+ SG_ Slot14LongitudinalEstimate : 318|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
+ SG_ Slot14LateralEstimate : 323|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Slot16LongitudinalEstimate : 356|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
+ SG_ Slot16LateralEstimate : 361|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Slot17LongitudinalEstimate : 383|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
+ SG_ Slot17LateralEstimate : 388|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
+ SG_ Slot18LongitudinalEstimate : 394|11@0+ (0.125,0) [0|255.875] "m" ACP3_MCU
+ SG_ Slot18LateralEstimate : 415|10@0- (0.125,0) [-64|63.875] "m" ACP3_MCU
 
 BO_ 214 CAN8_RX_0D6: 64 LRR
 
@@ -1521,31 +1521,13 @@ CM_ BO_ 1317 "Transmitter: FCM.";
 CM_ BO_ 1405 "Transmitter: CGM. CGM route: signal-gateway output on CAN8.";
 CM_ SG_ 963 PrimaryRunCrankCommand "The exact command-value labels remain unknown.";
 
-CM_ SG_ 222 RightLaneOffsetRaw "Image-checked host right boundary; positive offset is left. Raw scale retained.";
 CM_ SG_ 222 RightLaneCurvatureRaw "Image-space curvature fit only; physical radius scale is unverified. Heading and extent retain raw units.";
 CM_ SG_ 222 RightLaneStateRaw "State meaning unresolved. Values 1 and 2 both occur with valid-looking lanes; do not interpret as an availability flag.";
-CM_ SG_ 233 LeftLaneOffsetRaw "Image-checked host left boundary; positive offset is left. Raw scale retained. Viewer projection gains, ground-plane height, sensor-frame corrections, filtering, matching, log axes and display brightness are application hypotheses/settings, not CAN scaling. No physical conversion is encoded here.";
 CM_ SG_ 233 LeftLaneCurvatureRaw "Image-space curvature fit only; physical radius scale is unverified. Heading and extent retain raw units.";
 CM_ SG_ 233 LeftLaneStateRaw "State meaning unresolved. Values 1 and 2 both occur with valid-looking lanes; do not interpret as an availability flag.";
-CM_ SG_ 221 Object0LongitudinalRaw "FCM record at MSB-stream bit 325; X/Y bearing image-checked. Absolute coordinate units and camera-only provenance unresolved. Zero and recurrent 1992 are absence/sentinel candidates, not decoded validity.";
 CM_ SG_ 221 Object0IdCandidate "Candidate identity can follow a vehicle across records; not proven globally unique or persistent. Object0 denotes this message record, not a fixed vehicle.";
-CM_ SG_ 221 Object0RelativeMotionCandidate "Signed motion candidate; E9 correlates with longitudinal-coordinate derivative. Physical speed units remain unverified.";
-CM_ SG_ 222 Object0LongitudinalRaw "FCM record at MSB-stream bit 309; X/Y bearing image-checked. Absolute coordinate units and camera-only provenance unresolved. Zero and recurrent 1992 are absence/sentinel candidates, not decoded validity.";
 CM_ SG_ 222 Object0IdCandidate "Candidate identity can follow a vehicle across records; not proven globally unique or persistent. Object0 denotes this message record, not a fixed vehicle.";
-CM_ SG_ 222 Object0RelativeMotionCandidate "Signed motion candidate; E9 correlates with longitudinal-coordinate derivative. Physical speed units remain unverified.";
-CM_ SG_ 233 Object0LongitudinalRaw "FCM record at MSB-stream bit 251; X/Y bearing image-checked. Absolute coordinate units and camera-only provenance unresolved. Zero and recurrent 1992 are absence/sentinel candidates, not decoded validity.";
 CM_ SG_ 233 Object0IdCandidate "Candidate identity can follow a vehicle across records; not proven globally unique or persistent. Object0 denotes this message record, not a fixed vehicle.";
-CM_ SG_ 233 Object0RelativeMotionCandidate "Signed motion candidate; E9 correlates with longitudinal-coordinate derivative. Physical speed units remain unverified.";
-CM_ SG_ 210 Object0LongitudinalRaw "First compact coordinate record, MSB-stream bit313. Signed rear-to-front trajectory and detail-message copies cross-checked during a rear-to-front vehicle pass. Raw units; record index is not an object ID.";
-CM_ SG_ 210 Object0LateralCandidateRaw "Lateral interpretation and sensor-to-vehicle transform remain provisional. Do not assume a calibrated common reference frame or filter solely by sensor side.";
-CM_ SG_ 207 Object0LongitudinalRaw "First compact coordinate record, MSB-stream bit313. Signed rear-to-front trajectory and detail-message copies cross-checked during a rear-to-front vehicle pass. Raw units; record index is not an object ID.";
-CM_ SG_ 207 Object0LateralCandidateRaw "Lateral interpretation and sensor-to-vehicle transform remain provisional. Do not assume a calibrated common reference frame or filter solely by sensor side.";
-CM_ SG_ 517 Object0LongitudinalRaw "First compact coordinate record, MSB-stream bit313. Signed rear-to-front trajectory and detail-message copies cross-checked during a rear-to-front vehicle pass. Raw units; record index is not an object ID.";
-CM_ SG_ 517 Object0LateralCandidateRaw "Lateral interpretation and sensor-to-vehicle transform remain provisional. Do not assume a calibrated common reference frame or filter solely by sensor side.";
-CM_ SG_ 190 Object0LongitudinalRaw "First compact coordinate record, MSB-stream bit313. Signed rear-to-front trajectory and detail-message copies cross-checked during a rear-to-front vehicle pass. Raw units; record index is not an object ID.";
-CM_ SG_ 190 Object0LateralCandidateRaw "Lateral interpretation and sensor-to-vehicle transform remain provisional. Do not assume a calibrated common reference frame or filter solely by sensor side.";
-CM_ SG_ 199 Object0LongitudinalRaw "First compact coordinate record, MSB-stream bit313. Signed rear-to-front trajectory and detail-message copies cross-checked during a rear-to-front vehicle pass. Raw units; record index is not an object ID.";
-CM_ SG_ 199 Object0LateralCandidateRaw "Lateral interpretation and sensor-to-vehicle transform remain provisional. Do not assume a calibrated common reference frame or filter solely by sensor side.";
 CM_ SG_ 212 Object0LongitudinalRaw "First-object longitudinal duplicate at MSB-stream bit273; agrees within one raw count with its compact summary in the rear-left pass recording. Not an additional target.";
 CM_ SG_ 209 Object0LongitudinalRaw "First-object longitudinal duplicate at MSB-stream bit273; agrees within one raw count with its compact summary in the rear-left pass recording. Not an additional target.";
 CM_ SG_ 198 Object0LongitudinalRaw "First-object longitudinal duplicate at MSB-stream bit273; agrees within one raw count with its compact summary in the rear-left pass recording. Not an additional target.";
@@ -1554,26 +1536,13 @@ CM_ SG_ 254 Object0LongitudinalRaw "First-object longitudinal duplicate at MSB-s
 CM_ SG_ 180 UltrasonicRecord1Raw "All six six-byte records contain candidate 11-bit echo values at MSB-first record offsets 4,15,26. Repeated 2000 appears to be a sentinel; zeros and remaining bits need validity decoding. Millimetres, bank position and sensor order remain hypotheses. Raw records intentionally retained.";
 CM_ SG_ 532 UltrasonicRecord1Raw "All six six-byte records contain candidate 11-bit echo values at MSB-first record offsets 4,15,26. Repeated 2000 appears to be a sentinel; zeros and remaining bits need validity decoding. Millimetres, bank position and sensor order remain hypotheses. Raw records intentionally retained.";
 
-CM_ SG_ 219 Object0LongitudinalRaw "FCM repeated record at MSB-stream bit130; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
 CM_ SG_ 219 Object0IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
-CM_ SG_ 219 Object1LongitudinalRaw "FCM repeated record at MSB-stream bit301; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
 CM_ SG_ 219 Object1IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
-CM_ SG_ 220 Object0LongitudinalRaw "FCM repeated record at MSB-stream bit130; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
 CM_ SG_ 220 Object0IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
-CM_ SG_ 220 Object1LongitudinalRaw "FCM repeated record at MSB-stream bit301; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
 CM_ SG_ 220 Object1IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
-CM_ SG_ 234 Object0LongitudinalRaw "FCM repeated record at MSB-stream bit325; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
 CM_ SG_ 234 Object0IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
-CM_ SG_ 235 Object0LongitudinalRaw "FCM repeated record at MSB-stream bit325; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
 CM_ SG_ 235 Object0IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
-CM_ SG_ 236 Object0LongitudinalRaw "FCM repeated record at MSB-stream bit244; same structural layout as image-checked DD/DE/E9 records. Absolute units, OEM validity and camera-only provenance unresolved. Zero and recurrent1992 are sentinel candidates.";
 CM_ SG_ 236 Object0IdCandidate "Six-bit identity candidate; not proven globally unique or persistent. Record index is not vehicle identity. RelativeMotionCandidate retains uncalibrated signed raw units.";
-CM_ SG_ 210 Object1LongitudinalRaw "Object0..8 are the 21-bit compact records used by the viewer, not persistent IDs. Later record semantics follow the repeated-layout hypothesis; first records have the strongest cross-message evidence. All-zero records are omitted by the viewer, not a decoded OEM validity condition. Lateral reference frame remains provisional.";
-CM_ SG_ 207 Object1LongitudinalRaw "Object0..8 are the 21-bit compact records used by the viewer, not persistent IDs. Later record semantics follow the repeated-layout hypothesis; first records have the strongest cross-message evidence. All-zero records are omitted by the viewer, not a decoded OEM validity condition. Lateral reference frame remains provisional.";
-CM_ SG_ 517 Object1LongitudinalRaw "Object0..8 are the 21-bit compact records used by the viewer, not persistent IDs. Later record semantics follow the repeated-layout hypothesis; first records have the strongest cross-message evidence. All-zero records are omitted by the viewer, not a decoded OEM validity condition. Lateral reference frame remains provisional.";
-CM_ SG_ 190 Object1LongitudinalRaw "Object0..8 are the 21-bit compact records used by the viewer, not persistent IDs. Later record semantics follow the repeated-layout hypothesis; first records have the strongest cross-message evidence. All-zero records are omitted by the viewer, not a decoded OEM validity condition. Lateral reference frame remains provisional.";
-CM_ SG_ 199 Object1LongitudinalRaw "Object0..8 are the 21-bit compact records used by the viewer, not persistent IDs. Later record semantics follow the repeated-layout hypothesis; first records have the strongest cross-message evidence. All-zero records are omitted by the viewer, not a decoded OEM validity condition. Lateral reference frame remains provisional.";
-CM_ SG_ 213 Slot14LongitudinalRaw "Compact front-radar records used by the viewer: grid slots14,16,17,18. Slots may reassign between vehicles and are not object IDs. X/Y bearing compared with truck images; absolute units and OEM validity remain unresolved. Radar velocity in the viewer is coordinate-derived, not a decoded signal.";
 
 BA_DEF_ BO_ "GenMsgCycleTime" INT 0 65535;
 BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","J1939PG","StandardCAN_FD","ExtendedCAN_FD";
@@ -1761,7 +1730,7 @@ BO_ 204 CAMERA_LANE_MODEL_RIGHT_CANDIDATE_0CC: 48 Vector__XXX
  SG_ LaneCurvatureCandidateRaw : 37|16@0- (1,0) [-32768|32767] "" Vector__XXX
  SG_ LaneCurvatureRateCandidateRaw : 53|16@0- (1,0) [-32768|32767] "" Vector__XXX
  SG_ LaneHeadingCandidateRaw : 69|10@0- (1,0) [-512|511] "" Vector__XXX
- SG_ LaneOffsetCandidateRaw : 75|13@0- (1,0) [-4096|4095] "" Vector__XXX
+ SG_ LaneOffsetEstimate : 75|13@0- (0.00390625,0) [-16|15.9961] "m" Vector__XXX
 
 CM_ BO_ 204 "Empirical right lane-model candidate. Geometric fields track the corresponding camera boundary; this may be processed or copied camera data, not an independent sensor. Transmitter, validity bits, unused payload and physical units remain unresolved.";
 BA_ "VFrameFormat" BO_ 204 4;
@@ -1770,7 +1739,7 @@ BO_ 206 CAMERA_LANE_MODEL_LEFT_CANDIDATE_0CE: 64 Vector__XXX
  SG_ LaneCurvatureCandidateRaw : 37|16@0- (1,0) [-32768|32767] "" Vector__XXX
  SG_ LaneCurvatureRateCandidateRaw : 53|16@0- (1,0) [-32768|32767] "" Vector__XXX
  SG_ LaneHeadingCandidateRaw : 69|10@0- (1,0) [-512|511] "" Vector__XXX
- SG_ LaneOffsetCandidateRaw : 75|13@0- (1,0) [-4096|4095] "" Vector__XXX
+ SG_ LaneOffsetEstimate : 75|13@0- (0.00390625,0) [-16|15.9961] "m" Vector__XXX
 
 CM_ BO_ 206 "Empirical left lane-model candidate. Geometric fields track the corresponding camera boundary; this may be processed or copied camera data, not an independent sensor. Transmitter, validity bits, unused payload and physical units remain unresolved.";
 BA_ "VFrameFormat" BO_ 206 4;
@@ -1785,6 +1754,412 @@ CM_ SG_ 237 CenterCopyCandidateSupportRaw "Empirical support-like field. Zero in
 CM_ SG_ 237 CenterCopyCandidateExtentRaw "Empirical extent-like field. Zero in the checked parked recording and positive during supported highway tracking; OEM validity semantics and physical units remain unresolved. Application thresholds are not a decoded validity flag.";
 
 CM_ SG_ 221 OuterRightLaneCandidateSupportRaw "Support-like raw field, not a confirmed validity flag. Nonzero values can persist with frozen geometry.";
-CM_ SG_ 221 OuterRightLaneCandidateOffsetRaw "Additional outer-boundary candidate beyond the host lane; repeated lane-polynomial layout and observed placement support this interpretation. Physical units and validity unresolved. Values can freeze while frames continue; do not infer a detected boundary from message freshness alone.";
 CM_ SG_ 234 OuterLeftLaneCandidateSupportRaw "Support-like raw field, not a confirmed validity flag. Nonzero values can persist with frozen geometry.";
-CM_ SG_ 234 OuterLeftLaneCandidateOffsetRaw "Additional outer-boundary candidate beyond the host lane; repeated lane-polynomial layout and observed placement support this interpretation. Physical units and validity unresolved. Values can freeze while frames continue; do not infer a detected boundary from message freshness alone.";
+
+CM_ SG_ 219 RightRoadEdgeCandidateCurvatureRaw "Empirical right road-edge candidate; same polynomial representation as camera lanes. Image alignment supports pavement/curb boundary; physical units and exact OEM boundary class unresolved. Activity zero retains old geometry.";
+
+CM_ SG_ 219 RightRoadEdgeCandidateCurvatureRateRaw "Empirical right road-edge candidate; same polynomial representation as camera lanes. Image alignment supports pavement/curb boundary; physical units and exact OEM boundary class unresolved. Activity zero retains old geometry.";
+
+CM_ SG_ 219 RightRoadEdgeCandidateHeadingRaw "Empirical right road-edge candidate; same polynomial representation as camera lanes. Image alignment supports pavement/curb boundary; physical units and exact OEM boundary class unresolved. Activity zero retains old geometry.";
+
+
+CM_ SG_ 219 RightRoadEdgeCandidateActivityCandidateRaw "Empirical polynomial activity: 0 retains geometry; 2 and 3 can update geometry; 1 not observed. Not an OEM validity or confidence enum. Freshness and geometric checks remain necessary.";
+
+
+
+CM_ SG_ 220 RightSecondaryBoundaryCandidateActivityCandidateRaw "Empirical polynomial activity: 0 retains geometry; 2 and 3 can update geometry; 1 not observed. Not an OEM validity or confidence enum. Freshness and geometric checks remain necessary.";
+
+
+
+CM_ SG_ 221 OuterRightLaneCandidateActivityCandidateRaw "Empirical polynomial activity: 0 retains geometry; 2 and 3 can update geometry; 1 not observed. Not an OEM validity or confidence enum. Freshness and geometric checks remain necessary.";
+
+
+CM_ SG_ 222 RightLaneActivityCandidateRaw "Empirical polynomial activity: 0 retains geometry; 2 and 3 can update geometry; 1 not observed. Not an OEM validity or confidence enum. Freshness and geometric checks remain necessary.";
+
+
+CM_ SG_ 233 LeftLaneActivityCandidateRaw "Empirical polynomial activity: 0 retains geometry; 2 and 3 can update geometry; 1 not observed. Not an OEM validity or confidence enum. Freshness and geometric checks remain necessary.";
+
+
+CM_ SG_ 234 OuterLeftLaneCandidateActivityCandidateRaw "Empirical polynomial activity: 0 retains geometry; 2 and 3 can update geometry; 1 not observed. Not an OEM validity or confidence enum. Freshness and geometric checks remain necessary.";
+
+
+CM_ SG_ 235 LeftSecondaryBoundaryCandidateActivityCandidateRaw "Empirical polynomial activity: 0 retains geometry; 2 and 3 can update geometry; 1 not observed. Not an OEM validity or confidence enum. Freshness and geometric checks remain necessary.";
+
+
+CM_ SG_ 236 LeftRoadEdgeCandidateCurvatureRaw "Empirical left road-edge candidate; same polynomial representation as camera lanes. Image alignment supports pavement/curb boundary; physical units and exact OEM boundary class unresolved. Activity zero retains old geometry.";
+
+CM_ SG_ 236 LeftRoadEdgeCandidateCurvatureRateRaw "Empirical left road-edge candidate; same polynomial representation as camera lanes. Image alignment supports pavement/curb boundary; physical units and exact OEM boundary class unresolved. Activity zero retains old geometry.";
+
+CM_ SG_ 236 LeftRoadEdgeCandidateHeadingRaw "Empirical left road-edge candidate; same polynomial representation as camera lanes. Image alignment supports pavement/curb boundary; physical units and exact OEM boundary class unresolved. Activity zero retains old geometry.";
+
+
+CM_ SG_ 236 LeftRoadEdgeCandidateActivityCandidateRaw "Empirical polynomial activity: 0 retains geometry; 2 and 3 can update geometry; 1 not observed. Not an OEM validity or confidence enum. Freshness and geometric checks remain necessary.";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CM_ SG_ 219 RightRoadEdgeCandidateRoleCandidateRaw "Observed active role value is fixed by slot: E9=1, DE=2, EA=3, DD=4, EB=5, DC=6, EC=7, DB=8. Slots5/6 align with farther left/right boundaries in image review; exact paint/barrier class unresolved. Zero commonly accompanies retained/inactive geometry.";
+
+CM_ SG_ 220 RightSecondaryBoundaryCandidateRoleCandidateRaw "Observed active role value is fixed by slot: E9=1, DE=2, EA=3, DD=4, EB=5, DC=6, EC=7, DB=8. Slots5/6 align with farther left/right boundaries in image review; exact paint/barrier class unresolved. Zero commonly accompanies retained/inactive geometry.";
+
+CM_ SG_ 221 OuterRightLaneCandidateRoleCandidateRaw "Observed active role value is fixed by slot: E9=1, DE=2, EA=3, DD=4, EB=5, DC=6, EC=7, DB=8. Slots5/6 align with farther left/right boundaries in image review; exact paint/barrier class unresolved. Zero commonly accompanies retained/inactive geometry.";
+
+CM_ SG_ 222 RightLaneRoleCandidateRaw "Observed active role value is fixed by slot: E9=1, DE=2, EA=3, DD=4, EB=5, DC=6, EC=7, DB=8. Slots5/6 align with farther left/right boundaries in image review; exact paint/barrier class unresolved. Zero commonly accompanies retained/inactive geometry.";
+
+CM_ SG_ 233 LeftLaneRoleCandidateRaw "Observed active role value is fixed by slot: E9=1, DE=2, EA=3, DD=4, EB=5, DC=6, EC=7, DB=8. Slots5/6 align with farther left/right boundaries in image review; exact paint/barrier class unresolved. Zero commonly accompanies retained/inactive geometry.";
+
+CM_ SG_ 234 OuterLeftLaneCandidateRoleCandidateRaw "Observed active role value is fixed by slot: E9=1, DE=2, EA=3, DD=4, EB=5, DC=6, EC=7, DB=8. Slots5/6 align with farther left/right boundaries in image review; exact paint/barrier class unresolved. Zero commonly accompanies retained/inactive geometry.";
+
+CM_ SG_ 235 LeftSecondaryBoundaryCandidateRoleCandidateRaw "Observed active role value is fixed by slot: E9=1, DE=2, EA=3, DD=4, EB=5, DC=6, EC=7, DB=8. Slots5/6 align with farther left/right boundaries in image review; exact paint/barrier class unresolved. Zero commonly accompanies retained/inactive geometry.";
+
+CM_ SG_ 236 LeftRoadEdgeCandidateRoleCandidateRaw "Observed active role value is fixed by slot: E9=1, DE=2, EA=3, DD=4, EB=5, DC=6, EC=7, DB=8. Slots5/6 align with farther left/right boundaries in image review; exact paint/barrier class unresolved. Zero commonly accompanies retained/inactive geometry.";
+
+CM_ SG_ 219 RightRoadEdgeCandidateOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 219 RightRoadEdgeCandidateRangeEndEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 219 RightRoadEdgeCandidateRangeStartEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 219 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 219 Object0RelativeLongitudinalVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 219 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 219 Object0RelativeLateralVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks. Raw -256/+255 endpoints excluded from numeric extrapolation; exact sentinel semantics unverified.";
+
+CM_ SG_ 219 Object1LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 219 Object1RelativeLongitudinalVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 219 Object1LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 219 Object1RelativeLateralVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks. Raw -256/+255 endpoints excluded from numeric extrapolation; exact sentinel semantics unverified.";
+
+CM_ SG_ 220 RightSecondaryBoundaryCandidateOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 220 RightSecondaryBoundaryCandidateRangeEndEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 220 RightSecondaryBoundaryCandidateRangeStartEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 220 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 220 Object0RelativeLongitudinalVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 220 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 220 Object0RelativeLateralVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks. Raw -256/+255 endpoints excluded from numeric extrapolation; exact sentinel semantics unverified.";
+
+CM_ SG_ 220 Object1LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 220 Object1RelativeLongitudinalVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 220 Object1LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 220 Object1RelativeLateralVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks. Raw -256/+255 endpoints excluded from numeric extrapolation; exact sentinel semantics unverified.";
+
+CM_ SG_ 221 OuterRightLaneCandidateOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 221 OuterRightLaneCandidateRangeEndEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 221 OuterRightLaneCandidateRangeStartEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 221 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 221 Object0RelativeLongitudinalVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 221 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 221 Object0RelativeLateralVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks. Raw -256/+255 endpoints excluded from numeric extrapolation; exact sentinel semantics unverified.";
+
+CM_ SG_ 222 RightLaneOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 222 RightLaneRangeEndEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 222 RightLaneRangeStartEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 222 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 222 Object0RelativeLongitudinalVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 222 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 222 Object0RelativeLateralVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks. Raw -256/+255 endpoints excluded from numeric extrapolation; exact sentinel semantics unverified.";
+
+CM_ SG_ 233 LeftLaneOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 233 LeftLaneRangeEndEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 233 LeftLaneRangeStartEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 233 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 233 Object0RelativeLongitudinalVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 233 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 233 Object0RelativeLateralVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks. Raw -256/+255 endpoints excluded from numeric extrapolation; exact sentinel semantics unverified.";
+
+CM_ SG_ 234 OuterLeftLaneCandidateOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 234 OuterLeftLaneCandidateRangeEndEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 234 OuterLeftLaneCandidateRangeStartEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 234 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 234 Object0RelativeLongitudinalVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 234 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 234 Object0RelativeLateralVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks. Raw -256/+255 endpoints excluded from numeric extrapolation; exact sentinel semantics unverified.";
+
+CM_ SG_ 235 LeftSecondaryBoundaryCandidateOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 235 LeftSecondaryBoundaryCandidateRangeEndEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 235 LeftSecondaryBoundaryCandidateRangeStartEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 235 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 235 Object0RelativeLongitudinalVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 235 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 235 Object0RelativeLateralVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks. Raw -256/+255 endpoints excluded from numeric extrapolation; exact sentinel semantics unverified.";
+
+CM_ SG_ 236 LeftRoadEdgeCandidateOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 236 LeftRoadEdgeCandidateRangeEndEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 236 LeftRoadEdgeCandidateRangeStartEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Boundary endpoint: activity zero retains old values; 127 may be a range ceiling.";
+
+CM_ SG_ 236 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 236 Object0RelativeLongitudinalVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 236 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 236 Object0RelativeLateralVelocityEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks. Raw -256/+255 endpoints excluded from numeric extrapolation; exact sentinel semantics unverified.";
+
+CM_ SG_ 204 LaneOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 206 LaneOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 237 LeftBoundaryCandidateOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 237 RightBoundaryCandidateOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 237 CenterCandidateOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 237 CenterCopyCandidateOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+CM_ SG_ 213 Slot14LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 213 Slot14LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 213 Slot16LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 213 Slot16LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 213 Slot17LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 213 Slot17LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 213 Slot18LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 213 Slot18LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object1LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object1LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object2LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object2LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object3LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object3LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object4LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object4LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object5LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object5LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object6LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object6LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object7LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object7LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object8LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 210 Object8LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object1LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object1LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object2LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object2LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object3LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object3LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object4LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object4LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object5LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object5LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object6LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object6LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object7LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object7LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object8LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 207 Object8LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object1LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object1LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object2LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object2LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object3LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object3LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object4LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object4LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object5LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object5LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object6LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object6LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object7LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object7LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object8LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 517 Object8LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object1LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object1LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object2LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object2LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object3LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object3LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object4LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object4LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object5LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object5LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object6LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object6LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object7LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object7LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object8LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 190 Object8LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object0LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object0LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object1LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object1LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object2LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object2LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object3LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object3LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object4LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object4LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object5LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object5LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object6LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object6LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object7LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object7LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object8LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 199 Object8LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
