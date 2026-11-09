@@ -441,7 +441,7 @@ BO_ 219 CAMERA_0DB: 64 FCM
  SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RightRoadEdgeCandidateHeadingRaw : 71|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RightRoadEdgeCandidateOffsetEstimate : 77|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ RightRoadEdgeCandidateOffsetEstimate : 77|13@0- (0.00390625,0) [-16|15.99609375] "m" ACP3_MCU
  SG_ RightRoadEdgeCandidateRoleCandidateRaw : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RightRoadEdgeCandidateActivityCandidateRaw : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -511,7 +511,7 @@ BO_ 220 CAMERA_0DC: 64 FCM
  SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField09 : 71|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RightSecondaryBoundaryCandidateOffsetEstimate : 77|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ RightSecondaryBoundaryCandidateOffsetEstimate : 77|13@0- (0.00390625,0) [-16|15.99609375] "m" ACP3_MCU
  SG_ RightSecondaryBoundaryCandidateRoleCandidateRaw : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RightSecondaryBoundaryCandidateActivityCandidateRaw : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -596,7 +596,7 @@ BO_ 221 CAMERA_0DD: 64 FCM
  SG_ RawField22 : 163|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 172|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ OuterRightLaneCandidateHeadingRaw : 181|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ OuterRightLaneCandidateOffsetEstimate : 187|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ OuterRightLaneCandidateOffsetEstimate : 187|13@0- (0.00390625,0) [-16|15.99609375] "m" ACP3_MCU
  SG_ OuterRightLaneCandidateActivityCandidateRaw : 201|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ OuterRightLaneCandidateRoleCandidateRaw : 203|4@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField28 : 200|3@0+ (1,0) [0|0] "" ACP3_MCU
@@ -667,7 +667,7 @@ BO_ 222 CAMERA_0DE: 64 FCM
  SG_ RawField19 : 88|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField20 : 97|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RightLaneHeadingRaw : 106|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RightLaneOffsetEstimate : 112|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ RightLaneOffsetEstimate : 112|13@0- (0.00390625,0) [-16|15.99609375] "m" ACP3_MCU
  SG_ RightLaneRoleCandidateRaw : 128|4@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RightLaneStateRaw : 139|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RightLaneRangeEndEstimate : 138|7@0+ (1,0) [0|127] "m" ACP3_MCU
@@ -751,7 +751,7 @@ BO_ 233 CAMERA_0E9: 64 FCM
  SG_ RawField09 : 93|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField10 : 96|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ LeftLaneHeadingRaw : 111|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ LeftLaneOffsetEstimate : 117|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ LeftLaneOffsetEstimate : 117|13@0- (0.00390625,0) [-16|15.99609375] "m" ACP3_MCU
  SG_ LeftLaneRoleCandidateRaw : 120|4@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField14 : 128|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ LeftLaneActivityCandidateRaw : 131|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -851,7 +851,7 @@ BO_ 234 CAMERA_0EA: 64 FCM
  SG_ RawField37 : 165|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField38 : 168|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ OuterLeftLaneCandidateHeadingRaw : 183|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ OuterLeftLaneCandidateOffsetEstimate : 189|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ OuterLeftLaneCandidateOffsetEstimate : 189|13@0- (0.00390625,0) [-16|15.99609375] "m" ACP3_MCU
  SG_ OuterLeftLaneCandidateRoleCandidateRaw : 192|4@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField42 : 200|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ OuterLeftLaneCandidateActivityCandidateRaw : 203|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -933,7 +933,7 @@ BO_ 235 CAMERA_0EB: 64 FCM
  SG_ RawField22 : 163|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 172|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField24 : 181|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ LeftSecondaryBoundaryCandidateOffsetEstimate : 187|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ LeftSecondaryBoundaryCandidateOffsetEstimate : 187|13@0- (0.00390625,0) [-16|15.99609375] "m" ACP3_MCU
  SG_ LeftSecondaryBoundaryCandidateActivityCandidateRaw : 201|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ LeftSecondaryBoundaryCandidateRoleCandidateRaw : 203|4@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField28 : 200|3@0+ (1,0) [0|0] "" ACP3_MCU
@@ -992,7 +992,7 @@ BO_ 236 CAMERA_0EC: 64 FCM
  SG_ RawField07 : 53|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField08 : 56|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ LeftRoadEdgeCandidateHeadingRaw : 71|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ LeftRoadEdgeCandidateOffsetEstimate : 77|13@0- (0.00390625,0) [-16|15.9961] "m" ACP3_MCU
+ SG_ LeftRoadEdgeCandidateOffsetEstimate : 77|13@0- (0.00390625,0) [-16|15.99609375] "m" ACP3_MCU
  SG_ LeftRoadEdgeCandidateRoleCandidateRaw : 80|4@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField12 : 88|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ LeftRoadEdgeCandidateActivityCandidateRaw : 91|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -1065,7 +1065,7 @@ BO_ 237 CAMERA_0ED: 48 FCM
  SG_ LeftBoundaryCandidateCurvatureRaw : 40|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ LeftBoundaryCandidateCurvatureRateRaw : 56|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ LeftBoundaryCandidateHeadingRaw : 72|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ LeftBoundaryCandidateOffsetEstimate : 94|12@0- (0.00390625,0) [-8|7.99609] "m" ACP3_MCU
+ SG_ LeftBoundaryCandidateOffsetEstimate : 94|12@0- (0.00390625,0) [-8|7.99609375] "m" ACP3_MCU
  SG_ LeftBoundaryCandidateSupportRaw : 98|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ LeftBoundaryCandidateExtentRaw : 107|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 116|7@0+ (1,0) [0|0] "" ACP3_MCU
@@ -1073,7 +1073,7 @@ BO_ 237 CAMERA_0ED: 48 FCM
  SG_ RightBoundaryCandidateCurvatureRaw : 123|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RightBoundaryCandidateCurvatureRateRaw : 139|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RightBoundaryCandidateHeadingRaw : 155|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ RightBoundaryCandidateOffsetEstimate : 161|12@0- (0.00390625,0) [-8|7.99609] "m" ACP3_MCU
+ SG_ RightBoundaryCandidateOffsetEstimate : 161|12@0- (0.00390625,0) [-8|7.99609375] "m" ACP3_MCU
  SG_ RightBoundaryCandidateSupportRaw : 181|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RightBoundaryCandidateExtentRaw : 184|7@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField31 : 193|7@1+ (1,0) [0|0] "" ACP3_MCU
@@ -1081,7 +1081,7 @@ BO_ 237 CAMERA_0ED: 48 FCM
  SG_ CenterCandidateCurvatureRaw : 206|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCandidateCurvatureRateRaw : 222|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCandidateHeadingRaw : 238|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ CenterCandidateOffsetEstimate : 244|12@0- (0.00390625,0) [-8|7.99609] "m" ACP3_MCU
+ SG_ CenterCandidateOffsetEstimate : 244|12@0- (0.00390625,0) [-8|7.99609375] "m" ACP3_MCU
  SG_ CenterCandidateSupportRaw : 248|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCandidateExtentRaw : 257|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField39 : 266|7@0+ (1,0) [0|0] "" ACP3_MCU
@@ -1089,7 +1089,7 @@ BO_ 237 CAMERA_0ED: 48 FCM
  SG_ CenterCopyCandidateCurvatureRaw : 273|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCopyCandidateCurvatureRateRaw : 289|16@0- (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCopyCandidateHeadingRaw : 305|10@0- (1,0) [0|0] "" ACP3_MCU
- SG_ CenterCopyCandidateOffsetEstimate : 327|12@0- (0.00390625,0) [-8|7.99609] "m" ACP3_MCU
+ SG_ CenterCopyCandidateOffsetEstimate : 327|12@0- (0.00390625,0) [-8|7.99609375] "m" ACP3_MCU
  SG_ CenterCopyCandidateSupportRaw : 331|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ CenterCopyCandidateExtentRaw : 340|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 349|7@0+ (1,0) [0|0] "" ACP3_MCU
@@ -1730,7 +1730,7 @@ BO_ 204 CAMERA_LANE_MODEL_RIGHT_CANDIDATE_0CC: 48 Vector__XXX
  SG_ LaneCurvatureCandidateRaw : 37|16@0- (1,0) [-32768|32767] "" Vector__XXX
  SG_ LaneCurvatureRateCandidateRaw : 53|16@0- (1,0) [-32768|32767] "" Vector__XXX
  SG_ LaneHeadingCandidateRaw : 69|10@0- (1,0) [-512|511] "" Vector__XXX
- SG_ LaneOffsetEstimate : 75|13@0- (0.00390625,0) [-16|15.9961] "m" Vector__XXX
+ SG_ LaneOffsetEstimate : 75|13@0- (0.00390625,0) [-16|15.99609375] "m" Vector__XXX
 
 CM_ BO_ 204 "Empirical right lane-model candidate. Geometric fields track the corresponding camera boundary; this may be processed or copied camera data, not an independent sensor. Transmitter, validity bits, unused payload and physical units remain unresolved.";
 BA_ "VFrameFormat" BO_ 204 4;
@@ -1739,7 +1739,7 @@ BO_ 206 CAMERA_LANE_MODEL_LEFT_CANDIDATE_0CE: 64 Vector__XXX
  SG_ LaneCurvatureCandidateRaw : 37|16@0- (1,0) [-32768|32767] "" Vector__XXX
  SG_ LaneCurvatureRateCandidateRaw : 53|16@0- (1,0) [-32768|32767] "" Vector__XXX
  SG_ LaneHeadingCandidateRaw : 69|10@0- (1,0) [-512|511] "" Vector__XXX
- SG_ LaneOffsetEstimate : 75|13@0- (0.00390625,0) [-16|15.9961] "m" Vector__XXX
+ SG_ LaneOffsetEstimate : 75|13@0- (0.00390625,0) [-16|15.99609375] "m" Vector__XXX
 
 CM_ BO_ 206 "Empirical left lane-model candidate. Geometric fields track the corresponding camera boundary; this may be processed or copied camera data, not an independent sensor. Transmitter, validity bits, unused payload and physical units remain unresolved.";
 BA_ "VFrameFormat" BO_ 206 4;
@@ -1827,6 +1827,175 @@ CM_ SG_ 234 OuterLeftLaneCandidateRoleCandidateRaw "Observed active role value i
 CM_ SG_ 235 LeftSecondaryBoundaryCandidateRoleCandidateRaw "Observed active role value is fixed by slot: E9=1, DE=2, EA=3, DD=4, EB=5, DC=6, EC=7, DB=8. Slots5/6 align with farther left/right boundaries in image review; exact paint/barrier class unresolved. Zero commonly accompanies retained/inactive geometry.";
 
 CM_ SG_ 236 LeftRoadEdgeCandidateRoleCandidateRaw "Observed active role value is fixed by slot: E9=1, DE=2, EA=3, DD=4, EB=5, DC=6, EC=7, DB=8. Slots5/6 align with farther left/right boundaries in image review; exact paint/barrier class unresolved. Zero commonly accompanies retained/inactive geometry.";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CM_ SG_ 206 LaneOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 CM_ SG_ 219 RightRoadEdgeCandidateOffsetEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Apply freshness/activity and geometry checks; offset alone does not establish a valid boundary.";
 
