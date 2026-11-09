@@ -452,7 +452,7 @@ BO_ 219 CAMERA_0DB: 64 FCM
  SG_ RawField18 : 113|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField19 : 122|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField20 : 121|3@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField21 : 133|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0OrientationCandidateRaw : 133|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField22 : 134|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 138|13@0- (1,0) [0|0] "" ACP3_MCU
  SG_ Object0IdCandidate : 152|6@1+ (1,0) [0|0] "" ACP3_MCU
@@ -469,13 +469,13 @@ BO_ 219 CAMERA_0DB: 64 FCM
  SG_ Object0RelativeLateralVelocityEstimate : 249|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField36 : 256|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField37 : 272|7@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField38 : 281|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0StateCandidateRaw : 281|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField39 : 283|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField40 : 285|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField41 : 280|2@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField42 : 289|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField43 : 288|2@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField44 : 298|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1OrientationCandidateRaw : 298|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField45 : 299|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField46 : 300|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 319|13@0- (1,0) [0|0] "" ACP3_MCU
@@ -497,7 +497,7 @@ BO_ 219 CAMERA_0DB: 64 FCM
  SG_ RawField63 : 450|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField64 : 458|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField65 : 460|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField66 : 462|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1StateCandidateRaw : 462|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField67 : 457|28@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField68 : 493|19@0+ (1,0) [0|0] "" ACP3_MCU
 
@@ -522,7 +522,7 @@ BO_ 220 CAMERA_0DC: 64 FCM
  SG_ RawField18 : 113|6@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField19 : 122|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField20 : 121|3@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField21 : 133|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0OrientationCandidateRaw : 133|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField22 : 134|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField23 : 138|13@0- (1,0) [0|0] "" ACP3_MCU
  SG_ Object0IdCandidate : 152|6@1+ (1,0) [0|0] "" ACP3_MCU
@@ -539,13 +539,13 @@ BO_ 220 CAMERA_0DC: 64 FCM
  SG_ Object0RelativeLateralVelocityEstimate : 249|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField36 : 256|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField37 : 272|7@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField38 : 281|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0StateCandidateRaw : 281|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField39 : 283|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField40 : 285|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField41 : 280|2@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField42 : 289|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField43 : 288|2@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField44 : 298|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1OrientationCandidateRaw : 298|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField45 : 299|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField46 : 300|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 319|13@0- (1,0) [0|0] "" ACP3_MCU
@@ -567,7 +567,7 @@ BO_ 220 CAMERA_0DC: 64 FCM
  SG_ RawField63 : 450|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField64 : 458|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField65 : 460|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField66 : 462|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object1StateCandidateRaw : 462|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField67 : 457|28@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField68 : 493|22@0+ (1,0) [0|0] "" ACP3_MCU
 
@@ -619,7 +619,7 @@ BO_ 221 CAMERA_0DD: 64 FCM
  SG_ RawField45 : 304|2@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField46 : 313|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 312|2@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField48 : 322|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0OrientationCandidateRaw : 322|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField49 : 323|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField50 : 324|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField51 : 343|13@0- (1,0) [0|0] "" ACP3_MCU
@@ -642,7 +642,7 @@ BO_ 221 CAMERA_0DD: 64 FCM
  SG_ RawField68 : 480|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField69 : 482|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField70 : 484|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField71 : 486|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0StateCandidateRaw : 486|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField72 : 495|24@0+ (1,0) [0|0] "" ACP3_MCU
 
 BO_ 222 CAMERA_0DE: 64 FCM
@@ -703,7 +703,7 @@ BO_ 222 CAMERA_0DE: 64 FCM
  SG_ RawField55_Flag : 288|2@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField56 : 297|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField57_Flag : 296|2@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField58 : 306|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0OrientationCandidateRaw : 306|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField59 : 307|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField60 : 308|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField61 : 327|13@0- (1,0) [0|0] "" ACP3_MCU
@@ -724,7 +724,7 @@ BO_ 222 CAMERA_0DE: 64 FCM
  SG_ RawField76 : 456|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField77 : 458|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField78 : 466|4@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField79 : 470|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0StateCandidateRaw : 470|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField80 : 465|3@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField81 : 473|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField82 : 472|6@0+ (1,0) [0|0] "" ACP3_MCU
@@ -775,7 +775,7 @@ BO_ 233 CAMERA_0E9: 64 FCM
  SG_ RawField33 : 237|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField34_Flag : 241|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField35 : 240|3@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField36 : 252|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0OrientationCandidateRaw : 252|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField37 : 253|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField38 : 257|13@0- (1,0) [0|0] "" ACP3_MCU
  SG_ Object0IdCandidate : 276|6@0+ (1,0) [0|0] "" ACP3_MCU
@@ -792,7 +792,7 @@ BO_ 233 CAMERA_0E9: 64 FCM
  SG_ Object0RelativeLateralVelocityEstimate : 368|9@0- (0.125,0) [-32|31.875] "m/s" ACP3_MCU
  SG_ RawField51 : 391|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField52 : 397|7@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField53 : 400|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0StateCandidateRaw : 400|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField54 : 402|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField55 : 404|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField56 : 413|9@0- (1,0) [0|0] "" ACP3_MCU
@@ -876,7 +876,7 @@ BO_ 234 CAMERA_0EA: 64 FCM
  SG_ RawField62 : 304|2@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField63 : 313|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField64 : 312|2@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField65 : 322|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0OrientationCandidateRaw : 322|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField66 : 323|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField67 : 324|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField68 : 343|13@0- (1,0) [0|0] "" ACP3_MCU
@@ -899,7 +899,7 @@ BO_ 234 CAMERA_0EA: 64 FCM
  SG_ RawField85 : 483|10@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField86 : 484|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField87 : 485|1@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField88 : 486|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0StateCandidateRaw : 486|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField89 : 489|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField90 : 488|2@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField91 : 496|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -956,7 +956,7 @@ BO_ 235 CAMERA_0EB: 64 FCM
  SG_ RawField45 : 304|2@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField46 : 313|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField47 : 312|2@0+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField48 : 322|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0OrientationCandidateRaw : 322|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField49 : 323|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField50 : 324|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField51 : 343|13@0- (1,0) [0|0] "" ACP3_MCU
@@ -979,7 +979,7 @@ BO_ 235 CAMERA_0EB: 64 FCM
  SG_ RawField68 : 480|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField69 : 482|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField70 : 484|2@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField71 : 486|2@1+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0StateCandidateRaw : 486|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField72 : 495|24@0+ (1,0) [0|0] "" ACP3_MCU
 
 BO_ 236 CAMERA_0EC: 64 FCM
@@ -1017,7 +1017,7 @@ BO_ 236 CAMERA_0EC: 64 FCM
  SG_ RawField32 : 226|6@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField33 : 232|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField34 : 234|6@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField35 : 243|11@0- (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0OrientationCandidateRaw : 243|11@0- (1,0) [0|0] "" ACP3_MCU
  SG_ RawField36 : 244|1@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField37 : 245|3@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField38 : 248|13@0- (1,0) [0|0] "" ACP3_MCU
@@ -1037,7 +1037,7 @@ BO_ 236 CAMERA_0EC: 64 FCM
  SG_ RawField52 : 388|7@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField53 : 393|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField54 : 395|3@1+ (1,0) [0|0] "" ACP3_MCU
- SG_ RawField55 : 392|2@0+ (1,0) [0|0] "" ACP3_MCU
+ SG_ Object0StateCandidateRaw : 392|2@0+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField56 : 403|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField57 : 405|2@1+ (1,0) [0|0] "" ACP3_MCU
  SG_ RawField58 : 402|28@0+ (1,0) [0|0] "" ACP3_MCU
@@ -2332,3 +2332,43 @@ CM_ SG_ 199 Object7LateralEstimate "Metric estimate from lane-width and image-gr
 CM_ SG_ 199 Object8LongitudinalEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
 
 CM_ SG_ 199 Object8LateralEstimate "Metric estimate from lane-width and image-ground-contact calibration; not independently surveyed or OEM confirmed. Encoding unchanged; raw values remain available with scaling disabled. Position or velocity does not independently establish object validity; retain source identity and freshness checks.";
+
+CM_ SG_ 219 Object0OrientationCandidateRaw "FCM object orientation candidate: near zero correlates with forward-facing traffic; near +/-1024 with opposing-facing traffic. Display estimate uses pi/1024 rad/count; exact angular scale, intermediate-angle accuracy and sentinel semantics remain unverified. Require state 2, valid range, freshness and temporal consistency. FCM sensor-fusion provenance unresolved.";
+
+CM_ SG_ 219 Object0StateCandidateRaw "Empirical FCM object-record state: 0 accompanies cleared identity and companion states even when old coordinates remain; 2 accompanies populated records. 1 and 3 unobserved in validation. State 2 alone does not establish object existence: range/sentinel and freshness checks remain necessary. Not an OEM validity enumeration.";
+
+CM_ SG_ 219 Object1OrientationCandidateRaw "FCM object orientation candidate: near zero correlates with forward-facing traffic; near +/-1024 with opposing-facing traffic. Display estimate uses pi/1024 rad/count; exact angular scale, intermediate-angle accuracy and sentinel semantics remain unverified. Require state 2, valid range, freshness and temporal consistency. FCM sensor-fusion provenance unresolved.";
+
+CM_ SG_ 219 Object1StateCandidateRaw "Empirical FCM object-record state: 0 accompanies cleared identity and companion states even when old coordinates remain; 2 accompanies populated records. 1 and 3 unobserved in validation. State 2 alone does not establish object existence: range/sentinel and freshness checks remain necessary. Not an OEM validity enumeration.";
+
+CM_ SG_ 220 Object0OrientationCandidateRaw "FCM object orientation candidate: near zero correlates with forward-facing traffic; near +/-1024 with opposing-facing traffic. Display estimate uses pi/1024 rad/count; exact angular scale, intermediate-angle accuracy and sentinel semantics remain unverified. Require state 2, valid range, freshness and temporal consistency. FCM sensor-fusion provenance unresolved.";
+
+CM_ SG_ 220 Object0StateCandidateRaw "Empirical FCM object-record state: 0 accompanies cleared identity and companion states even when old coordinates remain; 2 accompanies populated records. 1 and 3 unobserved in validation. State 2 alone does not establish object existence: range/sentinel and freshness checks remain necessary. Not an OEM validity enumeration.";
+
+CM_ SG_ 220 Object1OrientationCandidateRaw "FCM object orientation candidate: near zero correlates with forward-facing traffic; near +/-1024 with opposing-facing traffic. Display estimate uses pi/1024 rad/count; exact angular scale, intermediate-angle accuracy and sentinel semantics remain unverified. Require state 2, valid range, freshness and temporal consistency. FCM sensor-fusion provenance unresolved.";
+
+CM_ SG_ 220 Object1StateCandidateRaw "Empirical FCM object-record state: 0 accompanies cleared identity and companion states even when old coordinates remain; 2 accompanies populated records. 1 and 3 unobserved in validation. State 2 alone does not establish object existence: range/sentinel and freshness checks remain necessary. Not an OEM validity enumeration.";
+
+CM_ SG_ 221 Object0OrientationCandidateRaw "FCM object orientation candidate: near zero correlates with forward-facing traffic; near +/-1024 with opposing-facing traffic. Display estimate uses pi/1024 rad/count; exact angular scale, intermediate-angle accuracy and sentinel semantics remain unverified. Require state 2, valid range, freshness and temporal consistency. FCM sensor-fusion provenance unresolved.";
+
+CM_ SG_ 221 Object0StateCandidateRaw "Empirical FCM object-record state: 0 accompanies cleared identity and companion states even when old coordinates remain; 2 accompanies populated records. 1 and 3 unobserved in validation. State 2 alone does not establish object existence: range/sentinel and freshness checks remain necessary. Not an OEM validity enumeration.";
+
+CM_ SG_ 222 Object0OrientationCandidateRaw "FCM object orientation candidate: near zero correlates with forward-facing traffic; near +/-1024 with opposing-facing traffic. Display estimate uses pi/1024 rad/count; exact angular scale, intermediate-angle accuracy and sentinel semantics remain unverified. Require state 2, valid range, freshness and temporal consistency. FCM sensor-fusion provenance unresolved.";
+
+CM_ SG_ 222 Object0StateCandidateRaw "Empirical FCM object-record state: 0 accompanies cleared identity and companion states even when old coordinates remain; 2 accompanies populated records. 1 and 3 unobserved in validation. State 2 alone does not establish object existence: range/sentinel and freshness checks remain necessary. Not an OEM validity enumeration.";
+
+CM_ SG_ 233 Object0OrientationCandidateRaw "FCM object orientation candidate: near zero correlates with forward-facing traffic; near +/-1024 with opposing-facing traffic. Display estimate uses pi/1024 rad/count; exact angular scale, intermediate-angle accuracy and sentinel semantics remain unverified. Require state 2, valid range, freshness and temporal consistency. FCM sensor-fusion provenance unresolved.";
+
+CM_ SG_ 233 Object0StateCandidateRaw "Empirical FCM object-record state: 0 accompanies cleared identity and companion states even when old coordinates remain; 2 accompanies populated records. 1 and 3 unobserved in validation. State 2 alone does not establish object existence: range/sentinel and freshness checks remain necessary. Not an OEM validity enumeration.";
+
+CM_ SG_ 234 Object0OrientationCandidateRaw "FCM object orientation candidate: near zero correlates with forward-facing traffic; near +/-1024 with opposing-facing traffic. Display estimate uses pi/1024 rad/count; exact angular scale, intermediate-angle accuracy and sentinel semantics remain unverified. Require state 2, valid range, freshness and temporal consistency. FCM sensor-fusion provenance unresolved.";
+
+CM_ SG_ 234 Object0StateCandidateRaw "Empirical FCM object-record state: 0 accompanies cleared identity and companion states even when old coordinates remain; 2 accompanies populated records. 1 and 3 unobserved in validation. State 2 alone does not establish object existence: range/sentinel and freshness checks remain necessary. Not an OEM validity enumeration.";
+
+CM_ SG_ 235 Object0OrientationCandidateRaw "FCM object orientation candidate: near zero correlates with forward-facing traffic; near +/-1024 with opposing-facing traffic. Display estimate uses pi/1024 rad/count; exact angular scale, intermediate-angle accuracy and sentinel semantics remain unverified. Require state 2, valid range, freshness and temporal consistency. FCM sensor-fusion provenance unresolved.";
+
+CM_ SG_ 235 Object0StateCandidateRaw "Empirical FCM object-record state: 0 accompanies cleared identity and companion states even when old coordinates remain; 2 accompanies populated records. 1 and 3 unobserved in validation. State 2 alone does not establish object existence: range/sentinel and freshness checks remain necessary. Not an OEM validity enumeration.";
+
+CM_ SG_ 236 Object0OrientationCandidateRaw "FCM object orientation candidate: near zero correlates with forward-facing traffic; near +/-1024 with opposing-facing traffic. Display estimate uses pi/1024 rad/count; exact angular scale, intermediate-angle accuracy and sentinel semantics remain unverified. Require state 2, valid range, freshness and temporal consistency. FCM sensor-fusion provenance unresolved.";
+
+CM_ SG_ 236 Object0StateCandidateRaw "Empirical FCM object-record state: 0 accompanies cleared identity and companion states even when old coordinates remain; 2 accompanies populated records. 1 and 3 unobserved in validation. State 2 alone does not establish object existence: range/sentinel and freshness checks remain necessary. Not an OEM validity enumeration.";
