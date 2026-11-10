@@ -99,14 +99,19 @@ BO_ 193 RRR_SIDE_SECURITY_AUX0_0C1: 48 RRR_SIDE
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
  SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0TrackId : 240|6@0+ (1,0) [0|63] "" ACP3_MCU
 
 BO_ 197 LRR_SIDE_OBJECT_PAGE0_0C5: 64 LRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object1TrackId : 102|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object2TrackId : 226|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object3TrackId : 374|6@0+ (1,0) [0|63] "" ACP3_MCU
 
 BO_ 198 LRR_SIDE_SECURITY_AUX0_0C6: 48 LRR_SIDE
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
  SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0TrackId : 240|6@0+ (1,0) [0|63] "" ACP3_MCU
 
 BO_ 199 LCRR_OBJECT_PAGE0_0C7: 64 LCRR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -134,6 +139,9 @@ BO_ 200 LCRR_OBJECT_PAGE1_0C8: 64 LCRR
 
 BO_ 201 LCRR_OBJECT_PAGE2_0C9: 64 LCRR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object1TrackId : 102|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object2TrackId : 226|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object3TrackId : 374|6@0+ (1,0) [0|63] "" ACP3_MCU
 
 BO_ 207 RFR_OBJECT_PAGE0_0CF: 64 RFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -163,6 +171,7 @@ BO_ 209 RFR_SECURITY_AUX0_0D1: 48 RFR
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
  SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0TrackId : 240|6@0+ (1,0) [0|63] "" ACP3_MCU
 
 BO_ 210 LFR_OBJECT_PAGE2_0D2: 64 LFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -192,6 +201,7 @@ BO_ 212 LFR_SECURITY_AUX1_0D4: 48 LFR
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
  SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0TrackId : 240|6@0+ (1,0) [0|63] "" ACP3_MCU
 
 BO_ 216 CAMERA_0D8: 48 FCM
  SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -1289,6 +1299,9 @@ BO_ 240 CAMERA_0F0: 20 FCM
 
 BO_ 244 LFR_OBJECT_PAGE0_0F4: 64 LFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object1TrackId : 102|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object2TrackId : 226|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object3TrackId : 374|6@0+ (1,0) [0|63] "" ACP3_MCU
 
 BO_ 245 LFR_OBJECT_PAGE1_0F5: 64 LFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -1298,6 +1311,9 @@ BO_ 246 LFR_AUX0_0F6: 48 LFR
 
 BO_ 247 RFR_OBJECT_PAGE2_0F7: 64 RFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object1TrackId : 102|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object2TrackId : 226|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object3TrackId : 374|6@0+ (1,0) [0|63] "" ACP3_MCU
 
 BO_ 248 RFR_OBJECT_PAGE3_0F8: 64 RFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -1309,6 +1325,7 @@ BO_ 254 LCRR_SECURITY_AUX0_0FE: 48 LCRR
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
  SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0TrackId : 240|6@0+ (1,0) [0|63] "" ACP3_MCU
 
 BO_ 255 LCRR_OBJECT_PAGE3_0FF: 64 LCRR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -1348,6 +1365,9 @@ BO_ 518 LRR_SIDE_AUX1_206: 48 LRR_SIDE
 
 BO_ 519 RRR_SIDE_OBJECT_PAGE2_207: 64 RRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
+ SG_ Object1TrackId : 102|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object2TrackId : 226|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object3TrackId : 374|6@0+ (1,0) [0|63] "" ACP3_MCU
 
 BO_ 520 RRR_SIDE_OBJECT_PAGE4_208: 64 RRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -2372,3 +2392,24 @@ CM_ SG_ 235 Object0StateCandidateRaw "Empirical FCM object-record state: 0 accom
 CM_ SG_ 236 Object0OrientationCandidateRaw "FCM object orientation candidate: near zero correlates with forward-facing traffic; near +/-1024 with opposing-facing traffic. Display estimate uses pi/1024 rad/count; exact angular scale, intermediate-angle accuracy and sentinel semantics remain unverified. Require state 2, valid range, freshness and temporal consistency. FCM sensor-fusion provenance unresolved.";
 
 CM_ SG_ 236 Object0StateCandidateRaw "Empirical FCM object-record state: 0 accompanies cleared identity and companion states even when old coordinates remain; 2 accompanies populated records. 1 and 3 unobserved in validation. State 2 alone does not establish object existence: range/sentinel and freshness checks remain necessary. Not an OEM validity enumeration.";
+
+CM_ SG_ 212 Object0TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 209 Object0TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 198 Object0TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 193 Object0TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 254 Object0TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 244 Object1TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 244 Object2TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 244 Object3TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 247 Object1TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 247 Object2TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 247 Object3TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 197 Object1TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 197 Object2TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 197 Object3TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 519 Object1TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 519 Object2TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 519 Object3TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 201 Object1TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 201 Object2TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+CM_ SG_ 201 Object3TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
