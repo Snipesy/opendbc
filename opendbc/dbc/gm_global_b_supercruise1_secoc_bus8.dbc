@@ -100,18 +100,28 @@ BO_ 193 RRR_SIDE_SECURITY_AUX0_0C1: 48 RRR_SIDE
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
  SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
  SG_ Object0TrackId : 240|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityRaw : 307|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityCandidateRaw : 248|9@0- (1,0) [-256|255] "" ACP3_MCU
 
 BO_ 197 LRR_SIDE_OBJECT_PAGE0_0C5: 64 LRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
  SG_ Object1TrackId : 102|6@0+ (1,0) [0|63] "" ACP3_MCU
  SG_ Object2TrackId : 226|6@0+ (1,0) [0|63] "" ACP3_MCU
  SG_ Object3TrackId : 374|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object1RelativeLongitudinalVelocityRaw : 145|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object1RelativeLateralVelocityCandidateRaw : 110|9@0- (1,0) [-256|255] "" ACP3_MCU
+ SG_ Object2RelativeLongitudinalVelocityRaw : 293|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object2RelativeLateralVelocityCandidateRaw : 234|9@0- (1,0) [-256|255] "" ACP3_MCU
+ SG_ Object3RelativeLongitudinalVelocityRaw : 425|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object3RelativeLateralVelocityCandidateRaw : 382|9@0- (1,0) [-256|255] "" ACP3_MCU
 
 BO_ 198 LRR_SIDE_SECURITY_AUX0_0C6: 48 LRR_SIDE
  SG_ SECOC_FRESHNESS : 39|5@0+ (1,0) [0|31] "" ACP3_MCU
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
  SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
  SG_ Object0TrackId : 240|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityRaw : 307|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityCandidateRaw : 248|9@0- (1,0) [-256|255] "" ACP3_MCU
 
 BO_ 199 LCRR_OBJECT_PAGE0_0C7: 64 LCRR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -142,6 +152,12 @@ BO_ 201 LCRR_OBJECT_PAGE2_0C9: 64 LCRR
  SG_ Object1TrackId : 102|6@0+ (1,0) [0|63] "" ACP3_MCU
  SG_ Object2TrackId : 226|6@0+ (1,0) [0|63] "" ACP3_MCU
  SG_ Object3TrackId : 374|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object1RelativeLongitudinalVelocityRaw : 145|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object1RelativeLateralVelocityCandidateRaw : 110|9@0- (1,0) [-256|255] "" ACP3_MCU
+ SG_ Object2RelativeLongitudinalVelocityRaw : 293|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object2RelativeLateralVelocityCandidateRaw : 234|9@0- (1,0) [-256|255] "" ACP3_MCU
+ SG_ Object3RelativeLongitudinalVelocityRaw : 425|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object3RelativeLateralVelocityCandidateRaw : 382|9@0- (1,0) [-256|255] "" ACP3_MCU
 
 BO_ 207 RFR_OBJECT_PAGE0_0CF: 64 RFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -172,6 +188,8 @@ BO_ 209 RFR_SECURITY_AUX0_0D1: 48 RFR
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
  SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
  SG_ Object0TrackId : 240|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityRaw : 307|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityCandidateRaw : 248|9@0- (1,0) [-256|255] "" ACP3_MCU
 
 BO_ 210 LFR_OBJECT_PAGE2_0D2: 64 LFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -202,6 +220,8 @@ BO_ 212 LFR_SECURITY_AUX1_0D4: 48 LFR
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
  SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
  SG_ Object0TrackId : 240|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityRaw : 307|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityCandidateRaw : 248|9@0- (1,0) [-256|255] "" ACP3_MCU
 
 BO_ 216 CAMERA_0D8: 48 FCM
  SG_ RawField01 : 4|2@1+ (1,0) [0|0] "" ACP3_MCU
@@ -1302,6 +1322,12 @@ BO_ 244 LFR_OBJECT_PAGE0_0F4: 64 LFR
  SG_ Object1TrackId : 102|6@0+ (1,0) [0|63] "" ACP3_MCU
  SG_ Object2TrackId : 226|6@0+ (1,0) [0|63] "" ACP3_MCU
  SG_ Object3TrackId : 374|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object1RelativeLongitudinalVelocityRaw : 145|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object1RelativeLateralVelocityCandidateRaw : 110|9@0- (1,0) [-256|255] "" ACP3_MCU
+ SG_ Object2RelativeLongitudinalVelocityRaw : 293|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object2RelativeLateralVelocityCandidateRaw : 234|9@0- (1,0) [-256|255] "" ACP3_MCU
+ SG_ Object3RelativeLongitudinalVelocityRaw : 425|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object3RelativeLateralVelocityCandidateRaw : 382|9@0- (1,0) [-256|255] "" ACP3_MCU
 
 BO_ 245 LFR_OBJECT_PAGE1_0F5: 64 LFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -1314,6 +1340,12 @@ BO_ 247 RFR_OBJECT_PAGE2_0F7: 64 RFR
  SG_ Object1TrackId : 102|6@0+ (1,0) [0|63] "" ACP3_MCU
  SG_ Object2TrackId : 226|6@0+ (1,0) [0|63] "" ACP3_MCU
  SG_ Object3TrackId : 374|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object1RelativeLongitudinalVelocityRaw : 145|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object1RelativeLateralVelocityCandidateRaw : 110|9@0- (1,0) [-256|255] "" ACP3_MCU
+ SG_ Object2RelativeLongitudinalVelocityRaw : 293|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object2RelativeLateralVelocityCandidateRaw : 234|9@0- (1,0) [-256|255] "" ACP3_MCU
+ SG_ Object3RelativeLongitudinalVelocityRaw : 425|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object3RelativeLateralVelocityCandidateRaw : 382|9@0- (1,0) [-256|255] "" ACP3_MCU
 
 BO_ 248 RFR_OBJECT_PAGE3_0F8: 64 RFR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -1326,6 +1358,8 @@ BO_ 254 LCRR_SECURITY_AUX0_0FE: 48 LCRR
  SG_ ApplicationCounter : 376|2@1+ (1,0) [0|3] "" ACP3_MCU
  SG_ Object0LongitudinalRaw : 278|11@0- (1,0) [-1024|1023] "" ACP3_MCU
  SG_ Object0TrackId : 240|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object0RelativeLongitudinalVelocityRaw : 307|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object0RelativeLateralVelocityCandidateRaw : 248|9@0- (1,0) [-256|255] "" ACP3_MCU
 
 BO_ 255 LCRR_OBJECT_PAGE3_0FF: 64 LCRR
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -1368,6 +1402,12 @@ BO_ 519 RRR_SIDE_OBJECT_PAGE2_207: 64 RRR_SIDE
  SG_ Object1TrackId : 102|6@0+ (1,0) [0|63] "" ACP3_MCU
  SG_ Object2TrackId : 226|6@0+ (1,0) [0|63] "" ACP3_MCU
  SG_ Object3TrackId : 374|6@0+ (1,0) [0|63] "" ACP3_MCU
+ SG_ Object1RelativeLongitudinalVelocityRaw : 145|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object1RelativeLateralVelocityCandidateRaw : 110|9@0- (1,0) [-256|255] "" ACP3_MCU
+ SG_ Object2RelativeLongitudinalVelocityRaw : 293|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object2RelativeLateralVelocityCandidateRaw : 234|9@0- (1,0) [-256|255] "" ACP3_MCU
+ SG_ Object3RelativeLongitudinalVelocityRaw : 425|11@0- (1,0) [-1024|1023] "" ACP3_MCU
+ SG_ Object3RelativeLateralVelocityCandidateRaw : 382|9@0- (1,0) [-256|255] "" ACP3_MCU
 
 BO_ 520 RRR_SIDE_OBJECT_PAGE4_208: 64 RRR_SIDE
  SG_ CycleCounter : 6|2@1+ (1,0) [0|3] "" ACP3_MCU
@@ -2413,3 +2453,44 @@ CM_ SG_ 519 Object3TrackId "Empirically identified sensor-local track label; fol
 CM_ SG_ 201 Object1TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
 CM_ SG_ 201 Object2TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
 CM_ SG_ 201 Object3TrackId "Empirically identified sensor-local track label; follows targets across summary-slot changes. IDs may be recycled after loss and are not shared across sensors. Require fresh coordinate-matched details and spatial continuity. Not object class or width.";
+
+CM_ SG_ 212 Object0RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 212 Object0RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 209 Object0RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 209 Object0RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 198 Object0RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 198 Object0RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 193 Object0RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 193 Object0RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 254 Object0RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 254 Object0RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 244 Object1RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 244 Object1RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 244 Object2RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 244 Object2RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 244 Object3RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 244 Object3RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 247 Object1RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 247 Object1RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 247 Object2RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 247 Object2RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 247 Object3RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 247 Object3RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 197 Object1RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 197 Object1RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 197 Object2RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 197 Object2RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 197 Object3RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 197 Object3RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 519 Object1RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 519 Object1RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 519 Object2RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 519 Object2RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 519 Object3RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 519 Object3RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 201 Object1RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 201 Object1RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 201 Object2RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 201 Object2RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 201 Object3RelativeLongitudinalVelocityRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
+CM_ SG_ 201 Object3RelativeLateralVelocityCandidateRaw "Empirical relative velocity in position-counts per second. Estimated physical conversion 0.125 m/s per count; not an OEM calibrated scale. Positive longitudinal is forward relative to ego, positive lateral is left. Lateral interpretation remains provisional. Require fresh identity-matched detail and reject extrema.";
